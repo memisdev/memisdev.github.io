@@ -1,0 +1,3403 @@
+[
+  {
+    "id": "CAC-003",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "PDH kompleksinin koenzimleri ve alt enzimleri",
+    "source_pages": [
+      9,
+      11,
+      13,
+      15
+    ],
+    "difficulty": "Zor",
+    "question_type": "eşleştirme",
+    "question": "Pirüvat dehidrogenaz kompleksi içindeki enzim-alt basamak eşleşmelerinden hangisi doğrudur?",
+    "options": {
+      "A": "E1, hidroksietil grubunu asetil-KoA'ya aktaran dihidrolipoil transasetilazdır.",
+      "B": "E2, elektronları FAD üzerinden NAD+'a aktaran dihidrolipoil dehidrogenazdır.",
+      "C": "E3, yükseltgenmiş lipoamidi yeniden oluşturan dihidrolipoil dehidrogenazdır.",
+      "D": "E1, süksinatı fumarata oksitleyen enzimdir.",
+      "E": "E2, sitrat sentazın alternatif adıdır."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "E1'in pirüvat dehidrogenaz, E2'nin dihidrolipoil transasetilaz, E3'ün ise dihidrolipoil dehidrogenaz olduğu; özellikle 4 ve 5. basamaklarda E3'ün elektronları FAD üzerinden NAD+'a aktararak kompleksin yükseltgenmiş durumunu yenilediği anlatılır.",
+    "distractor_explanations": {
+      "A": "Bu tanım E2'ye aittir, E1'e değil.",
+      "B": "Elektronların FAD üzerinden NAD+'a aktarılması E3 ile ilişkilidir.",
+      "C": "Doğru seçenek.",
+      "D": "Süksinat dehidrogenaz sitrik asit çevrimi enzimidir, PDH alt birimi değildir.",
+      "E": "Sitrat sentaz çevrimdeki ayrı bir enzimdir."
+    },
+    "learning_objective": "PDH kompleksinin alt birimlerinin görevlerini ayırt etmek.",
+    "tags": [
+      "Pirüvat dehidrogenaz kompleksinin enzimleri",
+      "PDH",
+      "E1",
+      "E2",
+      "E3",
+      "Enzim"
+    ]
+  },
+  {
+    "id": "CAC-006",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "Oksidatif dekarboksillenme basamakları",
+    "source_pages": [
+      21,
+      22
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "İzositrat dehidrogenaz hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Tüm hücrelerde yalnızca FAD kullanan tek bir şekli vardır.",
+      "B": "NADP+-bağımlı formun ana işlevi indirgeyici anabolik tepkimeler için NADPH üretmektir.",
+      "C": "Yalnızca sitozolde bulunur ve sitrik asit çevrimine katılmaz.",
+      "D": "İzositratı süksinata doğrudan dönüştürür.",
+      "E": "Hiçbir metal iyonuna gereksinim duymaz."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "İzositrat dehidrogenazın NAD+-bağımlı ve NADP+-bağımlı iki formu olduğu; özellikle sitozol ve mitokondride bulunan NADP+-bağımlı formun ana işlevinin NADPH üretmek olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "İki farklı formdan söz eder ve FAD verilmez.",
+      "B": "Doğru seçenek.",
+      "C": "NAD+-bağımlı form mitokondri matriksinde sitrik asit çevrimiyle ilişkilidir.",
+      "D": "İzositrat önce α-ketoglutarata oksidatif dekarboksillenir.",
+      "E": "Mn2+ kullanımından söz edilir."
+    },
+    "learning_objective": "İzositrat dehidrogenazın iki formu arasındaki işlev farkını ayırt etmek.",
+    "tags": [
+      "İzositrat dehidrogenaz",
+      "NADPH",
+      "NADP",
+      "NAD"
+    ]
+  },
+  {
+    "id": "CAC-008",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "Amfibolik rol ve biyosentetik ara ürünler",
+    "source_pages": [
+      32,
+      34
+    ],
+    "difficulty": "Zor",
+    "question_type": "kavramsal ayrım",
+    "question": "Sitrik asit çevriminin amfibolik olarak tanımlanmasının temel nedeni aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Yalnızca ATP tüketen bir biyosentetik yolak olması.",
+      "B": "Hem katabolik enerji elde etmede hem de biyosentetik öncül sağlamada görev alması.",
+      "C": "Sadece bitkilerde bulunması.",
+      "D": "Çevrim ara ürünlerinin hiçbir zaman dışarı alınmaması.",
+      "E": "Tüm ara ürünlerinin yalnızca bir kez kullanılması."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Sitrik asit çevriminin hem katabolik hem anabolik süreçlerde görev aldığı, ara ürünlerinin biyosentetik öncüller olarak kullanılabildiği ve anaplerotik tepkimelerle yeniden yerine konduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Çevrim yalnızca ATP tüketen bir yolak olarak verilmez.",
+      "B": "Doğru seçenek.",
+      "C": "Sadece bitkilere özgü olduğu söylenmez.",
+      "D": "Ara ürünler biyosentetik yolaklara ayrılabilir.",
+      "E": "Ara ürünler çevrim boyunca tekrar kullanılır."
+    },
+    "learning_objective": "Amfibolik yolak kavramını anaplerotik tepkimelerle ilişkilendirmek.",
+    "tags": [
+      "Amfibolik yolak ve anapleroz",
+      "Amfibolik",
+      "Anaplerotik",
+      "Biyosentetik öncül",
+      "Sitrik asit çevrimi"
+    ]
+  },
+  {
+    "id": "CAC-016",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "Amfibolik rol ve biyosentetik ara ürünler",
+    "source_pages": [
+      33,
+      34
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Sitrik asit çevrimi ara ürünlerinin biyosentetik yolaklara ayrılması durumunda aşağıdakilerden hangisi gereklidir?",
+    "options": {
+      "A": "Ara ürünlerin anaplerotik tepkimelerle yeniden yerine konması.",
+      "B": "Çevrimin bütünüyle geri dönüşsüz kapanması.",
+      "C": "Yalnız glikolizin durdurulması.",
+      "D": "DNA denatürasyonu.",
+      "E": "Pentoz fosfat yolağının tamamen kapanması."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Çevrim ara ürünlerinin biyosentetik öncül olarak uzaklaştırılabildiğini ve bunların anaplerotik tepkimelerle yeniden yerine konduğunu açıklar.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Çevrim bu nedenle kapanmaz; desteklenir.",
+      "C": "Böyle bir zorunluluk verilmez.",
+      "D": "İlgisizdir.",
+      "E": "İlgisizdir."
+    },
+    "learning_objective": "Anaplerotik tepkimelerin neden gerekli olduğunu açıklamak.",
+    "tags": [
+      "Amfibolik yolak ve anapleroz",
+      "Anaplerotik",
+      "Amfibolik",
+      "Biyosentetik öncül",
+      "CAC"
+    ]
+  },
+  {
+    "id": "CAC-019",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi",
+    "source_pages": [
+      5,
+      7
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "PDH kompleksinin E1 pirüvat dehidrogenaz, E2 dihidrolipoil transasetilaz ve E3 dihidrolipoil dehidrogenazdan oluştuğunu belirtir.",
+      "B": "PDH kompleksi için TPP, FAD, koenzim A, NAD ve lipoat gerektiği belirtilir; seçenekler içinde doğrudan verilen koenzim TPP'dir.",
+      "C": "PDH kompleksinin koenzimleri ve alt enzimleri için merkezde yer alan ayırıcı eksen e1, e2, e3 rolleri ayrımıdır.",
+      "D": "E3, yükseltgenmiş lipoamidi yeniden oluşturan dihidrolipoil dehidrogenazdır.",
+      "E": "PDH kompleksinin pirüvatı asetil-KoA ve CO2'ye dönüştüren, esasen oksidatif dekarboksillenme yapan enzim sistemi olduğu belirtilir."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "PDH kompleksinin pirüvatı asetil-KoA ve CO2'ye dönüştüren, esasen oksidatif dekarboksillenme yapan enzim sistemi olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "PDH kompleksinin koenzimleri ve alt enzimleri başlığıyla ilişkilidir; pirüvatın asetil-koa'ya oksidatif dekarboksillenmesi için ayırt edici değildir.",
+      "B": "PDH kompleksinin koenzimleri ve alt enzimleri başlığıyla ilişkilidir; pirüvatın asetil-koa'ya oksidatif dekarboksillenmesi için ayırt edici değildir.",
+      "C": "PDH kompleksinin koenzimleri ve alt enzimleri başlığıyla ilişkilidir; pirüvatın asetil-koa'ya oksidatif dekarboksillenmesi için ayırt edici değildir.",
+      "D": "PDH kompleksinin koenzimleri ve alt enzimleri başlığıyla ilişkilidir; pirüvatın asetil-koa'ya oksidatif dekarboksillenmesi için ayırt edici değildir."
+    },
+    "learning_objective": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CAC-021",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "PDH kompleksinin koenzimleri ve alt enzimleri",
+    "source_pages": [
+      8,
+      15
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "PDH kompleksinin koenzimleri ve alt enzimleri değerlendirildiğinde aşağıdaki ifadelerden hangisi uygundur?",
+    "options": {
+      "A": "PDH kompleksinin pirüvatı asetil-KoA ve CO2'ye dönüştüren, esasen oksidatif dekarboksillenme yapan enzim sistemi olduğu belirtilir.",
+      "B": "Substrat yönlendirilmesi sayesinde ara ürünlerin kompleksi terk etmediğini ve E2 substratı için yerel derişimin yüksek tutulduğunu vurgular.",
+      "C": "Tersinmezdir ve pirüvatın kalan iki karbonu asetil-KoA'nın asetil grubunu oluşturur.",
+      "D": "Ara ürünler kompleksi terk etmez; bölgesel derişim yüksek tutulur.",
+      "E": "PDH kompleksi için TPP, FAD, koenzim A, NAD ve lipoat gerektiği belirtilir; seçenekler içinde doğrudan verilen koenzim TPP'dir."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "PDH kompleksi için TPP, FAD, koenzim A, NAD ve lipoat gerektiği belirtilir; seçenekler içinde doğrudan verilen koenzim TPP'dir.",
+    "distractor_explanations": {
+      "A": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi başlığıyla ilişkilidir; pdh kompleksinin koenzimleri ve alt enzimleri için ayırt edici değildir.",
+      "B": "Substrat yönlendirilmesi başlığıyla ilişkilidir; pdh kompleksinin koenzimleri ve alt enzimleri için ayırt edici değildir.",
+      "C": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi başlığıyla ilişkilidir; pdh kompleksinin koenzimleri ve alt enzimleri için ayırt edici değildir.",
+      "D": "Substrat yönlendirilmesi başlığıyla ilişkilidir; pdh kompleksinin koenzimleri ve alt enzimleri için ayırt edici değildir."
+    },
+    "learning_objective": "PDH kompleksinin koenzimleri ve alt enzimleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "PDH kompleksinin koenzimleri ve alt enzimleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CAC-026",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "Oksidatif dekarboksillenme basamakları",
+    "source_pages": [
+      21,
+      23
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Oksidatif dekarboksillenme basamakları başlığında öne çıkan seçenek aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Doğrudan ATP eşdeğeri oluşumu ve oksidatif katkı ayrımı.",
+      "B": "Süksinil-KoA basamağında ATP eşdeğeri korunumu.",
+      "C": "NADP+-bağımlı izositrat dehidrogenaz ile NADPH üretimi.",
+      "D": "Sitratın izositrata tersinir izomerizasyonu.",
+      "E": "Asetil-KoA ile oksaloasetat kondensasyonu."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "İzositrat dehidrogenazın NAD+-bağımlı ve NADP+-bağımlı iki formu olduğu; özellikle sitozol ve mitokondride bulunan NADP+-bağımlı formun ana işlevinin NADPH üretmek olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Çevrimde enerji korunumu başlığıyla ilişkilidir; oksidatif dekarboksillenme basamakları için ayırt edici değildir.",
+      "B": "Çevrimde enerji korunumu başlığıyla ilişkilidir; oksidatif dekarboksillenme basamakları için ayırt edici değildir.",
+      "D": "Substrat yönlendirilmesi başlığıyla ilişkilidir; oksidatif dekarboksillenme basamakları için ayırt edici değildir.",
+      "E": "Süksinil-KoA sonrası basamaklar başlığıyla ilişkilidir; oksidatif dekarboksillenme basamakları için ayırt edici değildir."
+    },
+    "learning_objective": "Oksidatif dekarboksillenme basamakları için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Oksidatif dekarboksillenme basamakları",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CAC-029",
+    "source_pdf": "Sitrik Asit Çevrimi.pdf",
+    "source_topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+    "source_subtopic": "Çevrimde enerji korunumu",
+    "source_pages": [
+      28,
+      32
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Çevrimde enerji korunumu değerlendirildiğinde aşağıdaki ifadelerden hangisi uygundur?",
+    "options": {
+      "A": "Alfa-ketoglutarat dehidrogenaz basamağında NAD+'nın elektron alıcısı, KoA'nın ise süksinil grubunun taşıyıcısı olarak görev yaptığını açıklar.",
+      "B": "Çevrimin her devrinde doğrudan yalnızca bir ATP eşdeğerinin, süksinil-KoA'dan süksinat oluşurken korunduğu belirtilir.",
+      "C": "NADP+-bağımlı formun ana işlevi indirgeyici anabolik tepkimeler için NADPH üretmektir.",
+      "D": "Hem katabolik enerji elde etmede hem de biyosentetik öncül sağlamada görev alması.",
+      "E": "Ara ürünlerin anaplerotik tepkimelerle yeniden yerine konması."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Çevrimin her devrinde doğrudan yalnızca bir ATP eşdeğerinin, süksinil-KoA'dan süksinat oluşurken korunduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Oksidatif dekarboksillenme basamakları başlığıyla ilişkilidir; çevrimde enerji korunumu için ayırt edici değildir.",
+      "C": "Oksidatif dekarboksillenme basamakları başlığıyla ilişkilidir; çevrimde enerji korunumu için ayırt edici değildir.",
+      "D": "Amfibolik rol ve biyosentetik ara ürünler başlığıyla ilişkilidir; çevrimde enerji korunumu için ayırt edici değildir.",
+      "E": "Amfibolik rol ve biyosentetik ara ürünler başlığıyla ilişkilidir; çevrimde enerji korunumu için ayırt edici değildir."
+    },
+    "learning_objective": "Çevrimde enerji korunumu için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Çevrimde enerji korunumu",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-002",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "D/L izomerleri ve kiralite",
+    "source_pages": [
+      11,
+      12
+    ],
+    "difficulty": "Zor",
+    "question_type": "kavramsal ayrım",
+    "question": "Monosakkaritlerde D veya L tanımı hangi ölçüte dayanır?",
+    "options": {
+      "A": "Karbonil grubunun sayısına.",
+      "B": "Karbonil grubuna en uzak kiral merkezdeki düzenlenişin gliseraldehide benzerliğine.",
+      "C": "Molekülün halka açıp açmamasına.",
+      "D": "Mutlak optik dönme yönüne.",
+      "E": "Yalnızca molekül kütlesine."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "D/L ayrımının karbonil grubuna en uzak kiral merkezdeki -OH düzenlenişinin D- veya L-gliseraldehide benzerliğine göre yapıldığını belirtir.",
+    "distractor_explanations": {
+      "A": "Karbonil sayısı D/L ayrımını vermez.",
+      "B": "Doğru seçenek.",
+      "C": "Halka oluşumu ayrı bir konudur.",
+      "D": "D/L ile sağa-sola çevirme aynı kavram değildir.",
+      "E": "Molekül kütlesi belirleyici değildir."
+    },
+    "learning_objective": "D/L izomer tanımının referans noktasını açıklamak.",
+    "tags": [
+      "D ve L izomerleri",
+      "D-L",
+      "Stereoizomer",
+      "Gliseraldehit"
+    ]
+  },
+  {
+    "id": "CHO-003",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Halkalı yapı, anomerler ve mutarotasyon",
+    "source_pages": [
+      17,
+      20
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Aşağıdakilerden hangisi anomerleri en doğru biçimde tanımlar?",
+    "options": {
+      "A": "Karbon sayıları farklı monosakkarit çiftleri.",
+      "B": "Sadece zincir uzunluğu farklı şekerler.",
+      "C": "Yalnızca yarı asetal veya yarı ketal karbondaki düzenlenişi farklı izomerler.",
+      "D": "Aldoz ve ketoz arasındaki tüm farklar.",
+      "E": "Birbirinin ayna görüntüsü olan tüm şekerler."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Anomerlerin yalnızca yarı asetal/yarı ketal karbonundaki yani anomerik karbondaki düzenleniş farkıyla ayrılan izomerler olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Karbon sayısı farkı anomer tanımı değildir.",
+      "B": "Zincir uzunluğu farkı yoktur.",
+      "C": "Doğru seçenek.",
+      "D": "Aldoz-ketoz farkı çok daha farklı bir sınıflamadır.",
+      "E": "Bu tanım enantiyomerleri anlatır."
+    },
+    "learning_objective": "Anomer kavramını diğer stereokimyasal ayrımlardan ayırt etmek.",
+    "tags": [
+      "Anomer kavramı",
+      "Anomer",
+      "Anomerik karbon",
+      "Stereoizomer"
+    ]
+  },
+  {
+    "id": "CHO-006",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "İndirgen şeker mantığı",
+    "source_pages": [
+      34,
+      35,
+      44,
+      45
+    ],
+    "difficulty": "Zor",
+    "question_type": "kavramsal ayrım",
+    "question": "Bir disakkaritin indirgen olmayan şeker olması için hangi durum gereklidir?",
+    "options": {
+      "A": "En az bir serbest aldehit grubu taşıması.",
+      "B": "Yalnızca β bağları içermesi.",
+      "C": "Anomerik karbonlardan en az birinin serbest kalması.",
+      "D": "Anomerik karbonların bağ oluşumuna katılması ve çizgisel formun oluşamaması.",
+      "E": "Molekülün mutlaka glukoz ve fruktozdan oluşması."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "Bir anomerik karbon glikozit bağı yaptığında çizgisel forma geçemeyeceği, iki anomerik karbon da bağa katılmışsa şekerin indirgen olmayan özellik göstereceği açıklanır.",
+    "distractor_explanations": {
+      "A": "Bu, indirgen şeker lehine bir durumdur.",
+      "B": "Bağın α ya da β oluşu tek başına yeterli değildir.",
+      "C": "Serbest anomerik karbon indirgenlik sağlar; indirgen olmayan için tersi gerekir.",
+      "D": "Doğru seçenek.",
+      "E": "Sükroz bir örnektir ama tek olasılık değildir."
+    },
+    "learning_objective": "İndirgen ve indirgen olmayan şeker ayrımını anomerik karbon üzerinden yorumlamak.",
+    "tags": [
+      "İndirgen ve indirgen olmayan disakkaritler",
+      "Disakkarit",
+      "İndirgen şeker",
+      "Anomerik karbon",
+      "Glikozit bağı"
+    ]
+  },
+  {
+    "id": "CHO-010",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Yapısal homopolisakkaritler",
+    "source_pages": [
+      56,
+      57,
+      59
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Aşağıdaki ifadelerden hangisi selüloz ile kitin arasındaki farkı doğru verir?",
+    "options": {
+      "A": "Her ikisi de glikojenin dallanmış formlarıdır.",
+      "B": "Kitin, selülozdan C-2'deki -OH yerine asetillenmiş amino grup taşımasıyla ayrılır.",
+      "C": "Selüloz α(1→4), kitin ise α(1→6) bağları taşır.",
+      "D": "Hayvanlar her ikisini de kolaylıkla sindirir.",
+      "E": "Selüloz yalnızca bakterilerde, kitin yalnızca bitkilerde bulunur."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Kitinin N-asetilglukozamin kalıntılarından oluştuğu ve selülozdan temel farkının C-2'deki -OH yerine asetillenmiş amino grup taşıması olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Bu tanım ikisine de uymaz.",
+      "B": "Doğru seçenek.",
+      "C": "Selüloz ve kitin β(1→4) bağlarıyla anlatılır.",
+      "D": "Omurgalılar selülozu ve kitini sindiremez.",
+      "E": "Dağılım böyle verilmez."
+    },
+    "learning_objective": "Selüloz ve kitini yapı düzeyinde ayırt etmek.",
+    "tags": [
+      "Yapısal homopolisakkaritler",
+      "Selüloz",
+      "Kitin",
+      "N-asetilglukozamin",
+      "Yapısal polisakkarit"
+    ]
+  },
+  {
+    "id": "CHO-011",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Glikozaminoglikanlar",
+    "source_pages": [
+      70,
+      73,
+      75
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Hiyaluronan ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Tekrarlanan glukoz ve fruktoz birimlerinden oluşur.",
+      "B": "D-glukuronik asit ve N-asetilglukozamin içeren bir glikozaminoglikandır.",
+      "C": "Sadece bitki hücre duvarında bulunur.",
+      "D": "Ana işlevi elektron taşıma zincirinde görev almaktır.",
+      "E": "Protein çekirdeği zorunlu olarak taşır, bu yüzden proteoglikandır."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Hiyaluronanın D-glukuronik asit ve N-asetilglukozamin kalıntılarından oluşan bir glikozaminoglikan olduğunu ve proteoglikanlardan ayrı düşünülmesi gerektiğini anlatır.",
+    "distractor_explanations": {
+      "A": "Bu bileşim verilmez.",
+      "B": "Doğru seçenek.",
+      "C": "ECM bağlamında anlatılır; sadece bitki hücre duvarı değildir.",
+      "D": "Elektron taşıma ile ilişkili değildir.",
+      "E": "Hiyaluronan protein çekirdeği taşımadan da bulunabilir; bu yönüyle tipik proteoglikandan ayrılır."
+    },
+    "learning_objective": "Başlıca glikozaminoglikan örneklerinden hiyaluronanı tanımlamak.",
+    "tags": [
+      "Glikozaminoglikanlar",
+      "Hiyaluronan",
+      "Glikozaminoglikan",
+      "ECM"
+    ]
+  },
+  {
+    "id": "CHO-012",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Şeker kodu ve lektinler",
+    "source_pages": [
+      101,
+      102,
+      108
+    ],
+    "difficulty": "Zor",
+    "question_type": "kavramsal ayrım",
+    "question": "Lektinler için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Karbohidratları özgül olarak tanımayan yapısal lipitlerdir.",
+      "B": "Şeker kodunu okuyan ve karbohidratları yüksek özgüllükle bağlayan proteinlerdir.",
+      "C": "Yalnızca glikojeni sentezleyen enzimlerdir.",
+      "D": "DNA çift sarmalını açan helikazların diğer adıdır.",
+      "E": "Sadece bakterilerde bulunan taşıyıcı RNA'lardır."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Lektinleri şeker kodunu okuyan; karbohidratları yüksek özgüllükle bağlayarak hücre-hücre tanınması gibi pek çok biyolojik olaya aracılık eden proteinler olarak tanımlar.",
+    "distractor_explanations": {
+      "A": "Lektinler lipit değil proteindir.",
+      "B": "Doğru seçenek.",
+      "C": "Bu tanım lektin kavramını karşılamaz.",
+      "D": "Helikazlarla ilgisi yoktur.",
+      "E": "Taşıyıcı RNA değildir."
+    },
+    "learning_objective": "Şeker kodu kavramını lektinlerin özgül bağlanması üzerinden açıklamak.",
+    "tags": [
+      "Şeker kodu ve lektinler",
+      "Lektin",
+      "Şeker kodu",
+      "Glikobiyoloji",
+      "Özgüllük"
+    ]
+  },
+  {
+    "id": "CHO-020",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_pages": [
+      66
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Lizozimin bakterileri öldürücü etkisi aşağıdakilerden hangisiyle en iyi açıklanır?",
+    "options": {
+      "A": "N-asetilglukozamin ile N-asetilmuramik asit arasındaki glikozit bağını hidroliz etmesi.",
+      "B": "Kloroplastta ATP sentezini durdurması.",
+      "C": "DNA bazları arasında kovalent çapraz bağ oluşturması.",
+      "D": "Triaçilgliserolleri serbest yağ asitlerine hidroliz etmesi.",
+      "E": "Selüloz liflerini dallandırması."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Peptidoglikanda N-asetilglukozamin ile N-asetilmuramik asit arasında bulunan glikozit bağının lizozim tarafından hidrolizlenmesiyle bakteri hücre duvarının zayıfladığını belirtir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Lizozim etkisi bununla ilişkili değildir.",
+      "C": "Bu DNA hasarı örneği olurdu.",
+      "D": "Bu lipaz etkinliğine benzer.",
+      "E": "Selüloz üzerinde böyle bir rol anlatılmaz."
+    },
+    "learning_objective": "Peptidoglikan yapısını lizozim duyarlılığıyla ilişkilendirmek.",
+    "tags": [
+      "Polisakkaritler",
+      "Peptidoglikan",
+      "Lizozim",
+      "N-asetilglukozamin",
+      "N-asetilmuramik asit"
+    ]
+  },
+  {
+    "id": "CHO-021",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Proteoglikanlar, glikoproteinler ve glikolipitler",
+    "source_pages": [
+      83,
+      84,
+      87
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Proteoglikanlar ile glikoproteinler karşılaştırıldığında aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Proteoglikanlar çoğunlukla ≥1 glikozaminoglikan zinciri taşır; glikoproteinler ise proteine bağlı karmaşık oligosakkaritler içerir.",
+      "B": "Glikoproteinler yalnız ECM'de bulunur, proteoglikanlar yalnız sitozolde bulunur.",
+      "C": "Her iki sınıf da yalnızca depo polisakkarittir.",
+      "D": "Proteoglikanlarda karbohidrat kısmı hiç kovalent bağlı değildir.",
+      "E": "Glikoproteinlerin oligosakkarit kısımları biyolojik bilgi taşımaz."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Proteoglikanları hücre yüzeyi veya ECM'nin GAG içeren makromolekülleri olarak; glikoproteinleri ise proteine kovalent bağlı bir veya daha çok karmaşık oligosakkarit taşıyan yapılar olarak tanımlar.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Her iki sınıf için de daha geniş yerleşimler anlatılır.",
+      "C": "Depo polisakkaritleri değildir.",
+      "D": "Proteoglikanlarda zincirler proteine kovalent bağlıdır.",
+      "E": "Glikoprotein oligosakkaritlerini bilgice zengin olarak niteler."
+    },
+    "learning_objective": "Proteoglikan ve glikoprotein ayrımını yapı temelli yapmak.",
+    "tags": [
+      "Glikokonjugatlar",
+      "Proteoglikan",
+      "Glikoprotein",
+      "Glikokonjugat",
+      "GAG",
+      "Oligosakkarit"
+    ]
+  },
+  {
+    "id": "CHO-026",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Proteoglikanlar, glikoproteinler ve glikolipitler",
+    "source_pages": [
+      86
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Temel bir proteoglikan birimi için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Glikozaminoglikan(lar)a kovalent bağlı çekirdek proteinden oluşur.",
+      "B": "Yalnız serbest oligosakkaritlerden oluşur; protein kısmı yoktur.",
+      "C": "Sadece DNA'ya bağlanan lipit çapasıdır.",
+      "D": "Üç yağ asidi ve gliserolden oluşan nötral yağdır.",
+      "E": "Yalnız mitokondri zarında bulunan elektron taşıyıcısıdır."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Temel proteoglikan birimini glikozaminoglikanlara kovalent bağlı bir çekirdek protein olarak tanımlar.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Proteoglikanlarda protein çekirdeği vardır.",
+      "C": "Bu tanım proteoglikanı açıklamaz.",
+      "D": "Bu triaçilgliserol tanımıdır.",
+      "E": "Elektron taşıyıcı değildir."
+    },
+    "learning_objective": "Proteoglikanın çekirdek protein + GAG organizasyonunu tanımlamak.",
+    "tags": [
+      "Glikokonjugatlar",
+      "Proteoglikan",
+      "Çekirdek protein",
+      "GAG",
+      "Kovalent bağ"
+    ]
+  },
+  {
+    "id": "CHO-029",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Monosakkaritlerin temel sınıflandırılması",
+    "source_pages": [
+      5,
+      9
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Monosakkaritlerin temel sınıflandırılması değerlendirildiğinde aşağıdaki ifadelerden hangisi uygundur?",
+    "options": {
+      "A": "Karbonil grubuna en uzak kiral merkezdeki düzenlenişin gliseraldehide benzerliğine.",
+      "B": "4 ve 5 karbonlu ketozların ilgili aldozların adına '-ul' eki getirilerek adlandırıldığı; örnek olarak D-ribozdan D-ribuloz adı verildiği belirtilir.",
+      "C": "Sadece bir karbon atomu etrafındaki düzenlenişi farklı olan şeker çifti.",
+      "D": "En basit monosakkarit örnekleri olarak gliseraldehitin aldotrioz, dihidroksiasetonun ise ketotrioz olduğu verilir.",
+      "E": "Glukozun α ve β izomerlerinin sulu çözeltide mutarotasyon ile birbirine dönüştüğü ifade edilir."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "En basit monosakkarit örnekleri olarak gliseraldehitin aldotrioz, dihidroksiasetonun ise ketotrioz olduğu verilir.",
+    "distractor_explanations": {
+      "A": "D/L izomerleri ve kiralite başlığıyla ilişkilidir; monosakkaritlerin temel sınıflandırılması için ayırt edici değildir.",
+      "B": "D/L izomerleri ve kiralite başlığıyla ilişkilidir; monosakkaritlerin temel sınıflandırılması için ayırt edici değildir.",
+      "C": "D/L izomerleri ve kiralite başlığıyla ilişkilidir; monosakkaritlerin temel sınıflandırılması için ayırt edici değildir.",
+      "E": "Halkalı yapı, anomerler ve mutarotasyon başlığıyla ilişkilidir; monosakkaritlerin temel sınıflandırılması için ayırt edici değildir."
+    },
+    "learning_objective": "Monosakkaritlerin temel sınıflandırılması için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Monosakkaritlerin temel sınıflandırılması",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-032",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Halkalı yapı, anomerler ve mutarotasyon",
+    "source_pages": [
+      16,
+      23
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Bir monosakkarit halka yapısına geçtiğinde anomer oluşumunu en doğru açıklayan ifade aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "4 ve 5 karbonlu ketozların ilgili aldozların adına '-ul' eki getirilerek adlandırıldığı; örnek olarak D-ribozdan D-ribuloz adı verildiği belirtilir.",
+      "B": "Heksoz türevleri için merkezde yer alan ayırıcı eksen c-2 aminasyonu ve c-6 oksidasyonu ayrımıdır.",
+      "C": "N-asetilglukozamin bakteriyel hücre duvarı gibi yapısal polimerlerin parçası olabilir.",
+      "D": "N-asetilglukozaminin bakteriyel hücre duvarı dahil yapısal polimerlerde bulunduğunu; muramik asidin ise N-asetilglukozamine C-3 üzerinden laktik asit eklenmesiyle ilişkili olduğunu belirtir.",
+      "E": "Anomerlerin yalnızca yarı asetal/yarı ketal karbonundaki yani anomerik karbondaki düzenleniş farkıyla ayrılan izomerler olduğu belirtilir."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "Anomerlerin yalnızca yarı asetal/yarı ketal karbonundaki yani anomerik karbondaki düzenleniş farkıyla ayrılan izomerler olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "D/L izomerleri ve kiralite başlığıyla ilişkilidir; halkalı yapı, anomerler ve mutarotasyon için ayırt edici değildir.",
+      "B": "Heksoz türevleri başlığıyla ilişkilidir; halkalı yapı, anomerler ve mutarotasyon için ayırt edici değildir.",
+      "C": "Heksoz türevleri başlığıyla ilişkilidir; halkalı yapı, anomerler ve mutarotasyon için ayırt edici değildir.",
+      "D": "Heksoz türevleri başlığıyla ilişkilidir; halkalı yapı, anomerler ve mutarotasyon için ayırt edici değildir."
+    },
+    "learning_objective": "Halkalı yapı, anomerler ve mutarotasyon için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Halkalı yapı, anomerler ve mutarotasyon",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-034",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Heksoz türevleri",
+    "source_pages": [
+      24,
+      32
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Heksoz türevleri açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Bir anomerik karbon glikozit bağı yaptığında çizgisel forma geçemeyeceği, iki anomerik karbon da bağa katılmışsa şekerin indirgen olmayan özellik göstereceği açıklanır.",
+      "B": "Monosakkaritlerin ılımlı yükseltgen ajanlarla yükseltgenebildiği, karbonil grubunun karboksil grubuna dönüşebildiği ve Cu2+ gibi iyonları indirgediği anlatılır.",
+      "C": "Anomerlerin yalnızca yarı asetal/yarı ketal karbonundaki yani anomerik karbondaki düzenleniş farkıyla ayrılan izomerler olduğu belirtilir.",
+      "D": "N-asetilglukozaminin bakteriyel hücre duvarı dahil yapısal polimerlerde bulunduğunu; muramik asidin ise N-asetilglukozamine C-3 üzerinden laktik asit eklenmesiyle ilişkili olduğunu belirtir.",
+      "E": "Glukozun α ve β izomerlerinin sulu çözeltide mutarotasyon ile birbirine dönüştüğü ifade edilir."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "N-asetilglukozaminin bakteriyel hücre duvarı dahil yapısal polimerlerde bulunduğunu; muramik asidin ise N-asetilglukozamine C-3 üzerinden laktik asit eklenmesiyle ilişkili olduğunu belirtir.",
+    "distractor_explanations": {
+      "A": "İndirgen şeker mantığı başlığıyla ilişkilidir; heksoz türevleri için ayırt edici değildir.",
+      "B": "İndirgen şeker mantığı başlığıyla ilişkilidir; heksoz türevleri için ayırt edici değildir.",
+      "C": "Halkalı yapı, anomerler ve mutarotasyon başlığıyla ilişkilidir; heksoz türevleri için ayırt edici değildir.",
+      "E": "Halkalı yapı, anomerler ve mutarotasyon başlığıyla ilişkilidir; heksoz türevleri için ayırt edici değildir."
+    },
+    "learning_objective": "Heksoz türevleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Heksoz türevleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-037",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "İndirgen şeker mantığı",
+    "source_pages": [
+      33,
+      35
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "İndirgen şeker mantığı değerlendirildiğinde aşağıdaki ifadelerden hangisi uygundur?",
+    "options": {
+      "A": "Disakkarit ve oligosakkaritleri adlandırırken önce sola indirgen olmayan ucun yazıldığı, ardından bu uçtaki anomerik karbonun düzenlenişinin belirtildiği açıklanır.",
+      "B": "N-asetilglukozaminin bakteriyel hücre duvarı dahil yapısal polimerlerde bulunduğunu; muramik asidin ise N-asetilglukozamine C-3 üzerinden laktik asit eklenmesiyle ilişkili olduğunu belirtir.",
+      "C": "Bir anomerik karbon glikozit bağı yaptığında çizgisel forma geçemeyeceği, iki anomerik karbon da bağa katılmışsa şekerin indirgen olmayan özellik göstereceği açıklanır.",
+      "D": "Trehalozun Glc(α1→1α)Glc yapısında olduğu ve iki anomerik karbonun da bağa katılması nedeniyle özel olarak gösterildiği vurgulanır.",
+      "E": "Heksoz türevleri için merkezde yer alan ayırıcı eksen c-2 aminasyonu ve c-6 oksidasyonu ayrımıdır."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Bir anomerik karbon glikozit bağı yaptığında çizgisel forma geçemeyeceği, iki anomerik karbon da bağa katılmışsa şekerin indirgen olmayan özellik göstereceği açıklanır.",
+    "distractor_explanations": {
+      "A": "Disakkarit adlandırması ve bağ tipleri başlığıyla ilişkilidir; indirgen şeker mantığı için ayırt edici değildir.",
+      "B": "Heksoz türevleri başlığıyla ilişkilidir; indirgen şeker mantığı için ayırt edici değildir.",
+      "D": "Disakkarit adlandırması ve bağ tipleri başlığıyla ilişkilidir; indirgen şeker mantığı için ayırt edici değildir.",
+      "E": "Heksoz türevleri başlığıyla ilişkilidir; indirgen şeker mantığı için ayırt edici değildir."
+    },
+    "learning_objective": "İndirgen şeker mantığı için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "İndirgen şeker mantığı",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-039",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Disakkarit adlandırması ve bağ tipleri",
+    "source_pages": [
+      36,
+      45
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Disakkarit adlandırması ve bağ tipleri için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "Trehalozun Glc(α1→1α)Glc yapısında olduğu ve iki anomerik karbonun da bağa katılması nedeniyle özel olarak gösterildiği vurgulanır.",
+      "B": "Monosakkaritlerin ılımlı yükseltgen ajanlarla yükseltgenebildiği, karbonil grubunun karboksil grubuna dönüşebildiği ve Cu2+ gibi iyonları indirgediği anlatılır.",
+      "C": "Bir anomerik karbon glikozit bağı yaptığında çizgisel forma geçemeyeceği, iki anomerik karbon da bağa katılmışsa şekerin indirgen olmayan özellik göstereceği açıklanır.",
+      "D": "Eşdeğer miktardaki glukozun monomer halde tutulmasının çok yüksek osmolarite oluşturacağını, bu nedenle glikojen/polisakkarit halinde depolanmanın avantajlı olduğunu açıklar.",
+      "E": "Glikojen hayvanların ana depo polisakkaritidir ve nişastadan daha sık dallanmıştır."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Trehalozun Glc(α1→1α)Glc yapısında olduğu ve iki anomerik karbonun da bağa katılması nedeniyle özel olarak gösterildiği vurgulanır.",
+    "distractor_explanations": {
+      "B": "İndirgen şeker mantığı başlığıyla ilişkilidir; disakkarit adlandırması ve bağ tipleri için ayırt edici değildir.",
+      "C": "İndirgen şeker mantığı başlığıyla ilişkilidir; disakkarit adlandırması ve bağ tipleri için ayırt edici değildir.",
+      "D": "Depo polisakkaritleri başlığıyla ilişkilidir; disakkarit adlandırması ve bağ tipleri için ayırt edici değildir.",
+      "E": "Depo polisakkaritleri başlığıyla ilişkilidir; disakkarit adlandırması ve bağ tipleri için ayırt edici değildir."
+    },
+    "learning_objective": "Disakkarit adlandırması ve bağ tipleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Disakkarit adlandırması ve bağ tipleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-042",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Yapısal homopolisakkaritler",
+    "source_pages": [
+      56,
+      65
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Yapısal homopolisakkaritler açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Hiyaluronanın D-glukuronik asit ve N-asetilglukozamin kalıntılarından oluşan bir glikozaminoglikan olduğunu ve proteoglikanlardan ayrı düşünülmesi gerektiğini anlatır.",
+      "B": "Eşdeğer miktardaki glukozun monomer halde tutulmasının çok yüksek osmolarite oluşturacağını, bu nedenle glikojen/polisakkarit halinde depolanmanın avantajlı olduğunu açıklar.",
+      "C": "Kitinin N-asetilglukozamin kalıntılarından oluştuğu ve selülozdan temel farkının C-2'deki -OH yerine asetillenmiş amino grup taşıması olduğu belirtilir.",
+      "D": "Homopolisakkaritleri tek monomer türünden oluşan polisakkaritler olarak verir; glikojen ve nişasta bu gruptadır. Peptidoglikan ve glikozaminoglikanlar heteropolisakkarit yapıdadır.",
+      "E": "Monosakkaritlerden biri daima N-asetilglukozamin veya N-asetilgalaktozamin, diğeri çoğunlukla uronik asittir."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Kitinin N-asetilglukozamin kalıntılarından oluştuğu ve selülozdan temel farkının C-2'deki -OH yerine asetillenmiş amino grup taşıması olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Glikozaminoglikanlar başlığıyla ilişkilidir; yapısal homopolisakkaritler için ayırt edici değildir.",
+      "B": "Depo polisakkaritleri başlığıyla ilişkilidir; yapısal homopolisakkaritler için ayırt edici değildir.",
+      "D": "Depo polisakkaritleri başlığıyla ilişkilidir; yapısal homopolisakkaritler için ayırt edici değildir.",
+      "E": "Glikozaminoglikanlar başlığıyla ilişkilidir; yapısal homopolisakkaritler için ayırt edici değildir."
+    },
+    "learning_objective": "Yapısal homopolisakkaritler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Yapısal homopolisakkaritler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-044",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_pages": [
+      66,
+      68
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Lizozimin bakteri hücre duvarını zayıflatıcı etkisini en iyi açıklayan ifade aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Peptidoglikanda N-asetilglukozamin ile N-asetilmuramik asit arasında bulunan glikozit bağının lizozim tarafından hidrolizlenmesiyle bakteri hücre duvarının zayıfladığını belirtir.",
+      "B": "Lektinleri şeker kodunu okuyan; karbohidratları yüksek özgüllükle bağlayarak hücre-hücre tanınması gibi pek çok biyolojik olaya aracılık eden proteinler olarak tanımlar.",
+      "C": "Proteoglikanları hücre yüzeyi veya ECM'nin GAG içeren makromolekülleri olarak; glikoproteinleri ise proteine kovalent bağlı bir veya daha çok karmaşık oligosakkarit taşıyan yapılar olarak tanımlar.",
+      "D": "Proteoglikanlar çoğunlukla ≥1 glikozaminoglikan zinciri taşır; glikoproteinler ise proteine bağlı karmaşık oligosakkaritler içerir.",
+      "E": "Proteoglikanlar, glikoproteinler ve glikolipitler için merkezde yer alan ayırıcı eksen proteoglikan ve glikoprotein ayrımıdır."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Peptidoglikanda N-asetilglukozamin ile N-asetilmuramik asit arasında bulunan glikozit bağının lizozim tarafından hidrolizlenmesiyle bakteri hücre duvarının zayıfladığını belirtir.",
+    "distractor_explanations": {
+      "B": "Şeker kodu ve lektinler başlığıyla ilişkilidir; peptidoglikan ve heteropolisakkaritler için ayırt edici değildir.",
+      "C": "Proteoglikanlar, glikoproteinler ve glikolipitler başlığıyla ilişkilidir; peptidoglikan ve heteropolisakkaritler için ayırt edici değildir.",
+      "D": "Proteoglikanlar, glikoproteinler ve glikolipitler başlığıyla ilişkilidir; peptidoglikan ve heteropolisakkaritler için ayırt edici değildir.",
+      "E": "Proteoglikanlar, glikoproteinler ve glikolipitler başlığıyla ilişkilidir; peptidoglikan ve heteropolisakkaritler için ayırt edici değildir."
+    },
+    "learning_objective": "Peptidoglikan ve heteropolisakkaritler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Peptidoglikan ve heteropolisakkaritler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-046",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Glikozaminoglikanlar",
+    "source_pages": [
+      69,
+      81
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Glikozaminoglikanlar açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Lektinleri şeker kodunu okuyan; karbohidratları yüksek özgüllükle bağlayarak hücre-hücre tanınması gibi pek çok biyolojik olaya aracılık eden proteinler olarak tanımlar.",
+      "B": "Selülozun uzun doğrusal D-glukoz zincirlerinde β(1→4) glikozit bağları taşıdığını; amilozun ise α bağ düzeni nedeniyle farklı fiziksel ve kimyasal özellik gösterdiğini vurgular.",
+      "C": "Kitinin N-asetilglukozamin kalıntılarından oluştuğu ve selülozdan temel farkının C-2'deki -OH yerine asetillenmiş amino grup taşıması olduğu belirtilir.",
+      "D": "Şeker kodu ve lektinler için merkezde yer alan ayırıcı eksen yapısal karbonhidrat ve bilgi taşıyan yüzey işareti ayrımıdır.",
+      "E": "Hiyaluronanın D-glukuronik asit ve N-asetilglukozamin kalıntılarından oluşan bir glikozaminoglikan olduğunu ve proteoglikanlardan ayrı düşünülmesi gerektiğini anlatır."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "Hiyaluronanın D-glukuronik asit ve N-asetilglukozamin kalıntılarından oluşan bir glikozaminoglikan olduğunu ve proteoglikanlardan ayrı düşünülmesi gerektiğini anlatır.",
+    "distractor_explanations": {
+      "A": "Şeker kodu ve lektinler başlığıyla ilişkilidir; glikozaminoglikanlar için ayırt edici değildir.",
+      "B": "Yapısal homopolisakkaritler başlığıyla ilişkilidir; glikozaminoglikanlar için ayırt edici değildir.",
+      "C": "Yapısal homopolisakkaritler başlığıyla ilişkilidir; glikozaminoglikanlar için ayırt edici değildir.",
+      "D": "Şeker kodu ve lektinler başlığıyla ilişkilidir; glikozaminoglikanlar için ayırt edici değildir."
+    },
+    "learning_objective": "Glikozaminoglikanlar için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Glikozaminoglikanlar",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-050",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Proteoglikanlar, glikoproteinler ve glikolipitler",
+    "source_pages": [
+      82,
+      100
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Proteoglikanlar, glikoproteinler ve glikolipitler açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Peptidoglikanda N-asetilglukozamin ile N-asetilmuramik asit arasında bulunan glikozit bağının lizozim tarafından hidrolizlenmesiyle bakteri hücre duvarının zayıfladığını belirtir.",
+      "B": "Karbohidrat analitik yöntemleri için belirleyici ayrım iyon değişim ve jel filtrasyon temeli.",
+      "C": "Proteoglikanları hücre yüzeyi veya ECM'nin GAG içeren makromolekülleri olarak; glikoproteinleri ise proteine kovalent bağlı bir veya daha çok karmaşık oligosakkarit taşıyan yapılar olarak tanımlar.",
+      "D": "N-asetilglukozamin ile N-asetilmuramik asit arasındaki glikozit bağını hidroliz etmesi.",
+      "E": "Karbohidrat ayırma ve analizinde kullanılan temel yöntemleri tanımak."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Proteoglikanları hücre yüzeyi veya ECM'nin GAG içeren makromolekülleri olarak; glikoproteinleri ise proteine kovalent bağlı bir veya daha çok karmaşık oligosakkarit taşıyan yapılar olarak tanımlar.",
+    "distractor_explanations": {
+      "A": "Peptidoglikan ve heteropolisakkaritler başlığıyla ilişkilidir; proteoglikanlar, glikoproteinler ve glikolipitler için ayırt edici değildir.",
+      "B": "Karbohidrat analitik yöntemleri başlığıyla ilişkilidir; proteoglikanlar, glikoproteinler ve glikolipitler için ayırt edici değildir.",
+      "D": "Peptidoglikan ve heteropolisakkaritler başlığıyla ilişkilidir; proteoglikanlar, glikoproteinler ve glikolipitler için ayırt edici değildir.",
+      "E": "Karbohidrat analitik yöntemleri başlığıyla ilişkilidir; proteoglikanlar, glikoproteinler ve glikolipitler için ayırt edici değildir."
+    },
+    "learning_objective": "Proteoglikanlar, glikoproteinler ve glikolipitler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Proteoglikanlar, glikoproteinler ve glikolipitler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-054",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Şeker kodu ve lektinler",
+    "source_pages": [
+      101,
+      110
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Şeker kodu ve lektinler açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Lektinleri şeker kodunu okuyan; karbohidratları yüksek özgüllükle bağlayarak hücre-hücre tanınması gibi pek çok biyolojik olaya aracılık eden proteinler olarak tanımlar.",
+      "B": "Hiyaluronanın D-glukuronik asit ve N-asetilglukozamin kalıntılarından oluşan bir glikozaminoglikan olduğunu ve proteoglikanlardan ayrı düşünülmesi gerektiğini anlatır.",
+      "C": "Peptidoglikanda N-asetilglukozamin ile N-asetilmuramik asit arasında bulunan glikozit bağının lizozim tarafından hidrolizlenmesiyle bakteri hücre duvarının zayıfladığını belirtir.",
+      "D": "Monosakkaritlerden biri daima N-asetilglukozamin veya N-asetilgalaktozamin, diğeri çoğunlukla uronik asittir.",
+      "E": "Glikozaminoglikanlar için merkezde yer alan ayırıcı eksen hiyaluronan ve diğer sülfatlı gag'lar ayrımıdır."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Lektinleri şeker kodunu okuyan; karbohidratları yüksek özgüllükle bağlayarak hücre-hücre tanınması gibi pek çok biyolojik olaya aracılık eden proteinler olarak tanımlar.",
+    "distractor_explanations": {
+      "B": "Glikozaminoglikanlar başlığıyla ilişkilidir; şeker kodu ve lektinler için ayırt edici değildir.",
+      "C": "Peptidoglikan ve heteropolisakkaritler başlığıyla ilişkilidir; şeker kodu ve lektinler için ayırt edici değildir.",
+      "D": "Glikozaminoglikanlar başlığıyla ilişkilidir; şeker kodu ve lektinler için ayırt edici değildir.",
+      "E": "Glikozaminoglikanlar başlığıyla ilişkilidir; şeker kodu ve lektinler için ayırt edici değildir."
+    },
+    "learning_objective": "Şeker kodu ve lektinler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Şeker kodu ve lektinler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-057",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Karbohidrat analitik yöntemleri",
+    "source_pages": [
+      111,
+      117
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Karbohidrat analitik yöntemleri açısından ayırt edici seçenek aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Proteoglikan ve glikoprotein ayrımı.",
+      "B": "İyon değişim ve jel filtrasyon temeli.",
+      "C": "Yapısal karbonhidrat ve bilgi taşıyan yüzey işareti.",
+      "D": "Hiyaluronan ve diğer sülfatlı GAG'lar.",
+      "E": "Selüloz β(1→4), amiloz ise α bağ düzeni içerir."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Karbohidrat analitik yöntemleri için belirleyici ayrım iyon değişim ve jel filtrasyon temeli.",
+    "distractor_explanations": {
+      "A": "Proteoglikanlar, glikoproteinler ve glikolipitler başlığıyla ilişkilidir; karbohidrat analitik yöntemleri için ayırt edici değildir.",
+      "C": "Şeker kodu ve lektinler başlığıyla ilişkilidir; karbohidrat analitik yöntemleri için ayırt edici değildir.",
+      "D": "Glikozaminoglikanlar başlığıyla ilişkilidir; karbohidrat analitik yöntemleri için ayırt edici değildir.",
+      "E": "Yapısal homopolisakkaritler başlığıyla ilişkilidir; karbohidrat analitik yöntemleri için ayırt edici değildir."
+    },
+    "learning_objective": "Karbohidrat analitik yöntemleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Karbohidrat analitik yöntemleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "CHO-059",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Glikozaminoglikanlar",
+    "source_pages": [
+      76,
+      81
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Çok yüksek negatif yükü ve antikoagülan kullanımı ile öne çıkan glikozaminoglikan aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Hiyaluronan.",
+      "B": "Keratan sülfat.",
+      "C": "Heparin.",
+      "D": "Peptidoglikan.",
+      "E": "Selüloz."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Heparinin yoğun sülfat ve karboksilat içeriği nedeniyle çok yüksek negatif yük taşıdığı ve antikoagülan olarak kullanıldığı vurgulanır.",
+    "distractor_explanations": {
+      "A": "Hiyaluronan önemli bir GAG'dır ancak antikoagülan örneği olarak verilmez.",
+      "B": "Bir GAG'dır fakat bu ayırt edici kullanım heparine aittir.",
+      "C": "Doğru seçenek.",
+      "D": "Bakteri hücre duvarı heteropolimeridir; GAG değildir.",
+      "E": "Yapısal homopolisakkarittir; GAG değildir."
+    },
+    "learning_objective": "Heparini, glikozaminoglikanlar içinde yük ve biyolojik kullanım açısından tanımak.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Glikozaminoglikanlar",
+      "Heparin",
+      "Glikozaminoglikan",
+      "Antikoagülan",
+      "Negatif yük"
+    ]
+  },
+  {
+    "id": "CHO-060",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_pages": [
+      66,
+      68
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Gram-negatif bakterilerin lipopolisakkaritlerinde endotoksik etkinin temel belirleyicisi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Lipid A.",
+      "B": "N-asetilmuramik asit.",
+      "C": "Trehaloz.",
+      "D": "Hiyaluronan.",
+      "E": "Keratin."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Bazı bakterilerin lipopolisakkaritlerinde endotoksik etkinin lipid kısmı ile ilişkilendirildiği ve bu kısmın lipid A olarak anıldığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Peptidoglikanın yapı taşıdır; endotoksik LPS kısmı değildir.",
+      "C": "Disakkarittir; LPS endotoksin bileşeni değildir.",
+      "D": "Glikozaminoglikandır; Gram-negatif endotoksin bileşeni değildir.",
+      "E": "Protein yapılıdır; bakteriyel LPS ile ilişkili değildir."
+    },
+    "learning_objective": "Gram-negatif lipopolisakkaritlerde endotoksik kısmı tanımlamak.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Peptidoglikan ve heteropolisakkaritler",
+      "Lipid A",
+      "Lipopolisakkarit",
+      "Endotoksin",
+      "Gram-negatif bakteri"
+    ]
+  },
+  {
+    "id": "CHO-061",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Şeker kodu ve lektinler",
+    "source_pages": [
+      104,
+      110
+    ],
+    "difficulty": "Zor",
+    "question_type": "uygulama",
+    "question": "Lökositlerin damar endoteline tutunup dokuya geçişini kolaylaştıran plazma zar lektin ailesi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Selektinler.",
+      "B": "Akuaporinler.",
+      "C": "Ubikinonlar.",
+      "D": "Glikojen sentazlar.",
+      "E": "Sitozolik şaperonlar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "İnsan selektinlerinin hücre-hücre tanınması ve adezyon süreçlerine aracılık eden plazma zar lektinleri olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Su kanallarıdır; lektin ailesi değildir.",
+      "C": "Elektron taşıyıcı kinonlardır; adezyon lektini değildir.",
+      "D": "Metabolik enzimlerdir; hücre adezyon lektini değildir.",
+      "E": "Protein katlanmasıyla ilişkilidir; lektin ailesi değildir."
+    },
+    "learning_objective": "Selektinleri, lektin ailesi içinde hücre adezyonu bağlamında tanımak.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Şeker kodu ve lektinler",
+      "Selektin",
+      "Lektin",
+      "Şeker kodu",
+      "Hücre adezyonu",
+      "Lökosit göçü"
+    ]
+  },
+  {
+    "id": "CHO-062",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Proteoglikanlar, glikoproteinler ve glikolipitler",
+    "source_pages": [
+      96,
+      100
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "N-bağlı ve O-bağlı glikozilasyon karşılaştırıldığında aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "N-bağlı glikozilasyonda bağ Asn'nin amid azotuna, O-bağlı glikozilasyonda ise çoğunlukla Ser/Thr hidroksiline kurulur.",
+      "B": "Her iki glikozilasyon tipi de yalnız sisteinin sülfür atomu üzerinden kurulur.",
+      "C": "O-bağlı glikozilasyon yalnız nükleik asitlerde görülür.",
+      "D": "N-bağlı glikozilasyon fosfatidik asit türevlerinde gerçekleşir.",
+      "E": "İki tip arasında bağlanan atom merkezi bakımından hiçbir fark yoktur."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Karbohidratların glikoproteinlerde anomerik karbon üzerinden ya serin/treonin hidroksiline O-bağlı, ya da asparajinin amid azotuna N-bağlı bağlanabildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu bağlanma biçimi temel glikoprotein sınıflandırması için verilmez.",
+      "C": "O-bağlı glikozilasyon glikoprotein bağlamındadır; nükleik asitlerle sınırlı değildir.",
+      "D": "Fosfatidik asit gliserofosfolipitlerle ilişkilidir.",
+      "E": "N-bağlı ve O-bağlı glikozilasyonu ayıran temel fark tam da bağlanan atom merkezidir."
+    },
+    "learning_objective": "Glikoproteinlerde N-bağlı ve O-bağlı glikozilasyonun bağlanma kimyasını ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Proteoglikanlar, glikoproteinler ve glikolipitler",
+      "Glikoprotein",
+      "N-bağlı glikozilasyon",
+      "O-bağlı glikozilasyon",
+      "Asparajin",
+      "Serin/Treonin"
+    ]
+  },
+  {
+    "id": "LIP-003",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Yağ asidi yapısı ve gösterimi",
+    "source_pages": [
+      9,
+      11
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "İnsanlar için elzem olarak vurgulanan omega-3 yağ asidi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Arachidonik asit.",
+      "B": "Palmitik asit.",
+      "C": "α-linolenik asit (ALA).",
+      "D": "Stearik asit.",
+      "E": "Oleik asit."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Omega-3 PUFA'lardan α-linolenik asidin (ALA) insanlar için elzem olduğu ve diyetten alınması gerektiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Bu seçenek elzem omega-3 olarak verilmez.",
+      "B": "Doymuş yağ asididir.",
+      "C": "Doğru seçenek.",
+      "D": "Doymuş yağ asididir.",
+      "E": "Tekli doymamış yağ asididir."
+    },
+    "learning_objective": "Elzem omega-3 yağ asidini tanımak.",
+    "tags": [
+      "Omega-3 yağ asitleri",
+      "Omega-3",
+      "ALA",
+      "Elzem yağ asidi"
+    ]
+  },
+  {
+    "id": "LIP-010",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Steroller",
+    "source_pages": [
+      42,
+      44,
+      48,
+      49,
+      70
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Aşağıdaki ifadelerden hangisi lipit sınıfları arasındaki ayrımı doğru verir?",
+    "options": {
+      "A": "Sfingolipitler gliserol temelli olup seramit içermez.",
+      "B": "Steroller kaynaşmış dört karbon halkalı steroid çekirdeği taşır ve birçok biyolojik aktif bileşiğin öncüsüdür.",
+      "C": "Sfingolipitler ile steroller tamamen aynı yapıya sahiptir.",
+      "D": "Steroller yalnızca enerji depolamak için bulunur.",
+      "E": "Übikinon bir polisakkarittir."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Sterollerin kaynaşmış dört karbon halkasından oluşan steroid çekirdek taşıdığını ve steroid hormonlar ile safra asitleri gibi birçok bileşiğin öncülü olduğunu belirtir.",
+    "distractor_explanations": {
+      "A": "Sfingolipitler gliserol değil, sfingozin ve seramit temeliyle anlatılır.",
+      "B": "Doğru seçenek.",
+      "C": "İki sınıf yapısal olarak farklıdır.",
+      "D": "Steroller yapısal ve öncül işlevleriyle anlatılır.",
+      "E": "Übikinon lipit kinondur."
+    },
+    "learning_objective": "Sfingolipit ve sterol sınıflarını ayırt etmek.",
+    "tags": [
+      "Sfingolipitler ve steroller",
+      "Sfingolipit",
+      "Sterol",
+      "Steroid çekirdek",
+      "Seramit"
+    ]
+  },
+  {
+    "id": "LIP-015",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_pages": [
+      37
+    ],
+    "difficulty": "Zor",
+    "question_type": "kavramsal ayrım",
+    "question": "Eter lipitleri için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Gliserole bağlı zincirlerden biri ester yerine eter bağıyla bağlı olabilir.",
+      "B": "Yalnızca seramitten oluşurlar.",
+      "C": "Hiçbir zaman çift bağ içermezler.",
+      "D": "Yalnız bitki nişastasında bulunurlar.",
+      "E": "Fosfat taşıyamazlar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Bazı gliserofosfolipitlerde gliserole bağlı açil zincirlerinden birinin ester yerine eter bağıyla bağlı olabildiğini; bu grubun eter lipitleri ve plazmojenler olarak anıldığını belirtir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu sfingolipitlerle ilişkilidir.",
+      "C": "Eter bağlı zincirde çift bağ bulunabileceğini belirtir.",
+      "D": "Nişastayla ilişkili değildir.",
+      "E": "Bu yapıların fosfolipit bağlamı vardır."
+    },
+    "learning_objective": "Eter bağlı gliserofosfolipitleri standart ester bağlı yapılardan ayırt etmek.",
+    "tags": [
+      "Gliserofosfolipitler",
+      "Eter lipit",
+      "Plazmojen",
+      "Gliserofosfolipit",
+      "Eter bağı"
+    ]
+  },
+  {
+    "id": "LIP-022",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipitlerin genel özelliği",
+    "source_pages": [
+      2
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Lipitlerin genel özelliği açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Biyolojik lipitlerin geniş bir grup olduğunu ve ortak belirleyici özelliklerinin suda çözünmemeleri olduğunu belirtir.",
+      "B": "Yağ asitleri uzunluğu 4 ile 36 karbon arasında değişebilen hidrokarbon zincirli karboksilik asitler olarak tanımlanır.",
+      "C": "Dallanmamış yağ asitleri için X:Y gösteriminde X'in zincir uzunluğunu, Y'nin ise çift bağ sayısını verdiği açıklanır.",
+      "D": "Omega-3 PUFA'lardan α-linolenik asidin (ALA) insanlar için elzem olduğu ve diyetten alınması gerektiği belirtilir.",
+      "E": "Cis çift bağların düz zincirli sıkı paketlenmeyi bozduğu, bu yüzden aynı uzunlukta daha doymamış yağ asitlerinin daha düşük erime eğilimi gösterdiği anlatılır."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Biyolojik lipitlerin geniş bir grup olduğunu ve ortak belirleyici özelliklerinin suda çözünmemeleri olduğunu belirtir.",
+    "distractor_explanations": {
+      "B": "Yağ asidi yapısı ve gösterimi başlığıyla ilişkilidir; lipitlerin genel özelliği için ayırt edici değildir.",
+      "C": "Yağ asidi yapısı ve gösterimi başlığıyla ilişkilidir; lipitlerin genel özelliği için ayırt edici değildir.",
+      "D": "Yağ asidi yapısı ve gösterimi başlığıyla ilişkilidir; lipitlerin genel özelliği için ayırt edici değildir.",
+      "E": "Yağ asidi yapısı ve gösterimi başlığıyla ilişkilidir; lipitlerin genel özelliği için ayırt edici değildir."
+    },
+    "learning_objective": "Lipitlerin genel özelliği için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Lipitlerin genel özelliği",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "LIP-025",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Kısmi hidrojenleme ve trans yağlar",
+    "source_pages": [
+      25,
+      26
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Kısmi hidrojenleme ve trans yağlar değerlendirildiğinde aşağıdaki ifadelerden hangisi uygundur?",
+    "options": {
+      "A": "Üç yağ asidi de aynı tür olduğunda yapının basit triaçilgliserol olarak adlandırıldığını ve tripalmitini örnek verdiğini belirtir.",
+      "B": "Triaçilgliserolleri gliserolün üç yağ asidiyle esterleşmesi sonucu oluşan basit depo lipitleri olarak tanımlar.",
+      "C": "Kısmi hidrojenlemenin yan ürünü olan trans yağ asitlerinin kanda triaçilgliserol ve LDL düzeylerini artırıp HDL'yi düşürebildiğini belirtir.",
+      "D": "Yoğun hidratlanmadıkları için aynı kütlede daha yoğun enerji depolarlar.",
+      "E": "Uzun zincirli yağ asitleri ile uzun zincirli alkollerin esterleridir."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Kısmi hidrojenlemenin yan ürünü olan trans yağ asitlerinin kanda triaçilgliserol ve LDL düzeylerini artırıp HDL'yi düşürebildiğini belirtir.",
+    "distractor_explanations": {
+      "A": "Triaçilgliseroller ve depolama mantığı başlığıyla ilişkilidir; kısmi hidrojenleme ve trans yağlar için ayırt edici değildir.",
+      "B": "Triaçilgliseroller ve depolama mantığı başlığıyla ilişkilidir; kısmi hidrojenleme ve trans yağlar için ayırt edici değildir.",
+      "D": "Triaçilgliseroller ve depolama mantığı başlığıyla ilişkilidir; kısmi hidrojenleme ve trans yağlar için ayırt edici değildir.",
+      "E": "Mumlar başlığıyla ilişkilidir; kısmi hidrojenleme ve trans yağlar için ayırt edici değildir."
+    },
+    "learning_objective": "Kısmi hidrojenleme ve trans yağlar için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Kısmi hidrojenleme ve trans yağlar",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "LIP-027",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_pages": [
+      28,
+      47
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Gliserofosfolipitler ve diğer zar lipitleri için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "Steroller kaynaşmış dört karbon halkalı steroid çekirdeği taşır ve birçok biyolojik aktif bileşiğin öncüsüdür.",
+      "B": "Steroid çekirdeğine ek olarak C-3'te polar bir -OH ve C-17'de apolar hidrokarbon kuyruk taşıması.",
+      "C": "Uzun zincirli yağ asitleri ile uzun zincirli alkollerin esterleridir.",
+      "D": "Gliserofosfolipitlerin fosfatidik asit türevleri olduğu, gliserol iskeleti taşıdığı ve baş grubun fosfodiester bağı ile bağlandığı belirtilir.",
+      "E": "Uzun zincirli yağ asitleri ile uzun zincirli alkollerden oluşmaları."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "Gliserofosfolipitlerin fosfatidik asit türevleri olduğu, gliserol iskeleti taşıdığı ve baş grubun fosfodiester bağı ile bağlandığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Steroller başlığıyla ilişkilidir; gliserofosfolipitler ve diğer zar lipitleri için ayırt edici değildir.",
+      "B": "Steroller başlığıyla ilişkilidir; gliserofosfolipitler ve diğer zar lipitleri için ayırt edici değildir.",
+      "C": "Mumlar başlığıyla ilişkilidir; gliserofosfolipitler ve diğer zar lipitleri için ayırt edici değildir.",
+      "E": "Mumlar başlığıyla ilişkilidir; gliserofosfolipitler ve diğer zar lipitleri için ayırt edici değildir."
+    },
+    "learning_objective": "Gliserofosfolipitler ve diğer zar lipitleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Gliserofosfolipitler ve diğer zar lipitleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "LIP-031",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      50,
+      73
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Lipit türevli vitaminler, kinonlar ve pigmentler için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "Steroller kaynaşmış dört karbon halkalı steroid çekirdeği taşır ve birçok biyolojik aktif bileşiğin öncüsüdür.",
+      "B": "Steroid çekirdeğine ek olarak C-3'te polar bir -OH ve C-17'de apolar hidrokarbon kuyruk taşıması.",
+      "C": "A ve D vitaminlerini hormon öncüleri bağlamında işler; özellikle 1,25-dihidroksikalsiferolün özgül çekirdek proteinleriyle etkileşen hormonal bir ürün olduğunu belirtir.",
+      "D": "Galaktolipitlerde baş grup olarak galaktoz bulunabilir; arke zar lipitlerinde dallanmış hidrokarbon zincirleri eter bağıyla gliserole bağlanır.",
+      "E": "Gliserofosfolipitlerin fosfatidik asit türevleri olduğu, gliserol iskeleti taşıdığı ve baş grubun fosfodiester bağı ile bağlandığı belirtilir."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "A ve D vitaminlerini hormon öncüleri bağlamında işler; özellikle 1,25-dihidroksikalsiferolün özgül çekirdek proteinleriyle etkileşen hormonal bir ürün olduğunu belirtir.",
+    "distractor_explanations": {
+      "A": "Steroller başlığıyla ilişkilidir; lipit türevli vitaminler, kinonlar ve pigmentler için ayırt edici değildir.",
+      "B": "Steroller başlığıyla ilişkilidir; lipit türevli vitaminler, kinonlar ve pigmentler için ayırt edici değildir.",
+      "D": "Gliserofosfolipitler ve diğer zar lipitleri başlığıyla ilişkilidir; lipit türevli vitaminler, kinonlar ve pigmentler için ayırt edici değildir.",
+      "E": "Gliserofosfolipitler ve diğer zar lipitleri başlığıyla ilişkilidir; lipit türevli vitaminler, kinonlar ve pigmentler için ayırt edici değildir."
+    },
+    "learning_objective": "Lipit türevli vitaminler, kinonlar ve pigmentler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "LIP-034",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      59,
+      60
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Ateş, ağrı ve inflamasyon ile ilişkilendirilip COX baskılanması nedeniyle NSAİİ'lerle sentezi azalan eikosanoid grubu aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Prostaglandinler.",
+      "B": "Sfingomiyelinler.",
+      "C": "Triasilgliseroller.",
+      "D": "Galaktolipitler.",
+      "E": "Steroller."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Ağrı, ateş ve inflamasyonla ilişkili eikosanoidlerin prostaglandinler olduğu ve NSAİİ'lerin COX üzerinden bu sentezi azalttığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Zar lipididir; COX-bağımlı eikosanoid sınıfı değildir.",
+      "C": "Depo lipitidir; eikosanoid değildir.",
+      "D": "Bitki/zar lipidi sınıfındadır; ağrı-aracılı eikosanoid değildir.",
+      "E": "Steroid çekirdekli lipitlerdir; prostaglandin sınıfı değildir."
+    },
+    "learning_objective": "Prostaglandinleri, COX ve NSAİİ ilişkisi üzerinden diğer lipit sınıflarından ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Prostaglandin",
+      "NSAİİ",
+      "COX",
+      "İnflamasyon",
+      "Eikosanoid"
+    ]
+  },
+  {
+    "id": "LIP-036",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      60,
+      61
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Astım veya anafilaksi ile ilişkilendirilip NSAİİ'lerin doğrudan hedefi olmayan eikosanoid sınıfı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Lökotrienler.",
+      "B": "Prostaglandinler.",
+      "C": "Steroller.",
+      "D": "Galaktolipitler.",
+      "E": "Mumlar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Lökotrienlerin bronkokonstriksiyon ve anafilaktik yanıtlarla ilişkilendirildiği; NSAİİ etkisinin prostaglandin/tromboksan yönüne odaklandığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "NSAİİ-COX hattında daha doğrudan ilişkilidir.",
+      "C": "Steroid çekirdekli lipitlerdir; eikosanoid değildir.",
+      "D": "Zar lipitidir; eikosanoid değildir.",
+      "E": "Depo/koruyucu lipit sınıfıdır; eikosanoid değildir."
+    },
+    "learning_objective": "Lökotrienleri, diğer eikosanoid sınıflarından klinik sonuç ve enzim hedefi bakımından ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lökotrien",
+      "Eikosanoid",
+      "Astım",
+      "Anafilaksi",
+      "NSAİİ"
+    ]
+  },
+  {
+    "id": "LIP-038",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      65,
+      66
+    ],
+    "difficulty": "Zor",
+    "question_type": "süreç",
+    "question": "Rodopsin aracılı görme başlangıcında ışıkla tetiklenen temel izomerleşme aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "11-cis retinalin all-trans retinale dönüşmesi.",
+      "B": "Kolesterolün safra asidine oksidasyonu.",
+      "C": "Asetil-KoA'nın malonil-KoA'ya karboksillenmesi.",
+      "D": "Gliserolün üç yağ asidiyle esterleşmesi.",
+      "E": "Ubikinonun plastokinona dönüşmesi."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Görme pigmenti rodopsinde ışıkla 11-cis retinalin all-trans retinale izomerleştiği ve bunun sinyalin başlangıcını oluşturduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Sterol metabolizmasıyla ilişkilidir; görme kromoforu değildir.",
+      "C": "Yağ asidi sentez basamağıdır.",
+      "D": "Depo lipiti sentezidir.",
+      "E": "Farklı kinon sistemleridir; rodopsin kromoforu değildir."
+    },
+    "learning_objective": "Retinal izomerleşmesini görme pigmentlerinin işlevsel başlangıç olayı olarak açıklamak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Retinal",
+      "11-cis",
+      "All-trans",
+      "Rodopsin",
+      "Görme pigmenti"
+    ]
+  },
+  {
+    "id": "LIP-042",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      69,
+      73
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "A, D, E, K vitaminleri ile birçok doğal pigment için tekrar eden yapısal temel aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "İzopren birimleri.",
+      "B": "Peptit bağları.",
+      "C": "Riboz halkaları.",
+      "D": "Pirüvat dimerleri.",
+      "E": "Pürin bazları."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Birçok doğal pigmentin ve A, D, E, K vitaminlerinin izopren birimlerinin kondenzasyonundan türeyen izoprenoid yapılara dayandığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Protein omurgasıyla ilişkilidir.",
+      "C": "Nükleotit/nükleik asit bileşenidir.",
+      "D": "Bu şekilde tanımlanmaz.",
+      "E": "Nükleik asit bazlarıdır; izoprenoid temel oluşturmaz."
+    },
+    "learning_objective": "İzopren birimlerini, lipit türevli vitamin ve pigmentlerin ortak yapısal temeli olarak tanımak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "İzopren",
+      "İzoprenoid",
+      "Vitamin A",
+      "Vitamin D",
+      "Vitamin E",
+      "Vitamin K",
+      "Pigment"
+    ]
+  },
+  {
+    "id": "MEM-003",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Zar asimetrisi ve protein tipleri",
+    "source_pages": [
+      16
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Plazma zarı lipitlerinin iki yaprakçık arasında asimetrik dağılmasıyla ilgili aşağıdaki sonuçlardan hangisi özellikle örneklenmiştir?",
+    "options": {
+      "A": "Fosfatidilserinin trombositlerde dış yaprakçığa geçmesi kan pıhtısı oluşumunu destekleyebilir.",
+      "B": "Fosfatidilserinin dış yaprakçıkta bulunması tüm hücrelerde bölünmeyi başlatır.",
+      "C": "Asimetri yalnızca bakterilerde görülen önemsiz bir özelliktir.",
+      "D": "Asimetri, zar proteinlerinin her zaman eşit dağıldığını kanıtlar.",
+      "E": "Asimetri yalnızca glikoproteinlerin sitozole bakmasıyla açıklanır."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Fosfatidilserinin dış yaprakçığa doğru hareketinin trombositlerde kan pıhtısı oluşumuyla, diğer birçok hücrede ise apoptoz işaretiyle ilişkili olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Böyle genel bir hücre bölünmesi etkisi anlatılmaz.",
+      "C": "Asimetrinin biyolojik sonuçları olduğu özellikle vurgulanır.",
+      "D": "Lipit asimetrisi ile proteinlerin her zaman eşit dağılması aynı şey değildir.",
+      "E": "Asimetri yalnızca glikoprotein yönelimiyle sınırlandırılmaz."
+    },
+    "learning_objective": "Zar asimetrisinin biyolojik sonuçlarını yorumlamak.",
+    "tags": [
+      "Zar asimetrisi",
+      "Fosfatidilserin",
+      "Apoptoz",
+      "Pıhtılaşma"
+    ]
+  },
+  {
+    "id": "MEM-009",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Aktif taşınma, akuaporinler ve iyon kanalları",
+    "source_pages": [
+      38,
+      39
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Aşağıdaki ifadelerden hangisi aktif taşınmanın en doğru tanımı verir?",
+    "options": {
+      "A": "Taşınan türler her zaman elektrokimyasal fark yönünde hareket eder.",
+      "B": "Endergonik taşınma, yalnızca egzergonik bir işle eşleştiğinde gerçekleşebilir.",
+      "C": "Aktif taşınma ve pasif taşınma arasında enerji ilişkisi yoktur.",
+      "D": "Aktif taşınmada çözünmüş maddeler denge derişiminin üstünde birikemez.",
+      "E": "Birincil aktif taşınmada enerji mutlaka başka bir iyon gradyanından gelir."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Aktif taşınmanın termodinamik olarak tercih edilmeyen, yani endergonik bir süreç olduğu; ancak doğrudan ya da dolaylı biçimde egzergonik işlemlerle eşleştiğinde gerçekleşebildiği vurgulanır.",
+    "distractor_explanations": {
+      "A": "Bu pasif taşınmanın yönüyle ilgilidir.",
+      "B": "Doğru seçenek.",
+      "C": "Aktif taşınmanın enerji eşleşmesine bağlı olduğu açıkça anlatılır.",
+      "D": "Aktif taşınma tam da denge üstünde birikime yol açabilir.",
+      "E": "Bu ikincil aktif taşınma için tipik olabilir; birincil aktif taşınma doğrudan kimyasal tepkimeye bağlanır."
+    },
+    "learning_objective": "Aktif taşınmanın enerji eşleşmesi mantığını ayırt etmek.",
+    "tags": [
+      "Aktif taşınma",
+      "Endergonik",
+      "Egzergonik",
+      "Birincil",
+      "İkincil"
+    ]
+  },
+  {
+    "id": "MEM-010",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Aktif taşınma, akuaporinler ve iyon kanalları",
+    "source_pages": [
+      40,
+      41,
+      42
+    ],
+    "difficulty": "Zor",
+    "question_type": "kavramsal ayrım",
+    "question": "Akuaporinlerle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Hidrate iyonların suyla aynı hızda geçişine izin verirler.",
+      "B": "Sadece böbrek hücrelerinde bulunurlar.",
+      "C": "Su geçişi için hidrofilik por oluştururlar; bazı tipleri gliserol veya üreyi de geçirebilir.",
+      "D": "Net yük aktarımı olmadan yalnızca klorür-bikarbonat değişimi yaparlar.",
+      "E": "Görevleri, iyon seçici kanalların ATP kullanmasını sağlamaktır."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Akuaporinlerin hidrofilik por oluşturarak suyu hızla geçirdiği, bazı AQP'lerin gliserol veya üre geçişine de izin verdiği; buna karşın hidrate iyonları geçirmediği belirtilir.",
+    "distractor_explanations": {
+      "A": "Tam tersine, hidrate iyonların geçişine izin verilmediği vurgulanır.",
+      "B": "Akuaporinlerin bütün organizmalarda bulunduğu ifade edilir.",
+      "C": "Doğru seçenek.",
+      "D": "Bu özellik klorür-bikarbonat değiştiricisine aittir.",
+      "E": "Akuaporinler iyon kanallarının enerji kaynağı değildir."
+    },
+    "learning_objective": "Akuaporinleri diğer zar taşıma sistemlerinden ayırt etmek.",
+    "tags": [
+      "Akuaporinler ve iyon kanalları",
+      "Akuaporin",
+      "Su taşıma",
+      "İyon kanalı",
+      "Seçicilik"
+    ]
+  },
+  {
+    "id": "MEM-012",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Zar asimetrisi ve protein tipleri",
+    "source_pages": [
+      16
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Plazma zarında fosfatidilserinin dış yaprakçıkta görülmesi için aşağıdakilerden hangisi beklenir?",
+    "options": {
+      "A": "Hücrenin apoptoz için işaretlenmesi veya trombositte pıhtılaşma ile ilişkili bir sonuç.",
+      "B": "Glikolizin doğrudan durması.",
+      "C": "Akuaporinlerin yalnız su yerine iyon taşıması.",
+      "D": "GLUT taşıyıcılarının ATP kullanmaya başlaması.",
+      "E": "Klorür-bikarbonat değiştiricisinin yük taşıyan simporte dönüşmesi."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Fosfatidilserinin dış yaprakçığa hareketinin trombositlerde pıhtı oluşumuyla ve diğer birçok hücrede apoptoz işaretlenmesiyle ilişkili olduğunu belirtir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu sonuç zar asimetrisi bağlamında verilmez.",
+      "C": "Akuaporin seçiciliği bununla ilişkili değildir.",
+      "D": "GLUT pasif taşıyıcıdır; bu değişim anlatılmaz.",
+      "E": "Anyon değiştiricinin çalışma tipi bu olaya bağlı olarak verilmez."
+    },
+    "learning_objective": "Lipit asimetrisinin biyolojik sonuçlarını açıklamak.",
+    "tags": [
+      "Zar asimetrisi",
+      "Fosfatidilserin",
+      "Apoptoz",
+      "Pıhtılaşma"
+    ]
+  },
+  {
+    "id": "MEM-016",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Taşıyıcılar ve kanallar",
+    "source_pages": [
+      33
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Taşıyıcılar ile kanallar karşılaştırıldığında aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Kanallar daha yüksek hız sağlar, genellikle daha az stereoözgünlük gösterir ve çoğu zaman doyurulamaz.",
+      "B": "Taşıyıcılar her durumda doyurulamaz, kanallar ise enzimler gibi doygunluğa ulaşır.",
+      "C": "Kanallar yalnız aktif taşınma yapar, taşıyıcılar yalnız pasif taşır.",
+      "D": "Taşıyıcılar substrata bağlanmaz, kanallar yüksek stereoözgünlükle bağlanır.",
+      "E": "Bu iki sınıf arasında işlevsel fark yoktur."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Taşıyıcıların substrata yüksek stereoözgünlükle bağlanıp doygunluğa ulaşabildiğini; kanalların ise daha yüksek hız sağladığını, daha az stereoözgünlük gösterdiğini ve genellikle doyurulamadığını vurgular.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Doygunluk davranışı ters verilmiştir.",
+      "C": "Her iki sınıfta da pasif ve aktif örnekler farklı bağlamlarda bulunabilir; verilen mutlak ayrım yanlıştır.",
+      "D": "Taşıyıcılar substrata bağlanır.",
+      "E": "Açık işlevsel farklar verir."
+    },
+    "learning_objective": "Taşıyıcı ve kanal sistemlerini hız, özgüllük ve doyma açısından ayırt etmek.",
+    "tags": [
+      "Taşıyıcılar ve kanallar",
+      "Taşıyıcı",
+      "Kanal",
+      "Doygunluk",
+      "Stereoözgünlük"
+    ]
+  },
+  {
+    "id": "MEM-020",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Biyolojik zarların ortak özellikleri",
+    "source_pages": [
+      3,
+      8
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Biyolojik zarların seçici geçirgenliği dikkate alındığında aşağıdaki ifadelerden hangisi beklenir?",
+    "options": {
+      "A": "Sıvı-mozaik modele göre fosfolipitlerin çift tabaka oluşturduğu, apolar bölgelerin merkeze, polar baş gruplarının sulu ortama baktığı belirtilir.",
+      "B": "Misel küresel amfipatik düzenlenme; çift tabaka ise iki tekli tabakanın oluşturduğu iki boyutlu yapıdır.",
+      "C": "Fosfolipitler çift tabaka oluşturur; polar baş grupları sulu ortama, apolar kısımlar merkeze yönelir.",
+      "D": "İntegral zar proteinlerinin lipit çift tabakaya sıkı hidrofobik etkileşimlerle bağlandığı ve ancak deterjan, organik çözücü veya denatüranlarla uzaklaştırılabildiği belirtilir.",
+      "E": "Bütün biyolojik zarların polar veya yüklü çoğu çözünmüş maddeye geçirgen olmadığı, buna karşılık bazı polar olmayan bileşiklere geçirgen olduğu belirtilir."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "Bütün biyolojik zarların polar veya yüklü çoğu çözünmüş maddeye geçirgen olmadığı, buna karşılık bazı polar olmayan bileşiklere geçirgen olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Sıvı-mozaik model ve lipit çift tabaka başlığıyla ilişkilidir; biyolojik zarların ortak özellikleri için ayırt edici değildir.",
+      "B": "Sıvı-mozaik model ve lipit çift tabaka başlığıyla ilişkilidir; biyolojik zarların ortak özellikleri için ayırt edici değildir.",
+      "C": "Sıvı-mozaik model ve lipit çift tabaka başlığıyla ilişkilidir; biyolojik zarların ortak özellikleri için ayırt edici değildir.",
+      "D": "Zar asimetrisi ve protein tipleri başlığıyla ilişkilidir; biyolojik zarların ortak özellikleri için ayırt edici değildir."
+    },
+    "learning_objective": "Biyolojik zarların ortak özellikleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "Biyolojik zarların ortak özellikleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MEM-022",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Sıvı-mozaik model ve lipit çift tabaka",
+    "source_pages": [
+      9,
+      13
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Sıvı-mozaik model ve lipit çift tabaka açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Bütün biyolojik zarların polar veya yüklü çoğu çözünmüş maddeye geçirgen olmadığı, buna karşılık bazı polar olmayan bileşiklere geçirgen olduğu belirtilir.",
+      "B": "İntegral zar proteinlerinin lipit çift tabakaya sıkı hidrofobik etkileşimlerle bağlandığı ve ancak deterjan, organik çözücü veya denatüranlarla uzaklaştırılabildiği belirtilir.",
+      "C": "Fosfatidilserinin trombositlerde dış yaprakçığa geçmesi kan pıhtısı oluşumunu destekleyebilir.",
+      "D": "Sıvı-mozaik modele göre fosfolipitlerin çift tabaka oluşturduğu, apolar bölgelerin merkeze, polar baş gruplarının sulu ortama baktığı belirtilir.",
+      "E": "Hücrenin apoptoz için işaretlenmesi veya trombositte pıhtılaşma ile ilişkili bir sonuç."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "Sıvı-mozaik modele göre fosfolipitlerin çift tabaka oluşturduğu, apolar bölgelerin merkeze, polar baş gruplarının sulu ortama baktığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Biyolojik zarların ortak özellikleri başlığıyla ilişkilidir; sıvı-mozaik model ve lipit çift tabaka için ayırt edici değildir.",
+      "B": "Zar asimetrisi ve protein tipleri başlığıyla ilişkilidir; sıvı-mozaik model ve lipit çift tabaka için ayırt edici değildir.",
+      "C": "Zar asimetrisi ve protein tipleri başlığıyla ilişkilidir; sıvı-mozaik model ve lipit çift tabaka için ayırt edici değildir.",
+      "E": "Zar asimetrisi ve protein tipleri başlığıyla ilişkilidir; sıvı-mozaik model ve lipit çift tabaka için ayırt edici değildir."
+    },
+    "learning_objective": "Sıvı-mozaik model ve lipit çift tabaka için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "Sıvı-mozaik model ve lipit çift tabaka",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MEM-026",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Zar füzyonu",
+    "source_pages": [
+      20,
+      28
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Zar füzyonu açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Sinaptik vezikül füzyonu örneğinde SNARE ailesinin görev aldığı açıkça verilir.",
+      "B": "Glukozun hücre içi ve dışı derişim farkına bağlı pasif taşınmasına aracılık eder.",
+      "C": "Uzun zincirli doymuş yağ asitleri sıvı-düzenli paketlenmeyi teşvik eder.",
+      "D": "Eritrositlerdeki glukoz taşıyıcılarının kolaylaştırılmış difüzyonla, yani konsantrasyon farkına bağlı pasif taşınmaya aracılık ettiği belirtilir.",
+      "E": "Uzun zincirli doymuş yağ asitlerinin sıvı-düzenli dizi şeklinde paketlenmeyi teşvik ettiğini; doymamış ve kısa zincirli grupların ise bunu engellediğini açıklar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Sinaptik vezikül füzyonu örneğinde SNARE ailesinin görev aldığı açıkça verilir.",
+    "distractor_explanations": {
+      "B": "GLUT ve kolaylaştırılmış difüzyon başlığıyla ilişkilidir; zar füzyonu için ayırt edici değildir.",
+      "C": "Zar akışkanlığı ve dinamikleri başlığıyla ilişkilidir; zar füzyonu için ayırt edici değildir.",
+      "D": "GLUT ve kolaylaştırılmış difüzyon başlığıyla ilişkilidir; zar füzyonu için ayırt edici değildir.",
+      "E": "Zar akışkanlığı ve dinamikleri başlığıyla ilişkilidir; zar füzyonu için ayırt edici değildir."
+    },
+    "learning_objective": "Zar füzyonu için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "Zar füzyonu",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MEM-028",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Taşıyıcılar ve kanallar",
+    "source_pages": [
+      29,
+      33
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Taşıyıcı ve kanal proteinleri karşılaştırıldığında aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "İyon seçiciliği ve zar potansiyeli düzenlenmesi.",
+      "B": "Akuaporin aracılı su geçişi.",
+      "C": "Endergonik taşınmanın egzergonik süreçle eşleşmesi.",
+      "D": "Eritrositte hızlı hacim yanıtı.",
+      "E": "Alternatif geçiş yolu ile aktivasyon enerjisinin düşmesi."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "Taşıyıcıların ve kanalların polar bileşikler ile iyonların zardan geçişi için alternatif yol sağladığı, böylece aktifleşme enerjisini düşürdüğü belirtilir.",
+    "distractor_explanations": {
+      "A": "Zar füzyonu başlığıyla ilişkilidir; taşıyıcılar ve kanallar için ayırt edici değildir.",
+      "B": "Zar füzyonu başlığıyla ilişkilidir; taşıyıcılar ve kanallar için ayırt edici değildir.",
+      "C": "Zar akışkanlığı ve dinamikleri başlığıyla ilişkilidir; taşıyıcılar ve kanallar için ayırt edici değildir.",
+      "D": "Zar asimetrisi ve protein tipleri başlığıyla ilişkilidir; taşıyıcılar ve kanallar için ayırt edici değildir."
+    },
+    "learning_objective": "Taşıyıcılar ve kanallar için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "Taşıyıcılar ve kanallar",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MEM-030",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "GLUT ve kolaylaştırılmış difüzyon",
+    "source_pages": [
+      34,
+      35
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "GLUT ve kolaylaştırılmış difüzyon açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Klorür-bikarbonat değiştiricisinin elektronötr antiport yaptığı, bir HCO3- hareketine karşılık zıt yönde bir Cl- taşıdığı belirtilir.",
+      "B": "Eritrositlerdeki glukoz taşıyıcılarının kolaylaştırılmış difüzyonla, yani konsantrasyon farkına bağlı pasif taşınmaya aracılık ettiği belirtilir.",
+      "C": "Zar yüzeylerinin birbirine çok yaklaşması ve dış yaprakçıklarda bölgesel bozulma oluşması.",
+      "D": "Sinaptik vezikül füzyonu örneğinde SNARE ailesinin görev aldığı açıkça verilir.",
+      "E": "HCO3- taşınırken zıt yönde Cl- taşınır ve net yük aktarımı olmaz."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Eritrositlerdeki glukoz taşıyıcılarının kolaylaştırılmış difüzyonla, yani konsantrasyon farkına bağlı pasif taşınmaya aracılık ettiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Anyon değiştiriciler başlığıyla ilişkilidir; glut ve kolaylaştırılmış difüzyon için ayırt edici değildir.",
+      "C": "Zar füzyonu başlığıyla ilişkilidir; glut ve kolaylaştırılmış difüzyon için ayırt edici değildir.",
+      "D": "Zar füzyonu başlığıyla ilişkilidir; glut ve kolaylaştırılmış difüzyon için ayırt edici değildir.",
+      "E": "Anyon değiştiriciler başlığıyla ilişkilidir; glut ve kolaylaştırılmış difüzyon için ayırt edici değildir."
+    },
+    "learning_objective": "GLUT ve kolaylaştırılmış difüzyon için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "GLUT ve kolaylaştırılmış difüzyon",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MEM-032",
+    "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+    "source_topic": "Biyolojik zarlar ve taşınma",
+    "source_subtopic": "Anyon değiştiriciler",
+    "source_pages": [
+      36,
+      37
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Klorür-bikarbonat değiştiricisinin çalışması için aşağıdaki sonuçlardan hangisi beklenir?",
+    "options": {
+      "A": "Klorür-bikarbonat değiştiricisinin elektronötr antiport yaptığı, bir HCO3- hareketine karşılık zıt yönde bir Cl- taşıdığı belirtilir.",
+      "B": "Eritrositlerdeki glukoz taşıyıcılarının kolaylaştırılmış difüzyonla, yani konsantrasyon farkına bağlı pasif taşınmaya aracılık ettiği belirtilir.",
+      "C": "Belirli iyonlara geçirgenliği belirleyip sitozol iyon derişimi ile zar potansiyelini düzenlemek.",
+      "D": "Su geçişi için hidrofilik por oluştururlar; bazı tipleri gliserol veya üreyi de geçirebilir.",
+      "E": "Glukozun hücre içi ve dışı derişim farkına bağlı pasif taşınmasına aracılık eder."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Klorür-bikarbonat değiştiricisinin elektronötr antiport yaptığı, bir HCO3- hareketine karşılık zıt yönde bir Cl- taşıdığı belirtilir.",
+    "distractor_explanations": {
+      "B": "GLUT ve kolaylaştırılmış difüzyon başlığıyla ilişkilidir; anyon değiştiriciler için ayırt edici değildir.",
+      "C": "Aktif taşınma, akuaporinler ve iyon kanalları başlığıyla ilişkilidir; anyon değiştiriciler için ayırt edici değildir.",
+      "D": "Aktif taşınma, akuaporinler ve iyon kanalları başlığıyla ilişkilidir; anyon değiştiriciler için ayırt edici değildir.",
+      "E": "GLUT ve kolaylaştırılmış difüzyon başlığıyla ilişkilidir; anyon değiştiriciler için ayırt edici değildir."
+    },
+    "learning_objective": "Anyon değiştiriciler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "Anyon değiştiriciler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-004",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glikolizde enerji korunumu",
+    "source_pages": [
+      17,
+      18,
+      42
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Glikolizde bir glukoz molekülü başına net enerji korunumunu en iyi ifade eden seçenek hangisidir?",
+    "options": {
+      "A": "Net 2 ATP ve 2 NADH oluşur.",
+      "B": "Net 4 ATP ve 0 NADH oluşur.",
+      "C": "Net 1 ATP ve 1 FADH2 oluşur.",
+      "D": "Hiç ATP oluşmaz, yalnızca ısı açığa çıkar.",
+      "E": "Net 6 GTP oluşur."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Toplam bilanço ı, glikolizden net 2 ATP kazancı ve 2 NADH oluştuğunu gösterir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "4 ATP brüt oluşur; net kazanç 2 ATP'dir ve NADH de üretilir.",
+      "C": "FADH2 glikolizin net ürünü olarak verilmez.",
+      "D": "ATP ve NADH oluşumu açıkça anlatılır.",
+      "E": "GTP glikolizin net ürünü değildir."
+    },
+    "learning_objective": "Glikolizin net enerji bilançosunu hatırlamak.",
+    "tags": [
+      "Glikolizin enerji bilançosu",
+      "Glikoliz",
+      "ATP",
+      "NADH",
+      "Bilanço"
+    ]
+  },
+  {
+    "id": "MET-010",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoneogenez by-pass tepkimeleri",
+    "source_pages": [
+      58,
+      60,
+      67
+    ],
+    "difficulty": "Zor",
+    "question_type": "kavramsal ayrım",
+    "question": "Glukoneogenez için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Glikolizin tüm basamaklarının basit tersidir; ayrı enzime gerek yoktur.",
+      "B": "Glikolizin üç tersinmez basamağı glukoneogenezde by-pass tepkimeleriyle aşılır.",
+      "C": "Yalnızca tek bir enzimle pirüvattan glukoza dönülür.",
+      "D": "Sadece eritrosit sitozolünde gerçekleşir.",
+      "E": "Hiç enerji gerektirmez."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Glikolizin üç tersinmez basamağının glukoneogenezde farklı enzimlerle by-pass edildiğini; dolayısıyla iki yolun birbirinin basit tersi olmadığını vurgular.",
+    "distractor_explanations": {
+      "A": "Açıkça bunun doğru olmadığını söyler.",
+      "B": "Doğru seçenek.",
+      "C": "Birden fazla enzim ve by-pass basamağı gerekir.",
+      "D": "Başlıca karaciğer, daha az böbrek korteksi ve ince bağırsak epitelinde anlatılır.",
+      "E": "Enerji açısından masraflı olduğu belirtilir."
+    },
+    "learning_objective": "Glukoneogenezin glikolizin basit tersi olmadığını göstermek.",
+    "tags": [
+      "Glukoneogenez by-pass basamakları",
+      "Glukoneogenez",
+      "By-pass",
+      "Tersinmez basamaklar"
+    ]
+  },
+  {
+    "id": "MET-011",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
+    "source_pages": [
+      69,
+      71
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "İki pirüvattan bir glukoz oluşumu için glukoneogenezde kaç yüksek enerjili fosfat grubu gerekir?",
+    "options": {
+      "A": "2 ATP.",
+      "B": "4 ATP.",
+      "C": "2 ATP + 2 GTP.",
+      "D": "4 ATP + 2 GTP.",
+      "E": "Yalnızca 6 GTP."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "Piruvattan glukoz sentezi için her glukoz başına 6 yüksek enerjili fosfat gerektiği; bunun 4'ünün ATP, 2'sinin GTP kaynaklı olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Bu değer yetersizdir.",
+      "B": "GTP gereksinimini dışarıda bırakır.",
+      "C": "Toplam enerji maliyetini eksik verir.",
+      "D": "Doğru seçenek.",
+      "E": "ATP katkısı da vardır."
+    },
+    "learning_objective": "Glukoneogenezin enerji maliyetini doğru hatırlamak.",
+    "tags": [
+      "Glukoneogenezin enerji maliyeti",
+      "Glukoneogenez",
+      "ATP",
+      "GTP",
+      "Enerji maliyeti"
+    ]
+  },
+  {
+    "id": "MET-012",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
+    "source_pages": [
+      78,
+      82,
+      83,
+      84,
+      85
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Glukoz 6-fosfatın glikolize mi yoksa pentoz fosfat yolağına mı gireceğini belirleyen ana etken olarak ne vurgulanır?",
+    "options": {
+      "A": "Yalnızca ATP/ADP oranı.",
+      "B": "Yalnızca sitrik asit çevrimi ara ürünleri.",
+      "C": "Hücrenin ihtiyacı ve sitozoldeki NADP+ düzeyi.",
+      "D": "Mutlaka DNA sentezi hızı.",
+      "E": "Sadece oksijenin varlığı."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "G6FD basamağının NADP+'ye bağlı olduğu, NADPH ihtiyacı arttığında NADP+ düzeyinin yükselip pentoz fosfat yolağı akışını artırdığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Belirleyici olarak bu tek parametre verilmez.",
+      "B": "Ana düzenleyici olarak bu vurgulanmaz.",
+      "C": "Doğru seçenek.",
+      "D": "DNA sentezi bazı durumlarda riboz ihtiyacını etkileyebilir ama ana vurgu NADP+ düzeyidir.",
+      "E": "PPP seçimi yalnızca oksijene bağlanmaz."
+    },
+    "learning_objective": "Pentoz fosfat yolağına akışın NADP+ ve hücresel ihtiyaçla düzenlendiğini açıklamak.",
+    "tags": [
+      "Pentoz fosfat yolağının yönlendirilmesi",
+      "Pentoz fosfat yolağı",
+      "G6FD",
+      "NADP+",
+      "NADPH",
+      "Metabolik akış"
+    ]
+  },
+  {
+    "id": "MET-017",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Sonlanma evresi basamakları",
+    "source_pages": [
+      36
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Glikolizin sürmesi için NAD+'nın yeniden kazanılması gereksinimi en doğrudan hangi basamakla ilişkilidir?",
+    "options": {
+      "A": "Gliseraldehit 3-fosfatın 1,3-bisfosfogliserata yükseltgenmesi.",
+      "B": "Glukoz 6-fosfatın fruktoz 6-fosfata dönüşümü.",
+      "C": "Fosfoenolpirüvatın pirüvata dönüşümü.",
+      "D": "Glukoz 6-fosfatın serbest glukoza hidrolizi.",
+      "E": "Riboz 5-fosfatın ksülüloz 5-fosfata izomerizasyonu."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Gliseraldehit 3-fosfat dehidrogenaz basamağında NADH oluştuğunu ve NAD+ havuzunun küçük olması nedeniyle NADH'nin yeniden yükseltgenerek geri kazanılmaması durumunda glikolizin duracağını vurgular.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu basamak NAD+ gereksiniminin kritik noktası olarak verilmez.",
+      "C": "Bu ATP oluşturan son basamaktır.",
+      "D": "Bu glukoneogeneze aittir.",
+      "E": "Bu pentoz fosfat yolağıyla ilgilidir."
+    },
+    "learning_objective": "NAD+ yenilenmesinin glikolizde hangi basamak için kritik olduğunu açıklamak.",
+    "tags": [
+      "Gliseraldehit 3-fosfat dehidrogenaz",
+      "GAPDH",
+      "NAD+",
+      "NADH",
+      "Glikoliz",
+      "Fermentasyon"
+    ]
+  },
+  {
+    "id": "MET-021",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoneogenez by-pass tepkimeleri",
+    "source_pages": [
+      60,
+      62
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Glukoneogenezde oksaloasetatın önce malata dönüştürülmesinin başlıca nedeni aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Mitokondri zarında oksaloasetat için taşıyıcı olmaması.",
+      "B": "Malatın ATP üretimini doğrudan sağlaması.",
+      "C": "Oksaloasetatın glikolizde kullanılmaması.",
+      "D": "PEP'in mitokondriye girememesi.",
+      "E": "Malatın nükleik asit sentezinin öncülü olması."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Mitokondri zarında oksaloasetat için taşıyıcı bulunmadığını; bu yüzden oksaloasetatın malata indirgenip taşıyıcıyla sitozole çıkarıldığını ve burada yeniden oksaloasetata yükseltildiğini açıklar.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu dönüşümün temel amacı taşıma ve redoks eşlemesidir.",
+      "C": "Bu, malata dönüştürmenin nedeni olarak verilmez.",
+      "D": "Asıl sorun oksaloasetatın taşınamamasıdır.",
+      "E": "Böyle bir gerekçe anlatılmaz."
+    },
+    "learning_objective": "Malat ara basamağını mitokondri-sitozol taşınmasıyla ilişkilendirmek.",
+    "tags": [
+      "Glukoneogenez by-pass basamakları",
+      "Glukoneogenez",
+      "Oksaloasetat",
+      "Malat",
+      "Mitokondri taşıma"
+    ]
+  },
+  {
+    "id": "MET-022",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
+    "source_pages": [
+      83,
+      84
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Pentoz fosfat yolağının oksidatif olmayan evresi için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Başlıca transketolaz ve transaldolaz enzimleriyle yeniden düzenlemeler içerir.",
+      "B": "Yalnız ATP üretmek için çalışır.",
+      "C": "G6FD tarafından başlatılır ve doğrudan NADPH oluşturur.",
+      "D": "Fruktoz 1,6-bisfosfatazın zorunlu olduğu tek evredir.",
+      "E": "Mitokondri iç zarında gerçekleşir."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "PPP'nin oksidatif olmayan evresinde pentoz fosfatların yeniden düzenlenmesinde başlıca transketolaz ve transaldolaz enzimlerinin görev yaptığını belirtir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu evre ATP üretim odaklı olarak tanımlanmaz.",
+      "C": "Bu, oksidatif evreye aittir.",
+      "D": "FBPaz-1 glukoneogenezdedir.",
+      "E": "Bunu sitozolik bağlamda anlatır."
+    },
+    "learning_objective": "PPP'nin oksidatif olmayan evresini oksidatif evreden ayırt etmek.",
+    "tags": [
+      "Pentoz fosfat yolağının yönlendirilmesi",
+      "PPP",
+      "Oksidatif olmayan evre",
+      "Transketolaz",
+      "Transaldolaz"
+    ]
+  },
+  {
+    "id": "MET-025",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoneogenez by-pass tepkimeleri",
+    "source_pages": [
+      60,
+      61
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Piruvat karboksilaz için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Biyotin bağımlıdır ve pozitif efektör olarak asetil-KoA'ya ihtiyaç duyar.",
+      "B": "Yalnız sitozolde çalışır ve NADPH kullanır.",
+      "C": "Fruktoz 6-fosfatı doğrudan glukoza çevirir.",
+      "D": "G6FD'nin diğer adıdır.",
+      "E": "Laktatı etanole dönüştürür."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Piruvat karboksilazın biyotin koenzimine bağımlı olduğunu ve glukoneogenik yolaktaki ilk düzenleyici enzim olarak asetil-KoA tarafından pozitif etkilenmeye ihtiyaç duyduğunu belirtir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Mitokondri bağlamında ve farklı kofaktör mantığıyla anlatılır.",
+      "C": "Bu G6Paz ile ilişkilidir.",
+      "D": "G6FD PPP enzimidir.",
+      "E": "Bu fermentasyonla ilgilidir."
+    },
+    "learning_objective": "Piruvat karboksilazın kofaktör ve düzenleme özelliklerini açıklamak.",
+    "tags": [
+      "Glukoneogenez by-pass basamakları",
+      "Piruvat karboksilaz",
+      "Biyotin",
+      "Asetil-KoA",
+      "Glukoneogenez"
+    ]
+  },
+  {
+    "id": "MET-028",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoz kullanımının ana yolları",
+    "source_pages": [
+      2,
+      5
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Glukoz kullanımının ana yolları ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Glikolizin iki evresi için merkezde yer alan ayırıcı eksen atp tüketimi ve atp üretimi ayrımıdır.",
+      "B": "Hazırlık evresi ATP gerektirir; sonlanma evresi ATP ve NADH sağlar.",
+      "C": "Glikolizin bir molekül glukozu iki adet üç karbonlu pirüvata dönüştürdüğünü vurgular.",
+      "D": "İlk beş basamağın ATP gerektiren hazırlık evresi olduğu; sonlanma evresinin ise ATP ve NADH sağlayarak enerji korunumunu gerçekleştirdiği anlatılır.",
+      "E": "Karboksil grubunu CO2 olarak kaybedip asetil-KoA'nın asetil grubunu oluşturabilir."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Glikolizin bir molekül glukozu iki adet üç karbonlu pirüvata dönüştürdüğünü vurgular.",
+    "distractor_explanations": {
+      "A": "Glikolizin iki evresi başlığıyla ilişkilidir; glukoz kullanımının ana yolları için ayırt edici değildir.",
+      "B": "Glikolizin iki evresi başlığıyla ilişkilidir; glukoz kullanımının ana yolları için ayırt edici değildir.",
+      "D": "Glikolizin iki evresi başlığıyla ilişkilidir; glukoz kullanımının ana yolları için ayırt edici değildir.",
+      "E": "Pirüvatın akıbetleri başlığıyla ilişkilidir; glukoz kullanımının ana yolları için ayırt edici değildir."
+    },
+    "learning_objective": "Glukoz kullanımının ana yolları için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Glukoz kullanımının ana yolları",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-030",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glikolizin iki evresi",
+    "source_pages": [
+      6,
+      11
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Glikolizin iki evresi açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Pirüvatın asetil-KoA'ya oksidatif dönüşümü, laktata indirgenmesi veya etanol ve CO2'ye fermentasyonu olmak üzere üç temel katabolik akıbetini verir.",
+      "B": "Glikolizin bir molekül glukozu iki adet üç karbonlu pirüvata dönüştürdüğünü vurgular.",
+      "C": "Karboksil grubunu CO2 olarak kaybedip asetil-KoA'nın asetil grubunu oluşturabilir.",
+      "D": "Alanin amino asidi ve yağ asidi sentezi için karbon iskeleti sağlayabilir.",
+      "E": "İlk beş basamağın ATP gerektiren hazırlık evresi olduğu; sonlanma evresinin ise ATP ve NADH sağlayarak enerji korunumunu gerçekleştirdiği anlatılır."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "İlk beş basamağın ATP gerektiren hazırlık evresi olduğu; sonlanma evresinin ise ATP ve NADH sağlayarak enerji korunumunu gerçekleştirdiği anlatılır.",
+    "distractor_explanations": {
+      "A": "Pirüvatın akıbetleri başlığıyla ilişkilidir; glikolizin iki evresi için ayırt edici değildir.",
+      "B": "Glukoz kullanımının ana yolları başlığıyla ilişkilidir; glikolizin iki evresi için ayırt edici değildir.",
+      "C": "Pirüvatın akıbetleri başlığıyla ilişkilidir; glikolizin iki evresi için ayırt edici değildir.",
+      "D": "Pirüvatın akıbetleri başlığıyla ilişkilidir; glikolizin iki evresi için ayırt edici değildir."
+    },
+    "learning_objective": "Glikolizin iki evresi için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Glikolizin iki evresi",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-034",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glikolizde enerji korunumu",
+    "source_pages": [
+      17,
+      20
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Glikolizde enerji korunumu açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Dihidroksiaseton fosfatın doğrudan yıkılamaması ve gliseraldehit 3-fosfata çevrilmesi gereği.",
+      "B": "Karboksil grubunu CO2 olarak kaybedip asetil-KoA'nın asetil grubunu oluşturabilir.",
+      "C": "Alanin amino asidi ve yağ asidi sentezi için karbon iskeleti sağlayabilir.",
+      "D": "Toplam bilanço ilgili konudaı, glikolizden net 2 ATP kazancı ve 2 NADH oluştuğunu gösterir.",
+      "E": "Glukoz 6-fosfatın fruktoz 6-fosfata tersinir izomerleşmesi."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "Toplam bilanço ilgili biyokimyasal bağlamdaı, glikolizden net 2 ATP kazancı ve 2 NADH oluştuğunu gösterir.",
+    "distractor_explanations": {
+      "A": "Hazırlık evresi basamakları başlığıyla ilişkilidir; glikolizde enerji korunumu için ayırt edici değildir.",
+      "B": "Pirüvatın akıbetleri başlığıyla ilişkilidir; glikolizde enerji korunumu için ayırt edici değildir.",
+      "C": "Pirüvatın akıbetleri başlığıyla ilişkilidir; glikolizde enerji korunumu için ayırt edici değildir.",
+      "E": "Hazırlık evresi basamakları başlığıyla ilişkilidir; glikolizde enerji korunumu için ayırt edici değildir."
+    },
+    "learning_objective": "Glikolizde enerji korunumu için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Glikolizde enerji korunumu",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-037",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Sonlanma evresi basamakları",
+    "source_pages": [
+      34,
+      43
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Sonlanma evresi basamakları değerlendirildiğinde aşağıdaki ifadelerden hangisi uygundur?",
+    "options": {
+      "A": "Dihidroksiaseton fosfatın doğrudan yıkılamaması ve gliseraldehit 3-fosfata çevrilmesi gereği.",
+      "B": "NADH'ı NAD+'ye geri yükseltgeyerek glikolizin sürmesini sağlamak.",
+      "C": "PEP'tan fosforil grubunun ADP'ye pirüvat kinaz ile aktarılması sonucu ATP oluştuğunu açıklar.",
+      "D": "PFK-1 basamağını hücresel koşullarda tersinmez olan ve fruktoz 1,6-bisfosfatı glikolize adayan ilk basamak olarak tanımlar.",
+      "E": "Glukoz 6-fosfatın fruktoz 6-fosfata tersinir izomerleşmesi."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "PEP'tan fosforil grubunun ADP'ye pirüvat kinaz ile aktarılması sonucu ATP oluştuğunu açıklar.",
+    "distractor_explanations": {
+      "A": "Hazırlık evresi basamakları başlığıyla ilişkilidir; sonlanma evresi basamakları için ayırt edici değildir.",
+      "B": "Laktik asit fermentasyonu başlığıyla ilişkilidir; sonlanma evresi basamakları için ayırt edici değildir.",
+      "D": "Hazırlık evresi basamakları başlığıyla ilişkilidir; sonlanma evresi basamakları için ayırt edici değildir.",
+      "E": "Hazırlık evresi basamakları başlığıyla ilişkilidir; sonlanma evresi basamakları için ayırt edici değildir."
+    },
+    "learning_objective": "Sonlanma evresi basamakları için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Sonlanma evresi basamakları",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-039",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Laktik asit fermentasyonu",
+    "source_pages": [
+      46,
+      51
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Laktik asit fermentasyonu için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "Fosfogliserat kinazın 1,3-bisfosfogliserattaki yüksek enerjili fosforil grubunu ADP'ye aktararak ATP ve 3-fosfogliserat oluşturduğunu açıklar.",
+      "B": "Mayalarda ve bazı mikroorganizmalarda pirüvatın iki basamaklı bir süreçle etanol ve CO2'ye dönüştürüldüğünü açıklar.",
+      "C": "Anaerobik koşullarda pirüvatın laktata indirgenmesi sırasında NADH'ın NAD+'ye geri dönüştüğü ve böylece glikolizin devam edebildiği belirtilir.",
+      "D": "Etanol fermentasyonu için merkezde yer alan ayırıcı eksen laktat ve etanol fermentasyonu ayrımıdır.",
+      "E": "PEP'tan fosforil grubunun ADP'ye pirüvat kinaz ile aktarılması sonucu ATP oluştuğunu açıklar."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Anaerobik koşullarda pirüvatın laktata indirgenmesi sırasında NADH'ın NAD+'ye geri dönüştüğü ve böylece glikolizin devam edebildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Sonlanma evresi basamakları başlığıyla ilişkilidir; laktik asit fermentasyonu için ayırt edici değildir.",
+      "B": "Etanol fermentasyonu başlığıyla ilişkilidir; laktik asit fermentasyonu için ayırt edici değildir.",
+      "D": "Etanol fermentasyonu başlığıyla ilişkilidir; laktik asit fermentasyonu için ayırt edici değildir.",
+      "E": "Sonlanma evresi basamakları başlığıyla ilişkilidir; laktik asit fermentasyonu için ayırt edici değildir."
+    },
+    "learning_objective": "Laktik asit fermentasyonu için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Laktik asit fermentasyonu",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-041",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Etanol fermentasyonu",
+    "source_pages": [
+      52,
+      53
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Mayalarda pirüvatın asetaldehit üzerinden etanole yönelmesini en doğru açıklayan ifade aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Glukoneogenez by-pass tepkimeleri için merkezde yer alan ayırıcı eksen oksaloasetatın mitokondriden doğrudan çıkamaması ayrımıdır.",
+      "B": "Eritrositlerde mitokondri bulunmadığını, bu nedenle pirüvatı CO2'ye kadar yükseltgeyemediklerini ve glukozdan laktat oluşturduklarını vurgular.",
+      "C": "Anaerobik koşullarda pirüvatın laktata indirgenmesi sırasında NADH'ın NAD+'ye geri dönüştüğü ve böylece glikolizin devam edebildiği belirtilir.",
+      "D": "Glukoneogenezin by-pass basamaklarını ve malat/oksaloasetat mantığını yorumlamak.",
+      "E": "Mayalarda ve bazı mikroorganizmalarda pirüvatın iki basamaklı bir süreçle etanol ve CO2'ye dönüştürüldüğünü açıklar."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "Mayalarda ve bazı mikroorganizmalarda pirüvatın iki basamaklı bir süreçle etanol ve CO2'ye dönüştürüldüğünü açıklar.",
+    "distractor_explanations": {
+      "A": "Glukoneogenez by-pass tepkimeleri başlığıyla ilişkilidir; etanol fermentasyonu için ayırt edici değildir.",
+      "B": "Laktik asit fermentasyonu başlığıyla ilişkilidir; etanol fermentasyonu için ayırt edici değildir.",
+      "C": "Laktik asit fermentasyonu başlığıyla ilişkilidir; etanol fermentasyonu için ayırt edici değildir.",
+      "D": "Glukoneogenez by-pass tepkimeleri başlığıyla ilişkilidir; etanol fermentasyonu için ayırt edici değildir."
+    },
+    "learning_objective": "Etanol fermentasyonu için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Etanol fermentasyonu",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-044",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoneogenezin genel ilkeleri",
+    "source_pages": [
+      55,
+      59
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Glukoneogenezin genel ilkeleri için aşağıdaki seçeneklerden hangisi en uygundur?",
+    "options": {
+      "A": "Hücrenin ihtiyacı ve sitozoldeki NADP+ düzeyi.",
+      "B": "PPP'nin yalnız riboz üretim yolu olmaması.",
+      "C": "Glikolizin ters yönde birebir tekrarı olmaması.",
+      "D": "PPP'nin oksidatif evresinde NADPH üretimini açıklamak.",
+      "E": "NADPH ve NADH rolleri."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Glukoneogenezin genel ilkeleri için belirleyici ayrım glikolizin ters yönde birebir tekrarı olmaması.",
+    "distractor_explanations": {
+      "A": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi başlığıyla ilişkilidir; glukoneogenezin genel ilkeleri için ayırt edici değildir.",
+      "B": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi başlığıyla ilişkilidir; glukoneogenezin genel ilkeleri için ayırt edici değildir.",
+      "D": "Pentoz fosfat yolağının oksidatif evresi başlığıyla ilişkilidir; glukoneogenezin genel ilkeleri için ayırt edici değildir.",
+      "E": "Pentoz fosfat yolağının oksidatif evresi başlığıyla ilişkilidir; glukoneogenezin genel ilkeleri için ayırt edici değildir."
+    },
+    "learning_objective": "Glukoneogenezin genel ilkeleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Glukoneogenezin genel ilkeleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-048",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoneogenez by-pass tepkimeleri",
+    "source_pages": [
+      60,
+      68
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Glukoneogenezde by-pass tepkimelerine neden ihtiyaç duyulduğunu en iyi açıklayan ifade aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Piruvattan glukoz sentezi için her glukoz başına 6 yüksek enerjili fosfat gerektiği; bunun 4'ünün ATP, 2'sinin GTP kaynaklı olduğu belirtilir.",
+      "B": "Mayalarda ve bazı mikroorganizmalarda pirüvatın iki basamaklı bir süreçle etanol ve CO2'ye dönüştürüldüğünü açıklar.",
+      "C": "Etanol fermentasyonu için merkezde yer alan ayırıcı eksen laktat ve etanol fermentasyonu ayrımıdır.",
+      "D": "Bazı basamakların allosterik ve kovalent değişimlerle karşılıklı düzenlenmesi.",
+      "E": "Glikolizin üç tersinmez basamağının glukoneogenezde farklı enzimlerle by-pass edildiğini; dolayısıyla iki yolun birbirinin basit tersi olmadığını vurgular."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "Glikolizin üç tersinmez basamağının glukoneogenezde farklı enzimlerle by-pass edildiğini; dolayısıyla iki yolun birbirinin basit tersi olmadığını vurgular.",
+    "distractor_explanations": {
+      "A": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme başlığıyla ilişkilidir; glukoneogenez by-pass tepkimeleri için ayırt edici değildir.",
+      "B": "Etanol fermentasyonu başlığıyla ilişkilidir; glukoneogenez by-pass tepkimeleri için ayırt edici değildir.",
+      "C": "Etanol fermentasyonu başlığıyla ilişkilidir; glukoneogenez by-pass tepkimeleri için ayırt edici değildir.",
+      "D": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme başlığıyla ilişkilidir; glukoneogenez by-pass tepkimeleri için ayırt edici değildir."
+    },
+    "learning_objective": "Glukoneogenez by-pass tepkimeleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Glukoneogenez by-pass tepkimeleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-052",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
+    "source_pages": [
+      69,
+      74
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "G6FD basamağının NADP+'ye bağlı olduğu, NADPH ihtiyacı arttığında NADP+ düzeyinin yükselip pentoz fosfat yolağı akışını artırdığı belirtilir.",
+      "B": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi için merkezde yer alan ayırıcı eksen ppp'nin yalnız riboz üretim yolu olmaması ayrımıdır.",
+      "C": "Glukoneogenez by-pass tepkimeleri için merkezde yer alan ayırıcı eksen oksaloasetatın mitokondriden doğrudan çıkamaması ayrımıdır.",
+      "D": "Piruvattan glukoz sentezi için her glukoz başına 6 yüksek enerjili fosfat gerektiği; bunun 4'ünün ATP, 2'sinin GTP kaynaklı olduğu belirtilir.",
+      "E": "Glikolizin üç tersinmez basamağının glukoneogenezde farklı enzimlerle by-pass edildiğini; dolayısıyla iki yolun birbirinin basit tersi olmadığını vurgular."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "Piruvattan glukoz sentezi için her glukoz başına 6 yüksek enerjili fosfat gerektiği; bunun 4'ünün ATP, 2'sinin GTP kaynaklı olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi başlığıyla ilişkilidir; glukoneogenez enerji maliyeti ve karşılıklı düzenleme için ayırt edici değildir.",
+      "B": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi başlığıyla ilişkilidir; glukoneogenez enerji maliyeti ve karşılıklı düzenleme için ayırt edici değildir.",
+      "C": "Glukoneogenez by-pass tepkimeleri başlığıyla ilişkilidir; glukoneogenez enerji maliyeti ve karşılıklı düzenleme için ayırt edici değildir.",
+      "E": "Glukoneogenez by-pass tepkimeleri başlığıyla ilişkilidir; glukoneogenez enerji maliyeti ve karşılıklı düzenleme için ayırt edici değildir."
+    },
+    "learning_objective": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-054",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Pentoz fosfat yolağının oksidatif evresi",
+    "source_pages": [
+      75,
+      82
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Pentoz fosfat yolağının oksidatif evresi başlığında öne çıkan seçenek aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Glikolizin ters yönde birebir tekrarı olmaması.",
+      "B": "PPP'nin yalnız riboz üretim yolu olmaması.",
+      "C": "NADPH ve NADH rolleri.",
+      "D": "Hücrenin ihtiyacı ve sitozoldeki NADP+ düzeyi.",
+      "E": "4 ATP + 2 GTP."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Pentoz fosfat yolağının oksidatif evresi için belirleyici ayrım nadph ve nadh rolleri.",
+    "distractor_explanations": {
+      "A": "Glukoneogenezin genel ilkeleri başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif evresi için ayırt edici değildir.",
+      "B": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif evresi için ayırt edici değildir.",
+      "D": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif evresi için ayırt edici değildir.",
+      "E": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif evresi için ayırt edici değildir."
+    },
+    "learning_objective": "Pentoz fosfat yolağının oksidatif evresi için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Pentoz fosfat yolağının oksidatif evresi",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "MET-058",
+    "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "source_topic": "Karbohidrat metabolizması",
+    "source_subtopic": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
+    "source_pages": [
+      83,
+      85
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Piruvattan glukoz sentezi için her glukoz başına 6 yüksek enerjili fosfat gerektiği; bunun 4'ünün ATP, 2'sinin GTP kaynaklı olduğu belirtilir.",
+      "B": "Glukoneogenezin genel ilkeleri için merkezde yer alan ayırıcı eksen glikolizin ters yönde birebir tekrarı olmaması ayrımıdır.",
+      "C": "Glukoneogenezin genel ilkeleri için belirleyici ayrım glikolizin ters yönde birebir tekrarı olmaması.",
+      "D": "G6FD basamağının NADP+'ye bağlı olduğu, NADPH ihtiyacı arttığında NADP+ düzeyinin yükselip pentoz fosfat yolağı akışını artırdığı belirtilir.",
+      "E": "Bazı basamakların allosterik ve kovalent değişimlerle karşılıklı düzenlenmesi."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "G6FD basamağının NADP+'ye bağlı olduğu, NADPH ihtiyacı arttığında NADP+ düzeyinin yükselip pentoz fosfat yolağı akışını artırdığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi için ayırt edici değildir.",
+      "B": "Glukoneogenezin genel ilkeleri başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi için ayırt edici değildir.",
+      "C": "Glukoneogenezin genel ilkeleri başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi için ayırt edici değildir.",
+      "E": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme başlığıyla ilişkilidir; pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi için ayırt edici değildir."
+    },
+    "learning_objective": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Karbohidrat metabolizması",
+      "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "NUC-008",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_pages": [
+      42,
+      45,
+      46
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "DNA'nın erime sıcaklığı (Tm) ile ilgili aşağıdaki ifadelerden hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Tm, DNA'nın tamamen parçalandığı sıcaklıktır ve baz içeriğinden bağımsızdır.",
+      "B": "G-C çiftleri arttıkça Tm düşer.",
+      "C": "Tm, DNA parçasının yarısının çözülmüş olduğu sıcaklıktır; G-C içeriği arttıkça yükselir.",
+      "D": "Tm yalnızca RNA için kullanılır.",
+      "E": "Tm, fosfodiester bağlarının hidrolizi anlamına gelir."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Tm'nin DNA'nın yarısının çözülmüş olduğu sıcaklık olduğu ve G-C çiftlerindeki üç hidrojen bağının daha yüksek ısı gerektirmesi nedeniyle G-C içeriği arttıkça Tm'nin yükseldiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Tm baz içeriği hakkında bilgi verir.",
+      "B": "Yön ters verilmiştir.",
+      "C": "Doğru seçenek.",
+      "D": "DNA için açıkça kullanılır.",
+      "E": "Denatürasyon kovalent bağ kırılması olmadan tanımlanır."
+    },
+    "learning_objective": "DNA denatürasyonu ile baz içeriği arasındaki ilişkiyi yorumlamak.",
+    "tags": [
+      "DNA denatürasyonu ve Tm",
+      "Tm",
+      "DNA denatürasyonu",
+      "G-C içeriği"
+    ]
+  },
+  {
+    "id": "NUC-009",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_pages": [
+      50
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "DNA'nın timin kullanıp urasil kullanmamasına getirilen gerekçe aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Urasil çok büyük olduğu için çift sarmala sığmaz.",
+      "B": "Sitozinin deaminasyon ürünü urasildir; DNA'da urasil bulunması hasarı tanımayı zorlaştırır.",
+      "C": "Urasil yalnızca proteinlerde bulunur.",
+      "D": "Timin enerji taşıyıcı, urasil ise lipittir.",
+      "E": "Urasil yalnızca bitkilerde sentezlenir."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Sitozinin kendiliğinden deaminasyonla urasile dönüşebildiği, DNA'da normal baz olarak urasil bulunsaydı bu hasarın ayırt edilmesinin zorlaşacağı belirtilir.",
+    "distractor_explanations": {
+      "A": "Boyut gerekçesi verilmez.",
+      "B": "Doğru seçenek.",
+      "C": "Urasil RNA bazıdır.",
+      "D": "Bu sınıflandırma yanlıştır.",
+      "E": "Böyle bir bilgi verilmez."
+    },
+    "learning_objective": "DNA'da timin kullanılmasının hasar tanıma açısından önemini açıklamak.",
+    "tags": [
+      "Deaminasyon ve timin/urasil ayrımı",
+      "Deaminasyon",
+      "Timin",
+      "Urasil",
+      "DNA hasarı"
+    ]
+  },
+  {
+    "id": "NUC-010",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_pages": [
+      51,
+      52,
+      54,
+      58
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Aşağıdaki eşleştirmelerden hangisi verilen DNA hasarı örneklerinden biridir?",
+    "options": {
+      "A": "UV ışığı → bitişik pirimidinler arasında siklobütan dimerleri.",
+      "B": "ATP hidrolizi → peptidoglikan sentezi.",
+      "C": "Karotenoidler → DNA depürinizasyonu.",
+      "D": "Glikojen yıkımı → pirimidin dimeri.",
+      "E": "Hiyaluronan sentezi → oksidatif hasar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "UV ışığının aynı DNA ipliğindeki bitişik pirimidinler arasında siklobütan pirimidin dimerleri oluşturabildiğini açıkça belirtir; ayrıca oksidatif hasarın da önemli mutasyon kaynağı olduğu eklenir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu DNA hasarı örneği değildir.",
+      "C": "Karotenoidler pigmenttir; bu rol verilmez.",
+      "D": "Glikojen yıkımı DNA hasarı üretmez.",
+      "E": "Bu eşleştirme yoktur."
+    },
+    "learning_objective": "DNA hasarına yol açan başlıca etkenleri tanımak.",
+    "tags": [
+      "Mutajenik hasar kaynakları",
+      "DNA hasarı",
+      "UV",
+      "Pirimidin dimeri",
+      "Oksidatif hasar"
+    ]
+  },
+  {
+    "id": "NUC-017",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_pages": [
+      45
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Hipokromik etki aşağıdakilerden hangisini ifade eder?",
+    "options": {
+      "A": "Bazların istiflenmesi ve çift iplik oluşumu nedeniyle UV soğurmanın azalması.",
+      "B": "Pirimidin dimerlerinin UV soğurmayı tamamen yok etmesi.",
+      "C": "Proteinlerin 280 nm yerine 260 nm soğurması.",
+      "D": "Yalnız serbest nükleotitlerin renksiz olması.",
+      "E": "DNA kırıklarının floresan artışı."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Nükleik asitlerde baz istiflenmesi ve iplik eşleşmesi olduğunda 260 nm'deki UV soğurmanın azaldığını; bunun hipokromik etki olarak adlandırıldığını açıklar.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Hipokromik etki böyle tanımlanmaz.",
+      "C": "Bu proteinlerle ilgili başka bir soğurma penceresidir.",
+      "D": "Hipokromik etki bu değildir.",
+      "E": "Böyle bir tanım verilmez."
+    },
+    "learning_objective": "Hipokromik etki kavramını UV soğurma üzerinden açıklamak.",
+    "tags": [
+      "DNA denatürasyonu ve Tm",
+      "Hipokromik etki",
+      "UV 260 nm",
+      "Baz istiflenmesi",
+      "DNA"
+    ]
+  },
+  {
+    "id": "NUC-023",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Nükleotidlerin temel işlevleri",
+    "source_pages": [
+      1,
+      4
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Nükleotidlerin temel işlevleri için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "DNA ve RNA'nın U veya T taşımalarıyla değil, nükleotidin taşıdığı pentozla ayırt edilmesi gerektiğini özellikle vurgular.",
+      "B": "Nükleotidlerin enerji birimi, kofaktör bileşeni, ara bileşik bileşeni ve nükleik asit yapı taşı olarak birçok görev üstlendiğini belirtir.",
+      "C": "Pürin bazları adenin ve guanin; pirimidin bazları ise sitozin, timin ve urasil olarak verilir.",
+      "D": "Nükleotidlerin üç tipik bileşenden oluştuğunu belirtir: azot içeren baz, pentoz ve fosfat.",
+      "E": "Zincirdeki ardışık nükleotitlerin birinin 5'-fosfat grubu ile diğerinin 3'-hidroksil grubu arasında fosfat köprüsüyle bağlandığı anlatılır."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Nükleotidlerin enerji birimi, kofaktör bileşeni, ara bileşik bileşeni ve nükleik asit yapı taşı olarak birçok görev üstlendiğini belirtir.",
+    "distractor_explanations": {
+      "A": "Pürin, pirimidin ve pentoz yapısı başlığıyla ilişkilidir; nükleotidlerin temel işlevleri için ayırt edici değildir.",
+      "C": "Pürin, pirimidin ve pentoz yapısı başlığıyla ilişkilidir; nükleotidlerin temel işlevleri için ayırt edici değildir.",
+      "D": "Pürin, pirimidin ve pentoz yapısı başlığıyla ilişkilidir; nükleotidlerin temel işlevleri için ayırt edici değildir.",
+      "E": "Fosfodiester bağları ve yönlülük başlığıyla ilişkilidir; nükleotidlerin temel işlevleri için ayırt edici değildir."
+    },
+    "learning_objective": "Nükleotidlerin temel işlevleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Nükleotidlerin temel işlevleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "NUC-026",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Fosfodiester bağları ve yönlülük",
+    "source_pages": [
+      16,
+      23
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Fosfodiester bağları ve yönlülük açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "İki DNA zincirinin antiparalel olduğunu; hidrofilik şeker-fosfat iskeletinin dışta, bazların ise içeride istiflenmiş halde bulunduğunu açıklar.",
+      "B": "Zincirdeki ardışık nükleotitlerin birinin 5'-fosfat grubu ile diğerinin 3'-hidroksil grubu arasında fosfat köprüsüyle bağlandığı anlatılır.",
+      "C": "DNA çift sarmalının kanıtları ve yapısı için merkezde yer alan ayırıcı eksen baz bileşimi kanıtı ve geometrik model ayrımıdır.",
+      "D": "DNA ve RNA'nın U veya T taşımalarıyla değil, nükleotidin taşıdığı pentozla ayırt edilmesi gerektiğini özellikle vurgular.",
+      "E": "DNA'da baz içeriğinin türden türe değişebildiğini ama belirli bir türde A=T ve G=C oranlarının sağlandığını anlatır."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Zincirdeki ardışık nükleotitlerin birinin 5'-fosfat grubu ile diğerinin 3'-hidroksil grubu arasında fosfat köprüsüyle bağlandığı anlatılır.",
+    "distractor_explanations": {
+      "A": "DNA çift sarmalının kanıtları ve yapısı başlığıyla ilişkilidir; fosfodiester bağları ve yönlülük için ayırt edici değildir.",
+      "C": "DNA çift sarmalının kanıtları ve yapısı başlığıyla ilişkilidir; fosfodiester bağları ve yönlülük için ayırt edici değildir.",
+      "D": "Pürin, pirimidin ve pentoz yapısı başlığıyla ilişkilidir; fosfodiester bağları ve yönlülük için ayırt edici değildir.",
+      "E": "DNA çift sarmalının kanıtları ve yapısı başlığıyla ilişkilidir; fosfodiester bağları ve yönlülük için ayırt edici değildir."
+    },
+    "learning_objective": "Fosfodiester bağları ve yönlülük için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Fosfodiester bağları ve yönlülük",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "NUC-028",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Baz istiflenmesi ve UV soğurma",
+    "source_pages": [
+      24,
+      27
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Baz istiflenmesi ve UV soğurma ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Sitozinin deaminasyon ürünü urasildir; DNA'da urasil bulunması hasarı tanımayı zorlaştırır.",
+      "B": "Tüm nükleotitlerin rezonans yapıları nedeniyle yaklaşık 260 nm civarında kuvvetli UV soğurma gösterdiğini belirtir.",
+      "C": "Baz ile pentoz arasındaki N-β-glikozit bağının kırılması sonucu bazsız bölge oluşur.",
+      "D": "Sitozinin kendiliğinden deaminasyonla urasile dönüşebildiği, DNA'da normal baz olarak urasil bulunsaydı bu hasarın ayırt edilmesinin zorlaşacağı belirtilir.",
+      "E": "UV ışığı → bitişik pirimidinler arasında siklobütan dimerleri."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Tüm nükleotitlerin rezonans yapıları nedeniyle yaklaşık 260 nm civarında kuvvetli UV soğurma gösterdiğini belirtir.",
+    "distractor_explanations": {
+      "A": "Enzimatik olmayan nükleik asit hasarı başlığıyla ilişkilidir; baz istiflenmesi ve uv soğurma için ayırt edici değildir.",
+      "C": "Enzimatik olmayan nükleik asit hasarı başlığıyla ilişkilidir; baz istiflenmesi ve uv soğurma için ayırt edici değildir.",
+      "D": "Enzimatik olmayan nükleik asit hasarı başlığıyla ilişkilidir; baz istiflenmesi ve uv soğurma için ayırt edici değildir.",
+      "E": "Enzimatik olmayan nükleik asit hasarı başlığıyla ilişkilidir; baz istiflenmesi ve uv soğurma için ayırt edici değildir."
+    },
+    "learning_objective": "Baz istiflenmesi ve UV soğurma için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Baz istiflenmesi ve UV soğurma",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "NUC-030",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+    "source_pages": [
+      28,
+      35
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "DNA çift sarmalının kanıtları ve yapısı açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Zincirdeki ardışık nükleotitlerin birinin 5'-fosfat grubu ile diğerinin 3'-hidroksil grubu arasında fosfat köprüsüyle bağlandığı anlatılır.",
+      "B": "Bakteri ve arkelerde bir mRNA birden fazla polipeptidi kodlayabilir; buna polisistronik mRNA denir.",
+      "C": "İki DNA zincirinin antiparalel olduğunu; hidrofilik şeker-fosfat iskeletinin dışta, bazların ise içeride istiflenmiş halde bulunduğunu açıklar.",
+      "D": "Şematik gösterimde fosfat grubunun ℗ ile simgelendiğini, deoksiribozun belirli bir yönlenmeyle çizildiğini ve nükleotitleri bağlayan çizgilerin şeker-fosfat omurgasını temsil ettiğini belirtir.",
+      "E": "MRNA'yı DNA'daki mesajı çekirdekten sitoplazmadaki ribozoma taşıyan RNA türü olarak tanımlar."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "İki DNA zincirinin antiparalel olduğunu; hidrofilik şeker-fosfat iskeletinin dışta, bazların ise içeride istiflenmiş halde bulunduğunu açıklar.",
+    "distractor_explanations": {
+      "A": "Fosfodiester bağları ve yönlülük başlığıyla ilişkilidir; dna çift sarmalının kanıtları ve yapısı için ayırt edici değildir.",
+      "B": "MRNA ve diğer RNA tipleri başlığıyla ilişkilidir; dna çift sarmalının kanıtları ve yapısı için ayırt edici değildir.",
+      "D": "Fosfodiester bağları ve yönlülük başlığıyla ilişkilidir; dna çift sarmalının kanıtları ve yapısı için ayırt edici değildir.",
+      "E": "MRNA ve diğer RNA tipleri başlığıyla ilişkilidir; dna çift sarmalının kanıtları ve yapısı için ayırt edici değildir."
+    },
+    "learning_objective": "DNA çift sarmalının kanıtları ve yapısı için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "DNA çift sarmalının kanıtları ve yapısı",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "NUC-033",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_pages": [
+      49,
+      59
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Enzimatik olmayan nükleik asit hasarı açısından ayırt edici seçenek aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "260 nm civarında UV soğurması.",
+      "B": "Hibrit çift sarmal oluşturabilen tamamlayıcılık.",
+      "C": "G-C içeriğine bağlı Tm artışı.",
+      "D": "Sitozin deaminasyonunun urasil oluşturması.",
+      "E": "Denatürasyonda kovalent bağların korunması."
+    },
+    "correct_answer": "D",
+    "correct_explanation": "Sitozinin kendiliğinden deaminasyonla urasile dönüşebildiği, DNA'da normal baz olarak urasil bulunsaydı bu hasarın ayırt edilmesinin zorlaşacağı belirtilir.",
+    "distractor_explanations": {
+      "A": "Baz istiflenmesi ve UV soğurma başlığıyla ilişkilidir; enzimatik olmayan nükleik asit hasarı için ayırt edici değildir.",
+      "B": "MRNA ve diğer RNA tipleri başlığıyla ilişkilidir; enzimatik olmayan nükleik asit hasarı için ayırt edici değildir.",
+      "C": "DNA çift sarmalının kanıtları ve yapısı başlığıyla ilişkilidir; enzimatik olmayan nükleik asit hasarı için ayırt edici değildir.",
+      "E": "DNA çift sarmalının kanıtları ve yapısı başlığıyla ilişkilidir; enzimatik olmayan nükleik asit hasarı için ayırt edici değildir."
+    },
+    "learning_objective": "Enzimatik olmayan nükleik asit hasarı için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Enzimatik olmayan nükleik asit hasarı",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "NUC-036",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Baz istiflenmesi ve UV soğurma",
+    "source_pages": [
+      24,
+      27
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "DNA çift sarmalının kararlılığına en büyük katkıyı sağlayan etkileşim kümesi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "İstiflenmiş bazlar arasındaki hidrofobik ve van der Waals etkileşimleri.",
+      "B": "Yalnız fosfodiester bağlarının hidrolizi.",
+      "C": "Serbest yağ asitlerinin albümine bağlanması.",
+      "D": "Peptid bağlarının rezonansı.",
+      "E": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Baz halkalarının düzlemsel olarak üst üste istiflenmesiyle oluşan hidrofobik ve diğer zayıf etkileşimlerin DNA yapısal kararlılığına çok büyük katkı yaptığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu, omurga parçalanmasını anlatır; kararlılık katkısı değildir.",
+      "C": "Lipit taşınmasıyla ilgilidir.",
+      "D": "Protein omurgasıyla ilgilidir.",
+      "E": "Karbohidrat metabolizmasına aittir."
+    },
+    "learning_objective": "Baz istiflenmesinin DNA kararlılığına katkısını hidrojen bağlarından ayırmak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Baz istiflenmesi ve UV soğurma",
+      "Baz istiflenmesi",
+      "DNA kararlılığı",
+      "Hidrofobik etkileşim",
+      "Van der Waals",
+      "UV soğurma"
+    ]
+  },
+  {
+    "id": "NUC-038",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_pages": [
+      57,
+      59
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Nitröz asidin DNA üzerindeki temel kimyasal etkisi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Bazların deaminasyonunu hızlandırmak.",
+      "B": "Fosfodiester omurgayı doğrudan peptit bağlarına çevirmek.",
+      "C": "Ubikinonu plastokinona dönüştürmek.",
+      "D": "Triasilgliserolleri hidroliz etmek.",
+      "E": "ATP sentezinde proton pompalamak."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Nitröz asidin dış etkenler arasında özellikle bazların deaminasyonunu hızlandıran bir kimyasal ajan olarak verildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Nükleik asit kimyası böyle işlemez.",
+      "C": "Bu, farklı biyolojik sistemler arasında anlamsız bir dönüşümdür.",
+      "D": "Lipit yıkımıyla ilgilidir.",
+      "E": "Oksidatif fosforillenmeye aittir."
+    },
+    "learning_objective": "Nitröz asidi, dış etkenlerle artan deaminasyon hasarıyla ilişkilendirmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Enzimatik olmayan nükleik asit hasarı",
+      "Nitröz asit",
+      "Deaminasyon",
+      "DNA hasarı",
+      "Kimyasal mutajen"
+    ]
+  },
+  {
+    "id": "NUC-039",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_pages": [
+      43,
+      48
+    ],
+    "difficulty": "Zor",
+    "question_type": "süreç",
+    "question": "Tam ayrılmış iki tamamlayıcı DNA ipliği yeniden eşleşirken ilk basamak için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Kısa bir tamamlayıcı bölgenin yeniden eşleşmesiyle nükleasyon başlar.",
+      "B": "Önce tüm bazlar aynı anda ve tek adımda kusursuz kapanır.",
+      "C": "İlk adımda fosfodiester omurgası hidrolize edilir.",
+      "D": "Renatürasyonun başlaması için baz eşleşmesi gerekmez.",
+      "E": "Süreç ancak protein sentezi tamamlandıktan sonra başlayabilir."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Tam ayrılmış iki iplik yeniden birleşirken ilk aşamanın, kısa tamamlayıcı bir bölgenin eşleşerek nükleasyon çekirdeği oluşturması olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Renatürasyon iki basamaklı ilerler; tek adımlı tam kapanma olarak anlatılmaz.",
+      "C": "Omurga hidrolizi renatürasyon değil yıkımdır.",
+      "D": "Renatürasyonun özü tamamlayıcı baz eşleşmesidir.",
+      "E": "Protein sentezi bu sürecin zorunlu koşulu değildir."
+    },
+    "learning_objective": "DNA renatürasyonunda nükleasyon basamağını tamamlayıcı eşleşme mantığıyla açıklamak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+      "Renatürasyon",
+      "Nükleasyon",
+      "DNA",
+      "Hibritleşme",
+      "Tm"
+    ]
+  },
+  {
+    "id": "OXP-007",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Karotenoidler ve bilin pigmentler",
+    "source_pages": [
+      19,
+      20,
+      21
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Karotenoid pigmentlerle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Fotosentezde işlevleri yoktur; yalnızca hayvan dokularında bulunurlar.",
+      "B": "Işığı absorbe ederek klorofil a'ya aktarabilir ve klorofilleri fotooksidasyondan koruyabilirler.",
+      "C": "Mg ve fitol halkası taşımayan bilin pigmentlerin diğer adıdır.",
+      "D": "Sadece karanlık tepkimelerde görev yaparlar.",
+      "E": "Yalnızca DNA zincirleri arasında köprü kurarlar."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Karotenoidlerin ışık enerjisinin klorofil a'ya aktarılmasına katkı verdiği ve kendileri fotooksidasyona uğrayarak klorofilleri koruyabildiği anlatılır.",
+    "distractor_explanations": {
+      "A": "Karotenoidler tüm fotosentetik hücrelerde bulunur diye verilir.",
+      "B": "Doğru seçenek.",
+      "C": "Mg ve fitol halkası içermeme özelliği bilin pigmentler için belirtilir.",
+      "D": "Karanlık tepkimelere özgü olarak tanımlanmazlar.",
+      "E": "Bu ifade pigmentlerle ilgili değildir."
+    },
+    "learning_objective": "Fotosentetik pigmentlerin işlevlerini karşılaştırmak.",
+    "tags": [
+      "Fotosentezde pigmentlerin işlevi",
+      "Karotenoid",
+      "Klorofil",
+      "Fotooksidasyon",
+      "Pigment"
+    ]
+  },
+  {
+    "id": "OXP-008",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Kloroplast yapısı ve bölmeleri",
+    "source_pages": [
+      23,
+      24
+    ],
+    "difficulty": "Zor",
+    "question_type": "süreç",
+    "question": "Aşağıdaki eşleştirmelerden hangisi kloroplastta gerçekleşen olaylarla doğru verilmiştir?",
+    "options": {
+      "A": "Stroma: CO2'den karbohidrat sentezinin öncü basamakları; ışıkla oluşan ATP ve NADPH burada kullanılır.",
+      "B": "Stroma: yalnızca DNA denatürasyonu; granum: sitrik asit çevrimi.",
+      "C": "Lümen: glikoliz; stroma: laktik asit fermentasyonu.",
+      "D": "Tilakoitler: yalnızca protein sindirimi; stroma: yağ asidi beta-oksidasyonu.",
+      "E": "Kloroplast içinde hiçbir bölümleşme yoktur."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Stromanin enzimce zengin sıvı olduğu, karanlık tepkimelerin ve CO2'den CHO/nişasta sentezinin burada gerçekleştiği; ışıkla oluşan ATP ve NADPH'nin de burada kullanıldığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu olaylar kloroplast bölmeleriyle ilişkili değildir.",
+      "C": "Glikoliz ve fermentasyon kloroplast stroma/lümeni için verilmez.",
+      "D": "Bu eşleştirmeler yer almaz.",
+      "E": "Granum, tilakoit, stroma ve lümen gibi bölmeler anlatılır."
+    },
+    "learning_objective": "Kloroplast bölmeleri ile temel fotosentetik olayları eşleştirmek.",
+    "tags": [
+      "Kloroplast bölmeleri ve tepkimeler",
+      "Kloroplast",
+      "Stroma",
+      "Granum",
+      "NADPH",
+      "ATP",
+      "Fotosentez"
+    ]
+  },
+  {
+    "id": "OXP-010",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Solunum zinciri taşıyıcıları",
+    "source_pages": [
+      8
+    ],
+    "difficulty": "Zor",
+    "question_type": "sınıflandırma",
+    "question": "Oksidatif fosforillenmede geçen elektron aktarım tiplerinden biri aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Hidrür iyonu şeklinde iki elektron aktarımı.",
+      "B": "Yalnız tam karbon iskeleti aktarımı.",
+      "C": "Yalnız fosfat zinciri aktarımı.",
+      "D": "Sadece peptit bağı aktarımı.",
+      "E": "Yalnız metil grubu aktarımı."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Elektronların doğrudan, hidrojen atomu şeklinde veya iki elektron taşıyan hidrür iyonu şeklinde aktarılabildiğini açıklar.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Elektron aktarımı bu şekilde tanımlanmaz.",
+      "C": "Fosfat aktarımı değil, elektron aktarımı anlatılır.",
+      "D": "Peptit bağıyla ilişkili değildir.",
+      "E": "Metil grubu aktarımı burada konu edilmez."
+    },
+    "learning_objective": "Solunum zincirindeki elektron aktarım biçimlerini ayırt etmek.",
+    "tags": [
+      "Solunum zinciri taşıyıcıları",
+      "Elektron aktarımı",
+      "Hidrür",
+      "Solunum zinciri",
+      "Oksidatif fosforillenme"
+    ]
+  },
+  {
+    "id": "OXP-013",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Klorofil pigmentleri",
+    "source_pages": [
+      16
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Klorofil b için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Mavi-yeşil, kahverengi ve kırmızı alglerde bulunmadığı belirtilir.",
+      "B": "Yalnız fotosentetik bakterilerde bulunan tek klorofildir.",
+      "C": "Mg ve fitol halkası içermez.",
+      "D": "Çözeltide mavi-siyah değil yalnız renksiz görünür.",
+      "E": "Tüm organizmalarda zorunlu olarak bulunan tek pigmenttir."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Klorofil b'nin mavi-yeşil, kahverengi ve kırmızı alglerde bulunmadığını; klorofil a ile birlikte bitkilerde temel pigmentlerden biri olduğunu belirtir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu ifade bakteriyoklorofillere yaklaşır; klorofil b için verilmez.",
+      "C": "Mg ve fitol içermeme özelliği bilin pigmentler için belirtilir.",
+      "D": "Çözeltide yeşilimsi-siyah olarak verilir.",
+      "E": "Bu şekilde mutlak tanım yapılmaz."
+    },
+    "learning_objective": "Klorofil tipleri arasındaki dağılım farklarını ayırt etmek.",
+    "tags": [
+      "Fotosentezde pigmentlerin işlevi",
+      "Klorofil b",
+      "Algler",
+      "Pigment",
+      "Fotosentez"
+    ]
+  },
+  {
+    "id": "OXP-021",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "NADH, NADPH ve flavoproteinler",
+    "source_pages": [
+      4,
+      7
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "NADH, NADPH ve flavoproteinler değerlendirildiğinde aşağıdaki ifadelerden hangisi uygundur?",
+    "options": {
+      "A": "NAD ve flavoproteinlere ek olarak hidrofobik kinon olan ubikinon ile sitokromlar ve demir-kükürt proteinlerini zincirin diğer taşıyıcıları olarak verir.",
+      "B": "Elektronların doğrudan, hidrojen atomu şeklinde veya iki elektron taşıyan hidrür iyonu şeklinde aktarılabildiğini açıklar.",
+      "C": "Dehidrogenazların elektronları nikotinamid nükleotitlerine veya flavin nükleotitlerine verdiğini belirtir.",
+      "D": "Aerobik organizmalarda hücresel solunumun son basamağıdır.",
+      "E": "NADH'nin katabolik tepkimelerden getirdiği elektronları solunum zincirine verdiği, NADPH'nin ise genellikle anabolik tepkimelerde kullanıldığı belirtilir."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "NADH'nin katabolik tepkimelerden getirdiği elektronları solunum zincirine verdiği, NADPH'nin ise genellikle anabolik tepkimelerde kullanıldığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Solunum zinciri taşıyıcıları başlığıyla ilişkilidir; nadh, nadph ve flavoproteinler için ayırt edici değildir.",
+      "B": "Solunum zinciri taşıyıcıları başlığıyla ilişkilidir; nadh, nadph ve flavoproteinler için ayırt edici değildir.",
+      "C": "Oksidatif fosforillenmenin genel rolü başlığıyla ilişkilidir; nadh, nadph ve flavoproteinler için ayırt edici değildir.",
+      "D": "Oksidatif fosforillenmenin genel rolü başlığıyla ilişkilidir; nadh, nadph ve flavoproteinler için ayırt edici değildir."
+    },
+    "learning_objective": "NADH, NADPH ve flavoproteinler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "NADH, NADPH ve flavoproteinler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "OXP-023",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Solunum zinciri taşıyıcıları",
+    "source_pages": [
+      8,
+      10
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Solunum zinciri taşıyıcıları için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "NADH'nin katabolik tepkimelerden getirdiği elektronları solunum zincirine verdiği, NADPH'nin ise genellikle anabolik tepkimelerde kullanıldığı belirtilir.",
+      "B": "Işık enerjisiyle suyun fotolizi sonucu açığa çıkan elektronların aktarımı sırasında ATP'nin depolandığını ve NADP+'nın indirgenerek NADPH oluşturduğunu belirtir.",
+      "C": "ADP'ye inorganik fosfat eklenmesiyle ATP oluşmasının fosforilasyon olduğu, olay ışıkta gerçekleşiyorsa fotofosforilasyon dendiği belirtilir.",
+      "D": "Flavoproteinlerin kuvvetli etkileşimlerle ve bazen kovalent olarak bağlı flavin nükleotidi içerdiği belirtilir.",
+      "E": "NAD ve flavoproteinlere ek olarak hidrofobik kinon olan ubikinon ile sitokromlar ve demir-kükürt proteinlerini zincirin diğer taşıyıcıları olarak verir."
+    },
+    "correct_answer": "E",
+    "correct_explanation": "NAD ve flavoproteinlere ek olarak hidrofobik kinon olan ubikinon ile sitokromlar ve demir-kükürt proteinlerini zincirin diğer taşıyıcıları olarak verir.",
+    "distractor_explanations": {
+      "A": "NADH, NADPH ve flavoproteinler başlığıyla ilişkilidir; solunum zinciri taşıyıcıları için ayırt edici değildir.",
+      "B": "Işık tepkimeleri ve ATP/NADPH oluşumu başlığıyla ilişkilidir; solunum zinciri taşıyıcıları için ayırt edici değildir.",
+      "C": "Işık tepkimeleri ve ATP/NADPH oluşumu başlığıyla ilişkilidir; solunum zinciri taşıyıcıları için ayırt edici değildir.",
+      "D": "NADH, NADPH ve flavoproteinler başlığıyla ilişkilidir; solunum zinciri taşıyıcıları için ayırt edici değildir."
+    },
+    "learning_objective": "Solunum zinciri taşıyıcıları için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Solunum zinciri taşıyıcıları",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "OXP-025",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Fotosentezin redoks mantığı",
+    "source_pages": [
+      11,
+      14
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Fotosentetik elektron akışında CO2 indirgenmesi ile su yükseltgenmesi birlikte düşünüldüğünde aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Karbondioksit özümlemesi için gerekli enerji güneşten geliyorsa sürecin fotosentez, başka bir enerji kaynağından geliyorsa kemosentez olarak adlandırıldığını belirtir.",
+      "B": "Stromanin enzimce zengin sıvı olduğu, karanlık tepkimelerin ve CO2'den CHO/nişasta sentezinin burada gerçekleştiği; ışıkla oluşan ATP ve NADPH'nin de burada kullanıldığı belirtilir.",
+      "C": "Klorofil b'nin mavi-yeşil, kahverengi ve kırmızı alglerde bulunmadığını; klorofil a ile birlikte bitkilerde temel pigmentlerden biri olduğunu belirtir.",
+      "D": "Kloroplast yapısı ve bölmeleri için merkezde yer alan ayırıcı eksen ışık ve karanlık tepkimelerin bölmesel ayrımıdır.",
+      "E": "Klorofil pigmentleri için merkezde yer alan ayırıcı eksen klorofil a/b ve bakteriyoklorofiller ayrımıdır."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Karbondioksit özümlemesi için gerekli enerji güneşten geliyorsa sürecin fotosentez, başka bir enerji kaynağından geliyorsa kemosentez olarak adlandırıldığını belirtir.",
+    "distractor_explanations": {
+      "B": "Kloroplast yapısı ve bölmeleri başlığıyla ilişkilidir; fotosentezin redoks mantığı için ayırt edici değildir.",
+      "C": "Klorofil pigmentleri başlığıyla ilişkilidir; fotosentezin redoks mantığı için ayırt edici değildir.",
+      "D": "Kloroplast yapısı ve bölmeleri başlığıyla ilişkilidir; fotosentezin redoks mantığı için ayırt edici değildir.",
+      "E": "Klorofil pigmentleri başlığıyla ilişkilidir; fotosentezin redoks mantığı için ayırt edici değildir."
+    },
+    "learning_objective": "Fotosentezin redoks mantığı için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Fotosentezin redoks mantığı",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "OXP-027",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Klorofil pigmentleri",
+    "source_pages": [
+      15,
+      18
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Klorofil pigmentleri için aşağıdaki açıklamalardan hangisi doğrudur?",
+    "options": {
+      "A": "Klorofil b'nin mavi-yeşil, kahverengi ve kırmızı alglerde bulunmadığını; klorofil a ile birlikte bitkilerde temel pigmentlerden biri olduğunu belirtir.",
+      "B": "Fotosentezde suda bulunan hidrojen atomlarının karbondioksite taşındığını; bu nedenle CO2'nin indirgenip suyun yükseltgendiğini açıklar.",
+      "C": "Karbondioksit özümlemesi için gerekli enerji güneşten geliyorsa sürecin fotosentez, başka bir enerji kaynağından geliyorsa kemosentez olarak adlandırıldığını belirtir.",
+      "D": "Fotosentezde gerekli enerji güneşten, kemosentezde ise başka bir kimyasal enerji kaynağından sağlanır.",
+      "E": "Stromanin enzimce zengin sıvı olduğu, karanlık tepkimelerin ve CO2'den CHO/nişasta sentezinin burada gerçekleştiği; ışıkla oluşan ATP ve NADPH'nin de burada kullanıldığı belirtilir."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Klorofil b'nin mavi-yeşil, kahverengi ve kırmızı alglerde bulunmadığını; klorofil a ile birlikte bitkilerde temel pigmentlerden biri olduğunu belirtir.",
+    "distractor_explanations": {
+      "B": "Fotosentezin redoks mantığı başlığıyla ilişkilidir; klorofil pigmentleri için ayırt edici değildir.",
+      "C": "Fotosentezin redoks mantığı başlığıyla ilişkilidir; klorofil pigmentleri için ayırt edici değildir.",
+      "D": "Fotosentezin redoks mantığı başlığıyla ilişkilidir; klorofil pigmentleri için ayırt edici değildir.",
+      "E": "Kloroplast yapısı ve bölmeleri başlığıyla ilişkilidir; klorofil pigmentleri için ayırt edici değildir."
+    },
+    "learning_objective": "Klorofil pigmentleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Klorofil pigmentleri",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "OXP-030",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Karotenoidler ve bilin pigmentler",
+    "source_pages": [
+      19,
+      21
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Karotenoidler ve bilin pigmentler açısından aşağıdaki yargılardan hangisi bilgiyle uyumludur?",
+    "options": {
+      "A": "Işık enerjisiyle suyun fotolizi sonucu açığa çıkan elektronların aktarımı sırasında ATP'nin depolandığını ve NADP+'nın indirgenerek NADPH oluşturduğunu belirtir.",
+      "B": "Karotenoidlerin ışık enerjisinin klorofil a'ya aktarılmasına katkı verdiği ve kendileri fotooksidasyona uğrayarak klorofilleri koruyabildiği anlatılır.",
+      "C": "ADP'ye inorganik fosfat eklenmesiyle ATP oluşmasının fosforilasyon olduğu, olay ışıkta gerçekleşiyorsa fotofosforilasyon dendiği belirtilir.",
+      "D": "Stromanin enzimce zengin sıvı olduğu, karanlık tepkimelerin ve CO2'den CHO/nişasta sentezinin burada gerçekleştiği; ışıkla oluşan ATP ve NADPH'nin de burada kullanıldığı belirtilir.",
+      "E": "Kloroplast yapısı ve bölmeleri için merkezde yer alan ayırıcı eksen ışık ve karanlık tepkimelerin bölmesel ayrımıdır."
+    },
+    "correct_answer": "B",
+    "correct_explanation": "Karotenoidlerin ışık enerjisinin klorofil a'ya aktarılmasına katkı verdiği ve kendileri fotooksidasyona uğrayarak klorofilleri koruyabildiği anlatılır.",
+    "distractor_explanations": {
+      "A": "Işık tepkimeleri ve ATP/NADPH oluşumu başlığıyla ilişkilidir; karotenoidler ve bilin pigmentler için ayırt edici değildir.",
+      "C": "Işık tepkimeleri ve ATP/NADPH oluşumu başlığıyla ilişkilidir; karotenoidler ve bilin pigmentler için ayırt edici değildir.",
+      "D": "Kloroplast yapısı ve bölmeleri başlığıyla ilişkilidir; karotenoidler ve bilin pigmentler için ayırt edici değildir.",
+      "E": "Kloroplast yapısı ve bölmeleri başlığıyla ilişkilidir; karotenoidler ve bilin pigmentler için ayırt edici değildir."
+    },
+    "learning_objective": "Karotenoidler ve bilin pigmentler için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Karotenoidler ve bilin pigmentler",
+      "Desteklenen sonuç"
+    ]
+  },
+  {
+    "id": "OXP-032",
+    "source_pdf": "Oksidatif Fosforillenme.pdf",
+    "source_topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+    "source_subtopic": "Kloroplast yapısı ve bölmeleri",
+    "source_pages": [
+      22,
+      23
+    ],
+    "difficulty": "Zor",
+    "question_type": "destekleyici sonuç",
+    "question": "Kloroplast stroması ile tilakoit sistemi birlikte değerlendirildiğinde aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Stromanin enzimce zengin sıvı olduğu, karanlık tepkimelerin ve CO2'den CHO/nişasta sentezinin burada gerçekleştiği; ışıkla oluşan ATP ve NADPH'nin de burada kullanıldığı belirtilir.",
+      "B": "Karbondioksit özümlemesi için gerekli enerji güneşten geliyorsa sürecin fotosentez, başka bir enerji kaynağından geliyorsa kemosentez olarak adlandırıldığını belirtir.",
+      "C": "Karotenoidler içinde yalnız karbon ve hidrojen içerenlerin hidrojen karotenoidleri; oksijen içerenlerin ise ksantofil olarak adlandırıldığını belirtir.",
+      "D": "Karotenoidlerin ışık enerjisinin klorofil a'ya aktarılmasına katkı verdiği ve kendileri fotooksidasyona uğrayarak klorofilleri koruyabildiği anlatılır.",
+      "E": "Fotosentezde suda bulunan hidrojen atomlarının karbondioksite taşındığını; bu nedenle CO2'nin indirgenip suyun yükseltgendiğini açıklar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Stromanin enzimce zengin sıvı olduğu, karanlık tepkimelerin ve CO2'den CHO/nişasta sentezinin burada gerçekleştiği; ışıkla oluşan ATP ve NADPH'nin de burada kullanıldığı belirtilir.",
+    "distractor_explanations": {
+      "B": "Fotosentezin redoks mantığı başlığıyla ilişkilidir; kloroplast yapısı ve bölmeleri için ayırt edici değildir.",
+      "C": "Karotenoidler ve bilin pigmentler başlığıyla ilişkilidir; kloroplast yapısı ve bölmeleri için ayırt edici değildir.",
+      "D": "Karotenoidler ve bilin pigmentler başlığıyla ilişkilidir; kloroplast yapısı ve bölmeleri için ayırt edici değildir.",
+      "E": "Fotosentezin redoks mantığı başlığıyla ilişkilidir; kloroplast yapısı ve bölmeleri için ayırt edici değildir."
+    },
+    "learning_objective": "Kloroplast yapısı ve bölmeleri için desteklenen sonucu ayırt etmek.",
+    "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Kloroplast yapısı ve bölmeleri",
+      "Desteklenen sonuç"
+    ]
+  }
+]

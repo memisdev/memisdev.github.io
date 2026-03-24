@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biyokimya 2</title>
+    <meta
+      name="description"
+      content="Biyokimya 2 için mobil öncelikli çalışma alanı: pratik, konu bazlı tarama, yanlışlar ve kapsam."
+    >
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">İçeriğe geç</a>
+
+    <header class="site-header">
+      <div class="site-bar">
+        <a class="brand-link" href="index.html" aria-label="Biyokimya 2 ana sayfa">
+          <span class="brand-mark">Biyokimya 2</span>
+        </a>
+        <nav class="site-nav" aria-label="Ana gezinme">
+          <a href="index.html" aria-current="page">Ana Sayfa</a>
+          <a href="questions.html">Konuya Göre</a>
+          <a href="practice.html">Rastgele Pratik</a>
+          <a href="review.html">Yanlışlarım</a>
+          <a href="coverage.html">Kapsam</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell">
+      <section class="hero-panel home-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Çalışma alanı</p>
+          <h1>Biyokimya 2</h1>
+          <p class="section-copy">Soru çöz, konuları tara, eksiklerini hızla gör.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="practice.html">Pratiğe Başla</a>
+          <a class="button secondary" href="questions.html">Konulara Git</a>
+        </div>
+      </section>
+
+      <section class="stats-grid" id="home-stats" aria-label="Genel özet"></section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Çalışma yolları</p>
+            <h2>Hızlı giriş</h2>
+          </div>
+        </div>
+        <div class="quick-grid">
+          <a class="quick-card" href="questions.html">
+            <strong>Konuya Göre</strong>
+            <span>Belirli bir başlığı seçip odaklı tekrar yap.</span>
+          </a>
+          <a class="quick-card" href="practice.html">
+            <strong>Rastgele</strong>
+            <span>Hızlı tekrar için sıradaki soruya geç.</span>
+          </a>
+          <a class="quick-card" href="review.html">
+            <strong>Yanlışlarım</strong>
+            <span>Geri dönmen gereken soruları tek yerde gör.</span>
+          </a>
+          <a class="quick-card" href="coverage.html">
+            <strong>Kapsam</strong>
+            <span>Konuları ve yoğun tekrar alanlarını incele.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel-grid">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Kişisel özet</p>
+              <h2>Çalışma durumu</h2>
+            </div>
+          </div>
+          <div id="home-progress"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Kapsam özeti</p>
+              <h2>Nerelere bakacaksın</h2>
+            </div>
+            <a class="text-link" href="coverage.html">Kapsama Git</a>
+          </div>
+          <div id="home-coverage" class="stack-list"></div>
+        </article>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Hızlı gezinme">
+      <a href="index.html" aria-current="page">Ana</a>
+      <a href="questions.html">Konu</a>
+      <a href="practice.html">Pratik</a>
+      <a href="review.html">Yanlış</a>
+      <a href="coverage.html">Kapsam</a>
+    </nav>
+
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>

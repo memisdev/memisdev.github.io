@@ -1,0 +1,20 @@
+{
+  "name": "biyokimya-vize",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AHBVU Biyokimya 2 PDF-temelli soru bankasi ve GitHub Pages statik sitesi",
+  "scripts": {
+    "extract": "node scripts/extract-pdfs.mjs",
+    "build:analysis": "node scripts/build-analysis.mjs",
+    "build:questions": "node scripts/build-questions.mjs",
+    "review:merge": "node scripts/review-external-merge.mjs",
+    "build:site-data": "node scripts/build-site-data.mjs",
+    "build": "node scripts/build-all.mjs",
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "pdf-parse": "^2.4.5",
+    "tesseract.js": "^7.0.0"
+  }
+}

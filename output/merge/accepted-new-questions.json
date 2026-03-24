@@ -1,0 +1,852 @@
+[
+  {
+    "id": "CHO-058",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_pages": [
+      67,
+      68
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Agarın elektroforez jellerinde özellikle tercih edilen bileşeni aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Agaroz.",
+      "B": "Peptidoglikan.",
+      "C": "Hiyaluronan.",
+      "D": "Glikojen.",
+      "E": "Trehaloz."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Agarozun, agar karışımının çok az yüklü ve güçlü jel oluşturan bileşeni olduğu; bu nedenle elektroforez ve kültür ortamlarında tercih edildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bakteri hücre duvarı polimeridir; agarın jel bileşeni değildir.",
+      "C": "Bir glikozaminoglikandır; agar kökenli jel oluşturucu olarak verilmez.",
+      "D": "Depo polisakkaritidir; elektroforez jeli bileşeni değildir.",
+      "E": "Bir disakkarittir; agarın yapısal jel bileşeni değildir."
+    },
+    "learning_objective": "Agarozu, heteropolisakkaritler içinde analitik kullanım açısından ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Peptidoglikan ve heteropolisakkaritler",
+      "Agaroz",
+      "Agar",
+      "Elektroforez",
+      "Heteropolisakkarit"
+    ]
+  },
+  {
+    "id": "CHO-059",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Glikozaminoglikanlar",
+    "source_pages": [
+      76,
+      81
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Çok yüksek negatif yükü ve antikoagülan kullanımı ile öne çıkan glikozaminoglikan aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Hiyaluronan.",
+      "B": "Keratan sülfat.",
+      "C": "Heparin.",
+      "D": "Peptidoglikan.",
+      "E": "Selüloz."
+    },
+    "correct_answer": "C",
+    "correct_explanation": "Heparinin yoğun sülfat ve karboksilat içeriği nedeniyle çok yüksek negatif yük taşıdığı ve antikoagülan olarak kullanıldığı vurgulanır.",
+    "distractor_explanations": {
+      "A": "Hiyaluronan önemli bir GAG'dır ancak antikoagülan örneği olarak verilmez.",
+      "B": "Bir GAG'dır fakat bu ayırt edici kullanım heparine aittir.",
+      "C": "Doğru seçenek.",
+      "D": "Bakteri hücre duvarı heteropolimeridir; GAG değildir.",
+      "E": "Yapısal homopolisakkarittir; GAG değildir."
+    },
+    "learning_objective": "Heparini, glikozaminoglikanlar içinde yük ve biyolojik kullanım açısından tanımak.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Glikozaminoglikanlar",
+      "Heparin",
+      "Glikozaminoglikan",
+      "Antikoagülan",
+      "Negatif yük"
+    ]
+  },
+  {
+    "id": "CHO-060",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_pages": [
+      66,
+      68
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Gram-negatif bakterilerin lipopolisakkaritlerinde endotoksik etkinin temel belirleyicisi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Lipid A.",
+      "B": "N-asetilmuramik asit.",
+      "C": "Trehaloz.",
+      "D": "Hiyaluronan.",
+      "E": "Keratin."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Bazı bakterilerin lipopolisakkaritlerinde endotoksik etkinin lipid kısmı ile ilişkilendirildiği ve bu kısmın lipid A olarak anıldığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Peptidoglikanın yapı taşıdır; endotoksik LPS kısmı değildir.",
+      "C": "Disakkarittir; LPS endotoksin bileşeni değildir.",
+      "D": "Glikozaminoglikandır; Gram-negatif endotoksin bileşeni değildir.",
+      "E": "Protein yapılıdır; bakteriyel LPS ile ilişkili değildir."
+    },
+    "learning_objective": "Gram-negatif lipopolisakkaritlerde endotoksik kısmı tanımlamak.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Peptidoglikan ve heteropolisakkaritler",
+      "Lipid A",
+      "Lipopolisakkarit",
+      "Endotoksin",
+      "Gram-negatif bakteri"
+    ]
+  },
+  {
+    "id": "CHO-061",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Şeker kodu ve lektinler",
+    "source_pages": [
+      104,
+      110
+    ],
+    "difficulty": "Zor",
+    "question_type": "uygulama",
+    "question": "Lökositlerin damar endoteline tutunup dokuya geçişini kolaylaştıran plazma zar lektin ailesi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Selektinler.",
+      "B": "Akuaporinler.",
+      "C": "Ubikinonlar.",
+      "D": "Glikojen sentazlar.",
+      "E": "Sitozolik şaperonlar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "İnsan selektinlerinin hücre-hücre tanınması ve adezyon süreçlerine aracılık eden plazma zar lektinleri olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Su kanallarıdır; lektin ailesi değildir.",
+      "C": "Elektron taşıyıcı kinonlardır; adezyon lektini değildir.",
+      "D": "Metabolik enzimlerdir; hücre adezyon lektini değildir.",
+      "E": "Protein katlanmasıyla ilişkilidir; lektin ailesi değildir."
+    },
+    "learning_objective": "Selektinleri, lektin ailesi içinde hücre adezyonu bağlamında tanımak.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Şeker kodu ve lektinler",
+      "Selektin",
+      "Lektin",
+      "Şeker kodu",
+      "Hücre adezyonu",
+      "Lökosit göçü"
+    ]
+  },
+  {
+    "id": "CHO-062",
+    "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "source_topic": "Karbohidratlar ve glikobiyoloji",
+    "source_subtopic": "Proteoglikanlar, glikoproteinler ve glikolipitler",
+    "source_pages": [
+      96,
+      100
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "N-bağlı ve O-bağlı glikozilasyon karşılaştırıldığında aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "N-bağlı glikozilasyonda bağ Asn'nin amid azotuna, O-bağlı glikozilasyonda ise çoğunlukla Ser/Thr hidroksiline kurulur.",
+      "B": "Her iki glikozilasyon tipi de yalnız sisteinin sülfür atomu üzerinden kurulur.",
+      "C": "O-bağlı glikozilasyon yalnız nükleik asitlerde görülür.",
+      "D": "N-bağlı glikozilasyon fosfatidik asit türevlerinde gerçekleşir.",
+      "E": "İki tip arasında bağlanan atom merkezi bakımından hiçbir fark yoktur."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Karbohidratların glikoproteinlerde anomerik karbon üzerinden ya serin/treonin hidroksiline O-bağlı, ya da asparajinin amid azotuna N-bağlı bağlanabildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu bağlanma biçimi temel glikoprotein sınıflandırması için verilmez.",
+      "C": "O-bağlı glikozilasyon glikoprotein bağlamındadır; nükleik asitlerle sınırlı değildir.",
+      "D": "Fosfatidik asit gliserofosfolipitlerle ilişkilidir.",
+      "E": "N-bağlı ve O-bağlı glikozilasyonu ayıran temel fark tam da bağlanan atom merkezidir."
+    },
+    "learning_objective": "Glikoproteinlerde N-bağlı ve O-bağlı glikozilasyonun bağlanma kimyasını ayırt etmek.",
+    "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Proteoglikanlar, glikoproteinler ve glikolipitler",
+      "Glikoprotein",
+      "N-bağlı glikozilasyon",
+      "O-bağlı glikozilasyon",
+      "Asparajin",
+      "Serin/Treonin"
+    ]
+  },
+  {
+    "id": "LIP-032",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_pages": [
+      23,
+      24
+    ],
+    "difficulty": "Orta",
+    "question_type": "süreç",
+    "question": "Adipositlerde depolanmış triaçilgliserollerden serbest yağ asidi mobilizasyonu doğrudan hangi enzimatik işlemle başlar?",
+    "options": {
+      "A": "Lipaz aracılı ester bağlarının hidrolizi.",
+      "B": "Fosfodiester bağının spontan kopması.",
+      "C": "Ribozun oksidatif deaminasyonu.",
+      "D": "Steroid çekirdeğinin aromatizasyonu.",
+      "E": "Fosfatidik asidin karboksilasyonu."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Adipositlerde depo triaçilgliserollerin lipazlar tarafından hidrolize edildiği ve böylece serbest yağ asitlerinin açığa çıktığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Triaçilgliserollerin mobilizasyonu böyle açıklanmaz.",
+      "C": "Nükleik asit kimyasıyla ilişkilidir; yağ mobilizasyonu değildir.",
+      "D": "Steroid biyosenteziyle ilgilidir.",
+      "E": "Bu işlem depo triaçilgliserol yıkımını açıklamaz."
+    },
+    "learning_objective": "Depo triaçilgliserollerinin lipaz aracılı mobilizasyonunu tanımlamak.",
+    "tags": [
+      "Lipitler",
+      "Triaçilgliseroller ve depolama mantığı",
+      "Triaçilgliserol",
+      "Lipaz",
+      "Adiposit",
+      "Serbest yağ asidi",
+      "Mobilizasyon"
+    ]
+  },
+  {
+    "id": "LIP-033",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      57,
+      60
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Eikosanoidlerin sinyal iletim biçimi için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Genellikle sentezlendikleri dokunun yakın çevresindeki hücrelere parakrin etki gösterirler.",
+      "B": "Yalnız çekirdek DNA'sına kovalent bağlanarak etki ederler.",
+      "C": "Sadece mitokondri iç zarında elektron taşırlar.",
+      "D": "Uzun süreli depo yakıtı olarak yağ dokusunda birikirler.",
+      "E": "Yalnız ribozomların yapısal bileşenidirler."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Eikosanoidlerin sentezlendikleri dokunun çevresinde kısa menzilli, çoğu kez parakrin sinyaller olarak etkili olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu zorunlu bir etki mekanizması değildir.",
+      "C": "Bu rol übikinon gibi taşıyıcılara aittir.",
+      "D": "Eikosanoidler depo lipiti olarak anlatılmaz.",
+      "E": "Nükleik asit ve ribozom yapısıyla ilgili değildir."
+    },
+    "learning_objective": "Eikosanoidlerin temel sinyal iletim mantığını parakrin etki üzerinden açıklamak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Eikosanoid",
+      "Parakrin",
+      "Sinyal lipidi",
+      "Lipit türevli sinyal"
+    ]
+  },
+  {
+    "id": "LIP-034",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      59,
+      60
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Ateş, ağrı ve inflamasyon ile ilişkilendirilip COX baskılanması nedeniyle NSAİİ'lerle sentezi azalan eikosanoid grubu aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Prostaglandinler.",
+      "B": "Sfingomiyelinler.",
+      "C": "Triasilgliseroller.",
+      "D": "Galaktolipitler.",
+      "E": "Steroller."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Ağrı, ateş ve inflamasyonla ilişkili eikosanoidlerin prostaglandinler olduğu ve NSAİİ'lerin COX üzerinden bu sentezi azalttığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Zar lipididir; COX-bağımlı eikosanoid sınıfı değildir.",
+      "C": "Depo lipitidir; eikosanoid değildir.",
+      "D": "Bitki/zar lipidi sınıfındadır; ağrı-aracılı eikosanoid değildir.",
+      "E": "Steroid çekirdekli lipitlerdir; prostaglandin sınıfı değildir."
+    },
+    "learning_objective": "Prostaglandinleri, COX ve NSAİİ ilişkisi üzerinden diğer lipit sınıflarından ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Prostaglandin",
+      "NSAİİ",
+      "COX",
+      "İnflamasyon",
+      "Eikosanoid"
+    ]
+  },
+  {
+    "id": "LIP-035",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      60,
+      61
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Trombositler tarafından sentezlenip pıhtılaşma eğilimiyle ilişkilendirilen eikosanoid aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Tromboksan.",
+      "B": "Ubikinon.",
+      "C": "Kolesterol.",
+      "D": "Hiyaluronan.",
+      "E": "Trehaloz."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Tromboksanların eikosanoidler içinde trombositlerle ve pıhtılaşma süreciyle ilişkilendirildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Elektron taşıyıcı kinondur; eikosanoid değildir.",
+      "C": "Steroldür; trombosit eikosanoidi değildir.",
+      "D": "Glikozaminoglikandır.",
+      "E": "Disakkarittir."
+    },
+    "learning_objective": "Tromboksanı, eikosanoidler içinde hemostazla ilişkili özgül ürün olarak tanımak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Tromboksan",
+      "Eikosanoid",
+      "Trombosit",
+      "Pıhtılaşma"
+    ]
+  },
+  {
+    "id": "LIP-036",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      60,
+      61
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Astım veya anafilaksi ile ilişkilendirilip NSAİİ'lerin doğrudan hedefi olmayan eikosanoid sınıfı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Lökotrienler.",
+      "B": "Prostaglandinler.",
+      "C": "Steroller.",
+      "D": "Galaktolipitler.",
+      "E": "Mumlar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Lökotrienlerin bronkokonstriksiyon ve anafilaktik yanıtlarla ilişkilendirildiği; NSAİİ etkisinin prostaglandin/tromboksan yönüne odaklandığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "NSAİİ-COX hattında daha doğrudan ilişkilidir.",
+      "C": "Steroid çekirdekli lipitlerdir; eikosanoid değildir.",
+      "D": "Zar lipitidir; eikosanoid değildir.",
+      "E": "Depo/koruyucu lipit sınıfıdır; eikosanoid değildir."
+    },
+    "learning_objective": "Lökotrienleri, diğer eikosanoid sınıflarından klinik sonuç ve enzim hedefi bakımından ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lökotrien",
+      "Eikosanoid",
+      "Astım",
+      "Anafilaksi",
+      "NSAİİ"
+    ]
+  },
+  {
+    "id": "LIP-037",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      62,
+      63
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Deride UV etkisiyle kolekalsiferol oluşumuna giden yolakta doğrudan öncül olan sterol aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "7-dehidrokolesterol.",
+      "B": "Sfingozin.",
+      "C": "Asetoasetat.",
+      "D": "Hiyaluronan.",
+      "E": "Fosfatidik asit."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Vitamin D3'ün, deride 7-dehidrokolesterol üzerinden UV ile başlatılan fotokimyasal süreç sonucu oluştuğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Sfingolipit omurgasıdır; D3 öncülü sterol değildir.",
+      "C": "Ketocisimdir; vitamin D öncülü değildir.",
+      "D": "Glikozaminoglikandır.",
+      "E": "Gliserofosfolipit öncülüdür; D3 sterol öncülü değildir."
+    },
+    "learning_objective": "Vitamin D3 sentezinde 7-dehidrokolesterolün öncül rolünü tanımak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Vitamin D3",
+      "7-dehidrokolesterol",
+      "Kolekalsiferol",
+      "UV",
+      "Sterol"
+    ]
+  },
+  {
+    "id": "LIP-038",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      65,
+      66
+    ],
+    "difficulty": "Zor",
+    "question_type": "süreç",
+    "question": "Rodopsin aracılı görme başlangıcında ışıkla tetiklenen temel izomerleşme aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "11-cis retinalin all-trans retinale dönüşmesi.",
+      "B": "Kolesterolün safra asidine oksidasyonu.",
+      "C": "Asetil-KoA'nın malonil-KoA'ya karboksillenmesi.",
+      "D": "Gliserolün üç yağ asidiyle esterleşmesi.",
+      "E": "Ubikinonun plastokinona dönüşmesi."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Görme pigmenti rodopsinde ışıkla 11-cis retinalin all-trans retinale izomerleştiği ve bunun sinyalin başlangıcını oluşturduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Sterol metabolizmasıyla ilişkilidir; görme kromoforu değildir.",
+      "C": "Yağ asidi sentez basamağıdır.",
+      "D": "Depo lipiti sentezidir.",
+      "E": "Farklı kinon sistemleridir; rodopsin kromoforu değildir."
+    },
+    "learning_objective": "Retinal izomerleşmesini görme pigmentlerinin işlevsel başlangıç olayı olarak açıklamak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Retinal",
+      "11-cis",
+      "All-trans",
+      "Rodopsin",
+      "Görme pigmenti"
+    ]
+  },
+  {
+    "id": "LIP-039",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      67,
+      68
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Protrombin oluşumu ve pıhtılaşma ile ilişkilendirilen lipit türevli vitamin aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Vitamin K.",
+      "B": "Vitamin C.",
+      "C": "Biotin.",
+      "D": "Folat.",
+      "E": "Niasin."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Vitamin K'nın protrombin oluşumunda ve dolayısıyla pıhtılaşma süreçlerinde önemli olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu bağlamda protrombinle ilişkilendirilmez.",
+      "C": "Karboksilasyon kofaktörü olarak bilinse de burada doğru vitamin değildir.",
+      "D": "Tek-karbon metabolizmasıyla ilişkilidir.",
+      "E": "NAD/NADP öncülüdür; pıhtılaşma vitamini değildir."
+    },
+    "learning_objective": "Vitamin K'yı, lipit türevli vitaminler içinde pıhtılaşma ile ilişkilendirmek.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Vitamin K",
+      "Protrombin",
+      "Pıhtılaşma",
+      "Lipit türevli vitamin"
+    ]
+  },
+  {
+    "id": "LIP-040",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_pages": [
+      24
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Omurgalılarda serbest yağ asitlerinin kanda baskın taşıyıcısı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Albümin.",
+      "B": "Hemoglobin.",
+      "C": "Aktin.",
+      "D": "Pepsin.",
+      "E": "Katalaz."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Serbest yağ asitlerinin omurgalılarda kanda albümine kovalent olmayan biçimde bağlanarak taşındığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Başlıca oksijen taşıyıcısıdır; yağ asidi taşıyıcısı değildir.",
+      "C": "Yapısal proteindir.",
+      "D": "Sindirim enzimidir.",
+      "E": "Antioksidan enzimdir."
+    },
+    "learning_objective": "Serbest yağ asitlerinin dolaşımdaki temel taşıyıcısını tanımak.",
+    "tags": [
+      "Lipitler",
+      "Triaçilgliseroller ve depolama mantığı",
+      "Albümin",
+      "Serbest yağ asidi",
+      "Taşıma",
+      "Dolaşım",
+      "Triaçilgliserol mobilizasyonu"
+    ]
+  },
+  {
+    "id": "LIP-041",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      49,
+      50
+    ],
+    "difficulty": "Orta",
+    "question_type": "neden-sonuç",
+    "question": "Safra asitlerinin bağırsaktaki temel biyokimyasal etkisi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Yağları deterjan benzeri biçimde çözündürerek lipaz erişimini kolaylaştırmak.",
+      "B": "Glukozu glikojene dönüştürmek.",
+      "C": "Nükleik asitlerin Tm değerini yükseltmek.",
+      "D": "Elektron taşıma zincirinde proton pompalamak.",
+      "E": "Peptid bağlarını hidroliz etmek."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Safra asitlerinin bağırsakta deterjan etkisi göstererek yağların yüzeyini erişilebilir kıldığı ve lipaz etkisini kolaylaştırdığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Karbohidrat metabolizmasıyla ilişkilidir.",
+      "C": "Nükleik asit denatürasyon parametresidir; safra asidi etkisi değildir.",
+      "D": "Mitokondriyel süreçtir.",
+      "E": "Proteazların görevidir; safra asitlerinin değil."
+    },
+    "learning_objective": "Safra asitlerinin yağ sindirimine katkısını deterjan etkisi üzerinden açıklamak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Safra asidi",
+      "Deterjan etkisi",
+      "Lipaz",
+      "Yağ sindirimi"
+    ]
+  },
+  {
+    "id": "LIP-042",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_pages": [
+      69,
+      73
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "A, D, E, K vitaminleri ile birçok doğal pigment için tekrar eden yapısal temel aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "İzopren birimleri.",
+      "B": "Peptit bağları.",
+      "C": "Riboz halkaları.",
+      "D": "Pirüvat dimerleri.",
+      "E": "Pürin bazları."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Birçok doğal pigmentin ve A, D, E, K vitaminlerinin izopren birimlerinin kondenzasyonundan türeyen izoprenoid yapılara dayandığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Protein omurgasıyla ilişkilidir.",
+      "C": "Nükleotit/nükleik asit bileşenidir.",
+      "D": "Bu şekilde tanımlanmaz.",
+      "E": "Nükleik asit bazlarıdır; izoprenoid temel oluşturmaz."
+    },
+    "learning_objective": "İzopren birimlerini, lipit türevli vitamin ve pigmentlerin ortak yapısal temeli olarak tanımak.",
+    "tags": [
+      "Lipitler",
+      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "İzopren",
+      "İzoprenoid",
+      "Vitamin A",
+      "Vitamin D",
+      "Vitamin E",
+      "Vitamin K",
+      "Pigment"
+    ]
+  },
+  {
+    "id": "NUC-034",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Pürin, pirimidin ve pentoz yapısı",
+    "source_pages": [
+      5,
+      8
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Fosfat grubu içermeyen baz + pentoz bileşiği aşağıdakilerden hangisiyle adlandırılır?",
+    "options": {
+      "A": "Nükleozid.",
+      "B": "Nükleotid.",
+      "C": "Polipeptid.",
+      "D": "Triasilgliserol.",
+      "E": "Disakkarit."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Fosfat içermeyen, yalnız baz ve pentozdan oluşan yapının nükleozid olarak adlandırıldığı belirtilir; fosfat eklendiğinde nükleotid olur.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Fosfat içeren formu anlatır.",
+      "C": "Amino asit polimeridir.",
+      "D": "Depo lipitidir.",
+      "E": "Karbohidrat dimeridir."
+    },
+    "learning_objective": "Nükleozid ile nükleotid ayrımını fosfat varlığı üzerinden yapmak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Pürin, pirimidin ve pentoz yapısı",
+      "Nükleozid",
+      "Nükleotid",
+      "Pentoz",
+      "Azotlu baz",
+      "Fosfat"
+    ]
+  },
+  {
+    "id": "NUC-035",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Fosfodiester bağları ve yönlülük",
+    "source_pages": [
+      16,
+      23
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Nükleik asit omurgalarının fizyolojik pH'ya yakın koşullarda genel yük özelliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Negatiftir; başlıca fosfat grupları nedeniyle anyoniktir.",
+      "B": "Tamamen nötrdür; iyonlaşabilir grup içermez.",
+      "C": "Kalıcı pozitif yüklüdür; lizin bakımından zengindir.",
+      "D": "Yük yalnız bazlarda bulunduğu için rastgele değişir.",
+      "E": "Zincir uzunluğundan bağımsız olarak mutlaka yüksüzdür."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Nükleik asit omurgalarının fosfat grupları nedeniyle fizyolojik pH civarında negatif yüklü olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Fosfat grupları iyonlaşabildiği için omurga nötr değildir.",
+      "C": "Nükleik asit omurgası amino asitlerden oluşmaz.",
+      "D": "Temel yük özelliğini fosfat omurga belirler.",
+      "E": "Yüksüz yapı anlatımı yanlıştır."
+    },
+    "learning_objective": "Nükleik asit omurgasının negatif yükünü fosfat kimyasıyla ilişkilendirmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Fosfodiester bağları ve yönlülük",
+      "Fosfat",
+      "Negatif yük",
+      "Omurga",
+      "Fosfodiester",
+      "Nükleik asit"
+    ]
+  },
+  {
+    "id": "NUC-036",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Baz istiflenmesi ve UV soğurma",
+    "source_pages": [
+      24,
+      27
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "DNA çift sarmalının kararlılığına en büyük katkıyı sağlayan etkileşim kümesi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "İstiflenmiş bazlar arasındaki hidrofobik ve van der Waals etkileşimleri.",
+      "B": "Yalnız fosfodiester bağlarının hidrolizi.",
+      "C": "Serbest yağ asitlerinin albümine bağlanması.",
+      "D": "Peptid bağlarının rezonansı.",
+      "E": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Baz halkalarının düzlemsel olarak üst üste istiflenmesiyle oluşan hidrofobik ve diğer zayıf etkileşimlerin DNA yapısal kararlılığına çok büyük katkı yaptığı belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu, omurga parçalanmasını anlatır; kararlılık katkısı değildir.",
+      "C": "Lipit taşınmasıyla ilgilidir.",
+      "D": "Protein omurgasıyla ilgilidir.",
+      "E": "Karbohidrat metabolizmasına aittir."
+    },
+    "learning_objective": "Baz istiflenmesinin DNA kararlılığına katkısını hidrojen bağlarından ayırmak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Baz istiflenmesi ve UV soğurma",
+      "Baz istiflenmesi",
+      "DNA kararlılığı",
+      "Hidrofobik etkileşim",
+      "Van der Waals",
+      "UV soğurma"
+    ]
+  },
+  {
+    "id": "NUC-037",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_pages": [
+      52,
+      56
+    ],
+    "difficulty": "Orta",
+    "question_type": "sınıflandırma",
+    "question": "İyonlaştırıcı radyasyonun DNA üzerinde öne çıkan hasar sonucu aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "İplik kırıkları ve ilişkili radikal hasarı.",
+      "B": "Trehaloz oluşumu.",
+      "C": "Pirüvatın laktata indirgenmesi.",
+      "D": "Glikojen dallanmasının artması.",
+      "E": "Fosfolipit baş grubunun galaktoza dönüşmesi."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "İyonlaştırıcı ışınların DNA'da serbest radikal oluşumu ve buna bağlı iplik kırıkları gibi hasarlara yol açabildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Karbohidrat kimyasıyla ilgilidir.",
+      "C": "Fermentasyon sürecidir.",
+      "D": "Polisakkarit metabolizmasıyla ilgilidir.",
+      "E": "Zar lipit sınıflandırmasıyla ilgilidir."
+    },
+    "learning_objective": "İyonlaştırıcı radyasyonu, DNA hasarı tipleri içinde iplik kırığı ile ilişkilendirmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Enzimatik olmayan nükleik asit hasarı",
+      "İyonlaştırıcı radyasyon",
+      "DNA hasarı",
+      "İplik kırığı",
+      "Serbest radikal"
+    ]
+  },
+  {
+    "id": "NUC-038",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_pages": [
+      57,
+      59
+    ],
+    "difficulty": "Zor",
+    "question_type": "neden-sonuç",
+    "question": "Nitröz asidin DNA üzerindeki temel kimyasal etkisi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Bazların deaminasyonunu hızlandırmak.",
+      "B": "Fosfodiester omurgayı doğrudan peptit bağlarına çevirmek.",
+      "C": "Ubikinonu plastokinona dönüştürmek.",
+      "D": "Triasilgliserolleri hidroliz etmek.",
+      "E": "ATP sentezinde proton pompalamak."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Nitröz asidin dış etkenler arasında özellikle bazların deaminasyonunu hızlandıran bir kimyasal ajan olarak verildiği belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Nükleik asit kimyası böyle işlemez.",
+      "C": "Bu, farklı biyolojik sistemler arasında anlamsız bir dönüşümdür.",
+      "D": "Lipit yıkımıyla ilgilidir.",
+      "E": "Oksidatif fosforillenmeye aittir."
+    },
+    "learning_objective": "Nitröz asidi, dış etkenlerle artan deaminasyon hasarıyla ilişkilendirmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Enzimatik olmayan nükleik asit hasarı",
+      "Nitröz asit",
+      "Deaminasyon",
+      "DNA hasarı",
+      "Kimyasal mutajen"
+    ]
+  },
+  {
+    "id": "NUC-039",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_pages": [
+      43,
+      48
+    ],
+    "difficulty": "Zor",
+    "question_type": "süreç",
+    "question": "Tam ayrılmış iki tamamlayıcı DNA ipliği yeniden eşleşirken ilk basamak için aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": {
+      "A": "Kısa bir tamamlayıcı bölgenin yeniden eşleşmesiyle nükleasyon başlar.",
+      "B": "Önce tüm bazlar aynı anda ve tek adımda kusursuz kapanır.",
+      "C": "İlk adımda fosfodiester omurgası hidrolize edilir.",
+      "D": "Renatürasyonun başlaması için baz eşleşmesi gerekmez.",
+      "E": "Süreç ancak protein sentezi tamamlandıktan sonra başlayabilir."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Tam ayrılmış iki iplik yeniden birleşirken ilk aşamanın, kısa tamamlayıcı bir bölgenin eşleşerek nükleasyon çekirdeği oluşturması olduğu belirtilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Renatürasyon iki basamaklı ilerler; tek adımlı tam kapanma olarak anlatılmaz.",
+      "C": "Omurga hidrolizi renatürasyon değil yıkımdır.",
+      "D": "Renatürasyonun özü tamamlayıcı baz eşleşmesidir.",
+      "E": "Protein sentezi bu sürecin zorunlu koşulu değildir."
+    },
+    "learning_objective": "DNA renatürasyonunda nükleasyon basamağını tamamlayıcı eşleşme mantığıyla açıklamak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+      "Renatürasyon",
+      "Nükleasyon",
+      "DNA",
+      "Hibritleşme",
+      "Tm"
+    ]
+  }
+]

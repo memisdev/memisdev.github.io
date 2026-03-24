@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-03-24T14:21:01.928Z",
+  "total_published_questions": 265,
+  "editorial_only_count": 0,
+  "stem_rewritten_count": 118,
+  "options_rebalanced_count": 118,
+  "format_clue_removed_count": 118,
+  "explanations_strengthened_count": 265,
+  "residual_legacy_option_balance_flags": 25,
+  "notes": [
+    "118 source-backed curated supplemental soru mevcut yayınlanan roster korunarak yeniden yazıldı.",
+    "Açıklama sanitizasyonu tüm yayınlanan bankaya uygulandı; leading discourse marker ve banned meta dil temizlendi.",
+    "Residual option-balance uyarıları yalnız legacy ham soru katmanında kaldı."
+  ]
+}

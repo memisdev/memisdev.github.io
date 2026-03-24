@@ -1,0 +1,22 @@
+# Editor and OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+
+# Node artifacts
+node_modules/
+npm-debug.log*
+
+# Generated intermediates
+output/raw/
+
+# Local OCR assets
+*.traineddata
+
+# Ad hoc screenshots
+Screenshot_*.png

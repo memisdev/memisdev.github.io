@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yanlışlarım</title>
+    <meta
+      name="description"
+      content="Biyokimya 2 çalışma alanında tekrar etmen gereken soruları tek yerde gör."
+    >
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="review" data-layout="question-flow">
+    <a class="skip-link" href="#main-content">İçeriğe geç</a>
+
+    <header class="site-header">
+      <div class="site-bar">
+        <a class="brand-link" href="index.html" aria-label="Biyokimya 2 ana sayfa">
+          <span class="brand-mark">Biyokimya 2</span>
+        </a>
+        <nav class="site-nav" aria-label="Ana gezinme">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="questions.html">Konuya Göre</a>
+          <a href="practice.html">Rastgele Pratik</a>
+          <a href="review.html" aria-current="page">Yanlışlarım</a>
+          <a href="coverage.html">Kapsam</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell practice-shell">
+      <section class="practice-header" aria-label="Yanlışlarım üst alanı">
+        <div class="practice-heading">
+          <p class="eyebrow">Tekrar</p>
+          <h1>Yanlışlarım</h1>
+          <p class="practice-active-filter" id="review-active-filter">Yanlış havuzu</p>
+        </div>
+
+        <div class="practice-header-actions">
+          <div class="practice-chip-row">
+            <span class="practice-chip" id="review-count">Hazırlanıyor</span>
+          </div>
+          <div class="practice-top-actions">
+            <button
+              class="button secondary mobile-sheet-toggle"
+              id="review-tools-toggle"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="review-tools-sheet"
+              aria-expanded="false"
+            >
+              Araçlar
+            </button>
+            <button class="button ghost" id="clear-review-desktop" type="button">Listeyi Temizle</button>
+            <button class="button primary desktop-only-action" id="next-review-question-desktop" type="button">
+              Sonraki Soru
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="practice-filters-panel review-tools-panel"
+        id="review-tools-sheet"
+        aria-label="Yanlışlarım araçları"
+      >
+        <div class="practice-sheet-head">
+          <div>
+            <p class="eyebrow">Araçlar</p>
+            <h2>Yanlış havuzu</h2>
+          </div>
+          <button class="button ghost practice-sheet-close" id="review-tools-close" type="button">
+            Kapat
+          </button>
+        </div>
+
+        <div class="review-tools-body">
+          <div class="inline-stat practice-sheet-count" id="review-sheet-count">Hazırlanıyor</div>
+          <p class="question-flow-tools-note">
+            Doğru çözdüğün soru bu listeden çıkar, yanlış kaldığında havuzda kalır.
+          </p>
+        </div>
+
+        <div class="practice-sheet-actions review-sheet-actions">
+          <button class="button ghost" id="clear-review" type="button">Listeyi Temizle</button>
+        </div>
+
+        <nav class="practice-sheet-links" aria-label="Diğer çalışma alanları">
+          <a class="practice-sheet-link" href="index.html">Ana Sayfa</a>
+          <a class="practice-sheet-link" href="questions.html">Konuya Göre</a>
+          <a class="practice-sheet-link" href="practice.html">Rastgele Pratik</a>
+          <a class="practice-sheet-link" href="coverage.html">Kapsam</a>
+        </nav>
+      </section>
+
+      <section id="review-question" class="question-stack practice-question-stack"></section>
+    </main>
+
+    <button class="practice-overlay" id="review-overlay" type="button" aria-label="Açık paneli kapat"></button>
+
+    <nav class="practice-dock" aria-label="Tekrar aksiyonları">
+      <button
+        class="button secondary"
+        id="review-tools-dock-toggle"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="review-tools-sheet"
+        aria-expanded="false"
+      >
+        Araçlar
+      </button>
+      <button class="button primary" id="next-review-question" type="button">Sonraki</button>
+    </nav>
+
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>

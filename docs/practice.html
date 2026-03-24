@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rastgele Pratik</title>
+    <meta
+      name="description"
+      content="Biyokimya 2 için soru öncelikli rastgele pratik deneyimi."
+    >
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="practice" data-layout="question-flow">
+    <a class="skip-link" href="#main-content">İçeriğe geç</a>
+
+    <header class="site-header">
+      <div class="site-bar">
+        <a class="brand-link" href="index.html" aria-label="Biyokimya 2 ana sayfa">
+          <span class="brand-mark">Biyokimya 2</span>
+        </a>
+        <nav class="site-nav" aria-label="Ana gezinme">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="questions.html">Konuya Göre</a>
+          <a href="practice.html" aria-current="page">Rastgele Pratik</a>
+          <a href="review.html">Yanlışlarım</a>
+          <a href="coverage.html">Kapsam</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell practice-shell">
+      <section class="practice-header" aria-label="Pratik üst alanı">
+        <div class="practice-heading">
+          <p class="eyebrow">Pratik</p>
+          <h1>Rastgele Pratik</h1>
+          <p class="practice-active-filter" id="practice-active-filter">Tüm havuz</p>
+        </div>
+
+        <div class="practice-header-actions">
+          <div class="practice-chip-row">
+            <span class="practice-chip" id="practice-count">Hazırlanıyor</span>
+          </div>
+          <div class="practice-top-actions">
+            <button
+              class="button secondary mobile-sheet-toggle"
+              id="practice-filters-toggle"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="practice-filters-sheet"
+              aria-expanded="false"
+            >
+              Filtreler
+            </button>
+            <button class="button primary desktop-only-action" id="next-random-question-desktop" type="button">
+              Sonraki Soru
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice-filters-panel" id="practice-filters-sheet" aria-label="Pratik filtreleri">
+        <div class="practice-sheet-head">
+          <div>
+            <p class="eyebrow">Filtreler</p>
+            <h2>Pratik havuzu</h2>
+          </div>
+          <button class="button ghost practice-sheet-close" id="practice-filters-close" type="button">
+            Kapat
+          </button>
+        </div>
+
+        <div class="filter-grid practice-filter-grid">
+          <label>
+            <span>Konu alanı</span>
+            <select id="practice-topic"></select>
+          </label>
+          <label>
+            <span>Zorluk</span>
+            <select id="practice-difficulty">
+              <option value="">Tümü</option>
+              <option value="Kolay">Kolay</option>
+              <option value="Orta">Orta</option>
+              <option value="Zor">Zor</option>
+            </select>
+          </label>
+          <div class="inline-stat practice-sheet-count" id="practice-sheet-count">Hazırlanıyor</div>
+        </div>
+
+        <div class="practice-sheet-actions">
+          <button class="button ghost" id="practice-reset-filters" type="button">Sıfırla</button>
+          <button class="button primary" id="practice-apply-filters" type="button">Uygula</button>
+        </div>
+
+        <nav class="practice-sheet-links" aria-label="Diğer çalışma alanları">
+          <a class="practice-sheet-link" href="index.html">Ana Sayfa</a>
+          <a class="practice-sheet-link" href="questions.html">Konuya Göre</a>
+          <a class="practice-sheet-link" href="review.html">Yanlışlarım</a>
+          <a class="practice-sheet-link" href="coverage.html">Kapsam</a>
+        </nav>
+      </section>
+
+      <section id="practice-question" class="question-stack practice-question-stack"></section>
+    </main>
+
+    <button class="practice-overlay" id="practice-overlay" type="button" aria-label="Açık paneli kapat"></button>
+
+    <nav class="practice-dock" aria-label="Pratik aksiyonları">
+      <button
+        class="button secondary"
+        id="practice-filters-dock-toggle"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="practice-filters-sheet"
+        aria-expanded="false"
+      >
+        Filtreler
+      </button>
+      <button class="button primary" id="next-random-question" type="button">Sonraki</button>
+    </nav>
+
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>

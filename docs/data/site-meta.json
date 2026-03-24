@@ -1,0 +1,1708 @@
+{
+  "generatedAt": "2026-03-24T14:50:02.341Z",
+  "totals": {
+    "all": 287,
+    "easy": 55,
+    "medium": 137,
+    "hard": 95
+  },
+  "pdfCount": 7,
+  "curriculumTopicCount": 7,
+  "quality": {
+    "generatedAt": "2026-03-24T14:50:00.075Z",
+    "inventory": [
+      {
+        "id": "membrane-transport",
+        "fileName": "Hücre Zarından Madde Geçişi.pdf",
+        "title": "Hücre yapısı ve Hücre Zarından Madde Geçişi",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "totalPages": 44,
+        "substantivePages": 43,
+        "processedPages": 44,
+        "readabilityStatus": "complete",
+        "statusCounts": {
+          "text": 31,
+          "ocr_local": 13,
+          "ocr_external": 0,
+          "visual_blank": 0
+        },
+        "blankPages": [],
+        "previewTopics": [
+          "Derse devam durumlarınıza lütfen dikkat!",
+          "Biyokimya-II Ders İşleyişi",
+          "Hücre Zarından Madde Geçişi",
+          "Metabolizmaya Giriş: Biyoenerjetik ve Biyokimyasal Tepkime Türleri",
+          ". . H .Ve",
+          "Biyokimya-Il Ders İçeriği",
+          "Hücre Zarından Madde Geçişi",
+          "Metabolizmaya Giriş: Biyoenerjetik ve Biyokimyasal Tepkime Türleri",
+          "Biyolojik Zarlar ve Taşınma",
+          "• Zarlar:"
+        ]
+      },
+      {
+        "id": "carbohydrate-metabolism",
+        "fileName": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "title": "PowerPoint Sunusu",
+        "topic": "Glikoliz, glukoneogenez ve pentoz fosfat yolağı",
+        "totalPages": 86,
+        "substantivePages": 86,
+        "processedPages": 86,
+        "readabilityStatus": "complete",
+        "statusCounts": {
+          "text": 70,
+          "ocr_local": 16,
+          "ocr_external": 0,
+          "visual_blank": 0
+        },
+        "blankPages": [],
+        "previewTopics": [
+          "Karbohidrat Metabolizması-I:",
+          "Glikoliz, Glukoneogenez ve",
+          "Pentoz Fosfat Yolağı",
+          "Glikoliz, Glukoneogenez ve Pentoz Fosfat",
+          "Organizmalar glukoza başka kaynaklardan ulaşamıyorsa, onu sentezlemeleri",
+          "gerekir.",
+          "Fotosentetik organizmalar glukozu öncelikle atmosferdeki CO2’i triozlara",
+          "indirgeyerek oluşturur triozlar glukoza dönüştürülür.",
+          "Glukoz kullanımının ana yolakları",
+          "Bu 4 yolak birçok hücredeki açısından en önemli yolaklar"
+        ]
+      },
+      {
+        "id": "carbohydrates-glycobiology",
+        "fileName": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "title": "Karbohidratlar ve Glikobiyoloji",
+        "topic": "Karbohidratlar, polisakkaritler ve glikobiyoloji",
+        "totalPages": 119,
+        "substantivePages": 119,
+        "processedPages": 119,
+        "readabilityStatus": "complete",
+        "statusCounts": {
+          "text": 108,
+          "ocr_local": 11,
+          "ocr_external": 0,
+          "visual_blank": 0
+        },
+        "blankPages": [],
+        "previewTopics": [
+          "Biyokimya-II",
+          "Bahar 2023-2024 Ders İçeriği",
+          "• Karbohidratlar ve glikobiyoloji",
+          "• Nükleotidler ve nükleik asitler",
+          "* Karbohidratlar ve glikobiyoloji",
+          "* Nükleotidler ve nükleik asitler",
+          "* Lipidler",
+          "* Biyolojik zarlar ve taşınma",
+          "NOT",
+          "• Bknz. kaynak kitap bölüm sonu anahtar terimler ve ara sayfalardaki"
+        ]
+      },
+      {
+        "id": "lipids",
+        "fileName": "Lipitler.pdf",
+        "title": "Lipitler",
+        "topic": "Depo lipitleri ve zarlardaki yapisal lipitler",
+        "totalPages": 75,
+        "substantivePages": 75,
+        "processedPages": 75,
+        "readabilityStatus": "complete",
+        "statusCounts": {
+          "text": 65,
+          "ocr_local": 10,
+          "ocr_external": 0,
+          "visual_blank": 0
+        },
+        "blankPages": [],
+        "previewTopics": [
+          "Lipitler",
+          "NOT",
+          "• Bknz. kaynak kitap bölüm sonu anahtar terimler ve ara sayfalardaki",
+          "özetler",
+          "Lipitler",
+          "• Biyolojik lipitler geniş bir bileşik grubu",
+          "• Ortak ve belirleyici özellikleri suda çözünmemeleri",
+          "• Çok çeşitli biyolojik işlevler",
+          "Depo Lipitleri",
+          "Giriş"
+        ]
+      },
+      {
+        "id": "nucleotides",
+        "fileName": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "title": "Nükleotidler ve Nükleik Asitler",
+        "topic": "Nükleotidler, DNA, RNA ve nükleik asit kimyasi",
+        "totalPages": 66,
+        "substantivePages": 66,
+        "processedPages": 66,
+        "readabilityStatus": "complete",
+        "statusCounts": {
+          "text": 54,
+          "ocr_local": 12,
+          "ocr_external": 0,
+          "visual_blank": 0
+        },
+        "blankPages": [],
+        "previewTopics": [
+          "Nükleotidler ve Nükleik",
+          "Asitler",
+          "Nükleotidler ve Nükleik Asitler",
+          "• Nükleotidlerin hücre metabolizmasındaki çeşitli görevleri:",
+          "Nükleotidler ve Nükleik Asitler",
+          "• Her prot., her biyomolekülün ve sonuçta her hücre bileşeninin yapısı,",
+          "hücrenin nükleik asitlerinin diziliminde kodlanmış olan bilginin",
+          "ürünüdür",
+          "Temel Bilgiler",
+          "• Bir hücredeki her prot. aa dizisi ve her RNA molekülünün nükleotit"
+        ]
+      },
+      {
+        "id": "oxidative-phosphorylation",
+        "fileName": "Oksidatif Fosforillenme.pdf",
+        "title": "Oksidatif Fosforillenme ve Fotofosforillenme",
+        "topic": "Elektron aktarimi, oksidatif fosforillenme ve fotosenteze giris",
+        "totalPages": 30,
+        "substantivePages": 30,
+        "processedPages": 30,
+        "readabilityStatus": "complete",
+        "statusCounts": {
+          "text": 22,
+          "ocr_local": 8,
+          "ocr_external": 0,
+          "visual_blank": 0
+        },
+        "blankPages": [],
+        "previewTopics": [
+          "Oksidatif Fosforillenme ve",
+          "Fotofosforillenme",
+          "Oksidatif fosforillenme aerobik organizmalarda enerji metabolizmasının (hücresel",
+          "solunumun) son basamağı",
+          "OKSİDATİF FOSFORİLLENME",
+          "Mitokondrideki Elektron Aktarma Tepkimeleri",
+          "Oksidatif fosforillenme mitokondride gerçekleşir",
+          "Yalnızca glikoliz sitozolde gerçekleşir",
+          "Oksidatif fosforillenme, elektronların solunum zincirine girmesiyle başlar.",
+          "elektronların çoğu, katabolik yolaklardan elektronları toplayan dehidrogenazlardan"
+        ]
+      },
+      {
+        "id": "citric-acid-cycle",
+        "fileName": "Sitrik Asit Çevrimi.pdf",
+        "title": "Sitrik Asit Çevrimi",
+        "topic": "Pirüvat dehidrogenaz ve sitrik asit çevrimi",
+        "totalPages": 36,
+        "substantivePages": 36,
+        "processedPages": 36,
+        "readabilityStatus": "complete",
+        "statusCounts": {
+          "text": 30,
+          "ocr_local": 6,
+          "ocr_external": 0,
+          "visual_blank": 0
+        },
+        "blankPages": [],
+        "previewTopics": [
+          "Sitrik Asit Çevrimi",
+          "Giriş",
+          "Aerobik koşullarda yaşayan çoğu ökaryotik hücre ve birçok bakteri",
+          "glikoliz ile üretilen pirüvat H2O ve CO2’e yükseltgenir: hücresel solunum",
+          "Hücresel solunum 3 üç ana basamakta",
+          "gerçekleşir:",
+          "1. Organik yakıt molekülleri oksitlenerek asetil-",
+          "koenzim A’nın (asetil-KoA) asetil grubu",
+          "Önce:",
+          "Pirüvat asetil gruplarına dönüşür daha sonra bu gruplar sitrik asit"
+        ]
+      }
+    ],
+    "pdfCount": 7,
+    "totalPages": 456,
+    "ocrSummary": {
+      "text": 380,
+      "ocr_local": 76,
+      "ocr_external": 0,
+      "visual_blank": 0
+    },
+    "topicCount": 7,
+    "subtopicCount": 67,
+    "questionCount": 287,
+    "difficultyTotals": {
+      "Kolay": 55,
+      "Orta": 137,
+      "Zor": 95
+    },
+    "duplicateIds": [],
+    "exact_duplicate_prompt_count": 0,
+    "exact_duplicate_prompt_pairs": [],
+    "near_duplicate_count": 1,
+    "near_duplicate_pairs": [
+      {
+        "left": "NUC-016",
+        "right": "NUC-039",
+        "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+        "similarity": 0.83
+      }
+    ],
+    "fieldErrors": [],
+    "banned_term_hits_count": 0,
+    "banned_term_hits_ids": [],
+    "banned_term_hit_details": [],
+    "leading_discourse_marker_count": 0,
+    "leading_discourse_marker_details": [],
+    "lowercase_start_count": 0,
+    "lowercase_start_ids": [],
+    "option_balance_flag_count": 28,
+    "option_balance_flag_details": [
+      {
+        "id": "CAC-011",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 84,
+              "next_length": 43,
+              "delta": 41
+            }
+          }
+        ]
+      },
+      {
+        "id": "CAC-017",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 84,
+              "next_length": 48,
+              "delta": 36
+            }
+          }
+        ]
+      },
+      {
+        "id": "CHO-002",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 83,
+              "next_length": 32,
+              "delta": 51
+            }
+          }
+        ]
+      },
+      {
+        "id": "CHO-021",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 131,
+              "next_length": 80,
+              "delta": 51
+            }
+          }
+        ]
+      },
+      {
+        "id": "CHO-022",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 110,
+              "next_length": 68,
+              "delta": 42
+            }
+          }
+        ]
+      },
+      {
+        "id": "CHO-025",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 109,
+              "next_length": 59,
+              "delta": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "CHO-059",
+        "correct_answer": "C",
+        "flags": [
+          {
+            "type": "mixed_option_structure",
+            "details": {
+              "sentence_like_count": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "CHO-062",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 118,
+              "next_length": 78,
+              "delta": 40
+            }
+          }
+        ]
+      },
+      {
+        "id": "LIP-010",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 110,
+              "next_length": 58,
+              "delta": 52
+            }
+          }
+        ]
+      },
+      {
+        "id": "LIP-012",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 76,
+              "next_length": 38,
+              "delta": 38
+            }
+          }
+        ]
+      },
+      {
+        "id": "LIP-015",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 75,
+              "next_length": 37,
+              "delta": 38
+            }
+          }
+        ]
+      },
+      {
+        "id": "LIP-016",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 143,
+              "next_length": 79,
+              "delta": 64
+            }
+          }
+        ]
+      },
+      {
+        "id": "LIP-018",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 97,
+              "next_length": 46,
+              "delta": 51
+            }
+          }
+        ]
+      },
+      {
+        "id": "LIP-037",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "mixed_option_structure",
+            "details": {
+              "sentence_like_count": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "MEM-014",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 90,
+              "next_length": 55,
+              "delta": 35
+            }
+          }
+        ]
+      },
+      {
+        "id": "MEM-018",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 96,
+              "next_length": 52,
+              "delta": 44
+            }
+          }
+        ]
+      },
+      {
+        "id": "MET-005",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 100,
+              "next_length": 46,
+              "delta": 54
+            }
+          }
+        ]
+      },
+      {
+        "id": "MET-007",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 76,
+              "next_length": 38,
+              "delta": 38
+            }
+          }
+        ]
+      },
+      {
+        "id": "MET-016",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 93,
+              "next_length": 40,
+              "delta": 53
+            }
+          }
+        ]
+      },
+      {
+        "id": "MET-023",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 82,
+              "next_length": 45,
+              "delta": 37
+            }
+          }
+        ]
+      },
+      {
+        "id": "NUC-002",
+        "correct_answer": "D",
+        "flags": [
+          {
+            "type": "mixed_option_structure",
+            "details": {
+              "sentence_like_count": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "NUC-007",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 99,
+              "next_length": 63,
+              "delta": 36
+            }
+          }
+        ]
+      },
+      {
+        "id": "NUC-009",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 91,
+              "next_length": 49,
+              "delta": 42
+            }
+          }
+        ]
+      },
+      {
+        "id": "NUC-018",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 89,
+              "next_length": 53,
+              "delta": 36
+            }
+          }
+        ]
+      },
+      {
+        "id": "NUC-020",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "mixed_option_structure",
+            "details": {
+              "sentence_like_count": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": "OXP-003",
+        "correct_answer": "B",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 93,
+              "next_length": 43,
+              "delta": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "OXP-011",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "correct_length_outlier",
+            "details": {
+              "correct_length": 102,
+              "next_length": 56,
+              "delta": 46
+            }
+          }
+        ]
+      },
+      {
+        "id": "OXP-014",
+        "correct_answer": "A",
+        "flags": [
+          {
+            "type": "mixed_option_structure",
+            "details": {
+              "sentence_like_count": 1
+            }
+          }
+        ]
+      }
+    ],
+    "placeholder_file_findings": [],
+    "topicTotals": [
+      {
+        "source_pdf": "Hücre Zarından Madde Geçişi.pdf",
+        "question_count": 32
+      },
+      {
+        "source_pdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "question_count": 56
+      },
+      {
+        "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "question_count": 58
+      },
+      {
+        "source_pdf": "Lipitler.pdf",
+        "question_count": 41
+      },
+      {
+        "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "question_count": 39
+      },
+      {
+        "source_pdf": "Oksidatif Fosforillenme.pdf",
+        "question_count": 30
+      },
+      {
+        "source_pdf": "Sitrik Asit Çevrimi.pdf",
+        "question_count": 31
+      }
+    ],
+    "subtopic_coverage": [
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Biyolojik zarların ortak özellikleri",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "MEM-001",
+          "MEM-019",
+          "MEM-020"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Sıvı-mozaik model ve lipit çift tabaka",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MEM-002",
+          "MEM-011",
+          "MEM-021",
+          "MEM-022"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Zar asimetrisi ve protein tipleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MEM-003",
+          "MEM-004",
+          "MEM-012",
+          "MEM-023"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Zar akışkanlığı ve dinamikleri",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "MEM-005",
+          "MEM-013",
+          "MEM-024"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Zar füzyonu",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MEM-006",
+          "MEM-014",
+          "MEM-025",
+          "MEM-026"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Taşıyıcılar ve kanallar",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MEM-015",
+          "MEM-016",
+          "MEM-027",
+          "MEM-028"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "GLUT ve kolaylaştırılmış difüzyon",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "MEM-007",
+          "MEM-029",
+          "MEM-030"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Anyon değiştiriciler",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "MEM-008",
+          "MEM-031",
+          "MEM-032"
+        ]
+      },
+      {
+        "sourcePdf": "Hücre Zarından Madde Geçişi.pdf",
+        "topic": "Biyolojik zarlar ve taşınma",
+        "subtopic": "Aktif taşınma, akuaporinler ve iyon kanalları",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MEM-009",
+          "MEM-010",
+          "MEM-017",
+          "MEM-018"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Monosakkaritlerin temel sınıflandırılması",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-001",
+          "CHO-023",
+          "CHO-028",
+          "CHO-029"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "D/L izomerleri ve kiralite",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-002",
+          "CHO-013",
+          "CHO-014",
+          "CHO-030"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Halkalı yapı, anomerler ve mutarotasyon",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-003",
+          "CHO-004",
+          "CHO-031",
+          "CHO-032"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Heksoz türevleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-005",
+          "CHO-024",
+          "CHO-034",
+          "CHO-035"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "İndirgen şeker mantığı",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-006",
+          "CHO-015",
+          "CHO-036",
+          "CHO-037"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Disakkarit adlandırması ve bağ tipleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-007",
+          "CHO-016",
+          "CHO-038",
+          "CHO-039"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Depo polisakkaritleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-008",
+          "CHO-009",
+          "CHO-017",
+          "CHO-040"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Yapısal homopolisakkaritler",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CHO-010",
+          "CHO-018",
+          "CHO-041",
+          "CHO-042"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Peptidoglikan ve heteropolisakkaritler",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 5,
+        "status": "OK",
+        "questionIds": [
+          "CHO-020",
+          "CHO-043",
+          "CHO-044",
+          "CHO-058",
+          "CHO-060"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Glikozaminoglikanlar",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 7,
+        "status": "OK",
+        "questionIds": [
+          "CHO-011",
+          "CHO-019",
+          "CHO-025",
+          "CHO-046",
+          "CHO-047",
+          "CHO-048",
+          "CHO-059"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Proteoglikanlar, glikoproteinler ve glikolipitler",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 7,
+        "status": "OK",
+        "questionIds": [
+          "CHO-021",
+          "CHO-026",
+          "CHO-027",
+          "CHO-050",
+          "CHO-051",
+          "CHO-052",
+          "CHO-062"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Şeker kodu ve lektinler",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 5,
+        "status": "OK",
+        "questionIds": [
+          "CHO-012",
+          "CHO-022",
+          "CHO-054",
+          "CHO-055",
+          "CHO-061"
+        ]
+      },
+      {
+        "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "topic": "Karbohidratlar ve glikobiyoloji",
+        "subtopic": "Karbohidrat analitik yöntemleri",
+        "questionDensityNeed": "low",
+        "requiredMinimum": 2,
+        "actualCount": 2,
+        "status": "OK",
+        "questionIds": [
+          "CHO-056",
+          "CHO-057"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Glukoz kullanımının ana yolları",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "MET-001",
+          "MET-027",
+          "MET-028"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Glikolizin iki evresi",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-002",
+          "MET-029",
+          "MET-030",
+          "MET-031"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Pirüvatın akıbetleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-003",
+          "MET-023",
+          "MET-024",
+          "MET-032"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Glikolizde enerji korunumu",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-004",
+          "MET-005",
+          "MET-033",
+          "MET-034"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Hazırlık evresi basamakları",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 6,
+        "status": "OK",
+        "questionIds": [
+          "MET-006",
+          "MET-013",
+          "MET-014",
+          "MET-015",
+          "MET-016",
+          "MET-035"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Sonlanma evresi basamakları",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 6,
+        "status": "OK",
+        "questionIds": [
+          "MET-007",
+          "MET-017",
+          "MET-018",
+          "MET-019",
+          "MET-036",
+          "MET-037"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Laktik asit fermentasyonu",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-008",
+          "MET-020",
+          "MET-038",
+          "MET-039"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Etanol fermentasyonu",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "MET-009",
+          "MET-041",
+          "MET-042"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Glukoneogenezin genel ilkeleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-043",
+          "MET-044",
+          "MET-045",
+          "MET-046"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Glukoneogenez by-pass tepkimeleri",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 6,
+        "status": "OK",
+        "questionIds": [
+          "MET-010",
+          "MET-021",
+          "MET-025",
+          "MET-048",
+          "MET-049",
+          "MET-050"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-011",
+          "MET-026",
+          "MET-051",
+          "MET-052"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Pentoz fosfat yolağının oksidatif evresi",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-053",
+          "MET-054",
+          "MET-055",
+          "MET-056"
+        ]
+      },
+      {
+        "sourcePdf": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+        "topic": "Karbohidrat metabolizması",
+        "subtopic": "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "MET-012",
+          "MET-022",
+          "MET-058",
+          "MET-059"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Lipitlerin genel özelliği",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "LIP-001",
+          "LIP-021",
+          "LIP-022"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Yağ asidi yapısı ve gösterimi",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 5,
+        "status": "OK",
+        "questionIds": [
+          "LIP-002",
+          "LIP-003",
+          "LIP-004",
+          "LIP-011",
+          "LIP-012"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Triaçilgliseroller ve depolama mantığı",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 6,
+        "status": "OK",
+        "questionIds": [
+          "LIP-005",
+          "LIP-006",
+          "LIP-013",
+          "LIP-023",
+          "LIP-032",
+          "LIP-040"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Kısmi hidrojenleme ve trans yağlar",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "LIP-007",
+          "LIP-024",
+          "LIP-025"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Mumlar",
+        "questionDensityNeed": "low",
+        "requiredMinimum": 2,
+        "actualCount": 2,
+        "status": "OK",
+        "questionIds": [
+          "LIP-008",
+          "LIP-014"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 6,
+        "status": "OK",
+        "questionIds": [
+          "LIP-009",
+          "LIP-015",
+          "LIP-016",
+          "LIP-017",
+          "LIP-027",
+          "LIP-028"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Steroller",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "LIP-010",
+          "LIP-018",
+          "LIP-029"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 13,
+        "status": "OK",
+        "questionIds": [
+          "LIP-019",
+          "LIP-020",
+          "LIP-030",
+          "LIP-031",
+          "LIP-033",
+          "LIP-034",
+          "LIP-035",
+          "LIP-036",
+          "LIP-037",
+          "LIP-038",
+          "LIP-039",
+          "LIP-041",
+          "LIP-042"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Nükleotidlerin temel işlevleri",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "NUC-001",
+          "NUC-022",
+          "NUC-023"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Pürin, pirimidin ve pentoz yapısı",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 5,
+        "status": "OK",
+        "questionIds": [
+          "NUC-002",
+          "NUC-003",
+          "NUC-011",
+          "NUC-024",
+          "NUC-034"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Fosfodiester bağları ve yönlülük",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 5,
+        "status": "OK",
+        "questionIds": [
+          "NUC-004",
+          "NUC-012",
+          "NUC-025",
+          "NUC-026",
+          "NUC-035"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Baz istiflenmesi ve UV soğurma",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "NUC-021",
+          "NUC-027",
+          "NUC-028",
+          "NUC-036"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 6,
+        "status": "OK",
+        "questionIds": [
+          "NUC-005",
+          "NUC-006",
+          "NUC-013",
+          "NUC-029",
+          "NUC-030",
+          "NUC-031"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "mRNA ve diğer RNA tipleri",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "NUC-007",
+          "NUC-014",
+          "NUC-015"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 5,
+        "status": "OK",
+        "questionIds": [
+          "NUC-008",
+          "NUC-016",
+          "NUC-017",
+          "NUC-018",
+          "NUC-039"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Enzimatik olmayan nükleik asit hasarı",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 8,
+        "status": "OK",
+        "questionIds": [
+          "NUC-009",
+          "NUC-010",
+          "NUC-019",
+          "NUC-020",
+          "NUC-032",
+          "NUC-033",
+          "NUC-037",
+          "NUC-038"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CAC-001",
+          "CAC-017",
+          "CAC-018",
+          "CAC-019"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "PDH kompleksinin koenzimleri ve alt enzimleri",
+        "questionDensityNeed": "very_high",
+        "requiredMinimum": 6,
+        "actualCount": 6,
+        "status": "OK",
+        "questionIds": [
+          "CAC-002",
+          "CAC-003",
+          "CAC-009",
+          "CAC-020",
+          "CAC-021",
+          "CAC-022"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "Substrat yönlendirilmesi",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "CAC-004",
+          "CAC-010",
+          "CAC-023"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "Sitrat oluşumu ve akonitaz",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "CAC-005",
+          "CAC-011",
+          "CAC-024"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "Oksidatif dekarboksillenme basamakları",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CAC-006",
+          "CAC-012",
+          "CAC-025",
+          "CAC-026"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "Süksinil-KoA sonrası basamaklar",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CAC-013",
+          "CAC-014",
+          "CAC-015",
+          "CAC-027"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "Çevrimde enerji korunumu",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "CAC-007",
+          "CAC-028",
+          "CAC-029",
+          "CAC-030"
+        ]
+      },
+      {
+        "sourcePdf": "Sitrik Asit Çevrimi.pdf",
+        "topic": "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+        "subtopic": "Amfibolik rol ve biyosentetik ara ürünler",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "CAC-008",
+          "CAC-016",
+          "CAC-031"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "Oksidatif fosforillenmenin genel rolü",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "OXP-001",
+          "OXP-009",
+          "OXP-019"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "NADH, NADPH ve flavoproteinler",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "OXP-002",
+          "OXP-003",
+          "OXP-004",
+          "OXP-021"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "Solunum zinciri taşıyıcıları",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "OXP-005",
+          "OXP-010",
+          "OXP-022",
+          "OXP-023"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "Fotosentezin redoks mantığı",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "OXP-011",
+          "OXP-012",
+          "OXP-025"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "Klorofil pigmentleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "OXP-013",
+          "OXP-018",
+          "OXP-027",
+          "OXP-028"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "Karotenoidler ve bilin pigmentler",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "OXP-007",
+          "OXP-014",
+          "OXP-015",
+          "OXP-030"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "Kloroplast yapısı ve bölmeleri",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "OXP-008",
+          "OXP-031",
+          "OXP-032",
+          "OXP-033"
+        ]
+      },
+      {
+        "sourcePdf": "Oksidatif Fosforillenme.pdf",
+        "topic": "Oksidatif fosforillenme ve fotosenteze giriş",
+        "subtopic": "Işık tepkimeleri ve ATP/NADPH oluşumu",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "OXP-006",
+          "OXP-016",
+          "OXP-017",
+          "OXP-034"
+        ]
+      }
+    ],
+    "uncoveredCurriculum": [],
+    "roster_mismatch_findings": [],
+    "roster_missing_ids": [],
+    "roster_unexpected_ids": [],
+    "unexpected_supplemental_count": 0,
+    "artifact_sync_findings": [
+      "output/questions/all-questions.json ile docs/data/all-questions.json eşleşmiyor",
+      "site-meta toplam soru sayısı ile gerçek soru sayısı eşleşmiyor",
+      "site-meta quality.questionCount ile quality-report.json eşleşmiyor"
+    ]
+  }
+}
