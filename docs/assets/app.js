@@ -7,6 +7,15 @@ const state = {
   meta: null
 };
 
+const COMPACT_FIT_TIERS = ["default", "compact", "dense", "ultra"];
+const QUESTION_FLOW_MOBILE_QUERY = "(max-width: 767px)";
+const compactQuestionUi = {
+  activeCard: null,
+  fitFrame: 0,
+  resizeBound: false,
+  dialog: null
+};
+
 async function loadJson(fileName) {
   const response = await fetch(`data/${fileName}`);
   if (!response.ok) {
@@ -145,6 +154,7 @@ function buildEmptyState(title, message, actions = []) {
 }
 
 function setEmpty(container, title, message, actions = []) {
+  closeQuestionDialog();
   clearNode(container);
   container.append(buildEmptyState(title, message, actions));
 }
@@ -246,6 +256,147 @@ function sourceSummaryForTopic(fileName) {
   return `${formatFileLabel(fileName)} • ${match.totalPages} sayfa`;
 }
 
+function isQuestionFlowMobile() {
+  return window.matchMedia(QUESTION_FLOW_MOBILE_QUERY).matches;
+}
+
+function ensureCompactQuestionUi() {
+  if (!compactQuestionUi.dialog) {
+    const root = element("div", "question-dialog");
+    root.setAttribute("aria-hidden", "true");
+
+    const panel = element("section", "question-dialog-panel");
+    panel.setAttribute("role", "dialog");
+    panel.setAttribute("aria-modal", "true");
+    panel.setAttribute("aria-labelledby", "question-dialog-title");
+
+    const header = element("div", "question-dialog-header");
+    const headerCopy = element("div", "question-dialog-heading");
+    const title = element("h2", "", "");
+    title.id = "question-dialog-title";
+    const subtitle = element("p", "question-dialog-subtitle");
+    const closeButton = element("button", "button ghost question-dialog-close", "Kapat");
+    closeButton.type = "button";
+    closeButton.addEventListener("click", () => closeQuestionDialog());
+
+    headerCopy.append(title, subtitle);
+    header.append(headerCopy, closeButton);
+
+    const body = element("div", "question-dialog-body");
+    panel.append(header, body);
+    root.append(panel);
+
+    root.addEventListener("click", (event) => {
+      if (event.target === root) {
+        closeQuestionDialog();
+      }
+    });
+
+    document.body.append(root);
+    compactQuestionUi.dialog = { root, title, subtitle, body };
+  }
+
+  if (!compactQuestionUi.resizeBound) {
+    compactQuestionUi.resizeBound = true;
+    window.addEventListener("resize", () => scheduleCompactCardFit());
+    document.fonts?.ready.then(() => scheduleCompactCardFit()).catch(() => {});
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && compactQuestionUi.dialog?.root.classList.contains("is-open")) {
+        closeQuestionDialog();
+      }
+    });
+  }
+}
+
+function openQuestionDialog({ title, subtitle = "", content = [] }) {
+  ensureCompactQuestionUi();
+  const dialog = compactQuestionUi.dialog;
+  clearNode(dialog.body);
+  dialog.body.append(...content);
+  dialog.title.textContent = title;
+  dialog.subtitle.textContent = subtitle;
+  dialog.subtitle.hidden = !subtitle;
+  dialog.root.classList.add("is-open");
+  dialog.root.setAttribute("aria-hidden", "false");
+  document.body.classList.add("question-dialog-open");
+}
+
+function closeQuestionDialog() {
+  const dialog = compactQuestionUi.dialog;
+  if (!dialog) return;
+  dialog.root.classList.remove("is-open");
+  dialog.root.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("question-dialog-open");
+}
+
+function setActiveCompactCard(card) {
+  compactQuestionUi.activeCard = card;
+  ensureCompactQuestionUi();
+  scheduleCompactCardFit(card);
+}
+
+function scheduleCompactCardFit(card = compactQuestionUi.activeCard) {
+  if (!card?.isConnected) return;
+  window.cancelAnimationFrame(compactQuestionUi.fitFrame);
+  compactQuestionUi.fitFrame = window.requestAnimationFrame(() => applyCompactCardFit(card));
+}
+
+function applyCompactCardFit(card) {
+  if (!card?.isConnected) return;
+
+  const fitRegion = card.querySelector(".compact-fit-region");
+  const fitCanvas = card.querySelector(".compact-fit-canvas");
+  const fitBody = card.querySelector(".compact-fit-body");
+  if (!fitRegion || !fitCanvas || !fitBody) return;
+
+  if (!isQuestionFlowMobile()) {
+    card.dataset.fitDensity = "default";
+    card.style.setProperty("--compact-scale", "1");
+    card.style.removeProperty("--compact-body-height");
+    fitCanvas.style.removeProperty("height");
+    return;
+  }
+
+  const availableHeight = fitRegion.clientHeight;
+  if (!availableHeight) return;
+
+  let naturalHeight = 0;
+  let chosenTier = COMPACT_FIT_TIERS[COMPACT_FIT_TIERS.length - 1];
+
+  fitCanvas.style.removeProperty("height");
+  card.style.setProperty("--compact-scale", "1");
+
+  for (const tier of COMPACT_FIT_TIERS) {
+    card.dataset.fitDensity = tier;
+    naturalHeight = Math.ceil(fitBody.getBoundingClientRect().height);
+    chosenTier = tier;
+    if (naturalHeight <= availableHeight) {
+      break;
+    }
+  }
+
+  const scale = naturalHeight ? Math.min(1, availableHeight / naturalHeight) : 1;
+  card.dataset.fitDensity = chosenTier;
+  card.style.setProperty("--compact-scale", scale.toFixed(4));
+  card.style.setProperty("--compact-body-height", `${naturalHeight}px`);
+  fitCanvas.style.height = `${Math.ceil(naturalHeight * scale)}px`;
+}
+
+function buildQuestionDialogSection(title, nodes = []) {
+  const section = element("section", "question-dialog-section");
+  if (title) {
+    section.append(element("h3", "", title));
+  }
+  section.append(...nodes);
+  return section;
+}
+
+function buildQuestionDialogStat(label, value, extraClass = "") {
+  const stat = element("div", `question-dialog-stat ${extraClass}`.trim());
+  stat.append(element("span", "question-dialog-stat-label", label), element("strong", "", value));
+  return stat;
+}
+
 function buildDetailTextBlock(title, copy) {
   const block = element("div", "detail-block");
   block.append(element("h4", "", title), element("p", "", copy));
@@ -278,11 +429,70 @@ function buildInfoSummary(label) {
   return summary;
 }
 
+function buildSourceDialogContent(question, topicLabel) {
+  const sections = [
+    buildQuestionDialogSection("", [
+      buildQuestionDialogStat("Kaynak", `${formatFileLabel(question.source_pdf)} • Sayfa ${question.source_pages.join(", ")}`),
+      buildQuestionDialogStat("Odak", topicLabel || question.source_topic)
+    ]),
+    buildQuestionDialogSection("Öğrenme Hedefi", [element("p", "", question.learning_objective)])
+  ];
+
+  if (question.tags.length) {
+    const tagWrap = element("div", "question-dialog-chip-row");
+    question.tags.forEach((tag) => tagWrap.append(badge(tag)));
+    sections.push(buildQuestionDialogSection("Etiketler", [tagWrap]));
+  }
+
+  return sections;
+}
+
+function buildExplanationDialogContent(question, answerState) {
+  const sections = [
+    buildQuestionDialogSection("", [
+      buildQuestionDialogStat(
+        answerState.isCorrect ? "Sonuç" : "Doğru Cevap",
+        `${answerState.correctLetter}) ${question.options[answerState.correctLetter]}`,
+        answerState.isCorrect ? "success" : ""
+      )
+    ]),
+    buildQuestionDialogSection("Açıklama", [element("p", "", question.correct_explanation)])
+  ];
+
+  const notes = Object.entries(question.distractor_explanations || {}).filter(
+    ([key]) => key !== question.correct_answer
+  );
+
+  if (notes.length) {
+    const list = element("ul", "detail-list");
+    notes.forEach(([key, note]) => {
+      const item = document.createElement("li");
+      item.textContent = `${key}: ${note}`;
+      list.append(item);
+    });
+    sections.push(
+      buildQuestionDialogSection("Seçenek Notları", [list])
+    );
+  }
+
+  if (question.confusion_note) {
+    sections.push(
+      buildQuestionDialogSection("Karıştırılan Nokta", [element("p", "", question.confusion_note)])
+    );
+  }
+
+  return sections;
+}
+
 function buildQuestionCard(question, options = {}) {
   const { compact = false, progressLabel = "", onAnswered = null } = options;
   const card = element("article", compact ? "question-card compact-card" : "question-card");
   const meta = element("div", compact ? "question-meta question-meta-compact" : "question-meta");
   const topicLabel = question.source_subtopic || question.source_topic;
+  const title = element("h3", "question-title", question.question);
+  const optionGrid = element("div", "option-grid");
+  const optionButtons = [];
+  let answerState = null;
 
   if (compact) {
     const metaGroup = element("div", "question-meta-group");
@@ -303,12 +513,58 @@ function buildQuestionCard(question, options = {}) {
     }
   }
 
-  const title = element("h3", "question-title", question.question);
-  const optionGrid = element("div", "option-grid");
-  const explanation = element("section", "explanation-panel");
-  explanation.hidden = true;
+  const explanation = compact ? null : element("section", "explanation-panel");
+  if (explanation) {
+    explanation.hidden = true;
+  }
 
-  const optionButtons = [];
+  const details = compact ? null : document.createElement("details");
+  if (details) {
+    details.className = "info-details";
+    details.append(buildInfoSummary(compact ? "Kaynak" : "Kaynak ve notlar"));
+
+    const detailBody = element("div", "detail-body");
+    detailBody.append(
+      buildDetailTextBlock(
+        "Kaynak",
+        `${formatFileLabel(question.source_pdf)} • Sayfa ${question.source_pages.join(", ")}`
+      ),
+      buildDetailTextBlock("Öğrenme hedefi", question.learning_objective)
+    );
+
+    if (question.tags.length) {
+      detailBody.append(buildDetailChipBlock("Etiketler", question.tags));
+    }
+
+    details.append(detailBody);
+  }
+
+  let sourceButton = null;
+  let explanationButton = null;
+
+  if (compact) {
+    sourceButton = element("button", "button secondary question-card-action", "Kaynak");
+    sourceButton.type = "button";
+    sourceButton.addEventListener("click", () => {
+      openQuestionDialog({
+        title: "Kaynak",
+        subtitle: topicLabel || question.source_topic,
+        content: buildSourceDialogContent(question, topicLabel)
+      });
+    });
+
+    explanationButton = element("button", "button primary question-card-action", "Açıklama");
+    explanationButton.type = "button";
+    explanationButton.disabled = true;
+    explanationButton.addEventListener("click", () => {
+      if (!answerState) return;
+      openQuestionDialog({
+        title: "Açıklama",
+        subtitle: topicLabel || question.source_topic,
+        content: buildExplanationDialogContent(question, answerState)
+      });
+    });
+  }
 
   Object.entries(question.options).forEach(([letter, value]) => {
     const button = element("button", "option-button");
@@ -324,6 +580,11 @@ function buildQuestionCard(question, options = {}) {
       const correctLetter = question.correct_answer;
       const isCorrect = letter === correctLetter;
       recordAnswer(question.id, isCorrect);
+      answerState = {
+        isCorrect,
+        correctLetter,
+        selectedLetter: letter
+      };
 
       optionButtons.forEach((item) => {
         if (item.dataset.letter === correctLetter) {
@@ -333,42 +594,21 @@ function buildQuestionCard(question, options = {}) {
         }
       });
 
-      explanation.hidden = false;
-      clearNode(explanation);
-      explanation.append(
-        element("h4", "", isCorrect ? "Doğru cevap" : "Açıklama"),
-        element("p", "", `${correctLetter}) ${question.options[correctLetter]}`),
-        element("p", "", question.correct_explanation)
-      );
-
-      const notes = Object.entries(question.distractor_explanations || {}).filter(
-        ([key]) => key !== question.correct_answer
-      );
-
       if (compact) {
-        if (notes.length || question.confusion_note) {
-          const extraNotes = document.createElement("details");
-          extraNotes.className = "info-details";
-          extraNotes.append(buildInfoSummary("Seçenek notları"));
-
-          const noteBody = element("div", "detail-body");
-          if (notes.length) {
-            noteBody.append(
-              buildDetailListBlock(
-                "Kısa notlar",
-                notes.map(([key, note]) => `${key}: ${note}`)
-              )
-            );
-          }
-          if (question.confusion_note) {
-            noteBody.append(
-              buildDetailTextBlock("Karıştırılan nokta", question.confusion_note)
-            );
-          }
-          extraNotes.append(noteBody);
-          explanation.append(extraNotes);
-        }
+        explanationButton.disabled = false;
       } else {
+        explanation.hidden = false;
+        clearNode(explanation);
+        explanation.append(
+          element("h4", "", isCorrect ? "Doğru cevap" : "Açıklama"),
+          element("p", "", `${correctLetter}) ${question.options[correctLetter]}`),
+          element("p", "", question.correct_explanation)
+        );
+
+        const notes = Object.entries(question.distractor_explanations || {}).filter(
+          ([key]) => key !== question.correct_answer
+        );
+
         if (notes.length) {
           const list = element("ul", "");
           notes.forEach(([key, note]) => {
@@ -396,42 +636,37 @@ function buildQuestionCard(question, options = {}) {
     optionGrid.append(button);
   });
 
-  const details = document.createElement("details");
-  details.className = "info-details";
-  details.append(buildInfoSummary(compact ? "Kaynak" : "Kaynak ve notlar"));
+  if (compact) {
+    const fitRegion = element("div", "compact-fit-region");
+    const fitCanvas = element("div", "compact-fit-canvas");
+    const fitBody = element("div", "compact-fit-body");
+    if (topicLabel) {
+      fitBody.append(element("p", "question-kicker", topicLabel));
+    }
+    fitBody.append(title, optionGrid);
+    fitCanvas.append(fitBody);
+    fitRegion.append(fitCanvas);
 
-  const detailBody = element("div", "detail-body");
-  detailBody.append(
-    buildDetailTextBlock(
-      "Kaynak",
-      `${formatFileLabel(question.source_pdf)} • Sayfa ${question.source_pages.join(", ")}`
-    ),
-    buildDetailTextBlock("Öğrenme hedefi", question.learning_objective)
-  );
-
-  if (question.tags.length) {
-    detailBody.append(buildDetailChipBlock("Etiketler", question.tags));
+    const actionRow = element("div", "question-card-actions");
+    actionRow.append(sourceButton, explanationButton);
+    card.append(meta, fitRegion, actionRow);
+  } else {
+    card.append(meta, title, optionGrid, explanation, details);
   }
 
-  details.append(detailBody);
-
-  card.append(meta);
-  if (compact && topicLabel) {
-    card.append(element("p", "question-kicker", topicLabel));
-  }
-  card.append(title, optionGrid, explanation, details);
   return card;
 }
 
 function renderCompactQuestion(container, question, position, total, options = {}) {
+  closeQuestionDialog();
   clearNode(container);
-  container.append(
-    buildQuestionCard(question, {
-      compact: true,
-      progressLabel: `${position}/${total}`,
-      onAnswered: options.onAnswered
-    })
-  );
+  const card = buildQuestionCard(question, {
+    compact: true,
+    progressLabel: `${position}/${total}`,
+    onAnswered: options.onAnswered
+  });
+  container.append(card);
+  setActiveCompactCard(card);
 }
 
 function buildHome() {
@@ -654,6 +889,7 @@ function buildQuestionsPage() {
 
   const openFilters = (trigger) => {
     if (isDesktop()) return;
+    closeQuestionDialog();
     lastTrigger = trigger;
     draftFilters = { ...committedFilters };
     syncControlValues();
@@ -866,6 +1102,7 @@ function buildPracticePage() {
 
   const openFilters = (trigger) => {
     if (isDesktop()) return;
+    closeQuestionDialog();
     lastTrigger = trigger;
     draftFilters = { ...committedFilters };
     syncControlValues();
@@ -1050,6 +1287,7 @@ function buildReviewPage() {
 
   const openTools = (trigger) => {
     if (isDesktop()) return;
+    closeQuestionDialog();
     lastTrigger = trigger;
     updateCounts();
     body.classList.add("practice-filters-open", "practice-sheet-open");
