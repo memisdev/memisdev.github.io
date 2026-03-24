@@ -98,18 +98,50 @@
 
     <button class="practice-overlay" id="review-overlay" type="button" aria-label="Açık paneli kapat"></button>
 
-    <nav class="practice-dock" aria-label="Tekrar aksiyonları">
+    <nav class="practice-dock" aria-label="Soru aksiyonları">
       <button
-        class="button secondary"
+        class="button secondary practice-dock-button"
+        data-dock-action="source"
+        type="button"
+        aria-label="Kaynak"
+        title="Kaynak"
+        disabled
+      >
+        Kaynak
+      </button>
+      <button
+        class="button secondary practice-dock-button"
+        data-dock-action="explanation"
+        type="button"
+        aria-label="Açıklama"
+        title="Açıklama (cevaptan sonra açılır)"
+        disabled
+      >
+        Açıklama
+      </button>
+      <button
+        class="button primary practice-dock-button"
         id="review-tools-dock-toggle"
+        data-dock-action="menu"
         type="button"
         aria-haspopup="dialog"
         aria-controls="review-tools-sheet"
         aria-expanded="false"
+        aria-label="Ana Menü"
+        title="Ana Menü"
       >
-        Araçlar
+        Ana Menü
       </button>
-      <button class="button primary" id="next-review-question" type="button">Sonraki</button>
+      <button
+        class="button primary practice-dock-button"
+        id="next-review-question"
+        data-dock-action="next"
+        type="button"
+        aria-label="Sonraki Soru"
+        title="Sonraki Soru"
+      >
+        Sonraki
+      </button>
     </nav>
 
     <script type="module" src="assets/app.js"></script>

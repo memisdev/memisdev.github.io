@@ -13,7 +13,8 @@ const compactQuestionUi = {
   activeCard: null,
   fitFrame: 0,
   resizeBound: false,
-  dialog: null
+  dialog: null,
+  dock: null
 };
 
 async function loadJson(fileName) {
@@ -97,6 +98,56 @@ function element(tagName, className, content) {
   return node;
 }
 
+function svgElement(tagName, attributes = {}) {
+  const node = document.createElementNS("http://www.w3.org/2000/svg", tagName);
+  Object.entries(attributes).forEach(([key, value]) => node.setAttribute(key, value));
+  return node;
+}
+
+function buildDockIcon(name) {
+  const svg = svgElement("svg", {
+    viewBox: "0 0 24 24",
+    "aria-hidden": "true",
+    focusable: "false",
+    class: "dock-icon"
+  });
+
+  const shapes = {
+    source: [
+      ["path", { d: "M5.5 4.5A2.5 2.5 0 0 1 8 2h10v17H8a2.5 2.5 0 0 0-2.5 2.5z" }],
+      ["path", { d: "M5.5 4.5V21.5" }],
+      ["path", { d: "M8.5 6.5H15.5" }],
+      ["path", { d: "M8.5 10H15.5" }]
+    ],
+    explanation: [
+      ["path", { d: "M8.75 14.5c-.97-.84-1.55-1.98-1.55-3.24a4.8 4.8 0 1 1 9.6 0c0 1.26-.58 2.4-1.55 3.24-.62.53-1.04 1.25-1.15 2.05H9.9c-.11-.8-.53-1.52-1.15-2.05Z" }],
+      ["path", { d: "M9.75 18.5h4.5" }],
+      ["path", { d: "M10.5 21h3" }]
+    ],
+    menu: [
+      ["path", { d: "M4 6h6" }],
+      ["circle", { cx: "13", cy: "6", r: "2" }],
+      ["path", { d: "M16 6h4" }],
+      ["path", { d: "M4 12h3" }],
+      ["circle", { cx: "10", cy: "12", r: "2" }],
+      ["path", { d: "M13 12h7" }],
+      ["path", { d: "M4 18h9" }],
+      ["circle", { cx: "16", cy: "18", r: "2" }],
+      ["path", { d: "M19 18h1" }]
+    ],
+    next: [
+      ["path", { d: "M5 12h12" }],
+      ["path", { d: "M13 7l5 5-5 5" }]
+    ]
+  };
+
+  (shapes[name] || []).forEach(([tagName, attributes]) => {
+    svg.append(svgElement(tagName, attributes));
+  });
+
+  return svg;
+}
+
 function clearNode(node) {
   node.replaceChildren();
 }
@@ -155,6 +206,7 @@ function buildEmptyState(title, message, actions = []) {
 
 function setEmpty(container, title, message, actions = []) {
   closeQuestionDialog();
+  resetQuestionFlowDockState();
   clearNode(container);
   container.append(buildEmptyState(title, message, actions));
 }
@@ -296,6 +348,41 @@ function ensureCompactQuestionUi() {
     compactQuestionUi.dialog = { root, title, subtitle, body };
   }
 
+  if (!compactQuestionUi.dock) {
+    const root = document.querySelector(".practice-dock");
+    if (root) {
+      const buttons = {
+        source: root.querySelector('[data-dock-action="source"]'),
+        explanation: root.querySelector('[data-dock-action="explanation"]'),
+        menu: root.querySelector('[data-dock-action="menu"]'),
+        next: root.querySelector('[data-dock-action="next"]')
+      };
+
+      Object.entries(buttons).forEach(([name, button]) => {
+        if (!button || button.dataset.iconReady === "true") return;
+        const label = button.getAttribute("aria-label") || button.getAttribute("title") || "";
+        clearNode(button);
+        button.append(buildDockIcon(name), element("span", "sr-only", label));
+        button.dataset.iconReady = "true";
+        if (label && !button.title) {
+          button.title = label;
+        }
+      });
+
+      buttons.source?.addEventListener("click", () => compactQuestionUi.dock?.handlers.source?.());
+      buttons.explanation?.addEventListener("click", () => compactQuestionUi.dock?.handlers.explanation?.());
+
+      compactQuestionUi.dock = {
+        root,
+        buttons,
+        handlers: {
+          source: null,
+          explanation: null
+        }
+      };
+    }
+  }
+
   if (!compactQuestionUi.resizeBound) {
     compactQuestionUi.resizeBound = true;
     window.addEventListener("resize", () => scheduleCompactCardFit());
@@ -306,6 +393,57 @@ function ensureCompactQuestionUi() {
       }
     });
   }
+}
+
+function setQuestionFlowDockState({
+  question = null,
+  topicLabel = "",
+  answerState = null
+} = {}) {
+  if (document.body.dataset.layout !== "question-flow") return;
+
+  ensureCompactQuestionUi();
+  const dock = compactQuestionUi.dock;
+  if (!dock) return;
+
+  const hasQuestion = Boolean(question);
+  const sourceButton = dock.buttons.source;
+  const explanationButton = dock.buttons.explanation;
+
+  dock.handlers.source = hasQuestion
+    ? () =>
+        openQuestionDialog({
+          title: "Kaynak",
+          subtitle: topicLabel || question.source_topic,
+          content: buildSourceDialogContent(question, topicLabel)
+        })
+    : null;
+
+  dock.handlers.explanation = hasQuestion && answerState
+    ? () =>
+        openQuestionDialog({
+          title: "Açıklama",
+          subtitle: topicLabel || question.source_topic,
+          content: buildExplanationDialogContent(question, answerState)
+        })
+    : null;
+
+  if (sourceButton) {
+    sourceButton.disabled = !hasQuestion;
+  }
+
+  if (explanationButton) {
+    const isExplanationReady = Boolean(hasQuestion && answerState);
+    explanationButton.disabled = !isExplanationReady;
+    explanationButton.dataset.state = isExplanationReady ? "ready" : hasQuestion ? "locked" : "empty";
+    explanationButton.title = isExplanationReady ? "Açıklama" : "Açıklama (cevaptan sonra açılır)";
+  }
+
+  dock.root.dataset.dockState = answerState ? "answered" : hasQuestion ? "active" : "empty";
+}
+
+function resetQuestionFlowDockState() {
+  setQuestionFlowDockState();
 }
 
 function openQuestionDialog({ title, subtitle = "", content = [] }) {
@@ -485,7 +623,7 @@ function buildExplanationDialogContent(question, answerState) {
 }
 
 function buildQuestionCard(question, options = {}) {
-  const { compact = false, progressLabel = "", onAnswered = null } = options;
+  const { compact = false, progressLabel = "", onAnswered = null, onAnswerStateChange = null } = options;
   const card = element("article", compact ? "question-card compact-card" : "question-card");
   const meta = element("div", compact ? "question-meta question-meta-compact" : "question-meta");
   const topicLabel = question.source_subtopic || question.source_topic;
@@ -596,6 +734,7 @@ function buildQuestionCard(question, options = {}) {
 
       if (compact) {
         explanationButton.disabled = false;
+        onAnswerStateChange?.({ answerState, topicLabel });
       } else {
         explanation.hidden = false;
         clearNode(explanation);
@@ -660,10 +799,15 @@ function buildQuestionCard(question, options = {}) {
 function renderCompactQuestion(container, question, position, total, options = {}) {
   closeQuestionDialog();
   clearNode(container);
+  const topicLabel = question.source_subtopic || question.source_topic;
+  setQuestionFlowDockState({ question, topicLabel });
   const card = buildQuestionCard(question, {
     compact: true,
     progressLabel: `${position}/${total}`,
-    onAnswered: options.onAnswered
+    onAnswered: options.onAnswered,
+    onAnswerStateChange: ({ answerState }) => {
+      setQuestionFlowDockState({ question, topicLabel, answerState });
+    }
   });
   container.append(card);
   setActiveCompactCard(card);
