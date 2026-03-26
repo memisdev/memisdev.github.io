@@ -1931,9 +1931,7 @@ function buildFillBlankStage({
   index,
   total,
   answerState,
-  onAnswer,
-  onNext,
-  onOpenTools
+  onAnswer
 }) {
   const fragment = document.createDocumentFragment();
   const card = element("article", "question-card compact-card fill-blank-card");
@@ -1954,47 +1952,38 @@ function buildFillBlankStage({
   const fitRegion = element("div", "compact-fit-region fill-blank-fit-region");
   const fitCanvas = element("div", "compact-fit-canvas");
   const fitBody = element("div", "compact-fit-body fill-blank-fit-body");
-  const actionRow = element("div", "fill-blank-actions");
-  const nextButton = element("button", "button primary fill-blank-next", "Sonraki");
-  nextButton.type = "button";
-  const responsePanel = element("section", "fill-blank-response");
-  const responseHead = element("div", "fill-blank-response-head");
-  const responseBadge = element(
-    "span",
-    `fill-blank-response-badge ${answerState?.isCorrect ? "is-correct" : "is-wrong"}`.trim(),
-    answerState?.isCorrect ? "Doğru" : "Yanlış"
-  );
-  const responseTitle = element(
-    "p",
-    "fill-blank-response-title",
-    answerState?.isCorrect ? "Boşluğu doğru seçenekle tamamladın." : "Seçtiğin ifade boşluğu doğru tamamlamıyor."
-  );
-  const responseDetail = element(
-    "p",
-    "fill-blank-response-copy",
-    answerState?.isCorrect
-      ? `Doğru tamamlama: ${question.correct_answer}) ${question.correct_completion}`
-      : `Seçimin: ${answerState?.selectedLetter}) ${question.options[answerState?.selectedLetter] || ""}`
-  );
-  const responseAnswer = element(
-    "p",
-    "fill-blank-response-answer",
-    `Doğru tamamlama: ${question.correct_answer}) ${question.correct_completion}`
-  );
-  const explanation = element("p", "fill-blank-response-copy", question.explanation);
-  const desktopToolsButton = element("button", "button secondary fill-blank-tools-toggle desktop-only-action", "Ayarlar");
+  const actionRow = element("div", "question-card-actions");
+  const topicLabel = question.source_subtopic || question.source_topic;
+  const sourceButton = element("button", "button secondary question-card-action", "Kaynak");
+  const explanationButton = element("button", "button primary question-card-action", "Açıklama");
+  sourceButton.type = "button";
+  explanationButton.type = "button";
 
   metaGroup.append(
     badge(question.difficulty, difficultyClass(question.difficulty)),
     badge(topicLabelByPdf(question.source_pdf))
   );
-  utility.append(element("span", "question-progress", `${index}/${total}`), desktopToolsButton);
+  utility.append(element("span", "question-progress", `${index}/${total}`));
   meta.append(metaGroup, utility);
 
-  desktopToolsButton.type = "button";
-  desktopToolsButton.setAttribute("aria-haspopup", "dialog");
-  desktopToolsButton.setAttribute("aria-controls", "fill-blank-tools-sheet");
-  desktopToolsButton.addEventListener("click", () => onOpenTools(desktopToolsButton));
+  sourceButton.addEventListener("click", () => {
+    openQuestionDialog({
+      title: "Kaynak",
+      subtitle: topicLabel,
+      content: buildSourceDialogContent(question, topicLabel)
+    });
+  });
+
+  explanationButton.disabled = !answerState;
+  explanationButton.addEventListener("click", () => {
+    if (!answerState) return;
+    openQuestionDialog({
+      title: "Açıklama",
+      subtitle: topicLabel,
+      content: buildFillBlankExplanationDialogContent(question, answerState)
+    });
+  });
+
   promptPanel.append(promptLabel, prompt);
 
   Object.entries(question.options).forEach(([letter, value]) => {
@@ -2017,31 +2006,11 @@ function buildFillBlankStage({
     optionGrid.append(button);
   });
 
-  nextButton.disabled = !answerState;
-  nextButton.addEventListener("click", onNext);
-
-  if (answerState) {
-    responsePanel.classList.add(answerState.isCorrect ? "is-correct" : "is-wrong");
-    responseHead.append(responseBadge, responseTitle);
-    responsePanel.append(responseHead, answerState.isCorrect ? responseAnswer : responseDetail);
-    if (!answerState.isCorrect) {
-      responsePanel.append(responseAnswer);
-    }
-    responsePanel.append(
-      buildFillBlankPrompt(question.prompt_text, question.correct_completion, "fill-blank-feedback-prompt"),
-      explanation
-    );
-    actionRow.append(nextButton);
-  } else {
-    responsePanel.hidden = true;
-    actionRow.hidden = true;
-  }
-
   fitBody.append(kicker, promptPanel, optionGrid);
   fitCanvas.append(fitBody);
   fitRegion.append(fitCanvas);
-
-  card.append(meta, fitRegion, responsePanel, actionRow);
+  actionRow.append(sourceButton, explanationButton);
+  card.append(meta, fitRegion, actionRow);
   fragment.append(card);
 
   return { fragment, card };
@@ -2294,9 +2263,7 @@ function buildFillBlanksPage() {
         };
         recordFillBlankResult(question.id, isCorrect ? "correct" : "wrong", "midterm");
         renderQuestion(question, index, total);
-      },
-      onNext: goToNextQuestion,
-      onOpenTools: openTools
+      }
     });
 
     root.append(stage.fragment);
