@@ -1930,7 +1930,6 @@ function buildFillBlankStage({
   question,
   index,
   total,
-  activeFilterLabel,
   selectedLetter,
   answerState,
   onSelect,
@@ -1940,7 +1939,7 @@ function buildFillBlankStage({
   onOpenTools
 }) {
   const fragment = document.createDocumentFragment();
-  const card = element("article", "question-card fill-blank-card");
+  const card = element("article", "question-card compact-card fill-blank-card");
   const meta = element("div", "question-meta question-meta-compact");
   const metaGroup = element("div", "question-meta-group");
   const utility = element("div", "fill-blank-utility");
@@ -1951,18 +1950,45 @@ function buildFillBlankStage({
       ? question.source_subtopic
       : question.source_topic
   );
-  const filterLabel = element("p", "practice-active-filter fill-blank-inline-filter", activeFilterLabel);
   const prompt = buildFillBlankPrompt(question.prompt_text);
+  const promptPanel = element("section", "fill-blank-prompt-panel");
+  const promptLabel = element("span", "fill-blank-prompt-label", "Boşluğu en doğru ifadeyle tamamla");
   const optionGrid = element("div", "option-grid fill-blank-option-grid");
+  const fitRegion = element("div", "compact-fit-region fill-blank-fit-region");
+  const fitCanvas = element("div", "compact-fit-canvas");
+  const fitBody = element("div", "compact-fit-body fill-blank-fit-body");
   const actionRow = element("div", "fill-blank-actions");
   const submitButton = element("button", "button primary", "Kontrol Et");
   submitButton.type = "button";
   const skipButton = element("button", "button secondary", "Atla");
   skipButton.type = "button";
-  const nextButton = element("button", "button secondary fill-blank-next", "Sonraki");
+  const nextButton = element("button", "button primary fill-blank-next", "Sonraki");
   nextButton.type = "button";
-  const feedback = element("div", "fill-blank-feedback");
-  const explanation = element("div", "fill-blank-explanation");
+  const responsePanel = element("section", "fill-blank-response");
+  const responseHead = element("div", "fill-blank-response-head");
+  const responseBadge = element(
+    "span",
+    `fill-blank-response-badge ${answerState?.isCorrect ? "is-correct" : "is-wrong"}`.trim(),
+    answerState?.isCorrect ? "Doğru" : "Yanlış"
+  );
+  const responseTitle = element(
+    "p",
+    "fill-blank-response-title",
+    answerState?.isCorrect ? "Boşluğu doğru seçenekle tamamladın." : "Seçtiğin ifade boşluğu doğru tamamlamıyor."
+  );
+  const responseDetail = element(
+    "p",
+    "fill-blank-response-copy",
+    answerState?.isCorrect
+      ? `Doğru tamamlama: ${question.correct_answer}) ${question.correct_completion}`
+      : `Seçimin: ${answerState?.selectedLetter}) ${question.options[answerState?.selectedLetter] || ""}`
+  );
+  const responseAnswer = element(
+    "p",
+    "fill-blank-response-answer",
+    `Doğru tamamlama: ${question.correct_answer}) ${question.correct_completion}`
+  );
+  const explanation = element("p", "fill-blank-response-copy", question.explanation);
   const desktopToolsButton = element("button", "button secondary fill-blank-tools-toggle desktop-only-action", "Ayarlar");
 
   metaGroup.append(
@@ -1976,6 +2002,7 @@ function buildFillBlankStage({
   desktopToolsButton.setAttribute("aria-haspopup", "dialog");
   desktopToolsButton.setAttribute("aria-controls", "fill-blank-tools-sheet");
   desktopToolsButton.addEventListener("click", () => onOpenTools(desktopToolsButton));
+  promptPanel.append(promptLabel, prompt);
 
   Object.entries(question.options).forEach(([letter, value]) => {
     const button = element("button", "option-button");
@@ -2007,38 +2034,32 @@ function buildFillBlankStage({
   submitButton.addEventListener("click", () => onSubmit(selectedLetter));
   skipButton.addEventListener("click", onSkip);
   nextButton.addEventListener("click", onNext);
-  actionRow.append(submitButton, skipButton, nextButton);
 
   if (answerState) {
-    feedback.hidden = false;
-    feedback.classList.add(answerState.isCorrect ? "is-correct" : "is-wrong");
-    feedback.append(
-      element("h3", "", answerState.isCorrect ? "Doğru" : "Yanlış"),
-      element(
-        "p",
-        "",
-        answerState.isCorrect
-          ? "Boşluğu doğru seçenekle tamamladın."
-          : `Seçtiğin seçenek doğru değildi: ${answerState.selectedLetter}) ${question.options[answerState.selectedLetter]}`
-      ),
-      element("p", "fill-blank-answer-line", `Doğru tamamlama: ${question.correct_answer}) ${question.correct_completion}`),
-      buildFillBlankPrompt(question.prompt_text, question.correct_completion, "fill-blank-feedback-prompt")
+    responsePanel.classList.add(answerState.isCorrect ? "is-correct" : "is-wrong");
+    responseHead.append(responseBadge, responseTitle);
+    responsePanel.append(responseHead, answerState.isCorrect ? responseAnswer : responseDetail);
+    if (!answerState.isCorrect) {
+      responsePanel.append(responseAnswer);
+    }
+    responsePanel.append(
+      buildFillBlankPrompt(question.prompt_text, question.correct_completion, "fill-blank-feedback-prompt"),
+      explanation
     );
-
-    explanation.hidden = false;
-    explanation.append(
-      element("h3", "", "Kısa Açıklama"),
-      element("p", "", question.explanation)
-    );
+    actionRow.append(nextButton);
   } else {
-    feedback.hidden = true;
-    explanation.hidden = true;
+    responsePanel.hidden = true;
+    actionRow.append(submitButton, skipButton);
   }
 
-  card.append(meta, kicker, filterLabel, prompt, optionGrid, actionRow, feedback, explanation);
+  fitBody.append(kicker, promptPanel, optionGrid);
+  fitCanvas.append(fitBody);
+  fitRegion.append(fitCanvas);
+
+  card.append(meta, fitRegion, responsePanel, actionRow);
   fragment.append(card);
 
-  return { fragment };
+  return { fragment, card };
 }
 
 function buildFillBlanksPage() {
@@ -2059,10 +2080,14 @@ function buildFillBlanksPage() {
   const applyButton = document.getElementById("fill-blank-apply-filters");
   const resetButton = document.getElementById("fill-blank-reset-filters");
   const overlay = document.getElementById("fill-blank-overlay");
+  const toolsHeaderToggle = document.getElementById("fill-blank-tools-toggle");
   const toolsDockToggle = document.getElementById("fill-blank-tools-dock-toggle");
   const dockNextButton = document.getElementById("fill-blank-next-dock");
+  const desktopNextButton = document.getElementById("fill-blank-next-desktop");
   const poolCount = document.getElementById("fill-blank-count");
   const activeFilter = document.getElementById("fill-blank-active-filter");
+  const headerCount = document.getElementById("fill-blank-count-header");
+  const headerActiveFilter = document.getElementById("fill-blank-active-filter-header");
   const solvedStat = document.getElementById("fill-blank-solved");
   const correctStat = document.getElementById("fill-blank-correct");
   const weakStat = document.getElementById("fill-blank-weak");
@@ -2099,7 +2124,7 @@ function buildFillBlanksPage() {
 
   const resetToolExpansion = () => {
     document
-      .querySelectorAll("#fill-blank-tools-dock-toggle, .fill-blank-tools-toggle")
+      .querySelectorAll("#fill-blank-tools-dock-toggle, #fill-blank-tools-toggle, .fill-blank-tools-toggle")
       .forEach((node) => node.setAttribute("aria-expanded", "false"));
   };
 
@@ -2108,7 +2133,7 @@ function buildFillBlanksPage() {
       toolsSheet?.setAttribute("role", "dialog");
       toolsSheet?.setAttribute("aria-modal", "true");
       document
-        .querySelectorAll("#fill-blank-tools-dock-toggle, .fill-blank-tools-toggle")
+        .querySelectorAll("#fill-blank-tools-dock-toggle, #fill-blank-tools-toggle, .fill-blank-tools-toggle")
         .forEach((node) => node.setAttribute("aria-expanded", "true"));
     } else {
       toolsSheet?.removeAttribute("role");
@@ -2120,9 +2145,17 @@ function buildFillBlanksPage() {
     const summary = fillBlankSummary("midterm");
     const committedPool = filterFillBlanks(committedFilters);
     const draftPool = filterFillBlanks(draftFilters);
+    const committedLabel = formatFilterSummary(committedFilters);
+    const draftPoolLabel = fillBlankPoolLabel(draftPool.length);
 
-    activeFilter.textContent = formatFilterSummary(committedFilters);
-    poolCount.textContent = fillBlankPoolLabel(draftPool.length);
+    activeFilter.textContent = committedLabel;
+    if (headerActiveFilter) {
+      headerActiveFilter.textContent = `${committedLabel} • ${fillBlankPoolLabel(committedPool.length)}`;
+    }
+    poolCount.textContent = draftPoolLabel;
+    if (headerCount) {
+      headerCount.textContent = fillBlankPoolLabel(committedPool.length);
+    }
     solvedStat.textContent = String(summary.solvedCount);
     correctStat.textContent = String(summary.correctCount);
     weakStat.textContent = String(summary.weakCount);
@@ -2185,6 +2218,10 @@ function buildFillBlanksPage() {
 
     if (!state.fillBlanks?.length) {
       setFillBlankDockState();
+      if (desktopNextButton) {
+        desktopNextButton.disabled = true;
+        desktopNextButton.onclick = null;
+      }
       if (dockNextButton) {
         dockNextButton.disabled = true;
         dockNextButton.onclick = null;
@@ -2200,6 +2237,10 @@ function buildFillBlanksPage() {
 
     if (!filtered.length) {
       setFillBlankDockState();
+      if (desktopNextButton) {
+        desktopNextButton.disabled = true;
+        desktopNextButton.onclick = null;
+      }
       if (dockNextButton) {
         dockNextButton.disabled = true;
         dockNextButton.onclick = null;
@@ -2262,7 +2303,6 @@ function buildFillBlanksPage() {
       question,
       index: index + 1,
       total,
-      activeFilterLabel: `${formatFilterSummary(committedFilters)} • ${fillBlankPoolLabel(total)}`,
       selectedLetter,
       answerState,
       onSelect: (letter) => {
@@ -2286,11 +2326,18 @@ function buildFillBlanksPage() {
 
     root.append(stage.fragment);
     setFillBlankDockState({ question, answerState });
+    setActiveCompactCard(stage.card);
 
     if (dockNextButton) {
       dockNextButton.disabled = false;
       dockNextButton.onclick = answerState ? goToNextQuestion : skipCurrentQuestion;
       dockNextButton.title = answerState ? "Sonraki" : "Atla";
+    }
+
+    if (desktopNextButton) {
+      desktopNextButton.disabled = false;
+      desktopNextButton.textContent = answerState ? "Sonraki Boşluk" : "Boşluğu Atla";
+      desktopNextButton.onclick = answerState ? goToNextQuestion : skipCurrentQuestion;
     }
   };
 
@@ -2318,13 +2365,17 @@ function buildFillBlanksPage() {
 
   [topicSelect, difficultySelect].forEach((node) => node.addEventListener("change", handleDraftChange));
   weakOnlyInput?.addEventListener("change", handleDraftChange);
-  toolsDockToggle?.addEventListener("click", () => {
-    if (body.classList.contains("practice-sheet-open")) {
-      closeTools({ restoreFocus: true });
-    } else {
-      openTools(toolsDockToggle);
-    }
-  });
+  [toolsHeaderToggle, toolsDockToggle]
+    .filter(Boolean)
+    .forEach((node) =>
+      node.addEventListener("click", () => {
+        if (body.classList.contains("practice-sheet-open")) {
+          closeTools({ restoreFocus: true });
+        } else {
+          openTools(node);
+        }
+      })
+    );
   toolsClose?.addEventListener("click", () => closeTools({ restoreFocus: true }));
   applyButton?.addEventListener("click", applyFilters);
   resetButton?.addEventListener("click", () => {
