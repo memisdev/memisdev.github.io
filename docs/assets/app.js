@@ -1930,11 +1930,8 @@ function buildFillBlankStage({
   question,
   index,
   total,
-  selectedLetter,
   answerState,
-  onSelect,
-  onSubmit,
-  onSkip,
+  onAnswer,
   onNext,
   onOpenTools
 }) {
@@ -1952,16 +1949,12 @@ function buildFillBlankStage({
   );
   const prompt = buildFillBlankPrompt(question.prompt_text);
   const promptPanel = element("section", "fill-blank-prompt-panel");
-  const promptLabel = element("span", "fill-blank-prompt-label", "Boşluğu en doğru ifadeyle tamamla");
+  const promptLabel = element("span", "fill-blank-prompt-label", "Doğru ifadeye dokun ve boşluğu tamamla");
   const optionGrid = element("div", "option-grid fill-blank-option-grid");
   const fitRegion = element("div", "compact-fit-region fill-blank-fit-region");
   const fitCanvas = element("div", "compact-fit-canvas");
   const fitBody = element("div", "compact-fit-body fill-blank-fit-body");
   const actionRow = element("div", "fill-blank-actions");
-  const submitButton = element("button", "button primary", "Kontrol Et");
-  submitButton.type = "button";
-  const skipButton = element("button", "button secondary", "Atla");
-  skipButton.type = "button";
   const nextButton = element("button", "button primary fill-blank-next", "Sonraki");
   nextButton.type = "button";
   const responsePanel = element("section", "fill-blank-response");
@@ -2010,10 +2003,6 @@ function buildFillBlankStage({
     button.dataset.letter = letter;
     button.append(element("span", "option-label", letter), element("span", "option-text", value));
 
-    if (selectedLetter === letter && !answerState) {
-      button.classList.add("is-selected");
-    }
-
     if (answerState) {
       button.disabled = true;
       if (letter === question.correct_answer) {
@@ -2022,17 +2011,13 @@ function buildFillBlankStage({
         button.classList.add("incorrect");
       }
     } else {
-      button.addEventListener("click", () => onSelect(letter));
+      button.addEventListener("click", () => onAnswer(letter));
     }
 
     optionGrid.append(button);
   });
 
-  submitButton.disabled = Boolean(answerState) || !selectedLetter;
-  skipButton.disabled = Boolean(answerState);
   nextButton.disabled = !answerState;
-  submitButton.addEventListener("click", () => onSubmit(selectedLetter));
-  skipButton.addEventListener("click", onSkip);
   nextButton.addEventListener("click", onNext);
 
   if (answerState) {
@@ -2049,7 +2034,7 @@ function buildFillBlankStage({
     actionRow.append(nextButton);
   } else {
     responsePanel.hidden = true;
-    actionRow.append(submitButton, skipButton);
+    actionRow.hidden = true;
   }
 
   fitBody.append(kicker, promptPanel, optionGrid);
@@ -2102,7 +2087,6 @@ function buildFillBlanksPage() {
   };
   let draftFilters = { ...committedFilters };
   let currentQuestionId = null;
-  let selectedLetter = "";
   let answerState = null;
   let lastRenderedId = null;
   let lastTrigger = null;
@@ -2271,7 +2255,6 @@ function buildFillBlanksPage() {
       if (!nextPool.length) {
         currentQuestionId = null;
         answerState = null;
-        selectedLetter = "";
         lastRenderedId = null;
         render();
         return;
@@ -2282,7 +2265,6 @@ function buildFillBlanksPage() {
       const nextIndex = (resolvedIndex + 1) % nextPool.length;
       currentQuestionId = nextPool[nextIndex].id;
       answerState = null;
-      selectedLetter = "";
       lastRenderedId = null;
       render();
     };
@@ -2293,7 +2275,6 @@ function buildFillBlanksPage() {
       const nextIndex = currentPool.length > 1 ? (index + 1) % currentPool.length : index;
       currentQuestionId = currentPool[nextIndex]?.id || null;
       answerState = null;
-      selectedLetter = "";
       lastRenderedId = null;
       render();
     };
@@ -2303,13 +2284,8 @@ function buildFillBlanksPage() {
       question,
       index: index + 1,
       total,
-      selectedLetter,
       answerState,
-      onSelect: (letter) => {
-        selectedLetter = letter;
-        renderQuestion(question, index, total);
-      },
-      onSubmit: (letter) => {
+      onAnswer: (letter) => {
         const isCorrect = letter === question.correct_answer;
         answerState = {
           isCorrect,
@@ -2319,7 +2295,6 @@ function buildFillBlanksPage() {
         recordFillBlankResult(question.id, isCorrect ? "correct" : "wrong", "midterm");
         renderQuestion(question, index, total);
       },
-      onSkip: skipCurrentQuestion,
       onNext: goToNextQuestion,
       onOpenTools: openTools
     });
@@ -2335,9 +2310,9 @@ function buildFillBlanksPage() {
     }
 
     if (desktopNextButton) {
-      desktopNextButton.disabled = false;
-      desktopNextButton.textContent = answerState ? "Sonraki Boşluk" : "Boşluğu Atla";
-      desktopNextButton.onclick = answerState ? goToNextQuestion : skipCurrentQuestion;
+      desktopNextButton.disabled = !answerState;
+      desktopNextButton.textContent = "Sonraki Boşluk";
+      desktopNextButton.onclick = answerState ? goToNextQuestion : null;
     }
   };
 
@@ -2348,7 +2323,6 @@ function buildFillBlanksPage() {
       weakOnly: draftFilters.weakOnly
     };
     answerState = null;
-    selectedLetter = "";
     lastRenderedId = null;
     render();
     closeTools({ restoreFocus: true });
