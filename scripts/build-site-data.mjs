@@ -21,6 +21,8 @@ export async function buildSiteData() {
   const midtermQuestions = loadJson(path.join(QUESTIONS_DIR, "midterm-questions.json"));
   const finalQuestions = loadJson(path.join(QUESTIONS_DIR, "final-questions.json"));
   const reviewNeededQuestions = loadJson(path.join(QUESTIONS_DIR, "review-needed-questions.json"));
+  const midtermFillBlanks = loadJson(path.join(QUESTIONS_DIR, "midterm-fill-blanks.json"));
+  const midtermFillBlankReview = loadJson(path.join(QUESTIONS_DIR, "midterm-fill-blanks-review.json"));
   const topicIndex = loadJson(path.join(QUESTIONS_DIR, "topic-index.json"));
   const midtermTopicIndex = loadJson(path.join(QUESTIONS_DIR, "midterm-topic-index.json"));
   const finalTopicIndex = loadJson(path.join(QUESTIONS_DIR, "final-topic-index.json"));
@@ -37,6 +39,8 @@ export async function buildSiteData() {
     "midterm-questions.json",
     "final-questions.json",
     "review-needed-questions.json",
+    "midterm-fill-blanks.json",
+    "midterm-fill-blanks-review.json",
     "midterm-new-questions.json",
     "topic-index.json",
     "midterm-topic-index.json",
@@ -73,6 +77,18 @@ export async function buildSiteData() {
       review_needed: "review-needed-topic-index.json"
     },
     pdfScopes: PDF_EXAM_SCOPE_MAP,
+    study_modes: {
+      fill_blank: {
+        label: "Boşluk Doldurma",
+        page: "fill-blanks.html",
+        dataset: "midterm-fill-blanks.json",
+        review_dataset: "midterm-fill-blanks-review.json",
+        enabled_scopes: ["midterm"],
+        question_count: midtermFillBlanks.length,
+        review_count: midtermFillBlankReview.length,
+        source_pdfs: [...new Set(midtermFillBlanks.map((item) => item.source_pdf))].sort((a, b) => a.localeCompare(b, "tr"))
+      }
+    },
     quality: qualitySummary,
     by_scope: {
       midterm: {

@@ -2,6 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 import { CURRICULUM_MAP, DEDUP_RULES, PDF_ANALYSES } from "../src/content/curriculum.mjs";
 import { PDF_EXAM_SCOPE_MAP, splitQuestionsByExamScope } from "../src/content/exam-scope.mjs";
+import {
+  buildFillBlankBank,
+  buildFillBlankCoverageRows,
+  detectFillBlankExactDuplicates,
+  detectFillBlankNearDuplicates,
+  findFillBlankAcceptedAnswerIssues,
+  findFillBlankBannedTermHits
+} from "./lib/fill-blank-bank.mjs";
 import { buildQuestionBank, buildSubtopicCoverage } from "./lib/question-bank.mjs";
 import { loadPdfInventory } from "./lib/pdf-inventory.mjs";
 import { summarizePageRange, writeJson, writeText } from "./lib/utils.mjs";
@@ -304,11 +312,124 @@ function buildScopeQaReportMarkdown({ questions, split, midtermRows }) {
   return `${lines.join("\n")}\n`;
 }
 
+function buildMidtermFillBlankCoverageMarkdown(rows, fillBlanks) {
+  const lines = [
+    "# Midterm Fill Blanks Coverage Map",
+    "",
+    `- Toplam soru: ${fillBlanks.length}`,
+    `- Hedeflenen alt konu sayısı: ${rows.filter((row) => row.target_count > 0).length}`,
+    `- Tam karşılanan alt konu sayısı: ${rows.filter((row) => row.status === "covered").length}`,
+    "",
+    "| PDF | Alt konu | Uygunluk | Fill-blank odağı | Öğrenme hedefi | Hedef | Gerçek | Durum |",
+    "| --- | --- | --- | --- | --- | ---: | ---: | --- |"
+  ];
+
+  for (const row of rows) {
+    lines.push(
+      `| ${row.source_pdf} | ${row.subtopic} | ${row.suitability} | ${row.fill_blank_focus} | ${row.learning_objective} | ${row.target_count} | ${row.actual_count} | ${row.status} |`
+    );
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function buildMidtermFillBlankGapMarkdown(rows) {
+  const gaps = rows.filter((row) => row.gap_count > 0).sort(
+    (a, b) => b.gap_count - a.gap_count || a.subtopic.localeCompare(b.subtopic, "tr")
+  );
+  const lines = [
+    "# Midterm Fill Blanks Gap Report",
+    "",
+    `- Gap görülen alt konu sayısı: ${gaps.length}`,
+    `- Hedefi tam karşılanan alt konu sayısı: ${rows.filter((row) => row.status === "covered").length}`,
+    ""
+  ];
+
+  if (!gaps.length) {
+    lines.push("- Midterm fill-in-the-blank kapsam haritasında hedefin altında kalan alt konu yok.", "");
+    return `${lines.join("\n")}\n`;
+  }
+
+  lines.push("| Alt konu | Hedef | Gerçek | Eksik |", "| --- | ---: | ---: | ---: |");
+  for (const row of gaps) {
+    lines.push(`| ${row.subtopic} | ${row.target_count} | ${row.actual_count} | ${row.gap_count} |`);
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
+function buildMidtermFillBlankQualityMarkdown({
+  fillBlanks,
+  rows,
+  exactDuplicates,
+  nearDuplicates,
+  bannedHits,
+  acceptedAnswerIssues
+}) {
+  const perPdf = [...new Set(fillBlanks.map((item) => item.source_pdf))]
+    .sort((a, b) => a.localeCompare(b, "tr"))
+    .map((pdf) => ({
+      source_pdf: pdf,
+      question_count: fillBlanks.filter((item) => item.source_pdf === pdf).length
+    }));
+
+  const lines = [
+    "# Midterm Fill Blanks Quality Report",
+    "",
+    `- Toplam fill-in-the-blank soru sayısı: ${fillBlanks.length}`,
+    `- Kapsanan PDF sayısı: ${perPdf.length}`,
+    `- Exact duplicate prompt sayısı: ${exactDuplicates.length}`,
+    `- Near-duplicate prompt sayısı: ${nearDuplicates.length}`,
+    `- Meta dil ihlali sayısı: ${bannedHits.length}`,
+    `- Accepted answer issue sayısı: ${acceptedAnswerIssues.length}`,
+    `- Scope sızıntı sayısı: ${fillBlanks.filter((item) => item.exam_scope !== "midterm").length}`,
+    "",
+    "## PDF Bazlı Dağılım",
+    ...perPdf.map((row) => `- ${row.source_pdf}: ${row.question_count}`),
+    "",
+    "## Alt Konu Durumu",
+    "",
+    "| Alt konu | Hedef | Gerçek | Durum |",
+    "| --- | ---: | ---: | --- |",
+    ...rows.map((row) => `| ${row.subtopic} | ${row.target_count} | ${row.actual_count} | ${row.status} |`)
+  ];
+
+  if (acceptedAnswerIssues.length) {
+    lines.push("", "## Accepted Answer Issues", ...acceptedAnswerIssues.map((item) => `- ${item.id}: ${item.issues.join("; ")}`));
+  }
+
+  if (exactDuplicates.length) {
+    lines.push("", "## Exact Duplicates", ...exactDuplicates.map((item) => `- ${item.left} / ${item.right}`));
+  }
+
+  if (nearDuplicates.length) {
+    lines.push(
+      "",
+      "## Near Duplicates",
+      ...nearDuplicates.map(
+        (item) => `- ${item.left} / ${item.right}: ${item.source_subtopic} (${item.similarity})`
+      )
+    );
+  }
+
+  if (bannedHits.length) {
+    lines.push("", "## Meta Dil İhlalleri", ...bannedHits.map((item) => `- ${item.id}`));
+  }
+
+  return `${lines.join("\n")}\n`;
+}
+
 export async function buildAnalysis() {
   const questions = loadQuestions();
   const split = splitQuestionsByExamScope(questions);
+  const fillBlanks = buildFillBlankBank();
   const inventory = annotateInventoryWithScope(loadPdfInventory(ROOT));
   const midtermCoverageRows = buildMidtermCoverageRows(questions);
+  const midtermFillBlankRows = buildFillBlankCoverageRows(fillBlanks);
+  const fillBlankExactDuplicates = detectFillBlankExactDuplicates(fillBlanks);
+  const fillBlankNearDuplicates = detectFillBlankNearDuplicates(fillBlanks);
+  const fillBlankBannedHits = findFillBlankBannedTermHits(fillBlanks);
+  const fillBlankAcceptedAnswerIssues = findFillBlankAcceptedAnswerIssues(fillBlanks);
   const byScopeCurriculum = {
     midterm: CURRICULUM_MAP.filter((entry) =>
       PDF_EXAM_SCOPE_MAP.some((scope) => scope.file_name === entry.sourcePdf && scope.exam_scope === "midterm")
@@ -362,6 +483,22 @@ export async function buildAnalysis() {
   writeText(path.join(ANALYSIS_DIR, "question-scope-audit.md"), buildQuestionScopeAuditMarkdown(questions, split));
   writeText(path.join(ANALYSIS_DIR, "midterm-coverage-map.md"), buildMidtermCoverageMarkdown(midtermCoverageRows));
   writeText(path.join(ANALYSIS_DIR, "midterm-gap-report.md"), buildMidtermGapMarkdown(midtermCoverageRows));
+  writeText(
+    path.join(ANALYSIS_DIR, "midterm-fill-blanks-coverage-map.md"),
+    buildMidtermFillBlankCoverageMarkdown(midtermFillBlankRows, fillBlanks)
+  );
+  writeText(path.join(ANALYSIS_DIR, "midterm-fill-blanks-gap-report.md"), buildMidtermFillBlankGapMarkdown(midtermFillBlankRows));
+  writeText(
+    path.join(ANALYSIS_DIR, "midterm-fill-blanks-quality-report.md"),
+    buildMidtermFillBlankQualityMarkdown({
+      fillBlanks,
+      rows: midtermFillBlankRows,
+      exactDuplicates: fillBlankExactDuplicates,
+      nearDuplicates: fillBlankNearDuplicates,
+      bannedHits: fillBlankBannedHits,
+      acceptedAnswerIssues: fillBlankAcceptedAnswerIssues
+    })
+  );
   writeText(path.join(ANALYSIS_DIR, "scope-qa-report.md"), buildScopeQaReportMarkdown({ questions, split, midtermRows: midtermCoverageRows }));
   writeJson(path.join(ANALYSIS_DIR, "coverage-summary.json"), coverageSummary);
   writeJson(path.join(ANALYSIS_DIR, "exam-scope-map.json"), PDF_EXAM_SCOPE_MAP);

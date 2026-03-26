@@ -1,6 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  buildFillBlankBank,
+  buildFillBlankReviewQueue,
+  detectFillBlankExactDuplicates,
+  detectFillBlankNearDuplicates,
+  findFillBlankAcceptedAnswerIssues,
+  findFillBlankBannedTermHits
+} from "./lib/fill-blank-bank.mjs";
+import {
   buildSubtopicCoverage,
   comparePublishedRoster,
   detectExactDuplicatePrompts,
@@ -77,6 +85,56 @@ function validateSchema(questions) {
   return { duplicateIds, fieldErrors };
 }
 
+function validateFillBlankSchema(entries) {
+  const requiredFields = [
+    "id",
+    "mode",
+    "exam_scope",
+    "source_pdf",
+    "source_topic",
+    "source_subtopic",
+    "difficulty",
+    "prompt_text",
+    "blank_answer",
+    "accepted_answers",
+    "normalization_rules",
+    "explanation",
+    "learning_objective"
+  ];
+
+  const ids = new Set();
+  const duplicateIds = [];
+  const fieldErrors = [];
+
+  for (const entry of entries) {
+    if (ids.has(entry.id)) {
+      duplicateIds.push(entry.id);
+    }
+    ids.add(entry.id);
+
+    for (const field of requiredFields) {
+      if (
+        entry[field] === undefined ||
+        entry[field] === null ||
+        entry[field] === "" ||
+        (Array.isArray(entry[field]) && entry[field].length === 0)
+      ) {
+        fieldErrors.push(`${entry.id}: eksik fill-blank alanı -> ${field}`);
+      }
+    }
+
+    if (entry.mode !== "fill_blank") {
+      fieldErrors.push(`${entry.id}: mode fill_blank değil`);
+    }
+
+    if (entry.exam_scope !== "midterm") {
+      fieldErrors.push(`${entry.id}: exam_scope midterm değil`);
+    }
+  }
+
+  return { duplicateIds, fieldErrors };
+}
+
 function compareArtifacts(outputArtifacts, siteArtifacts, qualitySummary, siteMeta) {
   const findings = [];
 
@@ -98,6 +156,9 @@ function compareArtifacts(outputArtifacts, siteArtifacts, qualitySummary, siteMe
     }
     if (siteMeta.quality?.questionCount && siteMeta.quality.questionCount !== qualitySummary.questionCount) {
       findings.push("site-meta quality.questionCount ile quality-report.json eşleşmiyor");
+    }
+    if (outputArtifacts.fillBlankQuestions && siteMeta.study_modes?.fill_blank?.question_count !== outputArtifacts.fillBlankQuestions.length) {
+      findings.push("site-meta fill_blank question_count ile dataset eşleşmiyor");
     }
   }
 
@@ -129,6 +190,15 @@ function qualityMarkdown(summary) {
     `- Artifact senkron sorunu var mı?: ${
       summary.artifact_sync_findings.length === 0 ? "Yok" : `${summary.artifact_sync_findings.length} bulgu`
     }`,
+    `- Fill-in-the-blank soru sayısı: ${summary.fill_blank_question_count}`,
+    `- Fill-in-the-blank near-duplicate: ${
+      summary.fill_blank_near_duplicate_count === 0 ? "Yok" : `${summary.fill_blank_near_duplicate_count} çift`
+    }`,
+    `- Fill-in-the-blank accepted answer issue: ${
+      summary.fill_blank_accepted_answer_issue_count === 0
+        ? "Temiz"
+        : `${summary.fill_blank_accepted_answer_issue_count} kayıt`
+    }`,
     "",
     "## Konu başına soru dağılımı",
     ...summary.topicTotals.map((item) => `- ${item.source_pdf}: ${item.question_count}`),
@@ -157,6 +227,10 @@ function qualityMarkdown(summary) {
     lines.push("", "## Şema Hataları", ...summary.fieldErrors.map((item) => `- ${item}`));
   }
 
+  if (summary.fill_blank_field_errors.length) {
+    lines.push("", "## Fill-in-the-Blank Şema Hataları", ...summary.fill_blank_field_errors.map((item) => `- ${item}`));
+  }
+
   if (summary.artifact_sync_findings.length) {
     lines.push("", "## Artifact Senkron Bulguları", ...summary.artifact_sync_findings.map((item) => `- ${item}`));
   }
@@ -175,6 +249,12 @@ export async function validate() {
   const finalQuestions = loadJson(path.join(QUESTIONS_DIR, "final-questions.json"));
   const reviewNeededQuestions = loadJson(path.join(QUESTIONS_DIR, "review-needed-questions.json"));
   const midtermNewQuestions = loadJson(path.join(QUESTIONS_DIR, "midterm-new-questions.json"));
+  const fillBlankQuestions = fs.existsSync(path.join(QUESTIONS_DIR, "midterm-fill-blanks.json"))
+    ? loadJson(path.join(QUESTIONS_DIR, "midterm-fill-blanks.json"))
+    : buildFillBlankBank();
+  const fillBlankReviewQueue = fs.existsSync(path.join(QUESTIONS_DIR, "midterm-fill-blanks-review.json"))
+    ? loadJson(path.join(QUESTIONS_DIR, "midterm-fill-blanks-review.json"))
+    : buildFillBlankReviewQueue(fillBlankQuestions);
   const siteArtifacts = {
     allQuestions: fs.existsSync(path.join(DOCS_DATA_DIR, "all-questions.json"))
       ? loadJson(path.join(DOCS_DATA_DIR, "all-questions.json"))
@@ -187,6 +267,12 @@ export async function validate() {
       : null,
     reviewNeededQuestions: fs.existsSync(path.join(DOCS_DATA_DIR, "review-needed-questions.json"))
       ? loadJson(path.join(DOCS_DATA_DIR, "review-needed-questions.json"))
+      : null,
+    fillBlankQuestions: fs.existsSync(path.join(DOCS_DATA_DIR, "midterm-fill-blanks.json"))
+      ? loadJson(path.join(DOCS_DATA_DIR, "midterm-fill-blanks.json"))
+      : null,
+    fillBlankReviewQueue: fs.existsSync(path.join(DOCS_DATA_DIR, "midterm-fill-blanks-review.json"))
+      ? loadJson(path.join(DOCS_DATA_DIR, "midterm-fill-blanks-review.json"))
       : null
   };
   const siteMeta = fs.existsSync(path.join(DOCS_DATA_DIR, "site-meta.json"))
@@ -194,11 +280,16 @@ export async function validate() {
     : null;
 
   const { duplicateIds, fieldErrors } = validateSchema(allQuestions);
+  const fillBlankSchema = validateFillBlankSchema(fillBlankQuestions);
   const bannedTermHitDetails = findBannedTermHits(allQuestions);
   const leadingDiscourseMarkerDetails = findLeadingDiscourseMarkerHits(allQuestions);
   const lowercaseStartIds = findLowercaseStarts(allQuestions);
   const exactDuplicatePromptPairs = detectExactDuplicatePrompts(allQuestions);
   const nearDuplicatePairs = detectNearDuplicates(allQuestions);
+  const fillBlankExactDuplicatePairs = detectFillBlankExactDuplicates(fillBlankQuestions);
+  const fillBlankNearDuplicatePairs = detectFillBlankNearDuplicates(fillBlankQuestions);
+  const fillBlankBannedHitDetails = findFillBlankBannedTermHits(fillBlankQuestions);
+  const fillBlankAcceptedAnswerIssueDetails = findFillBlankAcceptedAnswerIssues(fillBlankQuestions);
   const optionBalanceFlagDetails = findOptionBalanceFlags(allQuestions);
   const subtopicCoverage = buildSubtopicCoverage(allQuestions);
   const uncoveredCurriculum = subtopicCoverage.filter((entry) => entry.actualCount < entry.requiredMinimum);
@@ -241,14 +332,26 @@ export async function validate() {
     near_duplicate_count: nearDuplicatePairs.length,
     near_duplicate_pairs: nearDuplicatePairs,
     fieldErrors,
+    fill_blank_duplicate_ids: fillBlankSchema.duplicateIds,
+    fill_blank_field_errors: fillBlankSchema.fieldErrors,
     banned_term_hits_count: bannedTermHitDetails.length,
     banned_term_hit_details: bannedTermHitDetails,
+    fill_blank_banned_term_hits_count: fillBlankBannedHitDetails.length,
+    fill_blank_banned_term_hit_details: fillBlankBannedHitDetails,
     leading_discourse_marker_count: leadingDiscourseMarkerDetails.length,
     leading_discourse_marker_details: leadingDiscourseMarkerDetails,
     lowercase_start_count: lowercaseStartIds.length,
     lowercase_start_ids: lowercaseStartIds,
     option_balance_flag_count: optionBalanceFlagDetails.length,
     option_balance_flag_details: optionBalanceFlagDetails,
+    fill_blank_question_count: fillBlankQuestions.length,
+    fill_blank_review_queue_count: fillBlankReviewQueue.length,
+    fill_blank_exact_duplicate_count: fillBlankExactDuplicatePairs.length,
+    fill_blank_exact_duplicate_pairs: fillBlankExactDuplicatePairs,
+    fill_blank_near_duplicate_count: fillBlankNearDuplicatePairs.length,
+    fill_blank_near_duplicate_pairs: fillBlankNearDuplicatePairs,
+    fill_blank_accepted_answer_issue_count: fillBlankAcceptedAnswerIssueDetails.length,
+    fill_blank_accepted_answer_issue_details: fillBlankAcceptedAnswerIssueDetails,
     placeholder_file_findings: placeholderFileFindings,
     topicTotals: topicDistribution(allQuestions),
     subtopic_coverage: subtopicCoverage,
@@ -261,7 +364,7 @@ export async function validate() {
   };
 
   const artifactSyncFindings = compareArtifacts(
-    { allQuestions, midtermQuestions, finalQuestions, reviewNeededQuestions },
+    { allQuestions, midtermQuestions, finalQuestions, reviewNeededQuestions, fillBlankQuestions, fillBlankReviewQueue },
     siteArtifacts,
     provisionalSummary,
     siteMeta

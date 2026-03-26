@@ -8,6 +8,8 @@ const PAGES_REQUIRING_SCOPE = new Set(["questions", "practice", "review", "cover
 const state = {
   questions: null,
   questionMap: null,
+  fillBlanks: null,
+  fillBlankMap: null,
   coverage: null,
   allCoverage: null,
   meta: null,
@@ -51,6 +53,22 @@ function examScopeLabel(scope) {
 
 function emptyWrongQuestionBuckets() {
   return { midterm: [], final: [] };
+}
+
+function emptyFillBlankScopeState() {
+  return {
+    statsById: {},
+    lastSeenIds: [],
+    weakIds: [],
+    lastQuestionId: null
+  };
+}
+
+function emptyFillBlankBuckets() {
+  return {
+    midterm: emptyFillBlankScopeState(),
+    final: emptyFillBlankScopeState()
+  };
 }
 
 async function loadMeta() {
@@ -136,6 +154,28 @@ async function loadScopeData(scope) {
   migrateLegacyWrongQuestionIds();
 }
 
+function fillBlankStudyModeMeta() {
+  return state.meta?.study_modes?.fill_blank || null;
+}
+
+async function loadFillBlankData() {
+  await loadMeta();
+  const fillBlankMeta = fillBlankStudyModeMeta();
+  if (!fillBlankMeta?.dataset) {
+    state.fillBlanks = [];
+    state.fillBlankMap = new Map();
+    return;
+  }
+
+  if (state.fillBlanks?.length && state.fillBlankMap?.size) {
+    return;
+  }
+
+  const fillBlanks = await loadJson(fillBlankMeta.dataset);
+  state.fillBlanks = fillBlanks;
+  state.fillBlankMap = new Map(fillBlanks.map((item) => [item.id, item]));
+}
+
 async function loadSharedData() {
   await loadMeta();
   const resolvedScope = queryExamScope() || getPersistedExamScope();
@@ -148,6 +188,11 @@ async function loadSharedData() {
     state.questionMap = new Map();
     state.coverage = null;
     state.topicIndex = null;
+  }
+
+  if (currentPage() === "fill-blanks") {
+    await loadScopeData("midterm");
+    await loadFillBlankData();
   }
 
   return state;
@@ -163,14 +208,19 @@ function getStore() {
         ...emptyWrongQuestionBuckets(),
         ...(parsed.wrongQuestionIdsByScope || {})
       },
-      legacyWrongQuestionIds: Array.isArray(parsed.wrongQuestionIds) ? parsed.wrongQuestionIds : []
+      legacyWrongQuestionIds: Array.isArray(parsed.wrongQuestionIds) ? parsed.wrongQuestionIds : [],
+      fillBlankByScope: {
+        ...emptyFillBlankBuckets(),
+        ...(parsed.fillBlankByScope || {})
+      }
     };
   } catch {
     return {
       questionStats: {},
       activeExamScope: null,
       wrongQuestionIdsByScope: emptyWrongQuestionBuckets(),
-      legacyWrongQuestionIds: []
+      legacyWrongQuestionIds: [],
+      fillBlankByScope: emptyFillBlankBuckets()
     };
   }
 }
@@ -185,9 +235,97 @@ function saveStore(store) {
         ...emptyWrongQuestionBuckets(),
         ...(store.wrongQuestionIdsByScope || {})
       },
-      legacyWrongQuestionIds: store.legacyWrongQuestionIds || []
+      legacyWrongQuestionIds: store.legacyWrongQuestionIds || [],
+      fillBlankByScope: {
+        ...emptyFillBlankBuckets(),
+        ...(store.fillBlankByScope || {})
+      }
     })
   );
+}
+
+function getFillBlankScopeState(store, scope = "midterm") {
+  if (!store.fillBlankByScope) {
+    store.fillBlankByScope = emptyFillBlankBuckets();
+  }
+
+  if (!store.fillBlankByScope[scope]) {
+    store.fillBlankByScope[scope] = emptyFillBlankScopeState();
+  }
+
+  const current = store.fillBlankByScope[scope];
+  current.statsById = current.statsById || {};
+  current.lastSeenIds = Array.isArray(current.lastSeenIds) ? current.lastSeenIds : [];
+  current.weakIds = Array.isArray(current.weakIds) ? current.weakIds : [];
+  current.lastQuestionId = current.lastQuestionId || null;
+  return current;
+}
+
+function updateRecentIds(ids, nextId, maxSize = 24) {
+  return [nextId, ...ids.filter((id) => id !== nextId)].slice(0, maxSize);
+}
+
+function recordFillBlankSeen(questionId, scope = "midterm") {
+  const store = getStore();
+  const scopeState = getFillBlankScopeState(store, scope);
+  scopeState.lastSeenIds = updateRecentIds(scopeState.lastSeenIds, questionId);
+  scopeState.lastQuestionId = questionId;
+  saveStore(store);
+}
+
+function recordFillBlankResult(questionId, result, scope = "midterm") {
+  const store = getStore();
+  const scopeState = getFillBlankScopeState(store, scope);
+  const stats = scopeState.statsById[questionId] || {
+    attempts: 0,
+    correctAttempts: 0,
+    wrongAttempts: 0,
+    skippedAttempts: 0,
+    lastResult: null,
+    lastSeenAt: null
+  };
+
+  if (result === "correct" || result === "wrong") {
+    stats.attempts += 1;
+  }
+  if (result === "correct") {
+    stats.correctAttempts += 1;
+  }
+  if (result === "wrong") {
+    stats.wrongAttempts += 1;
+  }
+  if (result === "skipped") {
+    stats.skippedAttempts += 1;
+  }
+
+  stats.lastResult = result;
+  stats.lastSeenAt = new Date().toISOString();
+  scopeState.statsById[questionId] = stats;
+  scopeState.lastSeenIds = updateRecentIds(scopeState.lastSeenIds, questionId);
+  scopeState.lastQuestionId = questionId;
+
+  if (result === "correct") {
+    scopeState.weakIds = scopeState.weakIds.filter((id) => id !== questionId);
+  } else if (!scopeState.weakIds.includes(questionId)) {
+    scopeState.weakIds = [questionId, ...scopeState.weakIds];
+  }
+
+  saveStore(store);
+}
+
+function fillBlankSummary(scope = "midterm") {
+  const scopeState = getFillBlankScopeState(getStore(), scope);
+  const statsEntries = Object.values(scopeState.statsById || {});
+  return {
+    solvedCount: statsEntries.filter((item) => item.attempts || item.skippedAttempts).length,
+    correctCount: statsEntries.reduce((sum, item) => sum + (item.correctAttempts || 0), 0),
+    wrongCount: statsEntries.reduce((sum, item) => sum + (item.wrongAttempts || 0), 0),
+    skippedCount: statsEntries.reduce((sum, item) => sum + (item.skippedAttempts || 0), 0),
+    weakCount: scopeState.weakIds.length,
+    lastSeenIds: scopeState.lastSeenIds,
+    weakIds: scopeState.weakIds,
+    lastQuestionId: scopeState.lastQuestionId
+  };
 }
 
 function recordAnswer(questionId, isCorrect) {
@@ -310,6 +448,10 @@ function poolSizeLabel(count) {
   return count === 1 ? "1 soruluk havuz" : `${count} soruluk havuz`;
 }
 
+function fillBlankPoolLabel(count) {
+  return count === 1 ? "1 boşluk" : `${count} boşluk`;
+}
+
 function badge(label, extraClass = "") {
   return element("span", `badge ${extraClass}`.trim(), label);
 }
@@ -328,6 +470,114 @@ function scopeHref(scope, fileName = "practice.html") {
 
 function scopeLinkButton(scope, pageFile, className = "button secondary") {
   return linkButton(`${examScopeLabel(scope)} Havuzu`, scopeHref(scope, pageFile), className);
+}
+
+function modeHref(fileName) {
+  const url = new URL(fileName, window.location.href);
+  if (fileName !== "fill-blanks.html" && state.activeScope) {
+    url.searchParams.set("scope", state.activeScope);
+  }
+  return url.searchParams.toString()
+    ? `${url.pathname.split("/").pop()}?${url.searchParams.toString()}`
+    : url.pathname.split("/").pop();
+}
+
+function buildModeSwitch({ currentMode, mcqPage = "practice.html" } = {}) {
+  if (state.activeScope !== "midterm" || !fillBlankStudyModeMeta()) {
+    return null;
+  }
+
+  const root = element("div", "mode-switch");
+  const mcqLink = linkButton("Çoktan Seçmeli", modeHref(mcqPage), "mode-switch-link");
+  const fillBlankLink = linkButton("Boşluk Doldurma", "fill-blanks.html", "mode-switch-link");
+
+  if (currentMode === "multiple_choice") {
+    mcqLink.setAttribute("aria-current", "page");
+  } else if (currentMode === "fill_blank") {
+    fillBlankLink.setAttribute("aria-current", "page");
+  }
+
+  root.append(mcqLink, fillBlankLink);
+  return root;
+}
+
+function renderModeSwitch(container, options = {}) {
+  if (!container) return;
+  clearNode(container);
+  const switchNode = buildModeSwitch(options);
+  container.hidden = !switchNode;
+  if (switchNode) {
+    container.append(switchNode);
+  }
+}
+
+function normalizeFillBlankAnswer(value, rules = [], caseSensitive = false) {
+  let normalized = String(value || "").replace(/\r\n/g, "\n");
+
+  if (rules.includes("trim")) {
+    normalized = normalized.trim();
+  }
+  if (rules.includes("collapse_whitespace")) {
+    normalized = normalized.replace(/\s+/g, " ");
+  }
+  if (rules.includes("apostrophe_fold")) {
+    normalized = normalized.replace(/[’`´]/g, "'");
+  }
+  if (rules.includes("separator_fold")) {
+    normalized = normalized
+      .replace(/[αΑ]/g, "alpha")
+      .replace(/[βΒ]/g, "beta")
+      .replace(/[ωΩ]/g, "omega")
+      .replace(/[‐‑‒–—-]/g, " ")
+      .replace(/[(){}\[\],.;:!?/\\]/g, " ")
+      .replace(/[’'"]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+  if (rules.includes("case_fold") && !caseSensitive) {
+    normalized = normalized.toLocaleLowerCase("tr");
+  }
+  if (rules.includes("turkish_fold")) {
+    normalized = normalized
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/ı/g, "i")
+      .replace(/İ/g, "i")
+      .replace(/ş/g, "s")
+      .replace(/Ş/g, "s")
+      .replace(/ğ/g, "g")
+      .replace(/Ğ/g, "g")
+      .replace(/ü/g, "u")
+      .replace(/Ü/g, "u")
+      .replace(/ö/g, "o")
+      .replace(/Ö/g, "o")
+      .replace(/ç/g, "c")
+      .replace(/Ç/g, "c");
+  }
+
+  return normalized.trim();
+}
+
+function matchFillBlankAnswer(question, userAnswer) {
+  const normalizedUser = normalizeFillBlankAnswer(
+    userAnswer,
+    question.normalization_rules || [],
+    question.case_sensitive
+  );
+  const acceptedAnswers = question.accepted_answers || [];
+
+  for (const answer of acceptedAnswers) {
+    const normalizedAccepted = normalizeFillBlankAnswer(
+      answer,
+      question.normalization_rules || [],
+      question.case_sensitive
+    );
+    if (normalizedUser && normalizedAccepted && normalizedUser === normalizedAccepted) {
+      return { isCorrect: true, normalizedUser, matchedAnswer: answer };
+    }
+  }
+
+  return { isCorrect: false, normalizedUser, matchedAnswer: null };
 }
 
 function buildScopeChoiceActions(pageFile = "practice.html") {
@@ -1157,6 +1407,11 @@ function buildQuestionsPage() {
   const root = document.getElementById("questions-question");
   if (!root) return;
 
+  renderModeSwitch(document.getElementById("questions-mode-switch"), {
+    currentMode: "multiple_choice",
+    mcqPage: "questions.html"
+  });
+
   const body = document.body;
   const topicSelect = document.getElementById("questions-topic");
   const difficultySelect = document.getElementById("questions-difficulty");
@@ -1385,6 +1640,11 @@ function buildPracticePage() {
   const root = document.getElementById("practice-question");
   if (!root) return;
 
+  renderModeSwitch(document.getElementById("practice-mode-switch"), {
+    currentMode: "multiple_choice",
+    mcqPage: "practice.html"
+  });
+
   const body = document.body;
   const topicSelect = document.getElementById("practice-topic");
   const difficultySelect = document.getElementById("practice-difficulty");
@@ -1594,6 +1854,349 @@ function buildPracticePage() {
     syncControlValues();
     updateCounts();
   });
+
+  render();
+}
+
+function populateFillBlankTopicSelect(select) {
+  if (!select) return;
+  clearNode(select);
+  select.append(new Option("Tümü", ""));
+  const topics = [...new Set((state.fillBlanks || []).map((item) => topicLabelByPdf(item.source_pdf)))].sort(
+    (a, b) => a.localeCompare(b, "tr")
+  );
+  topics.forEach((topic) => select.append(new Option(topic, topic)));
+}
+
+function filterFillBlanks({ topic = "", difficulty = "", weakOnly = false }) {
+  if (!state.fillBlanks?.length) return [];
+  const weakSet = new Set(fillBlankSummary("midterm").weakIds);
+
+  return state.fillBlanks.filter((question) => {
+    const topicMatch = !topic || topicLabelByPdf(question.source_pdf) === topic;
+    const difficultyMatch = !difficulty || question.difficulty === difficulty;
+    const weakMatch = !weakOnly || weakSet.has(question.id);
+    return topicMatch && difficultyMatch && weakMatch;
+  });
+}
+
+function buildFillBlankSupportCard(title, content, extraNodes = []) {
+  const card = element("article", "fill-blank-support-card");
+  card.append(element("h3", "", title), element("p", "", content));
+  if (extraNodes.length) {
+    const row = element("div", "detail-chip-row");
+    row.append(...extraNodes);
+    card.append(row);
+  }
+  return card;
+}
+
+function buildFillBlankStage({
+  question,
+  index,
+  total,
+  answerState,
+  onSubmit,
+  onSkip,
+  onNext
+}) {
+  const fragment = document.createDocumentFragment();
+  const stageHead = element("div", "fill-blank-stage-head");
+  const heading = element("div", "fill-blank-stage-heading");
+  const meta = element("div", "question-meta");
+  const card = element("article", "fill-blank-card");
+  const context = element(
+    "p",
+    "fill-blank-context",
+    question.source_subtopic && question.source_subtopic !== question.source_topic
+      ? question.source_subtopic
+      : question.source_topic
+  );
+  const prompt = element("p", "fill-blank-prompt", question.prompt_text);
+  const inputLabel = element("label", "fill-blank-input-label");
+  const inputCaption = element("span", "", "Cevabın");
+  const input = document.createElement("input");
+  input.className = "fill-blank-input";
+  input.id = "fill-blank-answer";
+  input.type = "text";
+  input.autocomplete = "off";
+  input.autocapitalize = "off";
+  input.autocorrect = "off";
+  input.spellcheck = false;
+  input.enterKeyHint = "done";
+  input.placeholder = "Kısa cevabı yaz";
+  input.value = answerState?.userAnswer || "";
+  input.disabled = Boolean(answerState);
+
+  const actionRow = element("div", "fill-blank-actions");
+  const submitButton = element("button", "button primary", "Kontrol Et");
+  submitButton.type = "button";
+  const skipButton = element("button", "button secondary", "Atla");
+  skipButton.type = "button";
+  const nextButton = element("button", "button secondary fill-blank-next", "Sonraki");
+  nextButton.type = "button";
+
+  const feedback = element("div", "fill-blank-feedback");
+  const explanation = element("div", "fill-blank-explanation");
+  const supportGrid = element("div", "fill-blank-support-grid");
+  const sourceCard = buildFillBlankSupportCard(
+    "Kaynak",
+    `${formatFileLabel(question.source_pdf)} • Sayfa ${question.source_pages.join(", ")}`
+  );
+  const objectiveCard = buildFillBlankSupportCard("Öğrenme Hedefi", question.learning_objective);
+
+  if (question.tags.length) {
+    objectiveCard.append(
+      (() => {
+        const row = element("div", "detail-chip-row");
+        question.tags.forEach((tag) => row.append(badge(tag)));
+        return row;
+      })()
+    );
+  }
+
+  heading.append(
+    element("p", "eyebrow", "Aktif hatırlama"),
+    element("h2", "fill-blank-stage-title", `${index}/${total}`),
+    element("p", "practice-active-filter fill-blank-active-filter", fillBlankPoolLabel(total))
+  );
+
+  meta.append(
+    badge(question.difficulty, difficultyClass(question.difficulty)),
+    badge(topicLabelByPdf(question.source_pdf))
+  );
+
+  if (question.source_subtopic && question.source_subtopic !== question.source_topic) {
+    meta.append(badge(question.source_subtopic));
+  }
+
+  stageHead.append(heading, meta);
+
+  inputLabel.append(inputCaption, input);
+
+  submitButton.disabled = true;
+  skipButton.disabled = Boolean(answerState);
+  nextButton.disabled = !answerState;
+
+  const syncSubmitState = () => {
+    submitButton.disabled = Boolean(answerState) || !input.value.trim();
+  };
+
+  input.addEventListener("input", syncSubmitState);
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && !submitButton.disabled) {
+      event.preventDefault();
+      onSubmit(input.value);
+    }
+  });
+
+  submitButton.addEventListener("click", () => onSubmit(input.value));
+  skipButton.addEventListener("click", onSkip);
+  nextButton.addEventListener("click", onNext);
+
+  actionRow.append(submitButton, skipButton, nextButton);
+
+  if (answerState) {
+    feedback.hidden = false;
+    feedback.classList.add(answerState.isCorrect ? "is-correct" : "is-wrong");
+    feedback.append(
+      element("h3", "", answerState.isCorrect ? "Doğru" : "Yanlış"),
+      element(
+        "p",
+        "",
+        answerState.isCorrect
+          ? "Cevap accepted_answers eşleşmesiyle doğrulandı."
+          : "Cevap accepted_answers eşleşmesine girmedi."
+      ),
+      element("p", "fill-blank-answer-line", `Doğru cevap: ${question.blank_answer}`)
+    );
+
+    explanation.hidden = false;
+    explanation.append(
+      element("h3", "", "Kısa Açıklama"),
+      element("p", "", question.explanation)
+    );
+  } else {
+    feedback.hidden = true;
+    explanation.hidden = true;
+  }
+
+  syncSubmitState();
+
+  supportGrid.append(sourceCard, objectiveCard);
+  card.append(stageHead, context, prompt, inputLabel, actionRow, feedback, explanation, supportGrid);
+  fragment.append(card);
+
+  return { fragment, input };
+}
+
+function buildFillBlanksPage() {
+  const root = document.getElementById("fill-blank-stage");
+  if (!root) return;
+
+  renderModeSwitch(document.getElementById("fill-blank-mode-switch"), {
+    currentMode: "fill_blank",
+    mcqPage: "practice.html"
+  });
+
+  const topicSelect = document.getElementById("fill-blank-topic");
+  const difficultySelect = document.getElementById("fill-blank-difficulty");
+  const weakOnlyInput = document.getElementById("fill-blank-weak-only");
+  const poolCount = document.getElementById("fill-blank-count");
+  const activeFilter = document.getElementById("fill-blank-active-filter");
+  const solvedStat = document.getElementById("fill-blank-solved");
+  const correctStat = document.getElementById("fill-blank-correct");
+  const weakStat = document.getElementById("fill-blank-weak");
+
+  populateFillBlankTopicSelect(topicSelect);
+
+  let filters = {
+    topic: "",
+    difficulty: "",
+    weakOnly: false
+  };
+  let currentQuestionId = null;
+  let answerState = null;
+  let lastRenderedId = null;
+
+  const syncSummary = () => {
+    const summary = fillBlankSummary("midterm");
+    const filtered = filterFillBlanks(filters);
+    const parts = [examScopeLabel("midterm")];
+    if (filters.topic) parts.push(filters.topic);
+    if (filters.difficulty) parts.push(filters.difficulty);
+    if (filters.weakOnly) parts.push("Zayıf sorular");
+
+    activeFilter.textContent = parts.join(" • ");
+    poolCount.textContent = fillBlankPoolLabel(filtered.length);
+    solvedStat.textContent = String(summary.solvedCount);
+    correctStat.textContent = String(summary.correctCount);
+    weakStat.textContent = String(summary.weakCount);
+
+    return filtered;
+  };
+
+  const resolveQuestion = (filtered) => {
+    if (!filtered.length) {
+      currentQuestionId = null;
+      return { question: null, index: -1 };
+    }
+
+    let index = filtered.findIndex((item) => item.id === currentQuestionId);
+
+    if (index < 0) {
+      const preferredId = fillBlankSummary("midterm").lastQuestionId;
+      index = filtered.findIndex((item) => item.id === preferredId);
+    }
+
+    if (index < 0) {
+      index = 0;
+    }
+
+    currentQuestionId = filtered[index].id;
+    return {
+      question: filtered[index],
+      index
+    };
+  };
+
+  const render = () => {
+    const filtered = syncSummary();
+
+    if (!state.fillBlanks?.length) {
+      setEmpty(
+        root,
+        "Boşluk doldurma verisi hazır değil",
+        "Bu mod için veri dosyası üretilmedi veya site datasına henüz taşınmadı.",
+        [linkButton("Ana Sayfa", "index.html", "button primary")]
+      );
+      return;
+    }
+
+    if (!filtered.length) {
+      const message = filters.weakOnly
+        ? "Zayıf boşluk havuzun şu an boş. Filtreyi kapatıp tüm havuza dönebilirsin."
+        : "Bu filtrelerle eşleşen boşluk bulunamadı.";
+      setEmpty(root, "Bu seçimde boşluk yok", message, [
+        linkButton("Rastgele Pratik", scopeHref("midterm", "practice.html"), "button secondary")
+      ]);
+      return;
+    }
+
+    const { question, index } = resolveQuestion(filtered);
+    if (!question) return;
+
+    renderQuestion(question, index, filtered.length);
+  };
+
+  const renderQuestion = (question, index, total) => {
+    if (lastRenderedId !== question.id) {
+      recordFillBlankSeen(question.id, "midterm");
+      lastRenderedId = question.id;
+    }
+
+    clearNode(root);
+    const stage = buildFillBlankStage({
+      question,
+      index: index + 1,
+      total,
+      answerState,
+      onSubmit: (value) => {
+        const result = matchFillBlankAnswer(question, value);
+        answerState = {
+          isCorrect: result.isCorrect,
+          userAnswer: value,
+          normalizedUser: result.normalizedUser
+        };
+        recordFillBlankResult(question.id, result.isCorrect ? "correct" : "wrong", "midterm");
+        syncSummary();
+        renderQuestion(question, index, total);
+      },
+      onSkip: () => {
+        const currentPool = filterFillBlanks(filters);
+        recordFillBlankResult(question.id, "skipped", "midterm");
+        const nextIndex = currentPool.length > 1 ? (index + 1) % currentPool.length : index;
+        currentQuestionId = currentPool[nextIndex]?.id || null;
+        answerState = null;
+        lastRenderedId = null;
+        render();
+      },
+      onNext: () => {
+        const nextPool = filterFillBlanks(filters);
+        if (!nextPool.length) {
+          currentQuestionId = null;
+          answerState = null;
+          lastRenderedId = null;
+          render();
+          return;
+        }
+
+        const currentPosition = nextPool.findIndex((item) => item.id === question.id);
+        const resolvedIndex = currentPosition >= 0 ? currentPosition : Math.max(0, index - 1);
+        const nextIndex = (resolvedIndex + 1) % nextPool.length;
+        currentQuestionId = nextPool[nextIndex].id;
+        answerState = null;
+        lastRenderedId = null;
+        render();
+      }
+    });
+
+    root.append(stage.fragment);
+  };
+
+  const handleFilters = () => {
+    filters = {
+      topic: topicSelect.value,
+      difficulty: difficultySelect.value,
+      weakOnly: weakOnlyInput.checked
+    };
+    answerState = null;
+    lastRenderedId = null;
+    render();
+  };
+
+  [topicSelect, difficultySelect].forEach((node) => node.addEventListener("change", handleFilters));
+  weakOnlyInput?.addEventListener("change", handleFilters);
 
   render();
 }
@@ -1890,6 +2493,7 @@ async function init() {
   buildHome();
   buildQuestionsPage();
   buildPracticePage();
+  buildFillBlanksPage();
   buildReviewPage();
   buildCoveragePage();
 }

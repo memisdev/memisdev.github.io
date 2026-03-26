@@ -13,6 +13,9 @@
 - Near-duplicate soru kökü: Yok
 - Scope sızıntısı: midterm 0, final 0
 - Artifact senkron sorunu var mı?: Yok
+- Fill-in-the-blank soru sayısı: 74
+- Fill-in-the-blank near-duplicate: Yok
+- Fill-in-the-blank accepted answer issue: Temiz
 
 ## Konu başına soru dağılımı
 - Hücre Zarından Madde Geçişi.pdf: 32

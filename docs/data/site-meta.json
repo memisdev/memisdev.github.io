@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T17:08:54.828Z",
+  "generatedAt": "2026-03-26T17:54:42.602Z",
   "totals": {
     "all": 300,
     "easy": 57,
@@ -128,8 +128,26 @@
       ]
     }
   ],
+  "study_modes": {
+    "fill_blank": {
+      "label": "Boşluk Doldurma",
+      "page": "fill-blanks.html",
+      "dataset": "midterm-fill-blanks.json",
+      "review_dataset": "midterm-fill-blanks-review.json",
+      "enabled_scopes": [
+        "midterm"
+      ],
+      "question_count": 74,
+      "review_count": 0,
+      "source_pdfs": [
+        "Karbonhidratlar ve Glikobiyoloji.pdf",
+        "Lipitler.pdf",
+        "Nükleotidler Ve Nükleik Asitler.pdf"
+      ]
+    }
+  },
   "quality": {
-    "generatedAt": "2026-03-26T17:08:54.807Z",
+    "generatedAt": "2026-03-26T17:54:42.574Z",
     "inventory": [
       {
         "id": "membrane-transport",
@@ -358,8 +376,12 @@
     "near_duplicate_count": 0,
     "near_duplicate_pairs": [],
     "fieldErrors": [],
+    "fill_blank_duplicate_ids": [],
+    "fill_blank_field_errors": [],
     "banned_term_hits_count": 0,
     "banned_term_hit_details": [],
+    "fill_blank_banned_term_hits_count": 0,
+    "fill_blank_banned_term_hit_details": [],
     "leading_discourse_marker_count": 0,
     "leading_discourse_marker_details": [],
     "lowercase_start_count": 0,
@@ -749,6 +771,14 @@
         ]
       }
     ],
+    "fill_blank_question_count": 74,
+    "fill_blank_review_queue_count": 0,
+    "fill_blank_exact_duplicate_count": 0,
+    "fill_blank_exact_duplicate_pairs": [],
+    "fill_blank_near_duplicate_count": 0,
+    "fill_blank_near_duplicate_pairs": [],
+    "fill_blank_accepted_answer_issue_count": 0,
+    "fill_blank_accepted_answer_issue_details": [],
     "placeholder_file_findings": [],
     "topicTotals": [
       {
@@ -1928,8 +1958,9 @@
     "roster_unexpected_ids": [],
     "unexpected_supplemental_count": 0,
     "artifact_sync_findings": [
-      "allQuestions output ile docs/data arasında eşleşmiyor",
-      "midtermQuestions output ile docs/data arasında eşleşmiyor"
+      "fillBlankQuestions output ile docs/data arasında eşleşmiyor",
+      "fillBlankReviewQueue output ile docs/data arasında eşleşmiyor",
+      "site-meta fill_blank question_count ile dataset eşleşmiyor"
     ]
   },
   "by_scope": {

@@ -7,6 +7,7 @@
   "scripts": {
     "extract": "node scripts/extract-pdfs.mjs",
     "build:analysis": "node scripts/build-analysis.mjs",
+    "build:fill-blanks": "node scripts/build-fill-blanks.mjs",
     "build:midterm-audit": "node scripts/build-midterm-audit.mjs",
     "build:questions": "node scripts/build-questions.mjs",
     "review:merge": "node scripts/review-external-merge.mjs",

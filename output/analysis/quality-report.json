@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T17:08:54.869Z",
+  "generatedAt": "2026-03-26T17:54:42.655Z",
   "inventory": [
     {
       "id": "membrane-transport",
@@ -228,8 +228,12 @@
   "near_duplicate_count": 0,
   "near_duplicate_pairs": [],
   "fieldErrors": [],
+  "fill_blank_duplicate_ids": [],
+  "fill_blank_field_errors": [],
   "banned_term_hits_count": 0,
   "banned_term_hit_details": [],
+  "fill_blank_banned_term_hits_count": 0,
+  "fill_blank_banned_term_hit_details": [],
   "leading_discourse_marker_count": 0,
   "leading_discourse_marker_details": [],
   "lowercase_start_count": 0,
@@ -619,6 +623,14 @@
       ]
     }
   ],
+  "fill_blank_question_count": 74,
+  "fill_blank_review_queue_count": 0,
+  "fill_blank_exact_duplicate_count": 0,
+  "fill_blank_exact_duplicate_pairs": [],
+  "fill_blank_near_duplicate_count": 0,
+  "fill_blank_near_duplicate_pairs": [],
+  "fill_blank_accepted_answer_issue_count": 0,
+  "fill_blank_accepted_answer_issue_details": [],
   "placeholder_file_findings": [],
   "topicTotals": [
     {
