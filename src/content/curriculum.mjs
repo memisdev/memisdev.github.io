@@ -599,7 +599,7 @@ export const CURRICULUM_MAP = [
   },
   {
     topic: "Karbohidratlar ve glikobiyoloji",
-    subtopic: "Peptidoglikan ve heteropolisakkaritler",
+    subtopic: "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
     learningObjective: "Hücre duvarı heteropolisakkaritlerini temel bileşenleriyle tanımak.",
     criticalDistinction: "Homopolisakkarit ve heteropolisakkarit",
     questionDensityNeed: "medium",
@@ -770,7 +770,7 @@ export const CURRICULUM_MAP = [
   },
   {
     topic: "Lipitler",
-    subtopic: "Yağ asidi yapısı ve gösterimi",
+    subtopic: "Yağ asidi yapısı ve X:Y gösterimi",
     learningObjective: "X:Y ve omega gösterimlerini yorumlamak.",
     criticalDistinction: "Çift bağ sayısı ile ilk çift bağ konumu",
     questionDensityNeed: "high",
@@ -779,8 +779,17 @@ export const CURRICULUM_MAP = [
   },
   {
     topic: "Lipitler",
-    subtopic: "Triaçilgliseroller ve depolama mantığı",
-    learningObjective: "Triaçilgliserollerin depo formu olarak avantajını açıklamak.",
+    subtopic: "Elzem omega-3 yağ asitleri",
+    learningObjective: "İnsan için elzem omega-3 yağ asitlerini ve metabolik önemlerini tanımak.",
+    criticalDistinction: "Elzem yağ asidi ve memelide sentezlenebilir yağ asidi ayrımı",
+    questionDensityNeed: "low",
+    sourcePdf: "Lipitler.pdf",
+    sourcePages: [9, 11]
+  },
+  {
+    topic: "Lipitler",
+    subtopic: "Triaçilgliseroller",
+    learningObjective: "Triaçilgliserollerin yapı ve depo yakıtı mantığını açıklamak.",
     criticalDistinction: "Serbest yağ asidi ve esterleşmiş depo formu",
     questionDensityNeed: "high",
     sourcePdf: "Lipitler.pdf",
@@ -806,12 +815,48 @@ export const CURRICULUM_MAP = [
   },
   {
     topic: "Lipitler",
-    subtopic: "Gliserofosfolipitler ve diğer zar lipitleri",
-    learningObjective: "Başlıca yapısal zar lipitlerini omurga tiplerine göre karşılaştırmak.",
-    criticalDistinction: "Gliserol ve sfingozin temelli zar lipitleri",
-    questionDensityNeed: "very_high",
+    subtopic: "Yapısal lipitlerin genel mantığı",
+    learningObjective: "Depo lipitleri ile yapısal zar lipitleri arasındaki temel işlev farkını açıklamak.",
+    criticalDistinction: "Enerji depolama ve zar organizasyonu ayrımı",
+    questionDensityNeed: "medium",
     sourcePdf: "Lipitler.pdf",
-    sourcePages: [28, 47]
+    sourcePages: [28, 31]
+  },
+  {
+    topic: "Lipitler",
+    subtopic: "Gliserofosfolipitler",
+    learningObjective: "Gliserofosfolipitleri omurga, baş grup ve bağ tipi üzerinden tanımlamak.",
+    criticalDistinction: "Gliserol omurgası ve sfingozin omurgası ayrımı",
+    questionDensityNeed: "medium",
+    sourcePdf: "Lipitler.pdf",
+    sourcePages: [32, 37]
+  },
+  {
+    topic: "Lipitler",
+    subtopic: "Galaktolipitler ve sülfolipitler",
+    learningObjective: "Galaktolipit ve sülfolipitleri bitkisel zar bağlamında ayırt etmek.",
+    criticalDistinction: "Fosfor içeren zar lipidi ve glikokonjuge zar lipidi ayrımı",
+    questionDensityNeed: "low",
+    sourcePdf: "Lipitler.pdf",
+    sourcePages: [38, 38]
+  },
+  {
+    topic: "Lipitler",
+    subtopic: "Arke zar lipitleri",
+    learningObjective: "Arke zar lipitlerini bağ tipi ve omurga stereokimyasıyla ayırt etmek.",
+    criticalDistinction: "Ester bağlı ökaryotik/bakteriyel lipit ve eter bağlı arke lipidi ayrımı",
+    questionDensityNeed: "low",
+    sourcePdf: "Lipitler.pdf",
+    sourcePages: [39, 41]
+  },
+  {
+    topic: "Lipitler",
+    subtopic: "Sfingolipitler",
+    learningObjective: "Sfingolipitleri yapı, zar yerleşimi ve yüzey tanıma işleviyle ilişkilendirmek.",
+    criticalDistinction: "Sfingozin omurgası ve gliserol omurgası ayrımı",
+    questionDensityNeed: "medium",
+    sourcePdf: "Lipitler.pdf",
+    sourcePages: [42, 47]
   },
   {
     topic: "Lipitler",
@@ -824,7 +869,7 @@ export const CURRICULUM_MAP = [
   },
   {
     topic: "Lipitler",
-    subtopic: "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    subtopic: "Lipit türevli vitaminler ve kinonlar",
     learningObjective: "Lipit türevli kofaktör ve pigment örneklerini sınıflandırmak.",
     criticalDistinction: "Depo/yapısal lipit ve biyolojik işaret/kofaktör lipidi",
     questionDensityNeed: "high",
@@ -834,7 +879,7 @@ export const CURRICULUM_MAP = [
   {
     topic: "Nükleotidler ve nükleik asitler",
     subtopic: "Nükleotidlerin temel işlevleri",
-    learningObjective: "Nükleotidlerin enerji, kofaktör ve bilgi molekülü rollerini açıklamak.",
+    learningObjective: "Nükleotidlerin bilgi taşıma ve temel hücresel rollerini açıklamak.",
     criticalDistinction: "Nükleotid ve nükleik asit ayrımı",
     questionDensityNeed: "medium",
     sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
@@ -869,12 +914,21 @@ export const CURRICULUM_MAP = [
   },
   {
     topic: "Nükleotidler ve nükleik asitler",
-    subtopic: "DNA çift sarmalının kanıtları ve yapısı",
-    learningObjective: "Chargaff, Franklin-Wilkins ve Watson-Crick katkılarını yapısal sonuçlarıyla ilişkilendirmek.",
-    criticalDistinction: "Baz bileşimi kanıtı ve geometrik model",
-    questionDensityNeed: "very_high",
+    subtopic: "Chargaff kuralları ve DNA kanıtları",
+    learningObjective: "Chargaff kurallarını ve deneysel DNA kanıtlarını çift sarmal mantığıyla ilişkilendirmek.",
+    criticalDistinction: "Baz bileşimi kanıtı ve geometrik model ayrımı",
+    questionDensityNeed: "medium",
     sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
-    sourcePages: [28, 35]
+    sourcePages: [28, 31]
+  },
+  {
+    topic: "Nükleotidler ve nükleik asitler",
+    subtopic: "Watson-Crick modeli",
+    learningObjective: "Watson-Crick modelinin antiparalellik ve eşleşme ilkelerini tanımlamak.",
+    criticalDistinction: "Baz bileşimi kanıtı ve yapısal çift sarmal modeli ayrımı",
+    questionDensityNeed: "medium",
+    sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
+    sourcePages: [32, 35]
   },
   {
     topic: "Nükleotidler ve nükleik asitler",
@@ -887,21 +941,48 @@ export const CURRICULUM_MAP = [
   },
   {
     topic: "Nükleotidler ve nükleik asitler",
-    subtopic: "Denatürasyon, renatürasyon, Tm ve hibritleşme",
-    learningObjective: "Denatürasyon ve hibritleşmeyi baz eşleşmesi ve G-C oranı ile ilişkilendirmek.",
-    criticalDistinction: "Erime sıcaklığı ve tam parçalanma ayrımı",
+    subtopic: "Denatürasyon, renatürasyon ve Tm",
+    learningObjective: "Denatürasyon ve renatürasyonu baz eşleşmesi ile G-C oranı üzerinden yorumlamak.",
+    criticalDistinction: "Erime sıcaklığı ve kovalent omurga yıkımı ayrımı",
     questionDensityNeed: "high",
     sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
-    sourcePages: [41, 48]
+    sourcePages: [41, 46]
   },
   {
     topic: "Nükleotidler ve nükleik asitler",
-    subtopic: "Enzimatik olmayan nükleik asit hasarı",
-    learningObjective: "Deaminasyon, AP lezyonu, UV ve oksidatif hasarı ayırt etmek.",
-    criticalDistinction: "Kendiliğinden oluşan ve dış etkilerle artan hasar türleri",
-    questionDensityNeed: "very_high",
+    subtopic: "Hibritleşme",
+    learningObjective: "Hibritleşmeyi tamamlayıcı baz eşleşmesi ve dizi benzerliğiyle ilişkilendirmek.",
+    criticalDistinction: "Aynı zincirin yeniden eşleşmesi ve farklı kaynaklardan tamamlayıcı ipliklerin hibritleşmesi ayrımı",
+    questionDensityNeed: "low",
     sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
-    sourcePages: [49, 59]
+    sourcePages: [47, 48]
+  },
+  {
+    topic: "Nükleotidler ve nükleik asitler",
+    subtopic: "Deaminasyon ve AP lezyonları",
+    learningObjective: "Kendiliğinden gelişen deaminasyon ve abazik bölge oluşumunu ayırt etmek.",
+    criticalDistinction: "Baz modifikasyonu ve baz kaybı ayrımı",
+    questionDensityNeed: "medium",
+    sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
+    sourcePages: [49, 51]
+  },
+  {
+    topic: "Nükleotidler ve nükleik asitler",
+    subtopic: "UV, radyasyon, alkilleyici ve oksidatif hasar",
+    learningObjective: "Dış etkenlerle artan nükleik asit hasar türlerini örnekleriyle eşleştirmek.",
+    criticalDistinction: "Kendiliğinden oluşan hasar ve dış etkenle artan hasar ayrımı",
+    questionDensityNeed: "high",
+    sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
+    sourcePages: [52, 59]
+  },
+  {
+    topic: "Nükleotidler ve nükleik asitler",
+    subtopic: "Nükleotidlerin enerji ve kofaktör rolleri",
+    learningObjective: "ATP, GTP ve nükleotid türevli kofaktörlerin biyokimyasal rollerini tanımak.",
+    criticalDistinction: "Polimer yapı taşı ve serbest nükleotid işlevi ayrımı",
+    questionDensityNeed: "low",
+    sourcePdf: "Nükleotidler Ve Nükleik Asitler.pdf",
+    sourcePages: [60, 61]
   },
   {
     topic: "Pirüvat oksidasyonu ve sitrik asit çevrimi",

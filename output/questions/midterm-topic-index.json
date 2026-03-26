@@ -1,0 +1,1237 @@
+{
+  "totals": {
+    "all": 151,
+    "Kolay": 24,
+    "Orta": 76,
+    "Zor": 51
+  },
+  "topics": [
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Monosakkaritlerin temel sınıflandırılması",
+      "question_ids": [
+        "CHO-001",
+        "CHO-023",
+        "CHO-028",
+        "CHO-029"
+      ],
+      "tags": [
+        "Aldoz",
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "Fruktoz",
+        "Karbohidratlar ve glikobiyoloji",
+        "Ketoheksoz",
+        "Ketoz",
+        "Monosakkarit",
+        "Monosakkaritlerin temel sınıflandırılması",
+        "Sınıflandırma",
+        "Trioz"
+      ],
+      "difficulties": {
+        "Kolay": 2,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "D/L izomerleri ve kiralite",
+      "question_ids": [
+        "CHO-002",
+        "CHO-013",
+        "CHO-014",
+        "CHO-030"
+      ],
+      "tags": [
+        "Adlandırma",
+        "D-L",
+        "D/L izomerleri ve kiralite",
+        "Doğru ifade",
+        "Epimer",
+        "Galaktoz",
+        "Gliseraldehit",
+        "Glukoz",
+        "Karbohidratlar ve glikobiyoloji",
+        "Ketoz",
+        "Mannoz",
+        "Riboz",
+        "Ribuloz",
+        "Stereoizomer"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 2,
+        "Zor": 1
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Halkalı yapı, anomerler ve mutarotasyon",
+      "question_ids": [
+        "CHO-003",
+        "CHO-004",
+        "CHO-031",
+        "CHO-032"
+      ],
+      "tags": [
+        "Anomer",
+        "Anomerik karbon",
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "Glukoz",
+        "Halkalı yapı, anomerler ve mutarotasyon",
+        "Karbohidratlar ve glikobiyoloji",
+        "Mutarotasyon",
+        "Stereoizomer"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 1,
+        "Zor": 2
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Heksoz türevleri",
+      "question_ids": [
+        "CHO-005",
+        "CHO-024",
+        "CHO-034",
+        "CHO-035"
+      ],
+      "tags": [
+        "Desteklenen sonuç",
+        "Heksoz",
+        "Heksoz türevleri",
+        "Karbohidratlar ve glikobiyoloji",
+        "Kavramsal ayrım",
+        "Muramik asit",
+        "N-asetilglukozamin",
+        "Şeker türevi",
+        "Uronik asit",
+        "Yükseltgenme"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 2,
+        "Zor": 1
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "İndirgen şeker mantığı",
+      "question_ids": [
+        "CHO-006",
+        "CHO-015",
+        "CHO-036",
+        "CHO-037"
+      ],
+      "tags": [
+        "Anomerik karbon",
+        "Desteklenen sonuç",
+        "Disakkarit",
+        "Doğru ifade",
+        "Fehling",
+        "Glikozit bağı",
+        "İndirgen şeker",
+        "İndirgen şeker mantığı",
+        "Karbohidratlar ve glikobiyoloji",
+        "Karbonil",
+        "Yükseltgenme"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 2
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Disakkarit adlandırması ve bağ tipleri",
+      "question_ids": [
+        "CHO-007",
+        "CHO-016",
+        "CHO-038",
+        "CHO-039"
+      ],
+      "tags": [
+        "Adlandırma",
+        "Anomerik karbon",
+        "Desteklenen sonuç",
+        "Disakkarit",
+        "Disakkarit adlandırması ve bağ tipleri",
+        "Doğru ifade",
+        "Glikozit bağı",
+        "İndirgen uç",
+        "Karbohidratlar ve glikobiyoloji",
+        "Trehaloz"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 2,
+        "Zor": 1
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Depo polisakkaritleri",
+      "question_ids": [
+        "CHO-008",
+        "CHO-009",
+        "CHO-017",
+        "CHO-040"
+      ],
+      "tags": [
+        "Dallanma",
+        "Depo polisakkariti",
+        "Depo polisakkaritleri",
+        "Depolama",
+        "Doğru ifade",
+        "Glikojen",
+        "Glukoz",
+        "Heteropolisakkarit",
+        "Homopolisakkarit",
+        "Karbohidratlar ve glikobiyoloji",
+        "Nişasta",
+        "Osmolarite",
+        "Peptidoglikan"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 3,
+        "Zor": 0
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Yapısal homopolisakkaritler",
+      "question_ids": [
+        "CHO-010",
+        "CHO-018",
+        "CHO-041",
+        "CHO-042"
+      ],
+      "tags": [
+        "Alfa bağ",
+        "Amiloz",
+        "Beta 1-4",
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "Karbohidratlar ve glikobiyoloji",
+        "Kitin",
+        "N-asetilglukozamin",
+        "Selüloz",
+        "Yapısal homopolisakkaritler",
+        "Yapısal polisakkarit"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 2
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Glikozaminoglikanlar",
+      "question_ids": [
+        "CHO-011",
+        "CHO-019",
+        "CHO-025",
+        "CHO-046",
+        "CHO-047",
+        "CHO-048",
+        "CHO-059"
+      ],
+      "tags": [
+        "Antikoagülan",
+        "Çalışma odağı",
+        "Destek matrisi",
+        "Desteklenen sonuç",
+        "Disakkarit",
+        "ECM",
+        "Glikozaminoglikan",
+        "Glikozaminoglikanlar",
+        "Heparin",
+        "Heteropolisakkarit",
+        "Hiyaluronan",
+        "Karbohidratlar ve glikobiyoloji",
+        "Kavramsal ayrım",
+        "N-asetilglukozamin",
+        "Negatif yük",
+        "Uronik asit"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 3,
+        "Zor": 3
+      },
+      "question_count": 7
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Şeker kodu ve lektinler",
+      "question_ids": [
+        "CHO-012",
+        "CHO-022",
+        "CHO-054",
+        "CHO-055",
+        "CHO-061"
+      ],
+      "tags": [
+        "Afinite kromatografisi",
+        "Çok değerlik",
+        "Desteklenen sonuç",
+        "Glikobiyoloji",
+        "Hücre adezyonu",
+        "Karbohidratlar ve glikobiyoloji",
+        "Kavramsal ayrım",
+        "Lektin",
+        "Lökosit göçü",
+        "Özgüllük",
+        "Selektin",
+        "Şeker kodu",
+        "Şeker kodu ve lektinler"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 1,
+        "Zor": 3
+      },
+      "question_count": 5
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
+      "question_ids": [
+        "CHO-020",
+        "CHO-043",
+        "CHO-044",
+        "CHO-058",
+        "CHO-060"
+      ],
+      "tags": [
+        "Agar",
+        "Agaroz",
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "Elektroforez",
+        "Endotoksin",
+        "Gram-negatif bakteri",
+        "Heteropolisakkarit",
+        "Karbohidratlar ve glikobiyoloji",
+        "Lipid A",
+        "Lipopolisakkarit",
+        "Lizozim",
+        "N-asetilglukozamin",
+        "N-asetilmuramik asit",
+        "Peptidoglikan",
+        "Peptidoglikan ve heteropolisakkaritler",
+        "Peptidoglikan ve hücre duvarı heteropolisakkaritleri"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 3
+      },
+      "question_count": 5
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Proteoglikanlar, glikoproteinler ve glikolipitler",
+      "question_ids": [
+        "CHO-021",
+        "CHO-026",
+        "CHO-027",
+        "CHO-050",
+        "CHO-051",
+        "CHO-052",
+        "CHO-062"
+      ],
+      "tags": [
+        "Asparajin",
+        "Bilgi taşıma",
+        "Çalışma odağı",
+        "Çekirdek protein",
+        "Desteklenen sonuç",
+        "GAG",
+        "Glikokaliks",
+        "Glikokonjugat",
+        "Glikoprotein",
+        "Karbohidratlar ve glikobiyoloji",
+        "Kavramsal ayrım",
+        "Kovalent bağ",
+        "Lektin",
+        "N-bağlı glikozilasyon",
+        "O-bağlı glikozilasyon",
+        "Oligosakkarit",
+        "Proteoglikan",
+        "Proteoglikanlar, glikoproteinler ve glikolipitler",
+        "Serin/Treonin"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 2,
+        "Zor": 4
+      },
+      "question_count": 7
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "topic": "Karbohidratlar ve glikobiyoloji",
+      "subtopic": "Karbohidrat analitik yöntemleri",
+      "question_ids": [
+        "CHO-056",
+        "CHO-057"
+      ],
+      "tags": [
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "Karbohidrat analitik yöntemleri",
+        "Karbohidratlar ve glikobiyoloji"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 2
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Lipitlerin genel özelliği",
+      "question_ids": [
+        "LIP-001",
+        "LIP-021",
+        "LIP-022"
+      ],
+      "tags": [
+        "Çözünürlük",
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "Genel özellik",
+        "Lipit",
+        "Lipitler",
+        "Lipitlerin genel özelliği"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Yağ asidi yapısı ve X:Y gösterimi",
+      "question_ids": [
+        "LIP-002",
+        "LIP-004",
+        "LIP-011",
+        "LIP-043"
+      ],
+      "tags": [
+        "Çift bağ",
+        "Doymamışlık",
+        "Erime noktası",
+        "İstiflenme",
+        "Lipit",
+        "Lipitler",
+        "X:Y",
+        "X:Y gösterimi",
+        "Yağ asidi",
+        "Yağ asidi yapısı ve X:Y gösterimi",
+        "Zincir uzunluğu"
+      ],
+      "difficulties": {
+        "Kolay": 3,
+        "Orta": 1,
+        "Zor": 0
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Elzem omega-3 yağ asitleri",
+      "question_ids": [
+        "LIP-003",
+        "LIP-012"
+      ],
+      "tags": [
+        "ALA",
+        "Elzem omega-3 yağ asitleri",
+        "Elzem yağ asidi",
+        "İlk çift bağ",
+        "Lipitler",
+        "Metil ucu",
+        "Omega-3",
+        "PUFA"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 2
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Triaçilgliseroller",
+      "question_ids": [
+        "LIP-005",
+        "LIP-006",
+        "LIP-013",
+        "LIP-023",
+        "LIP-032",
+        "LIP-040"
+      ],
+      "tags": [
+        "Adiposit",
+        "Albümin",
+        "Basit TAG",
+        "Depo lipiti",
+        "Doğru ifade",
+        "Dolaşım",
+        "Enerji depolama",
+        "Ester",
+        "Ester bağı",
+        "Gliserol",
+        "Hidratasyon",
+        "İndirgenmişlik",
+        "Lipaz",
+        "Lipitler",
+        "Mobilizasyon",
+        "Serbest yağ asidi",
+        "Taşıma",
+        "Triaçilgliserol",
+        "Triaçilgliserol mobilizasyonu",
+        "Triaçilgliseroller",
+        "Triaçilgliseroller ve depolama mantığı",
+        "Tripalmitin"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 5,
+        "Zor": 0
+      },
+      "question_count": 6
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Kısmi hidrojenleme ve trans yağlar",
+      "question_ids": [
+        "LIP-007",
+        "LIP-024",
+        "LIP-025"
+      ],
+      "tags": [
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "HDL",
+        "Kısmi hidrojenleme",
+        "Kısmi hidrojenleme ve trans yağlar",
+        "LDL",
+        "Lipitler",
+        "Trans yağ"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 1
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Mumlar",
+      "question_ids": [
+        "LIP-008",
+        "LIP-014"
+      ],
+      "tags": [
+        "Depo lipiti",
+        "Erime sıcaklığı",
+        "Ester",
+        "Lipitler",
+        "Mum",
+        "Mumlar",
+        "Su itici",
+        "Uzun zincirli alkol"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 0
+      },
+      "question_count": 2
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Gliserofosfolipitler",
+      "question_ids": [
+        "LIP-009",
+        "LIP-015",
+        "LIP-045"
+      ],
+      "tags": [
+        "Eter bağı",
+        "Eter lipit",
+        "Fosfatidik asit",
+        "Gliserofosfolipit",
+        "Gliserofosfolipitler",
+        "Lipitler",
+        "Plazmojen",
+        "Polar baş grup",
+        "Zar lipiti"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 1
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Steroller",
+      "question_ids": [
+        "LIP-010",
+        "LIP-018",
+        "LIP-029"
+      ],
+      "tags": [
+        "Amfipatik",
+        "Doğru ifade",
+        "Hidroksil",
+        "Kolesterol",
+        "Lipitler",
+        "Seramit",
+        "Sfingolipit",
+        "Steroid çekirdek",
+        "Sterol",
+        "Steroller"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Galaktolipitler ve sülfolipitler",
+      "question_ids": [
+        "LIP-016",
+        "LIP-046"
+      ],
+      "tags": [
+        "Arke zar lipidi",
+        "Eter bağı",
+        "Galaktolipit",
+        "Galaktolipitler ve sülfolipitler",
+        "Galaktoz",
+        "Gliserol",
+        "Kloroplast",
+        "Lipitler"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 0
+      },
+      "question_count": 2
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Sfingolipitler",
+      "question_ids": [
+        "LIP-017",
+        "LIP-049",
+        "LIP-050"
+      ],
+      "tags": [
+        "Biyolojik tanınma",
+        "Hücre yüzeyi",
+        "Kan grubu",
+        "Lipitler",
+        "Seramid",
+        "Sfingolipit",
+        "Sfingolipitler",
+        "Sfingomiyelin"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 1
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Lipit türevli vitaminler ve kinonlar",
+      "question_ids": [
+        "LIP-019",
+        "LIP-020",
+        "LIP-030",
+        "LIP-031",
+        "LIP-033",
+        "LIP-034",
+        "LIP-035",
+        "LIP-036",
+        "LIP-037",
+        "LIP-038",
+        "LIP-039",
+        "LIP-041",
+        "LIP-042"
+      ],
+      "tags": [
+        "11-cis",
+        "7-dehidrokolesterol",
+        "All-trans",
+        "Anafilaksi",
+        "Astım",
+        "COX",
+        "Desteklenen sonuç",
+        "Deterjan etkisi",
+        "Doğru ifade",
+        "Eikosanoid",
+        "Elektron taşıyıcı",
+        "Görme pigmenti",
+        "Hormon öncüsü",
+        "İnflamasyon",
+        "İzopren",
+        "İzoprenoid",
+        "Kalsiferol",
+        "Koenzim Q",
+        "Kolekalsiferol",
+        "Lipaz",
+        "Lipit kinon",
+        "Lipit türevli sinyal",
+        "Lipit türevli vitamin",
+        "Lipit türevli vitaminler ve kinonlar",
+        "Lipit türevli vitaminler, kinonlar ve pigmentler",
+        "Lipit vitamin",
+        "Lipitler",
+        "Lökotrien",
+        "NSAİİ",
+        "Parakrin",
+        "Pıhtılaşma",
+        "Pigment",
+        "Prostaglandin",
+        "Protrombin",
+        "Retinal",
+        "Rodopsin",
+        "Safra asidi",
+        "Sinyal lipidi",
+        "Sterol",
+        "Tromboksan",
+        "Trombosit",
+        "UV",
+        "Übikinon",
+        "Vitamin A",
+        "Vitamin D",
+        "Vitamin D3",
+        "Vitamin E",
+        "Vitamin K",
+        "Yağ sindirimi"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 8,
+        "Zor": 5
+      },
+      "question_count": 13
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Yapısal lipitlerin genel mantığı",
+      "question_ids": [
+        "LIP-027",
+        "LIP-028",
+        "LIP-044"
+      ],
+      "tags": [
+        "Amfipatik yapı",
+        "Desteklenen sonuç",
+        "Gliserofosfolipitler ve diğer zar lipitleri",
+        "Kavramsal ayrım",
+        "Lipitler",
+        "Yapısal lipitlerin genel mantığı"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Lipitler.pdf",
+      "topic": "Lipitler",
+      "subtopic": "Arke zar lipitleri",
+      "question_ids": [
+        "LIP-047",
+        "LIP-048"
+      ],
+      "tags": [
+        "Arke zar lipitleri",
+        "Eter bağı",
+        "İzoprenoid zincir",
+        "Lipitler"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 2
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Nükleotidlerin temel işlevleri",
+      "question_ids": [
+        "NUC-001",
+        "NUC-022",
+        "NUC-023"
+      ],
+      "tags": [
+        "ATP",
+        "Desteklenen sonuç",
+        "Doğru ifade",
+        "İşlev",
+        "Kofaktör",
+        "Nükleotid",
+        "Nükleotidler ve nükleik asitler",
+        "Nükleotidlerin temel işlevleri"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Pürin, pirimidin ve pentoz yapısı",
+      "question_ids": [
+        "NUC-002",
+        "NUC-003",
+        "NUC-011",
+        "NUC-024",
+        "NUC-034"
+      ],
+      "tags": [
+        "Adenin",
+        "Azotlu baz",
+        "Baz",
+        "Deoksiriboz",
+        "DNA",
+        "Doğru ifade",
+        "Fosfat",
+        "Nükleotid",
+        "Nükleotidler ve nükleik asitler",
+        "Nükleozid",
+        "Pentoz",
+        "Pirimidin",
+        "Pürin",
+        "Pürin, pirimidin ve pentoz yapısı",
+        "Riboz",
+        "RNA"
+      ],
+      "difficulties": {
+        "Kolay": 2,
+        "Orta": 3,
+        "Zor": 0
+      },
+      "question_count": 5
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Fosfodiester bağları ve yönlülük",
+      "question_ids": [
+        "NUC-004",
+        "NUC-012",
+        "NUC-025",
+        "NUC-026",
+        "NUC-035"
+      ],
+      "tags": [
+        "3 uç",
+        "5 uç",
+        "Desteklenen sonuç",
+        "DNA",
+        "Doğru ifade",
+        "Fosfat",
+        "Fosfodiester",
+        "Fosfodiester bağları ve yönlülük",
+        "Negatif yük",
+        "Nükleik asit",
+        "Nükleotidler ve nükleik asitler",
+        "Omurga",
+        "RNA",
+        "Şematik gösterim",
+        "Yönlülük"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 4,
+        "Zor": 1
+      },
+      "question_count": 5
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Watson-Crick modeli",
+      "question_ids": [
+        "NUC-005",
+        "NUC-040",
+        "NUC-041"
+      ],
+      "tags": [
+        "Antiparalel",
+        "Antiparalellik",
+        "Baz eşleşmesi",
+        "Çift sarmal",
+        "DNA",
+        "Heliks geometrisi",
+        "Nükleotidler ve nükleik asitler",
+        "Watson-Crick modeli"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 2,
+        "Zor": 0
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Chargaff kuralları ve DNA kanıtları",
+      "question_ids": [
+        "NUC-006",
+        "NUC-013",
+        "NUC-029",
+        "NUC-030",
+        "NUC-031"
+      ],
+      "tags": [
+        "A+G=T+C",
+        "Baz bileşimi",
+        "Chargaff",
+        "Chargaff kuralları ve DNA kanıtları",
+        "Desteklenen sonuç",
+        "DNA",
+        "DNA çift sarmalının kanıtları ve yapısı",
+        "Doğru ifade",
+        "Kavramsal ayrım",
+        "Nükleotidler ve nükleik asitler"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 3,
+        "Zor": 1
+      },
+      "question_count": 5
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "mRNA ve diğer RNA tipleri",
+      "question_ids": [
+        "NUC-007",
+        "NUC-014",
+        "NUC-015"
+      ],
+      "tags": [
+        "Adaptör",
+        "Genetik bilgi",
+        "Monosistronik",
+        "MRNA",
+        "MRNA ve diğer RNA tipleri",
+        "Nükleotidler ve nükleik asitler",
+        "Ökaryot",
+        "Polisistronik",
+        "Prokaryot",
+        "Ribozom",
+        "RNA türleri",
+        "RRNA",
+        "Transkripsiyon",
+        "TRNA"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 2,
+        "Zor": 0
+      },
+      "question_count": 3
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Denatürasyon, renatürasyon ve Tm",
+      "question_ids": [
+        "NUC-008",
+        "NUC-016",
+        "NUC-017",
+        "NUC-042"
+      ],
+      "tags": [
+        "Baz eşleşmesi",
+        "Baz istiflenmesi",
+        "Denatürasyon",
+        "Denatürasyon, renatürasyon ve Tm",
+        "DNA",
+        "DNA denatürasyonu",
+        "G-C içeriği",
+        "Hiperkromik etki",
+        "Hipokromik etki",
+        "Kovalent bağ",
+        "Nükleotidler ve nükleik asitler",
+        "Tm",
+        "UV 260 nm"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 1,
+        "Zor": 3
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Deaminasyon ve AP lezyonları",
+      "question_ids": [
+        "NUC-009",
+        "NUC-019",
+        "NUC-032",
+        "NUC-033"
+      ],
+      "tags": [
+        "AP lezyonu",
+        "Deaminasyon",
+        "Deaminasyon ve AP lezyonları",
+        "Depürinizasyon",
+        "Desteklenen sonuç",
+        "DNA hasarı",
+        "Doğru ifade",
+        "Enzimatik olmayan nükleik asit hasarı",
+        "N-beta-glikozit",
+        "Nükleotidler ve nükleik asitler",
+        "Timin",
+        "Urasil"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 2
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "UV, radyasyon, alkilleyici ve oksidatif hasar",
+      "question_ids": [
+        "NUC-010",
+        "NUC-020",
+        "NUC-037",
+        "NUC-038"
+      ],
+      "tags": [
+        "Deaminasyon",
+        "DNA",
+        "DNA hasarı",
+        "Hidroksil radikali",
+        "İplik kırığı",
+        "İyonlaştırıcı radyasyon",
+        "Kimyasal mutajen",
+        "Nitröz asit",
+        "Nükleotidler ve nükleik asitler",
+        "Oksidatif hasar",
+        "Pirimidin dimeri",
+        "ROS",
+        "Serbest radikal",
+        "UV",
+        "UV, radyasyon, alkilleyici ve oksidatif hasar"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 2,
+        "Zor": 2
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Hibritleşme",
+      "question_ids": [
+        "NUC-018",
+        "NUC-039"
+      ],
+      "tags": [
+        "DNA",
+        "Hibritleşme",
+        "Nükleasyon",
+        "Nükleotidler ve nükleik asitler",
+        "Renatürasyon",
+        "Tamamlayıcılık",
+        "Tm",
+        "Türler arası"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 2
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Baz istiflenmesi ve UV soğurma",
+      "question_ids": [
+        "NUC-021",
+        "NUC-027",
+        "NUC-028",
+        "NUC-036"
+      ],
+      "tags": [
+        "260 nm",
+        "Baz istiflenmesi",
+        "Baz istiflenmesi ve UV soğurma",
+        "Desteklenen sonuç",
+        "DNA kararlılığı",
+        "Doğru ifade",
+        "Hidrofobik etkileşim",
+        "Nükleotidler ve nükleik asitler",
+        "Nükleotit",
+        "UV",
+        "UV soğurma",
+        "Van der Waals"
+      ],
+      "difficulties": {
+        "Kolay": 1,
+        "Orta": 1,
+        "Zor": 2
+      },
+      "question_count": 4
+    },
+    {
+      "exam_scope": "midterm",
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "topic": "Nükleotidler ve nükleik asitler",
+      "subtopic": "Nükleotidlerin enerji ve kofaktör rolleri",
+      "question_ids": [
+        "NUC-043",
+        "NUC-044"
+      ],
+      "tags": [
+        "CAMP",
+        "FAD",
+        "Nükleotidler ve nükleik asitler",
+        "Nükleotidlerin enerji ve kofaktör rolleri"
+      ],
+      "difficulties": {
+        "Kolay": 0,
+        "Orta": 1,
+        "Zor": 1
+      },
+      "question_count": 2
+    }
+  ],
+  "by_pdf": [
+    {
+      "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "exam_scope": "midterm",
+      "question_count": 58
+    },
+    {
+      "source_pdf": "Lipitler.pdf",
+      "exam_scope": "midterm",
+      "question_count": 49
+    },
+    {
+      "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "exam_scope": "midterm",
+      "question_count": 44
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { CURRICULUM_MAP, PDF_ANALYSES, QUESTION_DENSITY_MINIMUMS } from "../../src/content/curriculum.mjs";
+import { buildQuestionExamScope } from "../../src/content/exam-scope.mjs";
 import { BASE_QUESTION_BANK } from "../../src/content/questions/base.mjs";
 import { QUESTION_BANK as RAW_QUESTION_BANK } from "../../src/content/questions/index.mjs";
-import { PUBLISHED_FINAL_ROSTER } from "../../src/content/questions/published-roster.mjs";
+import { PUBLISHED_QUESTION_ROSTER } from "../../src/content/questions/published-roster.mjs";
 import { normalizeSingleLine } from "./utils.mjs";
 
 const LETTERS = ["A", "B", "C", "D", "E"];
@@ -235,7 +236,9 @@ function findCurriculumEntry(question) {
     .map((entry) => {
       const entryMin = Math.min(...entry.sourcePages);
       const entryMax = Math.max(...entry.sourcePages);
+      const entrySpan = Math.max(1, entryMax - entryMin + 1);
       const pageOverlap = (question.source_pages || []).filter((page) => page >= entryMin && page <= entryMax).length;
+      const overlapRatio = pageOverlap / Math.max(1, (question.source_pages || []).length);
       const pageDistance = (question.source_pages || []).reduce((best, page) => {
         if (page >= entryMin && page <= entryMax) return 0;
         return Math.min(best, Math.min(Math.abs(page - entryMin), Math.abs(page - entryMax)));
@@ -243,11 +246,18 @@ function findCurriculumEntry(question) {
       const sourceText = question.source_subtopic || question.source_topic;
       const sourceNorm = normalizeForMatch(sourceText);
       const entryNorm = normalizeForMatch(entry.subtopic);
-      const exactish = sourceNorm === entryNorm ? 2 : sourceNorm.includes(entryNorm) || entryNorm.includes(sourceNorm) ? 1 : 0;
+      const exactish = sourceNorm === entryNorm ? 3 : sourceNorm.includes(entryNorm) || entryNorm.includes(sourceNorm) ? 1 : 0;
       const similarity = stemSimilarity(sourceText, entry.subtopic);
+      const specificityBonus = pageOverlap > 0 ? 20 / entrySpan : 0;
       return {
         entry,
-        score: pageOverlap * 10 + exactish + similarity - pageDistance / 100
+        score:
+          pageOverlap * 50 +
+          overlapRatio * 20 +
+          exactish * 8 +
+          similarity * 10 +
+          specificityBonus -
+          pageDistance / 100
       };
     })
     .sort((a, b) => b.score - a.score)[0]?.entry;
@@ -255,15 +265,19 @@ function findCurriculumEntry(question) {
 
 function canonicalizeQuestion(question) {
   const entry = findCurriculumEntry(question);
+  const examScope = buildQuestionExamScope(question);
   const pages = (question.source_pages?.length ? question.source_pages : entry?.sourcePages || [])
     .map(Number)
     .filter(Number.isFinite)
     .sort((a, b) => a - b);
+  const sourceTopic = entry?.topic || question.source_topic;
+  const sourceSubtopic = entry?.subtopic || question.source_subtopic || question.source_topic;
 
   return {
     ...question,
-    source_topic: entry?.topic || question.source_topic,
-    source_subtopic: entry?.subtopic || question.source_subtopic || question.source_topic,
+    exam_scope: examScope,
+    source_topic: sourceTopic,
+    source_subtopic: sourceSubtopic,
     source_pages: [...new Set(pages)],
     question: sanitizeQuestionText(question.question),
     options: Object.fromEntries(
@@ -274,7 +288,7 @@ function canonicalizeQuestion(question) {
       Object.entries(question.distractor_explanations || {}).map(([key, value]) => [key, sanitizeExplanationText(value)])
     ),
     learning_objective: sanitizeLearningObjective(question.learning_objective),
-    tags: sanitizeTags([question.source_topic, question.source_subtopic, ...(question.tags || [])]),
+    tags: sanitizeTags([sourceTopic, sourceSubtopic, ...(question.tags || [])]),
     ...(question.confusion_note ? { confusion_note: sanitizeExplanationText(question.confusion_note) } : {})
   };
 }
@@ -778,7 +792,7 @@ function generateSupplementalQuestions(entry, existingQuestions, nextNumbers) {
   return generated;
 }
 
-export function buildFinalQuestionBank({ allowSupplemental = false } = {}) {
+export function buildQuestionBank({ allowSupplemental = false } = {}) {
   const sourceBank = allowSupplemental ? BASE_QUESTION_BANK : RAW_QUESTION_BANK;
   const transformed = sourceBank.map(canonicalizeQuestion).sort(sortById);
   if (!allowSupplemental) {
@@ -800,6 +814,8 @@ export function buildFinalQuestionBank({ allowSupplemental = false } = {}) {
 
   return [...deduped, ...supplemental].sort(sortById);
 }
+
+export const buildFinalQuestionBank = buildQuestionBank;
 
 export function buildSubtopicCoverage(questions) {
   return CURRICULUM_MAP.map((entry) => {
@@ -915,15 +931,15 @@ export function findOptionBalanceFlags(questions) {
 
 export function comparePublishedRoster(questions) {
   const ids = questions.map((question) => question.id);
-  const rosterSet = new Set(PUBLISHED_FINAL_ROSTER);
+  const rosterSet = new Set(PUBLISHED_QUESTION_ROSTER);
   const questionSet = new Set(ids);
 
-  const missing_ids = PUBLISHED_FINAL_ROSTER.filter((id) => !questionSet.has(id));
+  const missing_ids = PUBLISHED_QUESTION_ROSTER.filter((id) => !questionSet.has(id));
   const unexpected_ids = ids.filter((id) => !rosterSet.has(id));
   const findings = [];
 
-  if (questions.length !== PUBLISHED_FINAL_ROSTER.length) {
-    findings.push(`yayınlanan roster ${PUBLISHED_FINAL_ROSTER.length}, mevcut çıktı ${questions.length}`);
+  if (questions.length !== PUBLISHED_QUESTION_ROSTER.length) {
+    findings.push(`yayınlanan roster ${PUBLISHED_QUESTION_ROSTER.length}, mevcut çıktı ${questions.length}`);
   }
   if (missing_ids.length) {
     findings.push(`eksik ID: ${missing_ids.slice(0, 10).join(", ")}`);
@@ -932,9 +948,9 @@ export function comparePublishedRoster(questions) {
     findings.push(`beklenmeyen ID: ${unexpected_ids.slice(0, 10).join(", ")}`);
   }
   if (!missing_ids.length && !unexpected_ids.length) {
-    const orderMismatchIndex = ids.findIndex((id, index) => id !== PUBLISHED_FINAL_ROSTER[index]);
+    const orderMismatchIndex = ids.findIndex((id, index) => id !== PUBLISHED_QUESTION_ROSTER[index]);
     if (orderMismatchIndex !== -1) {
-      findings.push(`sıra sapması: ${PUBLISHED_FINAL_ROSTER[orderMismatchIndex]} beklenirken ${ids[orderMismatchIndex]} bulundu`);
+      findings.push(`sıra sapması: ${PUBLISHED_QUESTION_ROSTER[orderMismatchIndex]} beklenirken ${ids[orderMismatchIndex]} bulundu`);
     }
   }
 
@@ -942,7 +958,7 @@ export function comparePublishedRoster(questions) {
     findings,
     missing_ids,
     unexpected_ids,
-    published_count: PUBLISHED_FINAL_ROSTER.length,
+    published_count: PUBLISHED_QUESTION_ROSTER.length,
     actual_count: questions.length,
     unexpected_supplemental_count: unexpected_ids.length
   };

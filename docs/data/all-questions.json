@@ -28,11 +28,13 @@
     },
     "learning_objective": "Pirüvat dehidrogenaz kompleksinin genel işlevini tanımlamak.",
     "tags": [
-      "Pirüvatın asetil-KoA'ya dönüşümü",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi",
       "PDH",
       "Asetil-KoA",
       "Oksidatif dekarboksillenme"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-002",
@@ -63,13 +65,15 @@
     },
     "learning_objective": "PDH kompleksinin koenzim gereksinimlerini tanımak.",
     "tags": [
-      "Pirüvat dehidrogenaz kompleksinin koenzimleri",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "PDH kompleksinin koenzimleri ve alt enzimleri",
       "PDH",
       "Koenzim",
       "TPP",
       "Lipoat",
       "FAD"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-003",
@@ -103,13 +107,15 @@
     },
     "learning_objective": "PDH kompleksinin alt birimlerinin görevlerini ayırt etmek.",
     "tags": [
-      "Pirüvat dehidrogenaz kompleksinin enzimleri",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "PDH kompleksinin koenzimleri ve alt enzimleri",
       "PDH",
       "E1",
       "E2",
       "E3",
       "Enzim"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-004",
@@ -140,10 +146,12 @@
     },
     "learning_objective": "Substrat yönlendirilmesinin çok enzimli komplekslerdeki avantajını açıklamak.",
     "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Substrat yönlendirilmesi",
       "PDH",
       "Ara ürün"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-005",
@@ -174,12 +182,14 @@
     },
     "learning_objective": "Sitrik asit çevriminin giriş tepkimesini tanımak.",
     "tags": [
-      "Sitrik asit çevriminin ilk basamağı",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Sitrat oluşumu ve akonitaz",
       "Sitrat sentaz",
       "Oksaloasetat",
       "Asetil-KoA",
       "Sitrat"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-006",
@@ -211,11 +221,14 @@
     },
     "learning_objective": "İzositrat dehidrogenazın iki formu arasındaki işlev farkını ayırt etmek.",
     "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Oksidatif dekarboksillenme basamakları",
       "İzositrat dehidrogenaz",
       "NADPH",
       "NADP",
       "NAD"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-007",
@@ -247,11 +260,13 @@
     },
     "learning_objective": "Sitrik asit çevrimindeki substrat düzeyinde fosforilasyonu tanımak.",
     "tags": [
-      "Enerjinin korunumu",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Çevrimde enerji korunumu",
       "Süksinil-KoA",
       "ATP",
       "Enerji korunumu"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-008",
@@ -283,12 +298,14 @@
     },
     "learning_objective": "Amfibolik yolak kavramını anaplerotik tepkimelerle ilişkilendirmek.",
     "tags": [
-      "Amfibolik yolak ve anapleroz",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Amfibolik rol ve biyosentetik ara ürünler",
       "Amfibolik",
       "Anaplerotik",
       "Biyosentetik öncül",
       "Sitrik asit çevrimi"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-009",
@@ -319,12 +336,14 @@
     },
     "learning_objective": "PDH kompleksinin alt enzimlerinden birini tanımak.",
     "tags": [
-      "Pirüvat dehidrogenaz kompleksinin enzimleri",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "PDH kompleksinin koenzimleri ve alt enzimleri",
       "PDH",
       "E2",
       "Dihidrolipoil transasetilaz",
       "Enzim"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-010",
@@ -356,11 +375,13 @@
     },
     "learning_objective": "Substrat yönlendirilmesinin işlevsel sonucunu açıklamak.",
     "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Substrat yönlendirilmesi",
       "PDH",
       "Yerel derişim",
       "Ara ürün"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-011",
@@ -391,12 +412,14 @@
     },
     "learning_objective": "Akonitaz basamağını diğer çevrim basamaklarından ayırmak.",
     "tags": [
-      "Sitrik asit çevriminin ilk basamağı",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Sitrat oluşumu ve akonitaz",
       "Akonitaz",
       "Cis-akonitat",
       "İzositat",
       "Sitrat"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-012",
@@ -427,11 +450,14 @@
     },
     "learning_objective": "Alfa-ketoglutarat dehidrogenaz basamağının kofaktör mantığını tanımak.",
     "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Oksidatif dekarboksillenme basamakları",
       "Alfa-ketoglutarat dehidrogenaz",
       "NAD+",
       "KoA",
       "Süksinil-KoA"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-013",
@@ -462,13 +488,15 @@
     },
     "learning_objective": "Süksinil-KoA basamağındaki enerji korunumunu bağ tipiyle ilişkilendirmek.",
     "tags": [
-      "Enerjinin korunumu",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Süksinil-KoA sonrası basamaklar",
       "Süksinil-KoA",
       "Tiyoester",
       "GTP",
       "ATP",
       "Enerji"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-014",
@@ -499,11 +527,14 @@
     },
     "learning_objective": "Süksinat dehidrogenaz basamağını tanımak.",
     "tags": [
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Süksinil-KoA sonrası basamaklar",
       "Süksinat dehidrogenaz",
       "Fumarat",
       "Oksidasyon",
       "CAC"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-015",
@@ -535,12 +566,14 @@
     },
     "learning_objective": "Malat dehidrogenaz tepkimesinin hücresel koşullarla nasıl yönlendirildiğini açıklamak.",
     "tags": [
-      "Fumaraz ve malat dehidrogenaz",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Süksinil-KoA sonrası basamaklar",
       "Malat dehidrogenaz",
       "Oksaloasetat",
       "Denge",
       "Çevrim"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-016",
@@ -572,12 +605,14 @@
     },
     "learning_objective": "Anaplerotik tepkimelerin neden gerekli olduğunu açıklamak.",
     "tags": [
-      "Amfibolik yolak ve anapleroz",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Amfibolik rol ve biyosentetik ara ürünler",
       "Anaplerotik",
       "Amfibolik",
       "Biyosentetik öncül",
       "CAC"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-017",
@@ -608,13 +643,15 @@
     },
     "learning_objective": "PDH tepkimesinin geri dönüşsüz ve iki karbonlu ürün mantığını açıklamak.",
     "tags": [
-      "Pirüvatın asetil-KoA'ya dönüşümü",
+      "Pirüvat oksidasyonu ve sitrik asit çevrimi",
+      "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi",
       "PDH",
       "Tersinmez",
       "Asetil-KoA",
       "CO2",
       "Oksidatif dekarboksillenme"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-018",
@@ -648,7 +685,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-019",
@@ -682,7 +720,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Pirüvatın asetil-KoA'ya oksidatif dekarboksillenmesi",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-020",
@@ -716,7 +755,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "PDH kompleksinin koenzimleri ve alt enzimleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-021",
@@ -750,7 +790,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "PDH kompleksinin koenzimleri ve alt enzimleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-022",
@@ -784,7 +825,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "PDH kompleksinin koenzimleri ve alt enzimleri",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-023",
@@ -817,7 +859,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Substrat yönlendirilmesi",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-024",
@@ -851,7 +894,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Sitrat oluşumu ve akonitaz",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-025",
@@ -885,7 +929,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Oksidatif dekarboksillenme basamakları",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-026",
@@ -919,7 +964,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Oksidatif dekarboksillenme basamakları",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-027",
@@ -953,7 +999,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Süksinil-KoA sonrası basamaklar",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-028",
@@ -987,7 +1034,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Çevrimde enerji korunumu",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-029",
@@ -1021,7 +1069,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Çevrimde enerji korunumu",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-030",
@@ -1055,7 +1104,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Çevrimde enerji korunumu",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CAC-031",
@@ -1089,7 +1139,8 @@
       "Pirüvat oksidasyonu ve sitrik asit çevrimi",
       "Amfibolik rol ve biyosentetik ara ürünler",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "CHO-001",
@@ -1120,12 +1171,14 @@
     },
     "learning_objective": "Monosakkaritleri aldoz/ketoz ve karbon sayısına göre sınıflandırmak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Monosakkaritlerin temel sınıflandırılması",
       "Monosakkarit",
       "Aldoz",
       "Ketoz",
       "Trioz"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-002",
@@ -1157,11 +1210,13 @@
     },
     "learning_objective": "D/L izomer tanımının referans noktasını açıklamak.",
     "tags": [
-      "D ve L izomerleri",
+      "Karbohidratlar ve glikobiyoloji",
+      "D/L izomerleri ve kiralite",
       "D-L",
       "Stereoizomer",
       "Gliseraldehit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-003",
@@ -1193,11 +1248,13 @@
     },
     "learning_objective": "Anomer kavramını diğer stereokimyasal ayrımlardan ayırt etmek.",
     "tags": [
-      "Anomer kavramı",
+      "Karbohidratlar ve glikobiyoloji",
+      "Halkalı yapı, anomerler ve mutarotasyon",
       "Anomer",
       "Anomerik karbon",
       "Stereoizomer"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-004",
@@ -1228,10 +1285,13 @@
     },
     "learning_objective": "Mutarotasyon kavramını tanımlamak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Halkalı yapı, anomerler ve mutarotasyon",
       "Mutarotasyon",
       "Glukoz",
       "Anomer"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-005",
@@ -1263,10 +1323,12 @@
     },
     "learning_objective": "Başlıca şeker türevlerini yapısal değişiklikleriyle tanımak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Heksoz türevleri",
       "N-asetilglukozamin",
       "Muramik asit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-006",
@@ -1300,12 +1362,14 @@
     },
     "learning_objective": "İndirgen ve indirgen olmayan şeker ayrımını anomerik karbon üzerinden yorumlamak.",
     "tags": [
-      "İndirgen ve indirgen olmayan disakkaritler",
+      "Karbohidratlar ve glikobiyoloji",
+      "İndirgen şeker mantığı",
       "Disakkarit",
       "İndirgen şeker",
       "Anomerik karbon",
       "Glikozit bağı"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-007",
@@ -1336,10 +1400,13 @@
     },
     "learning_objective": "Trehalozun bağ düzenini maltozdan ayırmak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
+      "Disakkarit adlandırması ve bağ tipleri",
       "Trehaloz",
       "Disakkarit",
       "Anomerik karbon"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-008",
@@ -1373,12 +1440,14 @@
     },
     "learning_objective": "Başlıca depo polisakkaritlerini yapı ve organizma düzeyinde karşılaştırmak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Depo polisakkaritleri",
       "Nişasta",
       "Glikojen",
       "Depo polisakkariti",
       "Dallanma"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-009",
@@ -1409,12 +1478,14 @@
     },
     "learning_objective": "Polimer depolamanın ozmotik avantajını açıklamak.",
     "tags": [
-      "Glukozun monomer olarak depolanmaması",
+      "Karbohidratlar ve glikobiyoloji",
+      "Depo polisakkaritleri",
       "Glukoz",
       "Osmolarite",
       "Glikojen",
       "Depolama"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-010",
@@ -1447,12 +1518,14 @@
     },
     "learning_objective": "Selüloz ve kitini yapı düzeyinde ayırt etmek.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Yapısal homopolisakkaritler",
       "Selüloz",
       "Kitin",
       "N-asetilglukozamin",
       "Yapısal polisakkarit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-011",
@@ -1485,11 +1558,13 @@
     },
     "learning_objective": "Başlıca glikozaminoglikan örneklerinden hiyaluronanı tanımlamak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Glikozaminoglikanlar",
       "Hiyaluronan",
       "Glikozaminoglikan",
       "ECM"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-012",
@@ -1522,12 +1597,14 @@
     },
     "learning_objective": "Şeker kodu kavramını lektinlerin özgül bağlanması üzerinden açıklamak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Şeker kodu ve lektinler",
       "Lektin",
       "Şeker kodu",
       "Glikobiyoloji",
       "Özgüllük"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-013",
@@ -1558,13 +1635,15 @@
     },
     "learning_objective": "Epimer kavramını diğer stereoizomer ayrımlarından ayırt etmek.",
     "tags": [
-      "D ve L izomerleri",
+      "Karbohidratlar ve glikobiyoloji",
+      "D/L izomerleri ve kiralite",
       "Epimer",
       "Stereoizomer",
       "Glukoz",
       "Mannoz",
       "Galaktoz"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-014",
@@ -1595,12 +1674,14 @@
     },
     "learning_objective": "Ketoz adlandırmasında ilgili aldoz kökünün nasıl kullanıldığını açıklamak.",
     "tags": [
-      "D ve L izomerleri",
+      "Karbohidratlar ve glikobiyoloji",
+      "D/L izomerleri ve kiralite",
       "Ketoz",
       "Adlandırma",
       "Riboz",
       "Ribuloz"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-015",
@@ -1631,12 +1712,14 @@
     },
     "learning_objective": "İndirgen şeker davranışını karbonil kimyası üzerinden yorumlamak.",
     "tags": [
-      "İndirgen ve indirgen olmayan disakkaritler",
+      "Karbohidratlar ve glikobiyoloji",
+      "İndirgen şeker mantığı",
       "İndirgen şeker",
       "Fehling",
       "Karbonil",
       "Yükseltgenme"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-016",
@@ -1667,12 +1750,14 @@
     },
     "learning_objective": "Disakkarit adlandırmasında temel sıralama kuralını tanımak.",
     "tags": [
-      "İndirgen ve indirgen olmayan disakkaritler",
+      "Karbohidratlar ve glikobiyoloji",
+      "Disakkarit adlandırması ve bağ tipleri",
       "Disakkarit",
       "Adlandırma",
       "İndirgen uç",
       "Glikozit bağı"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-017",
@@ -1703,12 +1788,14 @@
     },
     "learning_objective": "Homopolisakkarit ve heteropolisakkarit ayrımını örneklerle yapmak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Depo polisakkaritleri",
       "Homopolisakkarit",
       "Glikojen",
       "Heteropolisakkarit",
       "Peptidoglikan"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-018",
@@ -1739,13 +1826,15 @@
     },
     "learning_objective": "Selüloz ve amilozun bağ tipine bağlı özellik farkını açıklamak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Yapısal homopolisakkaritler",
       "Selüloz",
       "Amiloz",
       "Beta 1-4",
       "Alfa bağ",
       "Yapısal polisakkarit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-019",
@@ -1778,18 +1867,20 @@
     },
     "learning_objective": "Glikozaminoglikanların ECM içindeki yerini açıklamak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Glikozaminoglikanlar",
       "Glikozaminoglikan",
       "ECM",
       "Heteropolisakkarit",
       "Destek matrisi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-020",
     "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
     "source_topic": "Karbohidratlar ve glikobiyoloji",
-    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_subtopic": "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
     "source_pages": [
       66
     ],
@@ -1814,12 +1905,14 @@
     },
     "learning_objective": "Peptidoglikan yapısını lizozim duyarlılığıyla ilişkilendirmek.",
     "tags": [
-      "Polisakkaritler",
+      "Karbohidratlar ve glikobiyoloji",
+      "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
       "Peptidoglikan",
       "Lizozim",
       "N-asetilglukozamin",
       "N-asetilmuramik asit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-021",
@@ -1852,13 +1945,15 @@
     },
     "learning_objective": "Proteoglikan ve glikoprotein ayrımını yapı temelli yapmak.",
     "tags": [
-      "Glikokonjugatlar",
+      "Karbohidratlar ve glikobiyoloji",
+      "Proteoglikanlar, glikoproteinler ve glikolipitler",
       "Proteoglikan",
       "Glikoprotein",
       "Glikokonjugat",
       "GAG",
       "Oligosakkarit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-022",
@@ -1892,13 +1987,15 @@
     },
     "learning_objective": "Lektin-karbohidrat etkileşimlerinin özgüllük özelliklerini yorumlamak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Şeker kodu ve lektinler",
       "Lektin",
       "Çok değerlik",
       "Özgüllük",
       "Şeker kodu",
       "Afinite kromatografisi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-023",
@@ -1930,12 +2027,14 @@
     },
     "learning_objective": "Karbon sayısı ile aldoz/ketoz sınıflamasını örnekler üzerinden yapmak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Monosakkaritlerin temel sınıflandırılması",
       "Ketoheksoz",
       "Fruktoz",
       "Monosakkarit",
       "Sınıflandırma"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-024",
@@ -1966,12 +2065,14 @@
     },
     "learning_objective": "Şeker türevlerinin temel dönüşüm mantıklarını tanımak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Heksoz türevleri",
       "Şeker türevi",
       "Uronik asit",
       "Yükseltgenme",
       "Heksoz"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-025",
@@ -2002,12 +2103,14 @@
     },
     "learning_objective": "GAG tekrarlayan disakkarit biriminin tipik bileşimini açıklamak.",
     "tags": [
+      "Karbohidratlar ve glikobiyoloji",
       "Glikozaminoglikanlar",
       "Glikozaminoglikan",
       "N-asetilglukozamin",
       "Uronik asit",
       "Disakkarit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-026",
@@ -2038,12 +2141,14 @@
     },
     "learning_objective": "Proteoglikanın çekirdek protein + GAG organizasyonunu tanımlamak.",
     "tags": [
-      "Glikokonjugatlar",
+      "Karbohidratlar ve glikobiyoloji",
+      "Proteoglikanlar, glikoproteinler ve glikolipitler",
       "Proteoglikan",
       "Çekirdek protein",
       "GAG",
       "Kovalent bağ"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-027",
@@ -2074,12 +2179,14 @@
     },
     "learning_objective": "Glikoprotein karbohidratlarının bilgi taşıyıcı rolünü açıklamak.",
     "tags": [
-      "Glikokonjugatlar",
+      "Karbohidratlar ve glikobiyoloji",
+      "Proteoglikanlar, glikoproteinler ve glikolipitler",
       "Glikoprotein",
       "Lektin",
       "Glikokaliks",
       "Bilgi taşıma"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-028",
@@ -2113,7 +2220,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Monosakkaritlerin temel sınıflandırılması",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-029",
@@ -2147,7 +2255,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Monosakkaritlerin temel sınıflandırılması",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-030",
@@ -2181,7 +2290,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "D/L izomerleri ve kiralite",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-031",
@@ -2215,7 +2325,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Halkalı yapı, anomerler ve mutarotasyon",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-032",
@@ -2249,7 +2360,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Halkalı yapı, anomerler ve mutarotasyon",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-034",
@@ -2283,7 +2395,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Heksoz türevleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-035",
@@ -2317,7 +2430,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Heksoz türevleri",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-036",
@@ -2351,7 +2465,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "İndirgen şeker mantığı",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-037",
@@ -2385,7 +2500,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "İndirgen şeker mantığı",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-038",
@@ -2419,7 +2535,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Disakkarit adlandırması ve bağ tipleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-039",
@@ -2453,7 +2570,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Disakkarit adlandırması ve bağ tipleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-040",
@@ -2487,7 +2605,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Depo polisakkaritleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-041",
@@ -2521,7 +2640,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Yapısal homopolisakkaritler",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-042",
@@ -2555,13 +2675,14 @@
       "Karbohidratlar ve glikobiyoloji",
       "Yapısal homopolisakkaritler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-043",
     "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
     "source_topic": "Karbohidratlar ve glikobiyoloji",
-    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_subtopic": "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
     "source_pages": [
       66,
       68
@@ -2587,15 +2708,17 @@
     "learning_objective": "Peptidoglikan ve heteropolisakkaritler kapsamında doğru biyokimyasal ifadeyi seçmek.",
     "tags": [
       "Karbohidratlar ve glikobiyoloji",
+      "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
       "Peptidoglikan ve heteropolisakkaritler",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-044",
     "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
     "source_topic": "Karbohidratlar ve glikobiyoloji",
-    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_subtopic": "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
     "source_pages": [
       66,
       68
@@ -2621,9 +2744,11 @@
     "learning_objective": "Peptidoglikan ve heteropolisakkaritler için desteklenen sonucu ayırt etmek.",
     "tags": [
       "Karbohidratlar ve glikobiyoloji",
+      "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
       "Peptidoglikan ve heteropolisakkaritler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-046",
@@ -2657,7 +2782,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Glikozaminoglikanlar",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-047",
@@ -2691,7 +2817,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Glikozaminoglikanlar",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-048",
@@ -2725,7 +2852,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Glikozaminoglikanlar",
       "Çalışma odağı"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-050",
@@ -2759,7 +2887,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Proteoglikanlar, glikoproteinler ve glikolipitler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-051",
@@ -2793,7 +2922,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Proteoglikanlar, glikoproteinler ve glikolipitler",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-052",
@@ -2827,7 +2957,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Proteoglikanlar, glikoproteinler ve glikolipitler",
       "Çalışma odağı"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-054",
@@ -2861,7 +2992,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Şeker kodu ve lektinler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-055",
@@ -2895,7 +3027,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Şeker kodu ve lektinler",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-056",
@@ -2929,7 +3062,8 @@
       "Karbohidratlar ve glikobiyoloji",
       "Karbohidrat analitik yöntemleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-057",
@@ -2963,13 +3097,14 @@
       "Karbohidratlar ve glikobiyoloji",
       "Karbohidrat analitik yöntemleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-058",
     "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
     "source_topic": "Karbohidratlar ve glikobiyoloji",
-    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_subtopic": "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
     "source_pages": [
       67,
       68
@@ -2996,12 +3131,13 @@
     "learning_objective": "Agarozu, heteropolisakkaritler içinde analitik kullanım açısından ayırt etmek.",
     "tags": [
       "Karbohidratlar ve glikobiyoloji",
-      "Peptidoglikan ve heteropolisakkaritler",
+      "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
       "Agaroz",
       "Agar",
       "Elektroforez",
       "Heteropolisakkarit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-059",
@@ -3039,13 +3175,14 @@
       "Glikozaminoglikan",
       "Antikoagülan",
       "Negatif yük"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-060",
     "source_pdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
     "source_topic": "Karbohidratlar ve glikobiyoloji",
-    "source_subtopic": "Peptidoglikan ve heteropolisakkaritler",
+    "source_subtopic": "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
     "source_pages": [
       66,
       68
@@ -3072,12 +3209,13 @@
     "learning_objective": "Gram-negatif lipopolisakkaritlerde endotoksik kısmı tanımlamak.",
     "tags": [
       "Karbohidratlar ve glikobiyoloji",
-      "Peptidoglikan ve heteropolisakkaritler",
+      "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
       "Lipid A",
       "Lipopolisakkarit",
       "Endotoksin",
       "Gram-negatif bakteri"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-061",
@@ -3116,7 +3254,8 @@
       "Şeker kodu",
       "Hücre adezyonu",
       "Lökosit göçü"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "CHO-062",
@@ -3155,7 +3294,8 @@
       "O-bağlı glikozilasyon",
       "Asparajin",
       "Serin/Treonin"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-001",
@@ -3186,17 +3326,19 @@
     },
     "learning_objective": "Lipitlerin tanımlayıcı fizikokimyasal özelliğini hatırlamak.",
     "tags": [
+      "Lipitler",
       "Lipitlerin genel özelliği",
       "Lipit",
       "Çözünürlük",
       "Genel özellik"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-002",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Yağ asidi yapısı ve gösterimi",
+    "source_subtopic": "Yağ asidi yapısı ve X:Y gösterimi",
     "source_pages": [
       6,
       7
@@ -3222,17 +3364,19 @@
     },
     "learning_objective": "Yağ asidi kısaltma gösterimini doğru okumak.",
     "tags": [
-      "Yağ asidi gösterimi",
+      "Lipitler",
+      "Yağ asidi yapısı ve X:Y gösterimi",
       "Yağ asidi",
       "X:Y",
       "Çift bağ"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-003",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Yağ asidi yapısı ve gösterimi",
+    "source_subtopic": "Elzem omega-3 yağ asitleri",
     "source_pages": [
       9,
       11
@@ -3258,17 +3402,19 @@
     },
     "learning_objective": "Elzem omega-3 yağ asidini tanımak.",
     "tags": [
-      "Omega-3 yağ asitleri",
+      "Lipitler",
+      "Elzem omega-3 yağ asitleri",
       "Omega-3",
       "ALA",
       "Elzem yağ asidi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-004",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Yağ asidi yapısı ve gösterimi",
+    "source_subtopic": "Yağ asidi yapısı ve X:Y gösterimi",
     "source_pages": [
       12,
       14,
@@ -3295,18 +3441,20 @@
     },
     "learning_objective": "Doymuşluk derecesinin yağ asitlerinin fiziksel özelliklerine etkisini yorumlamak.",
     "tags": [
-      "Doymuşluk ve fiziksel özellik",
+      "Lipitler",
+      "Yağ asidi yapısı ve X:Y gösterimi",
       "Doymamışlık",
       "Erime noktası",
       "Yağ asidi",
       "İstiflenme"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-005",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_subtopic": "Triaçilgliseroller",
     "source_pages": [
       18,
       19
@@ -3332,18 +3480,20 @@
     },
     "learning_objective": "Triaçilgliserolün yapısal tanımını bilmek.",
     "tags": [
+      "Lipitler",
       "Triaçilgliseroller",
       "Triaçilgliserol",
       "Gliserol",
       "Ester bağı",
       "Depo lipiti"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-006",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_subtopic": "Triaçilgliseroller",
     "source_pages": [
       20,
       23
@@ -3369,12 +3519,14 @@
     },
     "learning_objective": "Triaçilgliserollerin enerji depolamadaki biyokimyasal avantajını açıklamak.",
     "tags": [
-      "Depo lipitlerinin avantajı",
+      "Lipitler",
+      "Triaçilgliseroller",
       "Triaçilgliserol",
       "Enerji depolama",
       "Hidratasyon",
       "İndirgenmişlik"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-007",
@@ -3406,12 +3558,14 @@
     },
     "learning_objective": "Kısmi hidrojenlenmenin biyolojik sonuçlarını yorumlamak.",
     "tags": [
-      "Trans yağlar",
+      "Lipitler",
+      "Kısmi hidrojenleme ve trans yağlar",
       "Trans yağ",
       "Kısmi hidrojenleme",
       "LDL",
       "HDL"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-008",
@@ -3442,18 +3596,20 @@
     },
     "learning_objective": "Biyolojik mumların yapısını ve işlevini tanımak.",
     "tags": [
+      "Lipitler",
       "Mumlar",
       "Mum",
       "Ester",
       "Su itici",
       "Depo lipiti"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-009",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_subtopic": "Gliserofosfolipitler",
     "source_pages": [
       29,
       32,
@@ -3480,11 +3636,13 @@
     },
     "learning_objective": "Gliserofosfolipitleri diğer zar lipitlerinden ayırt etmek.",
     "tags": [
+      "Lipitler",
       "Gliserofosfolipitler",
       "Gliserofosfolipit",
       "Fosfatidik asit",
       "Zar lipiti"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-010",
@@ -3519,18 +3677,20 @@
     },
     "learning_objective": "Sfingolipit ve sterol sınıflarını ayırt etmek.",
     "tags": [
-      "Sfingolipitler ve steroller",
+      "Lipitler",
+      "Steroller",
       "Sfingolipit",
       "Sterol",
       "Steroid çekirdek",
       "Seramit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-011",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Yağ asidi yapısı ve gösterimi",
+    "source_subtopic": "Yağ asidi yapısı ve X:Y gösterimi",
     "source_pages": [
       4
     ],
@@ -3555,17 +3715,19 @@
     },
     "learning_objective": "Yağ asitlerinin temel yapısal aralığını hatırlamak.",
     "tags": [
-      "Yağ asidi yapısı",
+      "Lipitler",
+      "Yağ asidi yapısı ve X:Y gösterimi",
       "Yağ asidi",
       "Zincir uzunluğu",
       "Lipit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-012",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Yağ asidi yapısı ve gösterimi",
+    "source_subtopic": "Elzem omega-3 yağ asitleri",
     "source_pages": [
       9
     ],
@@ -3590,18 +3752,20 @@
     },
     "learning_objective": "Omega sınıflamasını ilk çift bağ konumuyla ilişkilendirmek.",
     "tags": [
-      "Omega-3 yağ asitleri",
+      "Lipitler",
+      "Elzem omega-3 yağ asitleri",
       "Omega-3",
       "PUFA",
       "Metil ucu",
       "İlk çift bağ"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-013",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_subtopic": "Triaçilgliseroller",
     "source_pages": [
       18
     ],
@@ -3626,12 +3790,14 @@
     },
     "learning_objective": "Basit ve karışık triaçilgliserolleri ayırt etmek.",
     "tags": [
+      "Lipitler",
       "Triaçilgliseroller",
       "Triaçilgliserol",
       "Tripalmitin",
       "Basit TAG",
       "Ester"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-014",
@@ -3662,18 +3828,20 @@
     },
     "learning_objective": "Mumların uzun zincirli yapısını fiziksel özellikleriyle ilişkilendirmek.",
     "tags": [
+      "Lipitler",
       "Mumlar",
       "Mum",
       "Uzun zincirli alkol",
       "Erime sıcaklığı",
       "Ester"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-015",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_subtopic": "Gliserofosfolipitler",
     "source_pages": [
       37
     ],
@@ -3698,18 +3866,20 @@
     },
     "learning_objective": "Eter bağlı gliserofosfolipitleri standart ester bağlı yapılardan ayırt etmek.",
     "tags": [
+      "Lipitler",
       "Gliserofosfolipitler",
       "Eter lipit",
       "Plazmojen",
       "Gliserofosfolipit",
       "Eter bağı"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-016",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_subtopic": "Galaktolipitler ve sülfolipitler",
     "source_pages": [
       38,
       39
@@ -3735,19 +3905,21 @@
     },
     "learning_objective": "Galaktolipitler ile arkeal zar lipitlerini ayırt etmek.",
     "tags": [
-      "Zarlardaki yapısal lipitler",
+      "Lipitler",
+      "Galaktolipitler ve sülfolipitler",
       "Galaktolipit",
       "Arke zar lipidi",
       "Eter bağı",
       "Galaktoz",
       "Gliserol"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-017",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_subtopic": "Sfingolipitler",
     "source_pages": [
       42,
       45
@@ -3773,12 +3945,14 @@
     },
     "learning_objective": "Sfingolipitleri hücre yüzeyi tanıma olaylarıyla ilişkilendirmek.",
     "tags": [
-      "Sfingolipitler ve steroller",
+      "Lipitler",
+      "Sfingolipitler",
       "Sfingolipit",
       "Kan grubu",
       "Biyolojik tanınma",
       "Hücre yüzeyi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-018",
@@ -3809,18 +3983,20 @@
     },
     "learning_objective": "Kolesterolün amfipatik yapısını açıklamak.",
     "tags": [
-      "Sfingolipitler ve steroller",
+      "Lipitler",
+      "Steroller",
       "Kolesterol",
       "Amfipatik",
       "Sterol",
       "Hidroksil"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-019",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       63
     ],
@@ -3845,18 +4021,20 @@
     },
     "learning_objective": "Lipit türevli vitaminlerin biyolojik rollerini sınıflandırmak.",
     "tags": [
-      "Sinyal, kofaktör ve pigment olarak lipitler",
+      "Lipitler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Vitamin D",
       "Hormon öncüsü",
       "Kalsiferol",
       "Lipit vitamin"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-020",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       70
     ],
@@ -3881,12 +4059,14 @@
     },
     "learning_objective": "Lipit kinonları yapısal lipitlerden ayırt etmek.",
     "tags": [
-      "Sinyal, kofaktör ve pigment olarak lipitler",
+      "Lipitler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Übikinon",
       "Koenzim Q",
       "Lipit kinon",
       "Elektron taşıyıcı"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-021",
@@ -3919,7 +4099,8 @@
       "Lipitler",
       "Lipitlerin genel özelliği",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-022",
@@ -3952,13 +4133,14 @@
       "Lipitler",
       "Lipitlerin genel özelliği",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-023",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_subtopic": "Triaçilgliseroller",
     "source_pages": [
       18,
       24
@@ -3984,9 +4166,11 @@
     "learning_objective": "Triaçilgliseroller ve depolama mantığı kapsamında doğru biyokimyasal ifadeyi seçmek.",
     "tags": [
       "Lipitler",
+      "Triaçilgliseroller",
       "Triaçilgliseroller ve depolama mantığı",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-024",
@@ -4020,7 +4204,8 @@
       "Lipitler",
       "Kısmi hidrojenleme ve trans yağlar",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-025",
@@ -4054,13 +4239,14 @@
       "Lipitler",
       "Kısmi hidrojenleme ve trans yağlar",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-027",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_subtopic": "Yapısal lipitlerin genel mantığı",
     "source_pages": [
       28,
       47
@@ -4086,15 +4272,17 @@
     "learning_objective": "Gliserofosfolipitler ve diğer zar lipitleri için desteklenen sonucu ayırt etmek.",
     "tags": [
       "Lipitler",
+      "Yapısal lipitlerin genel mantığı",
       "Gliserofosfolipitler ve diğer zar lipitleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-028",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
+    "source_subtopic": "Yapısal lipitlerin genel mantığı",
     "source_pages": [
       28,
       47
@@ -4120,9 +4308,11 @@
     "learning_objective": "Gliserofosfolipitler ve diğer zar lipitleri için belirleyici kavramsal ayrımı seçmek.",
     "tags": [
       "Lipitler",
+      "Yapısal lipitlerin genel mantığı",
       "Gliserofosfolipitler ve diğer zar lipitleri",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-029",
@@ -4156,13 +4346,14 @@
       "Lipitler",
       "Steroller",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-030",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       50,
       73
@@ -4188,15 +4379,17 @@
     "learning_objective": "Lipit türevli vitaminler, kinonlar ve pigmentler kapsamında doğru biyokimyasal ifadeyi seçmek.",
     "tags": [
       "Lipitler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Lipit türevli vitaminler, kinonlar ve pigmentler",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-031",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       50,
       73
@@ -4222,15 +4415,17 @@
     "learning_objective": "Lipit türevli vitaminler, kinonlar ve pigmentler için desteklenen sonucu ayırt etmek.",
     "tags": [
       "Lipitler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Lipit türevli vitaminler, kinonlar ve pigmentler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-032",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_subtopic": "Triaçilgliseroller",
     "source_pages": [
       23,
       24
@@ -4257,19 +4452,20 @@
     "learning_objective": "Depo triaçilgliserollerinin lipaz aracılı mobilizasyonunu tanımlamak.",
     "tags": [
       "Lipitler",
-      "Triaçilgliseroller ve depolama mantığı",
+      "Triaçilgliseroller",
       "Triaçilgliserol",
       "Lipaz",
       "Adiposit",
       "Serbest yağ asidi",
       "Mobilizasyon"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-033",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       57,
       60
@@ -4296,18 +4492,19 @@
     "learning_objective": "Eikosanoidlerin temel sinyal iletim mantığını parakrin etki üzerinden açıklamak.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Eikosanoid",
       "Parakrin",
       "Sinyal lipidi",
       "Lipit türevli sinyal"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-034",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       59,
       60
@@ -4334,19 +4531,20 @@
     "learning_objective": "Prostaglandinleri, COX ve NSAİİ ilişkisi üzerinden diğer lipit sınıflarından ayırt etmek.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Prostaglandin",
       "NSAİİ",
       "COX",
       "İnflamasyon",
       "Eikosanoid"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-035",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       60,
       61
@@ -4373,18 +4571,19 @@
     "learning_objective": "Tromboksanı, eikosanoidler içinde hemostazla ilişkili özgül ürün olarak tanımak.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Tromboksan",
       "Eikosanoid",
       "Trombosit",
       "Pıhtılaşma"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-036",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       60,
       61
@@ -4411,19 +4610,20 @@
     "learning_objective": "Lökotrienleri, diğer eikosanoid sınıflarından klinik sonuç ve enzim hedefi bakımından ayırt etmek.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Lökotrien",
       "Eikosanoid",
       "Astım",
       "Anafilaksi",
       "NSAİİ"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-037",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       62,
       63
@@ -4450,19 +4650,20 @@
     "learning_objective": "Vitamin D3 sentezinde 7-dehidrokolesterolün öncül rolünü tanımak.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Vitamin D3",
       "7-dehidrokolesterol",
       "Kolekalsiferol",
       "UV",
       "Sterol"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-038",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       65,
       66
@@ -4489,19 +4690,20 @@
     "learning_objective": "Retinal izomerleşmesini görme pigmentlerinin işlevsel başlangıç olayı olarak açıklamak.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Retinal",
       "11-cis",
       "All-trans",
       "Rodopsin",
       "Görme pigmenti"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-039",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       67,
       68
@@ -4528,18 +4730,19 @@
     "learning_objective": "Vitamin K'yı, lipit türevli vitaminler içinde pıhtılaşma ile ilişkilendirmek.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Vitamin K",
       "Protrombin",
       "Pıhtılaşma",
       "Lipit türevli vitamin"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-040",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Triaçilgliseroller ve depolama mantığı",
+    "source_subtopic": "Triaçilgliseroller",
     "source_pages": [
       24
     ],
@@ -4565,19 +4768,20 @@
     "learning_objective": "Serbest yağ asitlerinin dolaşımdaki temel taşıyıcısını tanımak.",
     "tags": [
       "Lipitler",
-      "Triaçilgliseroller ve depolama mantığı",
+      "Triaçilgliseroller",
       "Albümin",
       "Serbest yağ asidi",
       "Taşıma",
       "Dolaşım",
       "Triaçilgliserol mobilizasyonu"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-041",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       49,
       50
@@ -4604,18 +4808,19 @@
     "learning_objective": "Safra asitlerinin yağ sindirimine katkısını deterjan etkisi üzerinden açıklamak.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "Safra asidi",
       "Deterjan etkisi",
       "Lipaz",
       "Yağ sindirimi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "LIP-042",
     "source_pdf": "Lipitler.pdf",
     "source_topic": "Lipitler",
-    "source_subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+    "source_subtopic": "Lipit türevli vitaminler ve kinonlar",
     "source_pages": [
       69,
       73
@@ -4642,7 +4847,7 @@
     "learning_objective": "İzopren birimlerini, lipit türevli vitamin ve pigmentlerin ortak yapısal temeli olarak tanımak.",
     "tags": [
       "Lipitler",
-      "Lipit türevli vitaminler, kinonlar ve pigmentler",
+      "Lipit türevli vitaminler ve kinonlar",
       "İzopren",
       "İzoprenoid",
       "Vitamin A",
@@ -4650,7 +4855,295 @@
       "Vitamin E",
       "Vitamin K",
       "Pigment"
-    ]
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-043",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Yağ asidi yapısı ve X:Y gösterimi",
+    "source_pages": [
+      5,
+      8
+    ],
+    "difficulty": "Kolay",
+    "question_type": "tanım",
+    "question": "Yağ asidi gösteriminde 18:2 ifadesindeki ilk sayı aşağıdakilerden hangisini belirtir?",
+    "options": {
+      "A": "Karbon atomu sayısını.",
+      "B": "Toplam çift bağ sayısını.",
+      "C": "Omega ailesini.",
+      "D": "Metil ucundan ilk çift bağın konumunu.",
+      "E": "Gliserole bağlanan zincir sayısını."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "X:Y gösteriminde ilk sayı zincirdeki toplam karbon atomu sayısını, ikinci sayı ise çift bağ sayısını ifade eder.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Çift bağ sayısı ikinci sayı ile gösterilir.",
+      "C": "Omega sınıflaması ayrı bir gösterim eksenidir; 18:2 ifadesinin ilk sayısı değildir.",
+      "D": "İlk çift bağın konumu omega ya da delta gösterimiyle belirtilir.",
+      "E": "Bu gösterim yağ asidi zincirini tanımlar; gliserole bağlanan zincir sayısını vermez."
+    },
+    "learning_objective": "Yağ asidi kısaltma gösteriminde karbon sayısı ile çift bağ sayısını ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Yağ asidi yapısı ve X:Y gösterimi",
+      "X:Y gösterimi"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-044",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Yapısal lipitlerin genel mantığı",
+    "source_pages": [
+      28,
+      31
+    ],
+    "difficulty": "Orta",
+    "question_type": "karşılaştırma",
+    "question": "Yapısal zar lipitlerini depo triaçilgliserollerinden ayıran temel özellik aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Amfipatik yapıları sayesinde çift tabaka oluşturabilmeleri.",
+      "B": "Tamamen apolar olmaları.",
+      "C": "Yalnız enerji depolamak için kullanılmaları.",
+      "D": "Her zaman üç yağ asidi zinciri taşımaları.",
+      "E": "Suda tam çözünür olmaları."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Yapısal zar lipitleri hidrofilik baş grup ve hidrofobik kuyrukları birlikte taşıdıkları için amfipatiktir ve zar çift tabakası oluşturabilir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Tamamen apolar yapı daha çok depo lipit mantığıyla ilişkilidir.",
+      "C": "Bu özellik triaçilgliserollerin ana işlevidir; yapısal zar lipitlerinin değil.",
+      "D": "Üç yağ asidi zinciri triaçilgliserollere özgüdür.",
+      "E": "Yapısal zar lipitleri amfipatiktir; tamamen suda çözünen moleküller değildir."
+    },
+    "learning_objective": "Yapısal zar lipitlerini amfipatik özellik ve çift tabaka oluşumu üzerinden ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Yapısal lipitlerin genel mantığı",
+      "Amfipatik yapı"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-045",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Gliserofosfolipitler",
+    "source_pages": [
+      32,
+      37
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Bir gliserofosfolipidi triaçilgliserolden ayıran yapısal özellik aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Üçüncü karbon üzerinde fosfat içeren polar baş grup bulunması.",
+      "B": "Sfingozin omurgası taşıması.",
+      "C": "Dört kaynaşmış halkadan oluşması.",
+      "D": "Baz ve pentoz içeren nükleotid başlığı taşıması.",
+      "E": "İki zincir yerine tek hidrokarbon zinciri taşıması."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Gliserofosfolipitlerde gliserol omurgasının üçüncü karbonuna fosfat ve buna bağlı polar bir baş grup bağlanır; bu yapı onları triaçilgliserollerden ayırır.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Sfingozin omurgası sfingolipitlerle ilişkilidir.",
+      "C": "Dört halka sterollerin ayırt edici özelliğidir.",
+      "D": "Bu yapı nükleotid veya kofaktör mantığına aittir; gliserofosfolipit tanımı değildir.",
+      "E": "Gliserofosfolipitler genellikle iki hidrofobik zincir taşır."
+    },
+    "learning_objective": "Gliserofosfolipitlerde fosfatlı polar baş grubun ayırt edici rolünü tanımak.",
+    "tags": [
+      "Lipitler",
+      "Gliserofosfolipitler",
+      "Polar baş grup"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-046",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Galaktolipitler ve sülfolipitler",
+    "source_pages": [
+      38
+    ],
+    "difficulty": "Orta",
+    "question_type": "uygulama",
+    "question": "Bitki kloroplast tilakoit zarlarında öne çıkan, şeker baş grubu taşıyan yapısal lipit sınıfı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Galaktolipitler.",
+      "B": "Triaçilgliseroller.",
+      "C": "Steroller.",
+      "D": "Nükleotidler.",
+      "E": "Peptidoglikanlar."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Galaktolipitler özellikle kloroplast zarlarında bulunan, baş grubunda şeker taşıyan yapısal lipitlerdir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Triaçilgliseroller depo lipitidir; tilakoit zarın temel yapısal lipidi değildir.",
+      "C": "Steroller zarla ilişkili olabilir ancak bu bitkisel şeker baş gruplu lipit sınıfını tanımlamaz.",
+      "D": "Nükleotidler zarın yapısal lipit sınıfı değildir.",
+      "E": "Peptidoglikan bakteri hücre duvarı polimeridir."
+    },
+    "learning_objective": "Galaktolipitleri kloroplast zarı bağlamında diğer lipit sınıflarından ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Galaktolipitler ve sülfolipitler",
+      "Kloroplast"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-047",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Arke zar lipitleri",
+    "source_pages": [
+      39,
+      41
+    ],
+    "difficulty": "Orta",
+    "question_type": "kavramsal ayrım",
+    "question": "Arke zar lipitlerini bakteriyel ve ökaryotik zar lipitlerinden ayıran temel bağ özelliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Hidrokarbon zincirlerinin gliserole eter bağlarıyla bağlanması.",
+      "B": "Yağ asitlerinin gliserole ester bağlarıyla bağlanması.",
+      "C": "Yağ asidi zincirlerinin yalnız amid bağıyla bağlanması.",
+      "D": "Bazların pentoza fosfodiester bağlarıyla bağlanması.",
+      "E": "Sterol halkalarının disülfid köprüleriyle tutulması."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Arke zar lipitlerinde hidrokarbon zincirleri gliserole tipik olarak eter bağlarıyla bağlanır; bu özellik onları klasik ester bağlı zar lipitlerinden ayırır.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu özellik daha çok bakteri ve ökaryot zar lipitleri için tipiktir.",
+      "C": "Amid bağı sfingolipit bağlamında görülebilir; arke zar lipitlerinin temel ayırıcı özelliği değildir.",
+      "D": "Bu bağ tipi nükleik asit omurgasıyla ilişkilidir.",
+      "E": "Steroller böyle tanımlanmaz."
+    },
+    "learning_objective": "Arke zar lipitlerinde eter bağının ayırt edici rolünü tanımak.",
+    "tags": [
+      "Lipitler",
+      "Arke zar lipitleri",
+      "Eter bağı"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-048",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Arke zar lipitleri",
+    "source_pages": [
+      39,
+      41
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "Arke zar lipitlerinde hidrofobik kısım için tipik olarak aşağıdaki yapılardan hangisi bulunur?",
+    "options": {
+      "A": "Dallanmış izoprenoid zincirler.",
+      "B": "Yalnız doğrusal glukoz polimerleri.",
+      "C": "Pürin bazlarından oluşan zincirler.",
+      "D": "Steroid halkası içermeyen kısa peptitler.",
+      "E": "Sadece doymamış serbest yağ asitleri."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Arke zar lipitlerinin hidrofobik kısmı çoğu kez dallanmış izoprenoid zincirlerden oluşur; bu yapı klasik doğrusal yağ asidi zincirlerinden farklıdır.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Glukoz polimerleri karbonhidrat sınıfındadır; zarın hidrofobik kısmını oluşturmaz.",
+      "C": "Pürin bazları nükleotid bileşenidir; zar lipidi zinciri değildir.",
+      "D": "Peptit yapılar zar lipit zinciri olarak kullanılmaz.",
+      "E": "Arke lipitlerinin ayırıcı yanı serbest yağ asidi değil izoprenoid zincir ve eter bağıdır."
+    },
+    "learning_objective": "Arke zar lipitlerinde izoprenoid zincirlerin ayırt edici rolünü açıklamak.",
+    "tags": [
+      "Lipitler",
+      "Arke zar lipitleri",
+      "İzoprenoid zincir"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-049",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Sfingolipitler",
+    "source_pages": [
+      42,
+      44
+    ],
+    "difficulty": "Orta",
+    "question_type": "tanım",
+    "question": "Seramid aşağıdakilerden hangisinin birleşmesiyle oluşur?",
+    "options": {
+      "A": "Sfingozin ile bir yağ asidinin amid bağıyla birleşmesiyle.",
+      "B": "Gliserol ile üç yağ asidinin esterleşmesiyle.",
+      "C": "Kolesterol ile fosfatın kovalent birleşmesiyle.",
+      "D": "Riboz ile pürin bazının glikozit bağı kurmasıyla.",
+      "E": "Galaktoz ile glukozun alfa(1→4) bağı kurmasıyla."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Seramid, sfingozin omurgasına bir yağ asidinin amid bağıyla bağlanması sonucu oluşan temel sfingolipit çekirdeğidir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu tanım triaçilgliserole aittir.",
+      "C": "Kolesterol böyle bir temel sfingolipit çekirdeği oluşturmaz.",
+      "D": "Bu yapı nükleozid oluşumuyla ilişkilidir.",
+      "E": "Bu bir disakkarit bağını anlatır; seramid tanımı değildir."
+    },
+    "learning_objective": "Seramidin sfingozin ve yağ asidi bileşenlerinden oluştuğunu tanımak.",
+    "tags": [
+      "Lipitler",
+      "Sfingolipitler",
+      "Seramid"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "LIP-050",
+    "source_pdf": "Lipitler.pdf",
+    "source_topic": "Lipitler",
+    "source_subtopic": "Sfingolipitler",
+    "source_pages": [
+      45,
+      47
+    ],
+    "difficulty": "Zor",
+    "question_type": "karşılaştırma",
+    "question": "Sfingomiyelini glikosfingolipitlerden ayıran baş grup özelliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Fosfokolin ya da fosfoetanolamin içermesi.",
+      "B": "Anomerik karbon üzerinden polisakkarit zinciri taşıması.",
+      "C": "Üç yağ asidi zinciri bulundurması.",
+      "D": "Sterol çekirdeği taşıması.",
+      "E": "Mutlaka serbest gliserol içermesi."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Sfingomiyelin, sfingolipitler içinde fosfokolin ya da fosfoetanolamin taşıyan fosforlu baş gruba sahip olmasıyla glikosfingolipitlerden ayrılır.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bu özellik daha çok glikosfingolipitlerin karbonhidrat baş gruplarıyla ilişkilidir.",
+      "C": "Üç zincirli yapı triaçilgliserollere özgüdür.",
+      "D": "Sterol çekirdeği kolesterol benzeri yapılarda görülür; sfingomiyelinin ayırt edici baş grubu değildir.",
+      "E": "Sfingomiyelin gliserol değil sfingozin omurgası taşır."
+    },
+    "learning_objective": "Sfingomiyelini, fosforlu baş grubu üzerinden glikosfingolipitlerden ayırt etmek.",
+    "tags": [
+      "Lipitler",
+      "Sfingolipitler",
+      "Sfingomiyelin"
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "MEM-001",
@@ -4681,11 +5174,13 @@
     },
     "learning_objective": "Biyolojik zarların seçici geçirgenlik özelliğini tanımak.",
     "tags": [
-      "Bütün biyolojik zarların ortak özellikleri",
+      "Biyolojik zarlar ve taşınma",
+      "Biyolojik zarların ortak özellikleri",
       "Zar",
       "Seçici geçirgenlik",
       "Temel özellik"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-002",
@@ -4716,11 +5211,13 @@
     },
     "learning_objective": "Sıvı-mozaik modelin temel düzenlenişini açıklamak.",
     "tags": [
-      "Sıvı-mozaik modeli",
+      "Biyolojik zarlar ve taşınma",
+      "Sıvı-mozaik model ve lipit çift tabaka",
       "Sıvı-mozaik",
       "Fosfolipit",
       "Zar mimarisi"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-003",
@@ -4751,11 +5248,14 @@
     },
     "learning_objective": "Zar asimetrisinin biyolojik sonuçlarını yorumlamak.",
     "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "Zar asimetrisi ve protein tipleri",
       "Zar asimetrisi",
       "Fosfatidilserin",
       "Apoptoz",
       "Pıhtılaşma"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-004",
@@ -4786,11 +5286,13 @@
     },
     "learning_objective": "İntegral ve diğer zar proteinlerini bağlanma biçimine göre ayırt etmek.",
     "tags": [
-      "Zar proteinlerinin sınıflandırılması",
+      "Biyolojik zarlar ve taşınma",
+      "Zar asimetrisi ve protein tipleri",
       "Zar proteini",
       "İntegral protein",
       "Deterjan"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-005",
@@ -4822,11 +5324,13 @@
     },
     "learning_objective": "Zar akışkanlığında lipit bileşiminin rolünü değerlendirmek.",
     "tags": [
-      "Zar dinamikleri ve akışkanlık",
+      "Biyolojik zarlar ve taşınma",
+      "Zar akışkanlığı ve dinamikleri",
       "Zar akışkanlığı",
       "Doymuş yağ asidi",
       "Lipit bileşimi"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-006",
@@ -4858,10 +5362,12 @@
     },
     "learning_objective": "Zar füzyonunun özgül protein aracılığı gerektirdiğini bilmek.",
     "tags": [
+      "Biyolojik zarlar ve taşınma",
       "Zar füzyonu",
       "SNARE",
       "Sinaps"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-007",
@@ -4892,11 +5398,13 @@
     },
     "learning_objective": "GLUT taşıyıcılarının pasif taşınma mantığını tanımak.",
     "tags": [
-      "Kolaylaştırılmış difüzyon ve GLUT",
+      "Biyolojik zarlar ve taşınma",
+      "GLUT ve kolaylaştırılmış difüzyon",
       "GLUT",
       "Kolaylaştırılmış difüzyon",
       "Eritrosit"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-008",
@@ -4928,12 +5436,14 @@
     },
     "learning_objective": "Elektronötr antiport mekanizmasını açıklayabilmek.",
     "tags": [
-      "Anyon değişimi",
+      "Biyolojik zarlar ve taşınma",
+      "Anyon değiştiriciler",
       "Anyon değiştirici",
       "Antiport",
       "Bikarbonat",
       "Klorür"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-009",
@@ -4965,12 +5475,15 @@
     },
     "learning_objective": "Aktif taşınmanın enerji eşleşmesi mantığını ayırt etmek.",
     "tags": [
+      "Biyolojik zarlar ve taşınma",
+      "Aktif taşınma, akuaporinler ve iyon kanalları",
       "Aktif taşınma",
       "Endergonik",
       "Egzergonik",
       "Birincil",
       "İkincil"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-010",
@@ -5003,12 +5516,14 @@
     },
     "learning_objective": "Akuaporinleri diğer zar taşıma sistemlerinden ayırt etmek.",
     "tags": [
-      "Akuaporinler ve iyon kanalları",
+      "Biyolojik zarlar ve taşınma",
+      "Aktif taşınma, akuaporinler ve iyon kanalları",
       "Akuaporin",
       "Su taşıma",
       "İyon kanalı",
       "Seçicilik"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-011",
@@ -5040,12 +5555,14 @@
     },
     "learning_objective": "Misel ve çift tabaka kavramlarını ayırt etmek.",
     "tags": [
-      "Sıvı-mozaik modeli",
+      "Biyolojik zarlar ve taşınma",
+      "Sıvı-mozaik model ve lipit çift tabaka",
       "Misel",
       "Çift tabaka",
       "Sıvı-mozaik",
       "Amfipatik"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-012",
@@ -5076,11 +5593,14 @@
     },
     "learning_objective": "Lipit asimetrisinin biyolojik sonuçlarını açıklamak.",
     "tags": [
-      "Zar asimetrisi",
+      "Biyolojik zarlar ve taşınma",
+      "Zar asimetrisi ve protein tipleri",
       "Fosfatidilserin",
+      "Zar asimetrisi",
       "Apoptoz",
       "Pıhtılaşma"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-013",
@@ -5112,12 +5632,14 @@
     },
     "learning_objective": "Zar akışkanlığını lipit bileşimiyle ilişkilendirmek.",
     "tags": [
-      "Zar dinamikleri ve akışkanlık",
+      "Biyolojik zarlar ve taşınma",
+      "Zar akışkanlığı ve dinamikleri",
       "Zar akışkanlığı",
       "Doymuş yağ asidi",
       "Sıvı-düzenli",
       "Paketlenme"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-014",
@@ -5149,11 +5671,13 @@
     },
     "learning_objective": "Zar füzyonunun basamaklı doğasını açıklamak.",
     "tags": [
+      "Biyolojik zarlar ve taşınma",
       "Zar füzyonu",
       "Yarı-füzyon",
       "Yakınlaşma",
       "Füzyon proteinleri"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-015",
@@ -5185,12 +5709,14 @@
     },
     "learning_objective": "Kolaylaştırılmış difüzyonun enerji bariyeri mantığını açıklamak.",
     "tags": [
+      "Biyolojik zarlar ve taşınma",
       "Taşıyıcılar ve kanallar",
       "Kolaylaştırılmış difüzyon",
       "Aktifleşme enerjisi",
       "Taşıyıcı",
       "Kanal"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-016",
@@ -5221,12 +5747,14 @@
     },
     "learning_objective": "Taşıyıcı ve kanal sistemlerini hız, özgüllük ve doyma açısından ayırt etmek.",
     "tags": [
+      "Biyolojik zarlar ve taşınma",
       "Taşıyıcılar ve kanallar",
       "Taşıyıcı",
       "Kanal",
       "Doygunluk",
       "Stereoözgünlük"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-017",
@@ -5258,12 +5786,14 @@
     },
     "learning_objective": "Akuaporinlerin fizyolojik bağlamını örnek üzerinden açıklamak.",
     "tags": [
-      "Akuaporinler ve iyon kanalları",
+      "Biyolojik zarlar ve taşınma",
+      "Aktif taşınma, akuaporinler ve iyon kanalları",
       "Akuaporin",
       "Eritrosit",
       "Osmolarite",
       "Su taşınması"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-018",
@@ -5294,12 +5824,14 @@
     },
     "learning_objective": "İyon seçici kanalların hücresel iyon dengesiyle ilişkisini açıklamak.",
     "tags": [
-      "İyon seçici kanallar",
+      "Biyolojik zarlar ve taşınma",
+      "Aktif taşınma, akuaporinler ve iyon kanalları",
       "İyon kanalı",
       "Zar potansiyeli",
       "İyon dengesi",
       "Geçirgenlik"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-019",
@@ -5333,7 +5865,8 @@
       "Biyolojik zarlar ve taşınma",
       "Biyolojik zarların ortak özellikleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-020",
@@ -5367,7 +5900,8 @@
       "Biyolojik zarlar ve taşınma",
       "Biyolojik zarların ortak özellikleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-021",
@@ -5401,7 +5935,8 @@
       "Biyolojik zarlar ve taşınma",
       "Sıvı-mozaik model ve lipit çift tabaka",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-022",
@@ -5435,7 +5970,8 @@
       "Biyolojik zarlar ve taşınma",
       "Sıvı-mozaik model ve lipit çift tabaka",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-023",
@@ -5469,7 +6005,8 @@
       "Biyolojik zarlar ve taşınma",
       "Zar asimetrisi ve protein tipleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-024",
@@ -5503,7 +6040,8 @@
       "Biyolojik zarlar ve taşınma",
       "Zar akışkanlığı ve dinamikleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-025",
@@ -5537,7 +6075,8 @@
       "Biyolojik zarlar ve taşınma",
       "Zar füzyonu",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-026",
@@ -5571,7 +6110,8 @@
       "Biyolojik zarlar ve taşınma",
       "Zar füzyonu",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-027",
@@ -5605,7 +6145,8 @@
       "Biyolojik zarlar ve taşınma",
       "Taşıyıcılar ve kanallar",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-028",
@@ -5639,7 +6180,8 @@
       "Biyolojik zarlar ve taşınma",
       "Taşıyıcılar ve kanallar",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-029",
@@ -5673,7 +6215,8 @@
       "Biyolojik zarlar ve taşınma",
       "GLUT ve kolaylaştırılmış difüzyon",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-030",
@@ -5707,7 +6250,8 @@
       "Biyolojik zarlar ve taşınma",
       "GLUT ve kolaylaştırılmış difüzyon",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-031",
@@ -5741,7 +6285,8 @@
       "Biyolojik zarlar ve taşınma",
       "Anyon değiştiriciler",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MEM-032",
@@ -5775,7 +6320,8 @@
       "Biyolojik zarlar ve taşınma",
       "Anyon değiştiriciler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-001",
@@ -5806,11 +6352,13 @@
     },
     "learning_objective": "Glikolizin temel ürününü doğru tanımlamak.",
     "tags": [
-      "Glikolizin genel çıktısı",
+      "Karbohidrat metabolizması",
+      "Glukoz kullanımının ana yolları",
       "Glikoliz",
       "Pirüvat",
       "Karbonhidrat metabolizması"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-002",
@@ -5843,13 +6391,15 @@
     },
     "learning_objective": "Glikolizin iki evresinin enerji mantığını ayırt etmek.",
     "tags": [
+      "Karbohidrat metabolizması",
       "Glikolizin iki evresi",
       "Glikoliz",
       "Hazırlık evresi",
       "Sonlanma evresi",
       "ATP",
       "NADH"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-003",
@@ -5882,11 +6432,13 @@
     },
     "learning_objective": "Pirüvatın başlıca katabolik akıbetlerini listelemek.",
     "tags": [
+      "Karbohidrat metabolizması",
       "Pirüvatın akıbetleri",
       "Pirüvat",
       "Asetil-KoA",
       "Fermentasyon"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-004",
@@ -5919,12 +6471,14 @@
     },
     "learning_objective": "Glikolizin net enerji bilançosunu hatırlamak.",
     "tags": [
-      "Glikolizin enerji bilançosu",
+      "Karbohidrat metabolizması",
+      "Glikolizde enerji korunumu",
       "Glikoliz",
       "ATP",
       "NADH",
       "Bilanço"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-005",
@@ -5955,11 +6509,13 @@
     },
     "learning_objective": "Glikolizde fosforillenmiş ara ürünlerin işlevlerini açıklamak.",
     "tags": [
-      "Fosforillenmiş ara ürünlerin önemi",
+      "Karbohidrat metabolizması",
+      "Glikolizde enerji korunumu",
       "Fosforillenmiş ara ürün",
       "Glikoliz",
       "Hücre içi tutulum"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-006",
@@ -5990,11 +6546,13 @@
     },
     "learning_objective": "Glikolizdeki kritik fosforilasyon basamaklarını doğru enzimle eşleştirmek.",
     "tags": [
-      "Fosfofruktokinaz-1",
+      "Karbohidrat metabolizması",
+      "Hazırlık evresi basamakları",
       "PFK-1",
       "Fruktoz 6-fosfat",
       "Fruktoz 1,6-bisfosfat"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-007",
@@ -6025,11 +6583,14 @@
     },
     "learning_objective": "Glikolizde ATP oluşturan son basamağı tanımak.",
     "tags": [
+      "Karbohidrat metabolizması",
+      "Sonlanma evresi basamakları",
       "Pirüvat kinaz",
       "PEP",
       "ATP",
       "Substrat düzeyinde fosforilasyon"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-008",
@@ -6061,11 +6622,13 @@
     },
     "learning_objective": "Laktat fermentasyonunun redoks dengesindeki rolünü açıklamak.",
     "tags": [
+      "Karbohidrat metabolizması",
       "Laktik asit fermentasyonu",
       "NADH",
       "NAD+",
       "Anaerobik glikoliz"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-009",
@@ -6096,11 +6659,13 @@
     },
     "learning_objective": "Etanol fermentasyonunu laktat fermentasyonundan ayırt etmek.",
     "tags": [
+      "Karbohidrat metabolizması",
       "Etanol fermentasyonu",
       "Maya",
       "Pirüvat",
       "CO2"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-010",
@@ -6133,11 +6698,13 @@
     },
     "learning_objective": "Glukoneogenezin glikolizin basit tersi olmadığını göstermek.",
     "tags": [
-      "Glukoneogenez by-pass basamakları",
+      "Karbohidrat metabolizması",
+      "Glukoneogenez by-pass tepkimeleri",
       "Glukoneogenez",
       "By-pass",
       "Tersinmez basamaklar"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-011",
@@ -6169,12 +6736,14 @@
     },
     "learning_objective": "Glukoneogenezin enerji maliyetini doğru hatırlamak.",
     "tags": [
-      "Glukoneogenezin enerji maliyeti",
+      "Karbohidrat metabolizması",
+      "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
       "Glukoneogenez",
       "ATP",
       "GTP",
       "Enerji maliyeti"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-012",
@@ -6209,13 +6778,15 @@
     },
     "learning_objective": "Pentoz fosfat yolağına akışın NADP+ ve hücresel ihtiyaçla düzenlendiğini açıklamak.",
     "tags": [
-      "Pentoz fosfat yolağının yönlendirilmesi",
+      "Karbohidrat metabolizması",
+      "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
       "Pentoz fosfat yolağı",
       "G6FD",
       "NADP+",
       "NADPH",
       "Metabolik akış"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-013",
@@ -6246,11 +6817,14 @@
     },
     "learning_objective": "Glikolizin erken izomerizasyon basamağını doğru enzimle eşleştirmek.",
     "tags": [
+      "Karbohidrat metabolizması",
+      "Hazırlık evresi basamakları",
       "Fosfoheksoz izomeraz",
       "Glukoz 6-fosfat",
       "Fruktoz 6-fosfat",
       "Glikoliz"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-014",
@@ -6281,12 +6855,14 @@
     },
     "learning_objective": "PFK-1 basamağının yolak taahhüdündeki önemini açıklamak.",
     "tags": [
-      "Fosfofruktokinaz-1",
+      "Karbohidrat metabolizması",
+      "Hazırlık evresi basamakları",
       "PFK-1",
       "Adanmış basamak",
       "Glikoliz",
       "Fruktoz 1,6-bisfosfat"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-015",
@@ -6318,13 +6894,15 @@
     },
     "learning_objective": "Aldolaz basamağının ürünlerini tanımak.",
     "tags": [
-      "Aldolaz ve trioz fosfatlar",
+      "Karbohidrat metabolizması",
+      "Hazırlık evresi basamakları",
       "Aldolaz",
       "Trioz fosfat",
       "G3P",
       "DHAP",
       "Glikoliz"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-016",
@@ -6355,12 +6933,14 @@
     },
     "learning_objective": "Trioz fosfat izomerazın akı devamlılığındaki rolünü açıklamak.",
     "tags": [
-      "Aldolaz ve trioz fosfatlar",
+      "Karbohidrat metabolizması",
+      "Hazırlık evresi basamakları",
       "Trioz fosfat izomeraz",
       "DHAP",
       "G3P",
       "Glikoliz"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-017",
@@ -6391,13 +6971,15 @@
     },
     "learning_objective": "NAD+ yenilenmesinin glikolizde hangi basamak için kritik olduğunu açıklamak.",
     "tags": [
-      "Gliseraldehit 3-fosfat dehidrogenaz",
+      "Karbohidrat metabolizması",
+      "Sonlanma evresi basamakları",
       "GAPDH",
       "NAD+",
       "NADH",
       "Glikoliz",
       "Fermentasyon"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-018",
@@ -6428,11 +7010,14 @@
     },
     "learning_objective": "Fosfogliserat kinaz basamağının ürünlerini tanımak.",
     "tags": [
+      "Karbohidrat metabolizması",
+      "Sonlanma evresi basamakları",
       "Fosfogliserat kinaz",
       "1,3-BPG",
       "ATP",
       "3-fosfogliserat"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-019",
@@ -6463,11 +7048,14 @@
     },
     "learning_objective": "Enolaz basamağının dehidrasyon mantığını açıklamak.",
     "tags": [
+      "Karbohidrat metabolizması",
+      "Sonlanma evresi basamakları",
       "Enolaz",
       "PEP",
       "Dehidrasyon",
       "Glikoliz"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-020",
@@ -6498,12 +7086,14 @@
     },
     "learning_objective": "Laktat oluşumunun hücresel organel eksikliğiyle ilişkisini açıklamak.",
     "tags": [
+      "Karbohidrat metabolizması",
       "Laktik asit fermentasyonu",
       "Eritrosit",
       "Laktat",
       "Mitokondri",
       "Fermentasyon"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-021",
@@ -6535,12 +7125,14 @@
     },
     "learning_objective": "Malat ara basamağını mitokondri-sitozol taşınmasıyla ilişkilendirmek.",
     "tags": [
-      "Glukoneogenez by-pass basamakları",
+      "Karbohidrat metabolizması",
+      "Glukoneogenez by-pass tepkimeleri",
       "Glukoneogenez",
       "Oksaloasetat",
       "Malat",
       "Mitokondri taşıma"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-022",
@@ -6572,12 +7164,14 @@
     },
     "learning_objective": "PPP'nin oksidatif olmayan evresini oksidatif evreden ayırt etmek.",
     "tags": [
-      "Pentoz fosfat yolağının yönlendirilmesi",
+      "Karbohidrat metabolizması",
+      "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
       "PPP",
       "Oksidatif olmayan evre",
       "Transketolaz",
       "Transaldolaz"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-023",
@@ -6608,12 +7202,14 @@
     },
     "learning_objective": "Pirüvatın aerobik oksidatif kaderini tanımak.",
     "tags": [
+      "Karbohidrat metabolizması",
       "Pirüvatın akıbetleri",
       "Pirüvat",
       "Asetil-KoA",
       "CO2",
       "Aerobik metabolizma"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-024",
@@ -6644,13 +7240,15 @@
     },
     "learning_objective": "Pirüvatın anabolik kullanımını katabolik akıbetlerinden ayırt etmek.",
     "tags": [
+      "Karbohidrat metabolizması",
       "Pirüvatın akıbetleri",
       "Pirüvat",
       "Anabolik",
       "Alanin",
       "Yağ asidi",
       "Karbon iskeleti"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-025",
@@ -6682,12 +7280,14 @@
     },
     "learning_objective": "Piruvat karboksilazın kofaktör ve düzenleme özelliklerini açıklamak.",
     "tags": [
-      "Glukoneogenez by-pass basamakları",
+      "Karbohidrat metabolizması",
+      "Glukoneogenez by-pass tepkimeleri",
       "Piruvat karboksilaz",
       "Biyotin",
       "Asetil-KoA",
       "Glukoneogenez"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-026",
@@ -6719,13 +7319,15 @@
     },
     "learning_objective": "Glikoliz ve glukoneogenezin karşılıklı düzenleme mantığını açıklamak.",
     "tags": [
-      "Glukoneogenezin enerji maliyeti",
+      "Karbohidrat metabolizması",
+      "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
       "Karşılıklı düzenleme",
       "Glikoliz",
       "Glukoneogenez",
       "Allosterik",
       "Kovalent"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-027",
@@ -6759,7 +7361,8 @@
       "Karbohidrat metabolizması",
       "Glukoz kullanımının ana yolları",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-028",
@@ -6793,7 +7396,8 @@
       "Karbohidrat metabolizması",
       "Glukoz kullanımının ana yolları",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-029",
@@ -6827,7 +7431,8 @@
       "Karbohidrat metabolizması",
       "Glikolizin iki evresi",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-030",
@@ -6861,7 +7466,8 @@
       "Karbohidrat metabolizması",
       "Glikolizin iki evresi",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-031",
@@ -6895,7 +7501,8 @@
       "Karbohidrat metabolizması",
       "Glikolizin iki evresi",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-032",
@@ -6929,7 +7536,8 @@
       "Karbohidrat metabolizması",
       "Pirüvatın akıbetleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-033",
@@ -6963,7 +7571,8 @@
       "Karbohidrat metabolizması",
       "Glikolizde enerji korunumu",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-034",
@@ -6997,7 +7606,8 @@
       "Karbohidrat metabolizması",
       "Glikolizde enerji korunumu",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-035",
@@ -7031,7 +7641,8 @@
       "Karbohidrat metabolizması",
       "Hazırlık evresi basamakları",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-036",
@@ -7065,7 +7676,8 @@
       "Karbohidrat metabolizması",
       "Sonlanma evresi basamakları",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-037",
@@ -7099,7 +7711,8 @@
       "Karbohidrat metabolizması",
       "Sonlanma evresi basamakları",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-038",
@@ -7133,7 +7746,8 @@
       "Karbohidrat metabolizması",
       "Laktik asit fermentasyonu",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-039",
@@ -7167,7 +7781,8 @@
       "Karbohidrat metabolizması",
       "Laktik asit fermentasyonu",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-041",
@@ -7201,7 +7816,8 @@
       "Karbohidrat metabolizması",
       "Etanol fermentasyonu",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-042",
@@ -7235,7 +7851,8 @@
       "Karbohidrat metabolizması",
       "Etanol fermentasyonu",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-043",
@@ -7269,7 +7886,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenezin genel ilkeleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-044",
@@ -7303,7 +7921,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenezin genel ilkeleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-045",
@@ -7337,7 +7956,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenezin genel ilkeleri",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-046",
@@ -7371,7 +7991,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenezin genel ilkeleri",
       "Çalışma odağı"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-048",
@@ -7405,7 +8026,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenez by-pass tepkimeleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-049",
@@ -7439,7 +8061,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenez by-pass tepkimeleri",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-050",
@@ -7473,7 +8096,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenez by-pass tepkimeleri",
       "Çalışma odağı"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-051",
@@ -7507,7 +8131,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-052",
@@ -7541,7 +8166,8 @@
       "Karbohidrat metabolizması",
       "Glukoneogenez enerji maliyeti ve karşılıklı düzenleme",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-053",
@@ -7575,7 +8201,8 @@
       "Karbohidrat metabolizması",
       "Pentoz fosfat yolağının oksidatif evresi",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-054",
@@ -7609,7 +8236,8 @@
       "Karbohidrat metabolizması",
       "Pentoz fosfat yolağının oksidatif evresi",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-055",
@@ -7643,7 +8271,8 @@
       "Karbohidrat metabolizması",
       "Pentoz fosfat yolağının oksidatif evresi",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-056",
@@ -7677,7 +8306,8 @@
       "Karbohidrat metabolizması",
       "Pentoz fosfat yolağının oksidatif evresi",
       "Çalışma odağı"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-058",
@@ -7711,7 +8341,8 @@
       "Karbohidrat metabolizması",
       "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "MET-059",
@@ -7745,7 +8376,8 @@
       "Karbohidrat metabolizması",
       "Pentoz fosfat yolağının oksidatif olmayan evresi ve akı seçimi",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "NUC-001",
@@ -7778,12 +8410,14 @@
     },
     "learning_objective": "Nükleotidlerin temel hücresel işlevlerini hatırlamak.",
     "tags": [
-      "Nükleotidlerin işlevleri",
+      "Nükleotidler ve nükleik asitler",
+      "Nükleotidlerin temel işlevleri",
       "Nükleotid",
       "ATP",
       "Kofaktör",
       "İşlev"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-002",
@@ -7815,12 +8449,14 @@
     },
     "learning_objective": "Pürin ve pirimidin bazlarını ayırt etmek.",
     "tags": [
-      "Azotlu baz sınıfları",
+      "Nükleotidler ve nükleik asitler",
+      "Pürin, pirimidin ve pentoz yapısı",
       "Pürin",
       "Pirimidin",
       "Adenin",
       "Baz"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-003",
@@ -7852,12 +8488,14 @@
     },
     "learning_objective": "DNA/RNA ayrımında pentoz tipinin belirleyici olduğunu kavramak.",
     "tags": [
-      "DNA ve RNA ayrımı",
+      "Nükleotidler ve nükleik asitler",
+      "Pürin, pirimidin ve pentoz yapısı",
       "DNA",
       "RNA",
       "Riboz",
       "Deoksiriboz"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-004",
@@ -7889,19 +8527,21 @@
     },
     "learning_objective": "Nükleik asit omurgasını oluşturan bağ tipini tanımlamak.",
     "tags": [
-      "Fosfodiester bağı",
+      "Nükleotidler ve nükleik asitler",
+      "Fosfodiester bağları ve yönlülük",
       "Fosfodiester",
       "5 uç",
       "3 uç",
       "DNA",
       "RNA"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-005",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+    "source_subtopic": "Watson-Crick modeli",
     "source_pages": [
       30,
       32,
@@ -7929,18 +8569,20 @@
     },
     "learning_objective": "Watson-Crick modelinin temel yapısal ilkelerini tanımlamak.",
     "tags": [
-      "DNA çift sarmalı",
+      "Nükleotidler ve nükleik asitler",
+      "Watson-Crick modeli",
       "DNA",
       "Çift sarmal",
       "Antiparalel",
       "Baz eşleşmesi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-006",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+    "source_subtopic": "Chargaff kuralları ve DNA kanıtları",
     "source_pages": [
       28
     ],
@@ -7965,11 +8607,13 @@
     },
     "learning_objective": "Chargaff kurallarını doğru ifade etmek.",
     "tags": [
-      "Chargaff kuralları",
+      "Nükleotidler ve nükleik asitler",
+      "Chargaff kuralları ve DNA kanıtları",
       "Chargaff",
       "DNA",
       "Baz bileşimi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-007",
@@ -8001,19 +8645,21 @@
     },
     "learning_objective": "Monosistronik ve polisistronik mRNA ayrımını yapmak.",
     "tags": [
-      "Monosistronik ve polisistronik mRNA",
+      "Nükleotidler ve nükleik asitler",
+      "MRNA ve diğer RNA tipleri",
       "MRNA",
       "Monosistronik",
       "Polisistronik",
       "Prokaryot",
       "Ökaryot"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-008",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_subtopic": "Denatürasyon, renatürasyon ve Tm",
     "source_pages": [
       42,
       45,
@@ -8040,17 +8686,19 @@
     },
     "learning_objective": "DNA denatürasyonu ile baz içeriği arasındaki ilişkiyi yorumlamak.",
     "tags": [
-      "DNA denatürasyonu ve Tm",
+      "Nükleotidler ve nükleik asitler",
+      "Denatürasyon, renatürasyon ve Tm",
       "Tm",
       "DNA denatürasyonu",
       "G-C içeriği"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-009",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "Deaminasyon ve AP lezyonları",
     "source_pages": [
       50
     ],
@@ -8075,18 +8723,20 @@
     },
     "learning_objective": "DNA'da timin kullanılmasının hasar tanıma açısından önemini açıklamak.",
     "tags": [
-      "Deaminasyon ve timin/urasil ayrımı",
+      "Nükleotidler ve nükleik asitler",
+      "Deaminasyon ve AP lezyonları",
       "Deaminasyon",
       "Timin",
       "Urasil",
       "DNA hasarı"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-010",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "UV, radyasyon, alkilleyici ve oksidatif hasar",
     "source_pages": [
       51,
       52,
@@ -8114,12 +8764,14 @@
     },
     "learning_objective": "DNA hasarına yol açan başlıca etkenleri tanımak.",
     "tags": [
-      "Mutajenik hasar kaynakları",
+      "Nükleotidler ve nükleik asitler",
+      "UV, radyasyon, alkilleyici ve oksidatif hasar",
       "DNA hasarı",
       "UV",
       "Pirimidin dimeri",
       "Oksidatif hasar"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-011",
@@ -8150,12 +8802,14 @@
     },
     "learning_objective": "Nükleotidin temel bileşenlerini tanımlamak.",
     "tags": [
-      "Azotlu baz sınıfları",
+      "Nükleotidler ve nükleik asitler",
+      "Pürin, pirimidin ve pentoz yapısı",
       "Nükleotid",
       "Baz",
       "Pentoz",
       "Fosfat"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-012",
@@ -8186,18 +8840,20 @@
     },
     "learning_objective": "Nükleik asit dizilerinin şematik gösterimini okumak.",
     "tags": [
-      "Fosfodiester bağı",
+      "Nükleotidler ve nükleik asitler",
+      "Fosfodiester bağları ve yönlülük",
       "Şematik gösterim",
       "Fosfat",
       "Yönlülük",
       "DNA"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-013",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+    "source_subtopic": "Chargaff kuralları ve DNA kanıtları",
     "source_pages": [
       28
     ],
@@ -8222,12 +8878,14 @@
     },
     "learning_objective": "Chargaff kurallarından türetilen temel eşitliği yorumlamak.",
     "tags": [
-      "DNA çift sarmalı",
+      "Nükleotidler ve nükleik asitler",
+      "Chargaff kuralları ve DNA kanıtları",
       "Chargaff",
       "A+G=T+C",
       "DNA",
       "Baz bileşimi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-014",
@@ -8258,12 +8916,14 @@
     },
     "learning_objective": "MRNA'nın genetik bilgi akışındaki rolünü tanımak.",
     "tags": [
-      "Mesajcı RNA ve diğer RNA türleri",
+      "Nükleotidler ve nükleik asitler",
+      "MRNA ve diğer RNA tipleri",
       "MRNA",
       "Ribozom",
       "Transkripsiyon",
       "Genetik bilgi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-015",
@@ -8294,19 +8954,21 @@
     },
     "learning_objective": "Başlıca RNA türlerini temel işlevleriyle eşleştirmek.",
     "tags": [
-      "Mesajcı RNA ve diğer RNA türleri",
+      "Nükleotidler ve nükleik asitler",
+      "MRNA ve diğer RNA tipleri",
       "TRNA",
       "RRNA",
       "RNA türleri",
       "Adaptör",
       "Ribozom"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-016",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_subtopic": "Denatürasyon, renatürasyon ve Tm",
     "source_pages": [
       42
     ],
@@ -8331,18 +8993,20 @@
     },
     "learning_objective": "DNA denatürasyonunu kovalent yıkımdan ayırt etmek.",
     "tags": [
-      "DNA denatürasyonu ve Tm",
+      "Nükleotidler ve nükleik asitler",
+      "Denatürasyon, renatürasyon ve Tm",
       "Denatürasyon",
       "DNA",
       "Kovalent bağ",
       "Baz eşleşmesi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-017",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_subtopic": "Denatürasyon, renatürasyon ve Tm",
     "source_pages": [
       45
     ],
@@ -8367,18 +9031,20 @@
     },
     "learning_objective": "Hipokromik etki kavramını UV soğurma üzerinden açıklamak.",
     "tags": [
-      "DNA denatürasyonu ve Tm",
+      "Nükleotidler ve nükleik asitler",
+      "Denatürasyon, renatürasyon ve Tm",
       "Hipokromik etki",
       "UV 260 nm",
       "Baz istiflenmesi",
       "DNA"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-018",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_subtopic": "Hibritleşme",
     "source_pages": [
       47
     ],
@@ -8403,18 +9069,19 @@
     },
     "learning_objective": "Hibritleşmeyi dizi benzerliği ile ilişkilendirmek.",
     "tags": [
-      "Farklı türlerin nükleik asitleri hibritler oluşturabilir",
+      "Nükleotidler ve nükleik asitler",
       "Hibritleşme",
       "DNA",
       "Tamamlayıcılık",
       "Türler arası"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-019",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "Deaminasyon ve AP lezyonları",
     "source_pages": [
       51
     ],
@@ -8439,18 +9106,20 @@
     },
     "learning_objective": "AP lezyonunu diğer DNA hasarlarından ayırt etmek.",
     "tags": [
-      "Mutajenik hasar kaynakları",
+      "Nükleotidler ve nükleik asitler",
+      "Deaminasyon ve AP lezyonları",
       "AP lezyonu",
       "N-beta-glikozit",
       "DNA hasarı",
       "Depürinizasyon"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-020",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "UV, radyasyon, alkilleyici ve oksidatif hasar",
     "source_pages": [
       58
     ],
@@ -8475,12 +9144,14 @@
     },
     "learning_objective": "Oksidatif DNA hasarıyla ilişkili ROS örneklerini tanımak.",
     "tags": [
-      "Mutajenik hasar kaynakları",
+      "Nükleotidler ve nükleik asitler",
+      "UV, radyasyon, alkilleyici ve oksidatif hasar",
       "Oksidatif hasar",
       "ROS",
       "Hidroksil radikali",
       "DNA"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-021",
@@ -8511,12 +9182,14 @@
     },
     "learning_objective": "Nükleik asit bileşenlerinin karakteristik UV soğurma bölgesini tanımak.",
     "tags": [
-      "Bazların özellikleri NA 3B yapısını etkiler",
+      "Nükleotidler ve nükleik asitler",
+      "Baz istiflenmesi ve UV soğurma",
       "UV",
       "260 nm",
       "Nükleotit",
       "Baz istiflenmesi"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-022",
@@ -8550,7 +9223,8 @@
       "Nükleotidler ve nükleik asitler",
       "Nükleotidlerin temel işlevleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-023",
@@ -8584,7 +9258,8 @@
       "Nükleotidler ve nükleik asitler",
       "Nükleotidlerin temel işlevleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-024",
@@ -8618,7 +9293,8 @@
       "Nükleotidler ve nükleik asitler",
       "Pürin, pirimidin ve pentoz yapısı",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-025",
@@ -8652,7 +9328,8 @@
       "Nükleotidler ve nükleik asitler",
       "Fosfodiester bağları ve yönlülük",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-026",
@@ -8686,7 +9363,8 @@
       "Nükleotidler ve nükleik asitler",
       "Fosfodiester bağları ve yönlülük",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-027",
@@ -8720,7 +9398,8 @@
       "Nükleotidler ve nükleik asitler",
       "Baz istiflenmesi ve UV soğurma",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-028",
@@ -8754,13 +9433,14 @@
       "Nükleotidler ve nükleik asitler",
       "Baz istiflenmesi ve UV soğurma",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-029",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+    "source_subtopic": "Chargaff kuralları ve DNA kanıtları",
     "source_pages": [
       28,
       35
@@ -8786,15 +9466,17 @@
     "learning_objective": "DNA çift sarmalının kanıtları ve yapısı kapsamında doğru biyokimyasal ifadeyi seçmek.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
+      "Chargaff kuralları ve DNA kanıtları",
       "DNA çift sarmalının kanıtları ve yapısı",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-030",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+    "source_subtopic": "Chargaff kuralları ve DNA kanıtları",
     "source_pages": [
       28,
       35
@@ -8820,15 +9502,17 @@
     "learning_objective": "DNA çift sarmalının kanıtları ve yapısı için desteklenen sonucu ayırt etmek.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
+      "Chargaff kuralları ve DNA kanıtları",
       "DNA çift sarmalının kanıtları ve yapısı",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-031",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "DNA çift sarmalının kanıtları ve yapısı",
+    "source_subtopic": "Chargaff kuralları ve DNA kanıtları",
     "source_pages": [
       28,
       35
@@ -8854,15 +9538,17 @@
     "learning_objective": "DNA çift sarmalının kanıtları ve yapısı için belirleyici kavramsal ayrımı seçmek.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
+      "Chargaff kuralları ve DNA kanıtları",
       "DNA çift sarmalının kanıtları ve yapısı",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-032",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "Deaminasyon ve AP lezyonları",
     "source_pages": [
       49,
       59
@@ -8888,15 +9574,17 @@
     "learning_objective": "Enzimatik olmayan nükleik asit hasarı kapsamında doğru biyokimyasal ifadeyi seçmek.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
+      "Deaminasyon ve AP lezyonları",
       "Enzimatik olmayan nükleik asit hasarı",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-033",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "Deaminasyon ve AP lezyonları",
     "source_pages": [
       49,
       59
@@ -8922,9 +9610,11 @@
     "learning_objective": "Enzimatik olmayan nükleik asit hasarı için desteklenen sonucu ayırt etmek.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
+      "Deaminasyon ve AP lezyonları",
       "Enzimatik olmayan nükleik asit hasarı",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-034",
@@ -8963,7 +9653,8 @@
       "Pentoz",
       "Azotlu baz",
       "Fosfat"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-035",
@@ -9002,7 +9693,8 @@
       "Omurga",
       "Fosfodiester",
       "Nükleik asit"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-036",
@@ -9041,13 +9733,14 @@
       "Hidrofobik etkileşim",
       "Van der Waals",
       "UV soğurma"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-037",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "UV, radyasyon, alkilleyici ve oksidatif hasar",
     "source_pages": [
       52,
       56
@@ -9074,18 +9767,19 @@
     "learning_objective": "İyonlaştırıcı radyasyonu, DNA hasarı tipleri içinde iplik kırığı ile ilişkilendirmek.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
-      "Enzimatik olmayan nükleik asit hasarı",
+      "UV, radyasyon, alkilleyici ve oksidatif hasar",
       "İyonlaştırıcı radyasyon",
       "DNA hasarı",
       "İplik kırığı",
       "Serbest radikal"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-038",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Enzimatik olmayan nükleik asit hasarı",
+    "source_subtopic": "UV, radyasyon, alkilleyici ve oksidatif hasar",
     "source_pages": [
       57,
       59
@@ -9112,18 +9806,19 @@
     "learning_objective": "Nitröz asidi, dış etkenlerle artan deaminasyon hasarıyla ilişkilendirmek.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
-      "Enzimatik olmayan nükleik asit hasarı",
+      "UV, radyasyon, alkilleyici ve oksidatif hasar",
       "Nitröz asit",
       "Deaminasyon",
       "DNA hasarı",
       "Kimyasal mutajen"
-    ]
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "NUC-039",
     "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
     "source_topic": "Nükleotidler ve nükleik asitler",
-    "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+    "source_subtopic": "Hibritleşme",
     "source_pages": [
       43,
       48
@@ -9150,13 +9845,193 @@
     "learning_objective": "DNA renatürasyonunda nükleasyon basamağını tamamlayıcı eşleşme mantığıyla açıklamak.",
     "tags": [
       "Nükleotidler ve nükleik asitler",
-      "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+      "Hibritleşme",
       "Renatürasyon",
       "Nükleasyon",
       "DNA",
-      "Hibritleşme",
       "Tm"
-    ]
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "NUC-040",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Watson-Crick modeli",
+    "source_pages": [
+      32,
+      35
+    ],
+    "difficulty": "Orta",
+    "question_type": "neden-sonuç",
+    "question": "Watson-Crick çift sarmalında heliks çapının büyük ölçüde sabit kalmasının temel nedeni aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Bir pürinin karşısında bir pirimidinin eşleşmesi.",
+      "B": "Her bazın kendiyle eşleşmesi.",
+      "C": "Fosfat gruplarının heliksin iç kısmında yer alması.",
+      "D": "DNA zincirlerinden birinin RNA olması.",
+      "E": "Şeker-fosfat omurgasının bazlar arasında bulunması."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Watson-Crick modelinde bir pürinin karşısına bir pirimidin gelmesi heliks çapının yaklaşık sabit kalmasını sağlar; iki pürin ya da iki pirimidin eşleşmeleri bu geometriyi bozardı.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Bazlar kendiyle değil tamamlayıcı bazla eşleşir.",
+      "C": "Fosfatlar heliksin dış kısmında yer alır; sabit çapın temel nedeni bu değildir.",
+      "D": "Çift sarmal modeli iki DNA zinciri için kurulmuştur.",
+      "E": "Şeker-fosfat omurga dışta bulunur; bazlar iç kısımda eşleşir."
+    },
+    "learning_objective": "Watson-Crick modelinde purin-pirimidin eşleşmesinin geometriye katkısını açıklamak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Watson-Crick modeli",
+      "Heliks geometrisi"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "NUC-041",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Watson-Crick modeli",
+    "source_pages": [
+      32,
+      35
+    ],
+    "difficulty": "Kolay",
+    "question_type": "tanım",
+    "question": "Watson-Crick modeline göre iki DNA zincirinin antiparalel olması aşağıdakilerden hangisini ifade eder?",
+    "options": {
+      "A": "Bir zincirin 5'→3', diğerinin 3'→5' yönünde uzanması.",
+      "B": "İki zincirin de aynı uçtan başlaması.",
+      "C": "Bir zincirin yalnız pürin, diğerinin yalnız pirimidin taşıması.",
+      "D": "Zincirlerden birinin sağ elli, diğerinin sol elli sarmal yapması.",
+      "E": "Bazların heliksin dış yüzeyine bakması."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Antiparalellik, iki DNA zincirinin omurga yönlülüklerinin zıt olması; yani birinin 5'ten 3'e giderken diğerinin 3'ten 5'e uzanması demektir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Antiparalellik aynı yönü değil zıt yönlülüğü tanımlar.",
+      "C": "Her zincirde hem pürin hem pirimidin bazları bulunabilir.",
+      "D": "Antiparalellik sarmal yönünden değil omurga yönlülüğünden söz eder.",
+      "E": "Bazlar çift sarmalın iç kısmında yer alır."
+    },
+    "learning_objective": "DNA zincirlerinde antiparalel yönlülüğün ne anlama geldiğini tanımlamak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Watson-Crick modeli",
+      "Antiparalellik"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "NUC-042",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Denatürasyon, renatürasyon ve Tm",
+    "source_pages": [
+      43,
+      46
+    ],
+    "difficulty": "Zor",
+    "question_type": "tanım",
+    "question": "DNA denatürasyonu sırasında 260 nm civarındaki absorbansın artması hangi terimle ifade edilir?",
+    "options": {
+      "A": "Hiperkromik etki.",
+      "B": "Hipokromik etki.",
+      "C": "Depurinasyon.",
+      "D": "Hibritleşme.",
+      "E": "Alkilleme."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Baz istiflenmesinin bozulduğu denatürasyonda UV absorbansı artar; bu artış hiperkromik etki olarak adlandırılır.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Hipokromik etki çift sarmal yapıdaki istiflenme ile ilişkili daha düşük absorbans durumunu anlatır.",
+      "C": "Depurinasyon bir hasar tipidir; absorbans artışının adı değildir.",
+      "D": "Hibritleşme tamamlayıcı ipliklerin yeniden eşleşmesidir.",
+      "E": "Alkilleme kimyasal hasar türlerinden biridir."
+    },
+    "learning_objective": "DNA denatürasyonundaki hiperkromik etkiyi UV absorbans değişimiyle ilişkilendirmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Denatürasyon, renatürasyon ve Tm",
+      "Hiperkromik etki"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "NUC-043",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Nükleotidlerin enerji ve kofaktör rolleri",
+    "source_pages": [
+      60,
+      61
+    ],
+    "difficulty": "Orta",
+    "question_type": "uygulama",
+    "question": "Nükleotid türevi ikinci haberci olarak hücre içi sinyal iletiminde görev yapan molekül aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "CAMP.",
+      "B": "Kolesterol.",
+      "C": "Heparin.",
+      "D": "Sfingomiyelin.",
+      "E": "Selüloz."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "Siklik AMP, nükleotid türevli bir ikinci haberci olarak sinyal iletiminde görev yapan klasik örneklerden biridir.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Kolesterol bir steroldür; ikinci haberci nükleotid değildir.",
+      "C": "Heparin glikozaminoglikandır; bu sinyal nükleotidi değildir.",
+      "D": "Sfingomiyelin yapısal bir zar lipididir.",
+      "E": "Selüloz yapısal bir polisakkarittir."
+    },
+    "learning_objective": "CAMP'yi, nükleotid türevi ikinci haberci olarak tanımak.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Nükleotidlerin enerji ve kofaktör rolleri",
+      "CAMP"
+    ],
+    "exam_scope": "midterm"
+  },
+  {
+    "id": "NUC-044",
+    "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "source_topic": "Nükleotidler ve nükleik asitler",
+    "source_subtopic": "Nükleotidlerin enerji ve kofaktör rolleri",
+    "source_pages": [
+      60,
+      61
+    ],
+    "difficulty": "Zor",
+    "question_type": "sınıflandırma",
+    "question": "Aşağıdaki kofaktörlerden hangisi nükleotid türevli elektron taşıyıcısına örnektir?",
+    "options": {
+      "A": "FAD.",
+      "B": "Biyotin.",
+      "C": "Lipoat.",
+      "D": "Piridoksal fosfat.",
+      "E": "Tiyamin pirofosfat."
+    },
+    "correct_answer": "A",
+    "correct_explanation": "FAD, flavin adenine dinucleotide yapısında bir nükleotid türevli kofaktördür ve redoks tepkimelerinde elektron taşıyıcısı olarak görev yapar.",
+    "distractor_explanations": {
+      "A": "Doğru seçenek.",
+      "B": "Biyotin karboksilasyon tepkimeleriyle ilişkili bir vitamindir; dinükleotid elektron taşıyıcısı değildir.",
+      "C": "Lipoat elektron aktarımında rol oynayabilir ancak nükleotid türevli bir dinükleotid değildir.",
+      "D": "Piridoksal fosfat amino asit metabolizmasında görev yapar; nükleotid türevli elektron taşıyıcısı değildir.",
+      "E": "Tiyamin pirofosfat dekarboksilasyon kofaktörüdür; dinükleotid redoks taşıyıcısı değildir."
+    },
+    "learning_objective": "FAD'ı, nükleotid türevli redoks kofaktörü olarak diğer vitamin kofaktörlerinden ayırt etmek.",
+    "tags": [
+      "Nükleotidler ve nükleik asitler",
+      "Nükleotidlerin enerji ve kofaktör rolleri",
+      "FAD"
+    ],
+    "exam_scope": "midterm"
   },
   {
     "id": "OXP-001",
@@ -9188,11 +10063,13 @@
     },
     "learning_objective": "Oksidatif fosforillenmenin hücresel solunum içindeki yerini bilmek.",
     "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
       "Oksidatif fosforillenmenin genel rolü",
       "Oksidatif fosforillenme",
       "Hücresel solunum",
       "Enerji metabolizması"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-002",
@@ -9223,12 +10100,14 @@
     },
     "learning_objective": "NADH ve NADPH'nin metabolik görevlerini karşılaştırmak.",
     "tags": [
-      "NADH ve NADPH'nin rolleri",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "NADH, NADPH ve flavoproteinler",
       "NADH",
       "NADPH",
       "Katabolizma",
       "Anabolizma"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-003",
@@ -9259,12 +10138,14 @@
     },
     "learning_objective": "İç zar geçirgenlik kısıtı ile mekik sistemleri arasındaki ilişkiyi açıklamak.",
     "tags": [
-      "İç zar geçirgenliği ve mekik sistemleri",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "NADH, NADPH ve flavoproteinler",
       "Mekik sistemi",
       "Mitokondri",
       "NADH",
       "NADPH"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-004",
@@ -9295,11 +10176,13 @@
     },
     "learning_objective": "Flavoproteinlerin temel yapısal özelliğini bilmek.",
     "tags": [
-      "Flavoproteinler",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "NADH, NADPH ve flavoproteinler",
       "Flavoprotein",
       "Flavin nükleotidi",
       "Elektron aktarımı"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-005",
@@ -9331,12 +10214,14 @@
     },
     "learning_objective": "Solunum zincirindeki başlıca taşıyıcı türlerini tanımak.",
     "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
       "Solunum zinciri taşıyıcıları",
       "Ubikinon",
       "Solunum zinciri",
       "Sitokrom",
       "Demir-kükürt"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-006",
@@ -9367,11 +10252,13 @@
     },
     "learning_objective": "Fotofosforilasyon terimini doğru tanımlamak.",
     "tags": [
-      "Fotofosforillenme",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Işık tepkimeleri ve ATP/NADPH oluşumu",
       "Fotofosforilasyon",
       "ATP",
       "Işık"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-007",
@@ -9404,12 +10291,14 @@
     },
     "learning_objective": "Fotosentetik pigmentlerin işlevlerini karşılaştırmak.",
     "tags": [
-      "Fotosentezde pigmentlerin işlevi",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Karotenoidler ve bilin pigmentler",
       "Karotenoid",
       "Klorofil",
       "Fotooksidasyon",
       "Pigment"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-008",
@@ -9441,14 +10330,16 @@
     },
     "learning_objective": "Kloroplast bölmeleri ile temel fotosentetik olayları eşleştirmek.",
     "tags": [
-      "Kloroplast bölmeleri ve tepkimeler",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Kloroplast yapısı ve bölmeleri",
       "Kloroplast",
       "Stroma",
       "Granum",
       "NADPH",
       "ATP",
       "Fotosentez"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-009",
@@ -9480,12 +10371,14 @@
     },
     "learning_objective": "Solunum zinciri öncesi genel elektron alıcı gruplarını tanımak.",
     "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
       "Oksidatif fosforillenmenin genel rolü",
       "Dehidrogenaz",
       "Flavin",
       "NAD",
       "Elektron alıcısı"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-010",
@@ -9516,12 +10409,14 @@
     },
     "learning_objective": "Solunum zincirindeki elektron aktarım biçimlerini ayırt etmek.",
     "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
       "Solunum zinciri taşıyıcıları",
       "Elektron aktarımı",
       "Hidrür",
       "Solunum zinciri",
       "Oksidatif fosforillenme"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-011",
@@ -9552,12 +10447,14 @@
     },
     "learning_objective": "Fotosentez ile kemosentezi enerji kaynağı bakımından karşılaştırmak.",
     "tags": [
-      "Fotofosforillenme",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Fotosentezin redoks mantığı",
       "Fotosentez",
       "Kemosentez",
       "Enerji kaynağı",
       "CO2 özümlemesi"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-012",
@@ -9588,13 +10485,15 @@
     },
     "learning_objective": "Fotosentezde hangi molekülün indirgenip hangisinin yükseltgendiğini açıklamak.",
     "tags": [
-      "Fotofosforillenme",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Fotosentezin redoks mantığı",
       "Fotosentez",
       "Redoks",
       "CO2",
       "Su",
       "İndirgenme"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-013",
@@ -9625,12 +10524,14 @@
     },
     "learning_objective": "Klorofil tipleri arasındaki dağılım farklarını ayırt etmek.",
     "tags": [
-      "Fotosentezde pigmentlerin işlevi",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Klorofil pigmentleri",
       "Klorofil b",
       "Algler",
       "Pigment",
       "Fotosentez"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-014",
@@ -9661,12 +10562,14 @@
     },
     "learning_objective": "Karotenoid alt sınıflarını bileşimlerine göre ayırmak.",
     "tags": [
-      "Fotosentezde pigmentlerin işlevi",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Karotenoidler ve bilin pigmentler",
       "Karotenoid",
       "Ksantofil",
       "Hidrojen karotenoidi",
       "Pigment"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-015",
@@ -9697,13 +10600,15 @@
     },
     "learning_objective": "Bilin pigmentleri klorofillerden ayıran yapısal özelliği tanımak.",
     "tags": [
-      "Fotosentezde pigmentlerin işlevi",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Karotenoidler ve bilin pigmentler",
       "Bilin pigment",
       "Fikobilin",
       "Mg",
       "Fitol",
       "Pigment"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-016",
@@ -9734,12 +10639,14 @@
     },
     "learning_objective": "Pigment rengini seçici absorpsiyon üzerinden açıklamak.",
     "tags": [
-      "Kloroplast bölmeleri ve tepkimeler",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Işık tepkimeleri ve ATP/NADPH oluşumu",
       "Klorofil",
       "Yeşil renk",
       "Absorpsiyon",
       "Görünür ışık"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-017",
@@ -9771,13 +10678,15 @@
     },
     "learning_objective": "Işık tepkimelerinin ana enerji ve indirgen güç ürünlerini tanımak.",
     "tags": [
-      "Kloroplast bölmeleri ve tepkimeler",
+      "Oksidatif fosforillenme ve fotosenteze giriş",
+      "Işık tepkimeleri ve ATP/NADPH oluşumu",
       "Işık tepkimeleri",
       "ATP",
       "NADPH",
       "Fotoliz",
       "Fotosentez"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-018",
@@ -9808,12 +10717,14 @@
     },
     "learning_objective": "Klorofilin temel biyolojik rolünü tanımlamak.",
     "tags": [
+      "Oksidatif fosforillenme ve fotosenteze giriş",
       "Klorofil pigmentleri",
       "Klorofil",
       "Yeşil pigment",
       "Fotosentez",
       "Temel pigment"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-019",
@@ -9847,7 +10758,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Oksidatif fosforillenmenin genel rolü",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-021",
@@ -9881,7 +10793,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "NADH, NADPH ve flavoproteinler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-022",
@@ -9915,7 +10828,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Solunum zinciri taşıyıcıları",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-023",
@@ -9949,7 +10863,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Solunum zinciri taşıyıcıları",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-025",
@@ -9983,7 +10898,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Fotosentezin redoks mantığı",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-027",
@@ -10017,7 +10933,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Klorofil pigmentleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-028",
@@ -10051,7 +10968,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Klorofil pigmentleri",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-030",
@@ -10085,7 +11003,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Karotenoidler ve bilin pigmentler",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-031",
@@ -10119,7 +11038,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Kloroplast yapısı ve bölmeleri",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-032",
@@ -10153,7 +11073,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Kloroplast yapısı ve bölmeleri",
       "Desteklenen sonuç"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-033",
@@ -10187,7 +11108,8 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Kloroplast yapısı ve bölmeleri",
       "Kavramsal ayrım"
-    ]
+    ],
+    "exam_scope": "final"
   },
   {
     "id": "OXP-034",
@@ -10221,6 +11143,7 @@
       "Oksidatif fosforillenme ve fotosenteze giriş",
       "Işık tepkimeleri ve ATP/NADPH oluşumu",
       "Doğru ifade"
-    ]
+    ],
+    "exam_scope": "final"
   }
 ]

@@ -12,7 +12,7 @@ export const PDF_SOURCES = [
     fileName: "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
     title: "Karbohidrat Metabolizması-I: Glikoliz, Glukoneogenez ve Pentoz Fosfat Yolağı",
     shortTitle: "Karbohidrat Metabolizması",
-    topic: "Glikoliz, glukoneogenez ve pentoz fosfat yolağı",
+    topic: "Karbohidrat metabolizması",
     expectedPages: 86
   },
   {
@@ -20,7 +20,7 @@ export const PDF_SOURCES = [
     fileName: "Karbonhidratlar ve Glikobiyoloji.pdf",
     title: "Karbohidratlar ve Glikobiyoloji",
     shortTitle: "Karbonhidratlar ve Glikobiyoloji",
-    topic: "Karbohidratlar, polisakkaritler ve glikobiyoloji",
+    topic: "Karbohidratlar ve glikobiyoloji",
     expectedPages: 119
   },
   {
@@ -28,7 +28,7 @@ export const PDF_SOURCES = [
     fileName: "Lipitler.pdf",
     title: "Lipitler",
     shortTitle: "Lipitler",
-    topic: "Depo lipitleri ve zarlardaki yapisal lipitler",
+    topic: "Lipitler",
     expectedPages: 75
   },
   {
@@ -36,7 +36,7 @@ export const PDF_SOURCES = [
     fileName: "Nükleotidler Ve Nükleik Asitler.pdf",
     title: "Nükleotidler ve Nükleik Asitler",
     shortTitle: "Nükleotidler ve Nükleik Asitler",
-    topic: "Nükleotidler, DNA, RNA ve nükleik asit kimyasi",
+    topic: "Nükleotidler ve nükleik asitler",
     expectedPages: 66
   },
   {
@@ -52,7 +52,7 @@ export const PDF_SOURCES = [
     fileName: "Sitrik Asit Çevrimi.pdf",
     title: "Sitrik Asit Çevrimi",
     shortTitle: "Sitrik Asit Çevrimi",
-    topic: "Pirüvat dehidrogenaz ve sitrik asit çevrimi",
+    topic: "Pirüvat oksidasyonu ve sitrik asit çevrimi",
     expectedPages: 36
   }
 ];

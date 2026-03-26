@@ -1,15 +1,135 @@
 {
-  "generatedAt": "2026-03-24T14:50:02.341Z",
+  "generatedAt": "2026-03-26T16:41:49.285Z",
   "totals": {
-    "all": 287,
-    "easy": 55,
-    "medium": 137,
-    "hard": 95
+    "all": 300,
+    "easy": 57,
+    "medium": 144,
+    "hard": 99,
+    "midterm": 151,
+    "final": 149,
+    "review_needed": 0
+  },
+  "scopeTotals": {
+    "midterm": 151,
+    "final": 149,
+    "review_needed": 0,
+    "all": 300
   },
   "pdfCount": 7,
   "curriculumTopicCount": 7,
+  "availableExamScopes": [
+    "midterm",
+    "final"
+  ],
+  "requiresScopeSelection": true,
+  "mixedModeEnabled": false,
+  "defaultExamScope": null,
+  "datasets": {
+    "midterm": "midterm-questions.json",
+    "final": "final-questions.json",
+    "review_needed": "review-needed-questions.json"
+  },
+  "topicIndexes": {
+    "all": "topic-index.json",
+    "midterm": "midterm-topic-index.json",
+    "final": "final-topic-index.json",
+    "review_needed": "review-needed-topic-index.json"
+  },
+  "pdfScopes": [
+    {
+      "file_name": "Hücre Zarından Madde Geçişi.pdf",
+      "exam_scope": "final",
+      "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre final havuzuna dahildir.",
+      "covered_topics": [
+        "Biyolojik zarların temel özellikleri",
+        "Lipit çift tabaka ve sıvı-mozaik model",
+        "Zar proteinleri ve asimetri",
+        "Zar kıvrımı ve füzyonu",
+        "Pasif ve aktif taşınma",
+        "Su ve iyon kanalları"
+      ]
+    },
+    {
+      "file_name": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+      "exam_scope": "final",
+      "reason": "Karbonhidrat yapısı değil metabolizma odaklı olduğu için final havuzuna ayrılmıştır.",
+      "covered_topics": [
+        "Glikolizin genel mantığı",
+        "Glikolitik basamaklar",
+        "Fermentasyon",
+        "Glukoneogenez",
+        "Karşılıklı düzenleme",
+        "Pentoz fosfat yolağı"
+      ]
+    },
+    {
+      "file_name": "Karbonhidratlar ve Glikobiyoloji.pdf",
+      "exam_scope": "midterm",
+      "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre vize havuzuna dahildir.",
+      "covered_topics": [
+        "Monosakkaritler ve stereokimya",
+        "Halkalı yapı ve anomerler",
+        "Şeker türevleri ve disakkaritler",
+        "Depo ve yapısal polisakkaritler",
+        "Glikozaminoglikanlar",
+        "Glikokonjugatlar",
+        "Şeker kodu ve analitik yöntemler"
+      ]
+    },
+    {
+      "file_name": "Lipitler.pdf",
+      "exam_scope": "midterm",
+      "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre vize havuzuna dahildir.",
+      "covered_topics": [
+        "Yağ asitleri ve depo lipitleri",
+        "Triaçilgliseroller ve mumlar",
+        "Zar lipitleri",
+        "Sfingolipitler ve steroller",
+        "Sinyal, kofaktör ve pigment olarak lipitler"
+      ]
+    },
+    {
+      "file_name": "Nükleotidler Ve Nükleik Asitler.pdf",
+      "exam_scope": "midterm",
+      "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre vize havuzuna dahildir.",
+      "covered_topics": [
+        "Temel bilgiler ve baz-pentoz yapısı",
+        "Fosfodiester omurga",
+        "DNA çift sarmalı",
+        "RNA çeşitleri",
+        "Nükleik asit kimyası",
+        "Enzimatik olmayan hasar",
+        "Nükleotidlerin diğer işlevleri"
+      ]
+    },
+    {
+      "file_name": "Oksidatif Fosforillenme.pdf",
+      "exam_scope": "final",
+      "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre final havuzuna dahildir.",
+      "covered_topics": [
+        "Oksidatif fosforillenmenin yeri",
+        "Elektron taşıyıcıları",
+        "Fotosenteze giriş",
+        "Pigmentler",
+        "Kloroplast yapısı",
+        "Fotofosforillenme"
+      ]
+    },
+    {
+      "file_name": "Sitrik Asit Çevrimi.pdf",
+      "exam_scope": "final",
+      "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre final havuzuna dahildir.",
+      "covered_topics": [
+        "Pirüvatın asetil-KoA'ya dönüşümü",
+        "PDH kompleksinin yapısı ve koenzimleri",
+        "Sitrik asit çevrimi basamakları",
+        "Enerji korunumu",
+        "Amfibolik rol"
+      ]
+    }
+  ],
   "quality": {
-    "generatedAt": "2026-03-24T14:50:00.075Z",
+    "generatedAt": "2026-03-26T16:41:49.251Z",
     "inventory": [
       {
         "id": "membrane-transport",
@@ -217,36 +337,28 @@
     ],
     "pdfCount": 7,
     "totalPages": 456,
-    "ocrSummary": {
-      "text": 380,
-      "ocr_local": 76,
-      "ocr_external": 0,
-      "visual_blank": 0
-    },
     "topicCount": 7,
-    "subtopicCount": 67,
-    "questionCount": 287,
+    "subtopicCount": 76,
+    "questionCount": 300,
     "difficultyTotals": {
-      "Kolay": 55,
-      "Orta": 137,
-      "Zor": 95
+      "Kolay": 57,
+      "Orta": 144,
+      "Zor": 99
     },
+    "scopeTotals": {
+      "all": 300,
+      "midterm": 151,
+      "final": 149,
+      "review_needed": 0
+    },
+    "midterm_new_question_count": 13,
     "duplicateIds": [],
     "exact_duplicate_prompt_count": 0,
     "exact_duplicate_prompt_pairs": [],
-    "near_duplicate_count": 1,
-    "near_duplicate_pairs": [
-      {
-        "left": "NUC-016",
-        "right": "NUC-039",
-        "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
-        "source_subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
-        "similarity": 0.83
-      }
-    ],
+    "near_duplicate_count": 0,
+    "near_duplicate_pairs": [],
     "fieldErrors": [],
     "banned_term_hits_count": 0,
-    "banned_term_hits_ids": [],
     "banned_term_hit_details": [],
     "leading_discourse_marker_count": 0,
     "leading_discourse_marker_details": [],
@@ -653,11 +765,11 @@
       },
       {
         "source_pdf": "Lipitler.pdf",
-        "question_count": 41
+        "question_count": 49
       },
       {
         "source_pdf": "Nükleotidler Ve Nükleik Asitler.pdf",
-        "question_count": 39
+        "question_count": 44
       },
       {
         "source_pdf": "Oksidatif Fosforillenme.pdf",
@@ -923,7 +1035,7 @@
       {
         "sourcePdf": "Karbonhidratlar ve Glikobiyoloji.pdf",
         "topic": "Karbohidratlar ve glikobiyoloji",
-        "subtopic": "Peptidoglikan ve heteropolisakkaritler",
+        "subtopic": "Peptidoglikan ve hücre duvarı heteropolisakkaritleri",
         "questionDensityNeed": "medium",
         "requiredMinimum": 3,
         "actualCount": 5,
@@ -1217,23 +1329,35 @@
       {
         "sourcePdf": "Lipitler.pdf",
         "topic": "Lipitler",
-        "subtopic": "Yağ asidi yapısı ve gösterimi",
+        "subtopic": "Yağ asidi yapısı ve X:Y gösterimi",
         "questionDensityNeed": "high",
         "requiredMinimum": 4,
-        "actualCount": 5,
+        "actualCount": 4,
         "status": "OK",
         "questionIds": [
           "LIP-002",
-          "LIP-003",
           "LIP-004",
           "LIP-011",
+          "LIP-043"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Elzem omega-3 yağ asitleri",
+        "questionDensityNeed": "low",
+        "requiredMinimum": 2,
+        "actualCount": 2,
+        "status": "OK",
+        "questionIds": [
+          "LIP-003",
           "LIP-012"
         ]
       },
       {
         "sourcePdf": "Lipitler.pdf",
         "topic": "Lipitler",
-        "subtopic": "Triaçilgliseroller ve depolama mantığı",
+        "subtopic": "Triaçilgliseroller",
         "questionDensityNeed": "high",
         "requiredMinimum": 4,
         "actualCount": 6,
@@ -1277,18 +1401,69 @@
       {
         "sourcePdf": "Lipitler.pdf",
         "topic": "Lipitler",
-        "subtopic": "Gliserofosfolipitler ve diğer zar lipitleri",
-        "questionDensityNeed": "very_high",
-        "requiredMinimum": 6,
-        "actualCount": 6,
+        "subtopic": "Yapısal lipitlerin genel mantığı",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "LIP-027",
+          "LIP-028",
+          "LIP-044"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Gliserofosfolipitler",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
         "status": "OK",
         "questionIds": [
           "LIP-009",
           "LIP-015",
+          "LIP-045"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Galaktolipitler ve sülfolipitler",
+        "questionDensityNeed": "low",
+        "requiredMinimum": 2,
+        "actualCount": 2,
+        "status": "OK",
+        "questionIds": [
           "LIP-016",
+          "LIP-046"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Arke zar lipitleri",
+        "questionDensityNeed": "low",
+        "requiredMinimum": 2,
+        "actualCount": 2,
+        "status": "OK",
+        "questionIds": [
+          "LIP-047",
+          "LIP-048"
+        ]
+      },
+      {
+        "sourcePdf": "Lipitler.pdf",
+        "topic": "Lipitler",
+        "subtopic": "Sfingolipitler",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
           "LIP-017",
-          "LIP-027",
-          "LIP-028"
+          "LIP-049",
+          "LIP-050"
         ]
       },
       {
@@ -1308,7 +1483,7 @@
       {
         "sourcePdf": "Lipitler.pdf",
         "topic": "Lipitler",
-        "subtopic": "Lipit türevli vitaminler, kinonlar ve pigmentler",
+        "subtopic": "Lipit türevli vitaminler ve kinonlar",
         "questionDensityNeed": "high",
         "requiredMinimum": 4,
         "actualCount": 13,
@@ -1393,18 +1568,31 @@
       {
         "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
         "topic": "Nükleotidler ve nükleik asitler",
-        "subtopic": "DNA çift sarmalının kanıtları ve yapısı",
-        "questionDensityNeed": "very_high",
-        "requiredMinimum": 6,
-        "actualCount": 6,
+        "subtopic": "Chargaff kuralları ve DNA kanıtları",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 5,
         "status": "OK",
         "questionIds": [
-          "NUC-005",
           "NUC-006",
           "NUC-013",
           "NUC-029",
           "NUC-030",
           "NUC-031"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Watson-Crick modeli",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 3,
+        "status": "OK",
+        "questionIds": [
+          "NUC-005",
+          "NUC-040",
+          "NUC-041"
         ]
       },
       {
@@ -1424,15 +1612,27 @@
       {
         "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
         "topic": "Nükleotidler ve nükleik asitler",
-        "subtopic": "Denatürasyon, renatürasyon, Tm ve hibritleşme",
+        "subtopic": "Denatürasyon, renatürasyon ve Tm",
         "questionDensityNeed": "high",
         "requiredMinimum": 4,
-        "actualCount": 5,
+        "actualCount": 4,
         "status": "OK",
         "questionIds": [
           "NUC-008",
           "NUC-016",
           "NUC-017",
+          "NUC-042"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Hibritleşme",
+        "questionDensityNeed": "low",
+        "requiredMinimum": 2,
+        "actualCount": 2,
+        "status": "OK",
+        "questionIds": [
           "NUC-018",
           "NUC-039"
         ]
@@ -1440,20 +1640,44 @@
       {
         "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
         "topic": "Nükleotidler ve nükleik asitler",
-        "subtopic": "Enzimatik olmayan nükleik asit hasarı",
-        "questionDensityNeed": "very_high",
-        "requiredMinimum": 6,
-        "actualCount": 8,
+        "subtopic": "Deaminasyon ve AP lezyonları",
+        "questionDensityNeed": "medium",
+        "requiredMinimum": 3,
+        "actualCount": 4,
         "status": "OK",
         "questionIds": [
           "NUC-009",
-          "NUC-010",
           "NUC-019",
-          "NUC-020",
           "NUC-032",
-          "NUC-033",
+          "NUC-033"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "UV, radyasyon, alkilleyici ve oksidatif hasar",
+        "questionDensityNeed": "high",
+        "requiredMinimum": 4,
+        "actualCount": 4,
+        "status": "OK",
+        "questionIds": [
+          "NUC-010",
+          "NUC-020",
           "NUC-037",
           "NUC-038"
+        ]
+      },
+      {
+        "sourcePdf": "Nükleotidler Ve Nükleik Asitler.pdf",
+        "topic": "Nükleotidler ve nükleik asitler",
+        "subtopic": "Nükleotidlerin enerji ve kofaktör rolleri",
+        "questionDensityNeed": "low",
+        "requiredMinimum": 2,
+        "actualCount": 2,
+        "status": "OK",
+        "questionIds": [
+          "NUC-043",
+          "NUC-044"
         ]
       },
       {
@@ -1695,14 +1919,31 @@
       }
     ],
     "uncoveredCurriculum": [],
+    "scope_leakage": {
+      "midterm": 0,
+      "final": 0
+    },
     "roster_mismatch_findings": [],
     "roster_missing_ids": [],
     "roster_unexpected_ids": [],
     "unexpected_supplemental_count": 0,
-    "artifact_sync_findings": [
-      "output/questions/all-questions.json ile docs/data/all-questions.json eşleşmiyor",
-      "site-meta toplam soru sayısı ile gerçek soru sayısı eşleşmiyor",
-      "site-meta quality.questionCount ile quality-report.json eşleşmiyor"
-    ]
+    "artifact_sync_findings": []
+  },
+  "by_scope": {
+    "midterm": {
+      "questions": 151,
+      "topics": 38,
+      "pdfs": 3
+    },
+    "final": {
+      "questions": 149,
+      "topics": 38,
+      "pdfs": 4
+    },
+    "review_needed": {
+      "questions": 0,
+      "topics": 0,
+      "pdfs": 0
+    }
   }
 }

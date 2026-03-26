@@ -1,7 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
-  BANNED_META_PATTERN_STRINGS,
   buildSubtopicCoverage,
   comparePublishedRoster,
   detectExactDuplicatePrompts,
@@ -11,14 +10,15 @@ import {
   findLowercaseStarts,
   findOptionBalanceFlags,
   scanPlaceholderFiles
-} from "./lib/final-question-bank.mjs";
+} from "./lib/question-bank.mjs";
+import { loadPdfInventory } from "./lib/pdf-inventory.mjs";
 import { writeJson, writeText } from "./lib/utils.mjs";
 
 const ROOT = process.cwd();
-const RAW_DIR = path.join(ROOT, "output", "raw");
 const QUESTIONS_DIR = path.join(ROOT, "output", "questions");
 const ANALYSIS_DIR = path.join(ROOT, "output", "analysis");
 const DOCS_DATA_DIR = path.join(ROOT, "docs", "data");
+const LETTERS = ["A", "B", "C", "D", "E"];
 
 function loadJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -37,6 +37,7 @@ function topicDistribution(questions) {
 function validateSchema(questions) {
   const requiredFields = [
     "id",
+    "exam_scope",
     "source_pdf",
     "source_topic",
     "source_subtopic",
@@ -76,27 +77,27 @@ function validateSchema(questions) {
   return { duplicateIds, fieldErrors };
 }
 
-const LETTERS = ["A", "B", "C", "D", "E"];
-
-function compareArtifacts(outputQuestions, siteQuestions, qualitySummary, siteMeta) {
+function compareArtifacts(outputArtifacts, siteArtifacts, qualitySummary, siteMeta) {
   const findings = [];
 
-  if (!siteQuestions || JSON.stringify(outputQuestions) !== JSON.stringify(siteQuestions)) {
-    findings.push("output/questions/all-questions.json ile docs/data/all-questions.json eşleşmiyor");
+  for (const [name, outputValue] of Object.entries(outputArtifacts)) {
+    if (!siteArtifacts[name] || JSON.stringify(outputValue) !== JSON.stringify(siteArtifacts[name])) {
+      findings.push(`${name} output ile docs/data arasında eşleşmiyor`);
+    }
   }
 
   if (siteMeta) {
-    if (siteMeta.totals?.all !== outputQuestions.length) {
-      findings.push("site-meta toplam soru sayısı ile gerçek soru sayısı eşleşmiyor");
+    if (siteMeta.scopeTotals?.all !== outputArtifacts.allQuestions.length) {
+      findings.push("site-meta scopeTotals.all gerçek soru sayısı ile eşleşmiyor");
+    }
+    if (siteMeta.scopeTotals?.midterm !== outputArtifacts.midtermQuestions.length) {
+      findings.push("site-meta midterm toplamı ile midterm dataset eşleşmiyor");
+    }
+    if (siteMeta.scopeTotals?.final !== outputArtifacts.finalQuestions.length) {
+      findings.push("site-meta final toplamı ile final dataset eşleşmiyor");
     }
     if (siteMeta.quality?.questionCount && siteMeta.quality.questionCount !== qualitySummary.questionCount) {
       findings.push("site-meta quality.questionCount ile quality-report.json eşleşmiyor");
-    }
-    if (
-      siteMeta.quality?.banned_term_hits_count != null &&
-      siteMeta.quality.banned_term_hits_count !== qualitySummary.banned_term_hits_count
-    ) {
-      findings.push("site-meta banned_term_hits_count ile quality-report.json eşleşmiyor");
     }
   }
 
@@ -112,19 +113,11 @@ function qualityMarkdown(summary) {
     `- Toplam konu sayısı: ${summary.topicCount}`,
     `- Toplam alt konu sayısı: ${summary.subtopicCount}`,
     `- Toplam üretilen soru sayısı: ${summary.questionCount}`,
+    `- Midterm / Final / Review-needed: ${summary.scopeTotals.midterm} / ${summary.scopeTotals.final} / ${summary.scopeTotals.review_needed}`,
+    `- Midterm için yeni eklenen soru sayısı: ${summary.midterm_new_question_count}`,
     `- Kolay / Orta / Zor dağılımı: Kolay ${summary.difficultyTotals.Kolay}, Orta ${summary.difficultyTotals.Orta}, Zor ${summary.difficultyTotals.Zor}`,
-    `- OCR özeti: yerleşik metin ${summary.ocrSummary.text}, yerel OCR ${summary.ocrSummary.ocr_local}, harici OCR ${summary.ocrSummary.ocr_external}, görsel boş ${summary.ocrSummary.visual_blank}`,
     `- Yasak meta dil kontrolü sonucu: ${
       summary.banned_term_hits_count === 0 ? "Temiz" : `${summary.banned_term_hits_count} ihlal`
-    }`,
-    `- Leading discourse marker bulgusu: ${
-      summary.leading_discourse_marker_count === 0 ? "Yok" : `${summary.leading_discourse_marker_count} soru`
-    }`,
-    `- Şık denge uyarısı: ${
-      summary.option_balance_flag_count === 0 ? "Yok" : `${summary.option_balance_flag_count} soru`
-    }`,
-    `- Küçük harfle başlayan soru kökü: ${
-      summary.lowercase_start_count === 0 ? "Yok" : `${summary.lowercase_start_count} ihlal`
     }`,
     `- Exact duplicate soru kökü: ${
       summary.exact_duplicate_prompt_count === 0 ? "Yok" : `${summary.exact_duplicate_prompt_count} çift`
@@ -132,22 +125,10 @@ function qualityMarkdown(summary) {
     `- Near-duplicate soru kökü: ${
       summary.near_duplicate_count === 0 ? "Yok" : `${summary.near_duplicate_count} çift`
     }`,
-    `- Placeholder dosya bulgusu: ${
-      summary.placeholder_file_findings.length === 0 ? "Yok" : `${summary.placeholder_file_findings.length} dosya`
-    }`,
-    `- Eşik altı kalan alt konu var mı?: ${
-      summary.uncoveredCurriculum.length === 0 ? "Yok" : `${summary.uncoveredCurriculum.length} alt konu eşik altında`
-    }`,
-    `- Yayınlanan roster sapması var mı?: ${
-      summary.roster_mismatch_findings.length === 0 ? "Yok" : `${summary.roster_mismatch_findings.length} bulgu`
-    }`,
-    `- Beklenmeyen supplemental ID sayısı: ${summary.unexpected_supplemental_count}`,
+    `- Scope sızıntısı: midterm ${summary.scope_leakage.midterm}, final ${summary.scope_leakage.final}`,
     `- Artifact senkron sorunu var mı?: ${
       summary.artifact_sync_findings.length === 0 ? "Yok" : `${summary.artifact_sync_findings.length} bulgu`
     }`,
-    "",
-    "## Yasak Desenler",
-    ...BANNED_META_PATTERN_STRINGS.map((pattern) => `- \`${pattern}\``),
     "",
     "## Konu başına soru dağılımı",
     ...summary.topicTotals.map((item) => `- ${item.source_pdf}: ${item.question_count}`),
@@ -162,88 +143,12 @@ function qualityMarkdown(summary) {
     )
   ];
 
-  if (summary.banned_term_hits_count) {
-    lines.push(
-      "",
-      "## Yasak Meta Dil Bulguları",
-      ...summary.banned_term_hit_details.map(
-        (item) =>
-          `- ${item.id}: ${item.hits
-            .map((hit) => `${hit.field} -> ${hit.patterns.join(", ")}`)
-            .join(" | ")}`
-      )
-    );
-  }
-
-  if (summary.lowercase_start_count) {
-    lines.push("", "## Küçük Harfle Başlayan Soru Kökleri", ...summary.lowercase_start_ids.map((id) => `- ${id}`));
-  }
-
-  if (summary.leading_discourse_marker_count) {
-    lines.push(
-      "",
-      "## Leading Discourse Marker Bulguları",
-      ...summary.leading_discourse_marker_details.map(
-        (item) => `- ${item.id}: ${item.hits.map((hit) => `${hit.field} -> ${hit.patterns.join(", ")}`).join(" | ")}`
-      )
-    );
-  }
-
-  if (summary.option_balance_flag_count) {
-    lines.push(
-      "",
-      "## Şık Denge Bulguları",
-      ...summary.option_balance_flag_details.map(
-        (item) =>
-          `- ${item.id}: ${item.flags
-            .map((flag) => `${flag.type} (${Object.entries(flag.details).map(([key, value]) => `${key}=${value}`).join(", ")})`)
-            .join(" | ")}`
-      )
-    );
-  }
-
-  if (summary.placeholder_file_findings.length) {
-    lines.push(
-      "",
-      "## Placeholder Dosya Bulguları",
-      ...summary.placeholder_file_findings.map((item) => `- ${item.file}: ${item.matches.join(", ")}`)
-    );
-  }
-
-  lines.push(
-    "",
-    "## Tekrar / Çakışma Özeti",
-    `- Birebir tekrar soru: ${summary.exact_duplicate_prompt_count}`,
-    `- Near-duplicate soru: ${summary.near_duplicate_count}`,
-    `- Mükerrer ID: ${summary.duplicateIds.length}`
-  );
-
-  if (summary.exact_duplicate_prompt_count) {
-    lines.push(
-      "",
-      "## Exact Duplicate Çiftleri",
-      ...summary.exact_duplicate_prompt_pairs.map((pair) => `- ${pair.left} ~ ${pair.right}`)
-    );
-  }
-
-  if (summary.near_duplicate_count) {
-    lines.push(
-      "",
-      "## Near-Duplicate Çiftleri",
-      ...summary.near_duplicate_pairs.map(
-        (pair) =>
-          `- ${pair.left} ~ ${pair.right} (${pair.source_subtopic}, benzerlik ${pair.similarity})`
-      )
-    );
-  }
-
   if (summary.uncoveredCurriculum.length) {
     lines.push(
       "",
       "## Eşik Altı Kalan Alt Konular",
       ...summary.uncoveredCurriculum.map(
-        (entry) =>
-          `- ${entry.sourcePdf} / ${entry.subtopic}: ${entry.actualCount}/${entry.requiredMinimum}`
+        (entry) => `- ${entry.sourcePdf} / ${entry.subtopic}: ${entry.actualCount}/${entry.requiredMinimum}`
       )
     );
   }
@@ -260,42 +165,47 @@ function qualityMarkdown(summary) {
     lines.push("", "## Yayınlanan Roster Bulguları", ...summary.roster_mismatch_findings.map((item) => `- ${item}`));
   }
 
-  lines.push(
-    "",
-    "## PDF İşleme Özeti",
-    ...summary.inventory.map(
-      (item) =>
-        `- ${item.fileName}: ${item.totalPages} sayfa, durum ${item.readabilityStatus}, yerel OCR ${item.statusCounts.ocr_local}, harici OCR ${item.statusCounts.ocr_external}, görsel boş ${item.statusCounts.visual_blank}`
-    )
-  );
-
   return `${lines.join("\n")}\n`;
 }
 
 export async function validate() {
-  const inventory = loadJson(path.join(RAW_DIR, "pdf-inventory.json"));
-  const questions = loadJson(path.join(QUESTIONS_DIR, "all-questions.json"));
-  const siteQuestions = fs.existsSync(path.join(DOCS_DATA_DIR, "all-questions.json"))
-    ? loadJson(path.join(DOCS_DATA_DIR, "all-questions.json"))
-    : null;
+  const inventory = loadPdfInventory(ROOT);
+  const allQuestions = loadJson(path.join(QUESTIONS_DIR, "all-questions.json"));
+  const midtermQuestions = loadJson(path.join(QUESTIONS_DIR, "midterm-questions.json"));
+  const finalQuestions = loadJson(path.join(QUESTIONS_DIR, "final-questions.json"));
+  const reviewNeededQuestions = loadJson(path.join(QUESTIONS_DIR, "review-needed-questions.json"));
+  const midtermNewQuestions = loadJson(path.join(QUESTIONS_DIR, "midterm-new-questions.json"));
+  const siteArtifacts = {
+    allQuestions: fs.existsSync(path.join(DOCS_DATA_DIR, "all-questions.json"))
+      ? loadJson(path.join(DOCS_DATA_DIR, "all-questions.json"))
+      : null,
+    midtermQuestions: fs.existsSync(path.join(DOCS_DATA_DIR, "midterm-questions.json"))
+      ? loadJson(path.join(DOCS_DATA_DIR, "midterm-questions.json"))
+      : null,
+    finalQuestions: fs.existsSync(path.join(DOCS_DATA_DIR, "final-questions.json"))
+      ? loadJson(path.join(DOCS_DATA_DIR, "final-questions.json"))
+      : null,
+    reviewNeededQuestions: fs.existsSync(path.join(DOCS_DATA_DIR, "review-needed-questions.json"))
+      ? loadJson(path.join(DOCS_DATA_DIR, "review-needed-questions.json"))
+      : null
+  };
   const siteMeta = fs.existsSync(path.join(DOCS_DATA_DIR, "site-meta.json"))
     ? loadJson(path.join(DOCS_DATA_DIR, "site-meta.json"))
     : null;
 
-  const { duplicateIds, fieldErrors } = validateSchema(questions);
-  const bannedTermHitDetails = findBannedTermHits(questions);
-  const bannedTermHitsIds = bannedTermHitDetails.map((item) => item.id);
-  const leadingDiscourseMarkerDetails = findLeadingDiscourseMarkerHits(questions);
-  const lowercaseStartIds = findLowercaseStarts(questions);
-  const exactDuplicatePromptPairs = detectExactDuplicatePrompts(questions);
-  const nearDuplicatePairs = detectNearDuplicates(questions);
-  const optionBalanceFlagDetails = findOptionBalanceFlags(questions);
-  const subtopicCoverage = buildSubtopicCoverage(questions);
+  const { duplicateIds, fieldErrors } = validateSchema(allQuestions);
+  const bannedTermHitDetails = findBannedTermHits(allQuestions);
+  const leadingDiscourseMarkerDetails = findLeadingDiscourseMarkerHits(allQuestions);
+  const lowercaseStartIds = findLowercaseStarts(allQuestions);
+  const exactDuplicatePromptPairs = detectExactDuplicatePrompts(allQuestions);
+  const nearDuplicatePairs = detectNearDuplicates(allQuestions);
+  const optionBalanceFlagDetails = findOptionBalanceFlags(allQuestions);
+  const subtopicCoverage = buildSubtopicCoverage(allQuestions);
   const uncoveredCurriculum = subtopicCoverage.filter((entry) => entry.actualCount < entry.requiredMinimum);
   const placeholderFileFindings = scanPlaceholderFiles(ROOT);
-  const rosterComparison = comparePublishedRoster(questions);
+  const rosterComparison = comparePublishedRoster(allQuestions);
 
-  const difficultyTotals = questions.reduce(
+  const difficultyTotals = allQuestions.reduce(
     (acc, question) => {
       acc[question.difficulty] += 1;
       return acc;
@@ -304,35 +214,34 @@ export async function validate() {
   );
 
   const totalPages = inventory.reduce((sum, item) => sum + item.totalPages, 0);
-  const ocrSummary = inventory.reduce(
-    (acc, item) => {
-      acc.text += item.statusCounts.text || 0;
-      acc.ocr_local += item.statusCounts.ocr_local || 0;
-      acc.ocr_external += item.statusCounts.ocr_external || 0;
-      acc.visual_blank += item.statusCounts.visual_blank || 0;
-      return acc;
-    },
-    { text: 0, ocr_local: 0, ocr_external: 0, visual_blank: 0 }
-  );
+  const scopeLeakage = {
+    midterm: midtermQuestions.filter((question) => question.exam_scope !== "midterm").length,
+    final: finalQuestions.filter((question) => question.exam_scope !== "final").length
+  };
 
   const provisionalSummary = {
     generatedAt: new Date().toISOString(),
     inventory,
     pdfCount: inventory.length,
     totalPages,
-    ocrSummary,
     topicCount: [...new Set(subtopicCoverage.map((entry) => entry.topic))].length,
     subtopicCount: subtopicCoverage.length,
-    questionCount: questions.length,
+    questionCount: allQuestions.length,
     difficultyTotals,
+    scopeTotals: {
+      all: allQuestions.length,
+      midterm: midtermQuestions.length,
+      final: finalQuestions.length,
+      review_needed: reviewNeededQuestions.length
+    },
+    midterm_new_question_count: midtermNewQuestions.length,
     duplicateIds,
     exact_duplicate_prompt_count: exactDuplicatePromptPairs.length,
     exact_duplicate_prompt_pairs: exactDuplicatePromptPairs,
     near_duplicate_count: nearDuplicatePairs.length,
     near_duplicate_pairs: nearDuplicatePairs,
     fieldErrors,
-    banned_term_hits_count: bannedTermHitsIds.length,
-    banned_term_hits_ids: bannedTermHitsIds,
+    banned_term_hits_count: bannedTermHitDetails.length,
     banned_term_hit_details: bannedTermHitDetails,
     leading_discourse_marker_count: leadingDiscourseMarkerDetails.length,
     leading_discourse_marker_details: leadingDiscourseMarkerDetails,
@@ -341,16 +250,22 @@ export async function validate() {
     option_balance_flag_count: optionBalanceFlagDetails.length,
     option_balance_flag_details: optionBalanceFlagDetails,
     placeholder_file_findings: placeholderFileFindings,
-    topicTotals: topicDistribution(questions),
+    topicTotals: topicDistribution(allQuestions),
     subtopic_coverage: subtopicCoverage,
     uncoveredCurriculum,
+    scope_leakage: scopeLeakage,
     roster_mismatch_findings: rosterComparison.findings,
     roster_missing_ids: rosterComparison.missing_ids,
     roster_unexpected_ids: rosterComparison.unexpected_ids,
     unexpected_supplemental_count: rosterComparison.unexpected_supplemental_count
   };
 
-  const artifactSyncFindings = compareArtifacts(questions, siteQuestions, provisionalSummary, siteMeta);
+  const artifactSyncFindings = compareArtifacts(
+    { allQuestions, midtermQuestions, finalQuestions, reviewNeededQuestions },
+    siteArtifacts,
+    provisionalSummary,
+    siteMeta
+  );
 
   const summary = {
     ...provisionalSummary,

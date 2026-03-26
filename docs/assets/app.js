@@ -1,10 +1,18 @@
-const STORAGE_KEY = "biyokimya-vize-progress-v1";
+const STORAGE_KEY = "biyokimya-vize-progress-v2";
+const EXAM_SCOPE_LABELS = {
+  midterm: "Vize",
+  final: "Final"
+};
+const PAGES_REQUIRING_SCOPE = new Set(["questions", "practice", "review", "coverage"]);
 
 const state = {
   questions: null,
   questionMap: null,
   coverage: null,
-  meta: null
+  allCoverage: null,
+  meta: null,
+  topicIndex: null,
+  activeScope: null
 };
 
 const COMPACT_FIT_TIERS = ["default", "compact", "dense", "ultra"];
@@ -25,18 +33,123 @@ async function loadJson(fileName) {
   return response.json();
 }
 
-async function loadSharedData() {
-  if (!state.questions) {
-    const [questions, coverage, meta] = await Promise.all([
-      loadJson("all-questions.json"),
-      loadJson("coverage-summary.json"),
-      loadJson("site-meta.json")
+function normalizeExamScope(value) {
+  return value === "midterm" || value === "final" ? value : null;
+}
+
+function currentPage() {
+  return document.body.dataset.page || "home";
+}
+
+function pageRequiresScope() {
+  return PAGES_REQUIRING_SCOPE.has(currentPage());
+}
+
+function examScopeLabel(scope) {
+  return EXAM_SCOPE_LABELS[scope] || "Kapsam";
+}
+
+function emptyWrongQuestionBuckets() {
+  return { midterm: [], final: [] };
+}
+
+async function loadMeta() {
+  if (!state.meta) {
+    const [meta, coverage] = await Promise.all([
+      loadJson("site-meta.json"),
+      loadJson("coverage-summary.json")
     ]);
-    state.questions = questions;
-    state.questionMap = new Map(questions.map((question) => [question.id, question]));
-    state.coverage = coverage;
     state.meta = meta;
+    state.allCoverage = coverage;
   }
+}
+
+function setActiveExamScope(scope) {
+  const normalizedScope = normalizeExamScope(scope);
+  state.activeScope = normalizedScope;
+
+  const store = getStore();
+  store.activeExamScope = normalizedScope;
+  saveStore(store);
+}
+
+function queryExamScope() {
+  return normalizeExamScope(new URLSearchParams(window.location.search).get("scope"));
+}
+
+function getPersistedExamScope() {
+  return normalizeExamScope(getStore().activeExamScope);
+}
+
+function getWrongQuestionIds(store, scope = state.activeScope) {
+  if (!scope) return [];
+  return store.wrongQuestionIdsByScope?.[scope] || [];
+}
+
+function setWrongQuestionIds(store, ids, scope = state.activeScope) {
+  if (!scope) return;
+  store.wrongQuestionIdsByScope[scope] = ids;
+}
+
+function migrateLegacyWrongQuestionIds() {
+  const store = getStore();
+  if (!store.legacyWrongQuestionIds.length || !state.questionMap || !state.activeScope) return;
+
+  const kept = [];
+  const nextWrongIds = [...getWrongQuestionIds(store)];
+
+  store.legacyWrongQuestionIds.forEach((id) => {
+    if (state.questionMap.has(id)) {
+      if (!nextWrongIds.includes(id)) {
+        nextWrongIds.push(id);
+      }
+    } else {
+      kept.push(id);
+    }
+  });
+
+  store.legacyWrongQuestionIds = kept;
+  setWrongQuestionIds(store, nextWrongIds);
+  saveStore(store);
+}
+
+async function loadScopeData(scope) {
+  const normalizedScope = normalizeExamScope(scope);
+  if (!normalizedScope) return;
+  await loadMeta();
+
+  if (state.activeScope === normalizedScope && state.questions?.length) {
+    return;
+  }
+
+  const [questions, topicIndex] = await Promise.all([
+    loadJson(state.meta.datasets[normalizedScope]),
+    loadJson(state.meta.topicIndexes[normalizedScope])
+  ]);
+
+  state.activeScope = normalizedScope;
+  state.questions = questions;
+  state.questionMap = new Map(questions.map((question) => [question.id, question]));
+  state.topicIndex = topicIndex;
+  state.coverage = state.allCoverage.by_scope[normalizedScope];
+  setActiveExamScope(normalizedScope);
+  migrateLegacyWrongQuestionIds();
+}
+
+async function loadSharedData() {
+  await loadMeta();
+  const resolvedScope = queryExamScope() || getPersistedExamScope();
+
+  if (resolvedScope) {
+    await loadScopeData(resolvedScope);
+  } else {
+    state.activeScope = null;
+    state.questions = [];
+    state.questionMap = new Map();
+    state.coverage = null;
+    state.topicIndex = null;
+  }
+
   return state;
 }
 
@@ -45,19 +158,42 @@ function getStore() {
     const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
     return {
       questionStats: parsed.questionStats || {},
-      wrongQuestionIds: parsed.wrongQuestionIds || []
+      activeExamScope: normalizeExamScope(parsed.activeExamScope),
+      wrongQuestionIdsByScope: {
+        ...emptyWrongQuestionBuckets(),
+        ...(parsed.wrongQuestionIdsByScope || {})
+      },
+      legacyWrongQuestionIds: Array.isArray(parsed.wrongQuestionIds) ? parsed.wrongQuestionIds : []
     };
   } catch {
-    return { questionStats: {}, wrongQuestionIds: [] };
+    return {
+      questionStats: {},
+      activeExamScope: null,
+      wrongQuestionIdsByScope: emptyWrongQuestionBuckets(),
+      legacyWrongQuestionIds: []
+    };
   }
 }
 
 function saveStore(store) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify({
+      questionStats: store.questionStats || {},
+      activeExamScope: normalizeExamScope(store.activeExamScope),
+      wrongQuestionIdsByScope: {
+        ...emptyWrongQuestionBuckets(),
+        ...(store.wrongQuestionIdsByScope || {})
+      },
+      legacyWrongQuestionIds: store.legacyWrongQuestionIds || []
+    })
+  );
 }
 
 function recordAnswer(questionId, isCorrect) {
+  if (!state.activeScope) return;
   const store = getStore();
+  const wrongIds = getWrongQuestionIds(store);
   const stats = store.questionStats[questionId] || {
     attempts: 0,
     correctAttempts: 0,
@@ -70,12 +206,15 @@ function recordAnswer(questionId, isCorrect) {
   if (isCorrect) {
     stats.correctAttempts += 1;
     stats.lastCorrect = true;
-    store.wrongQuestionIds = store.wrongQuestionIds.filter((id) => id !== questionId);
+    setWrongQuestionIds(
+      store,
+      wrongIds.filter((id) => id !== questionId)
+    );
   } else {
     stats.wrongAttempts += 1;
     stats.lastCorrect = false;
-    if (!store.wrongQuestionIds.includes(questionId)) {
-      store.wrongQuestionIds.unshift(questionId);
+    if (!wrongIds.includes(questionId)) {
+      setWrongQuestionIds(store, [questionId, ...wrongIds]);
     }
   }
 
@@ -181,6 +320,32 @@ function linkButton(label, href, className = "button secondary") {
   return link;
 }
 
+function scopeHref(scope, fileName = "practice.html") {
+  const url = new URL(fileName, window.location.href);
+  url.searchParams.set("scope", scope);
+  return `${url.pathname.split("/").pop()}?${url.searchParams.toString()}`;
+}
+
+function scopeLinkButton(scope, pageFile, className = "button secondary") {
+  return linkButton(`${examScopeLabel(scope)} Havuzu`, scopeHref(scope, pageFile), className);
+}
+
+function buildScopeChoiceActions(pageFile = "practice.html") {
+  return [
+    scopeLinkButton("midterm", pageFile, "button primary"),
+    scopeLinkButton("final", pageFile, "button secondary")
+  ];
+}
+
+function ensureScopeChosen(container, title = "Önce sınav türünü seç", pageFile = "practice.html") {
+  setEmpty(
+    container,
+    title,
+    "Bu ekran artık yalnız seçili Vize ya da Final havuzuyla çalışır.",
+    buildScopeChoiceActions(pageFile)
+  );
+}
+
 function stackItem(title, copy) {
   const item = element("article", "stack-item");
   item.append(element("h4", "", title), element("p", "", copy));
@@ -242,7 +407,7 @@ function formatFileLabel(fileName) {
 }
 
 function inventoryByFile(fileName) {
-  return state.coverage.inventory.find((item) => item.fileName === fileName);
+  return state.coverage?.inventory?.find((item) => item.fileName === fileName) || null;
 }
 
 function topicLabelByPdf(fileName) {
@@ -251,15 +416,27 @@ function topicLabelByPdf(fileName) {
 }
 
 function coverageSummary() {
+  if (!state.activeScope || !state.coverage) {
+    const pages = (state.allCoverage?.inventory || []).reduce((sum, item) => sum + item.totalPages, 0);
+    return {
+      topics: state.meta?.curriculumTopicCount || 0,
+      subtopics: state.allCoverage?.curriculumMap?.length || 0,
+      questions: state.meta?.scopeTotals?.all || 0,
+      pages
+    };
+  }
+
+  const scopeMeta = state.meta?.by_scope?.[state.activeScope] || {};
   const pages = state.coverage.inventory.reduce((sum, item) => sum + item.totalPages, 0);
   const subtopics =
-    state.meta?.quality?.subtopicCount ||
-    state.coverage.mergedCurriculum.reduce((sum, item) => sum + item.subtopics.length, 0);
+    state.coverage?.curriculumMap?.length ||
+    state.coverage?.mergedCurriculum?.reduce((sum, item) => sum + item.subtopics.length, 0) ||
+    0;
 
   return {
-    topics: state.meta.curriculumTopicCount,
+    topics: state.coverage?.mergedCurriculum?.length || scopeMeta.topics || 0,
     subtopics,
-    questions: state.meta.totals.all,
+    questions: state.meta?.scopeTotals?.[state.activeScope] || 0,
     pages
   };
 }
@@ -299,7 +476,7 @@ function getTopicPerformance(questionStats) {
 }
 
 function questionCountForSources(sources) {
-  return state.questions.filter((question) => sources.includes(question.source_pdf)).length;
+  return (state.questions || []).filter((question) => sources.includes(question.source_pdf)).length;
 }
 
 function sourceSummaryForTopic(fileName) {
@@ -820,21 +997,27 @@ function buildHome() {
   if (!statsRoot || !progressRoot || !coverageRoot) return;
 
   const store = getStore();
-  const totalSolved = Object.values(store.questionStats).reduce((sum, item) => sum + item.attempts, 0);
-  const totalCorrect = Object.values(store.questionStats).reduce(
-    (sum, item) => sum + item.correctAttempts,
-    0
-  );
-  const totalWrong = Object.values(store.questionStats).reduce((sum, item) => sum + item.wrongAttempts, 0);
-  const uniqueSeen = Object.keys(store.questionStats).length;
   const summary = coverageSummary();
+  const activeWrongIds = getWrongQuestionIds(store);
+  const scopedStatEntries = Object.entries(store.questionStats).filter(([questionId]) => state.questionMap.has(questionId));
+  const totalSolved = scopedStatEntries.reduce((sum, [, item]) => sum + item.attempts, 0);
+  const totalCorrect = scopedStatEntries.reduce((sum, [, item]) => sum + item.correctAttempts, 0);
+  const totalWrong = scopedStatEntries.reduce((sum, [, item]) => sum + item.wrongAttempts, 0);
+  const uniqueSeen = scopedStatEntries.length;
 
-  const statCards = [
-    ["Soru", String(summary.questions), "Hazır çalışma havuzu"],
-    ["Konu", String(summary.topics), "Ana tekrar alanı"],
-    ["Alt başlık", String(summary.subtopics), "Dağıtılmış kapsam"],
-    ["Sayfa", String(summary.pages), "Toplam ders içeriği"]
-  ];
+  const statCards = state.activeScope
+    ? [
+        ["Scope", examScopeLabel(state.activeScope), "Aktif çalışma alanı"],
+        ["Soru", String(summary.questions), "Hazır çalışma havuzu"],
+        ["Konu", String(summary.topics), "Ana tekrar alanı"],
+        ["Sayfa", String(summary.pages), "Bu scope kapsamı"]
+      ]
+    : [
+        ["Vize", String(state.meta?.scopeTotals?.midterm || 0), "Yalnız vize havuzu"],
+        ["Final", String(state.meta?.scopeTotals?.final || 0), "Yalnız final havuzu"],
+        ["Toplam", String(state.meta?.scopeTotals?.all || 0), "Ayrılmış soru bankası"],
+        ["PDF", String(state.meta?.pdfCount || 0), "Kaynak ders dosyası"]
+      ];
 
   clearNode(statsRoot);
   statCards.forEach(([label, value, copy]) => {
@@ -844,13 +1027,41 @@ function buildHome() {
   });
 
   clearNode(progressRoot);
+  clearNode(coverageRoot);
+
+  if (!state.activeScope) {
+    progressRoot.append(
+      buildEmptyState(
+        "Önce Vize ya da Final seç",
+        "Bu sistem artık iki ayrı sınav havuzuyla çalışır. Soru akışına girmeden önce kapsam seçilir.",
+        buildScopeChoiceActions("practice.html")
+      )
+    );
+
+    coverageRoot.append(
+      stackItem("Ayrım kuralı", "Vize ve final soruları artık aynı havuzda karışmıyor."),
+      stackItem(
+        "Vize kapsamı",
+        `${state.meta?.scopeTotals?.midterm || 0} soru • Karbonhidratlar ve Glikobiyoloji, Nükleotidler ve Nükleik Asitler, Lipitler`
+      ),
+      stackItem(
+        "Final kapsamı",
+        `${state.meta?.scopeTotals?.final || 0} soru • Kalan dört PDF ayrı final havuzunda tutuluyor`
+      )
+    );
+    return;
+  }
 
   if (!uniqueSeen) {
     progressRoot.append(
-      buildEmptyState("Başlamak için hazırsın", "Rastgele pratikle hemen başla ya da doğrudan bir konu seç.", [
-        linkButton("Pratiğe Başla", "practice.html", "button primary"),
-        linkButton("Konuya Git", "questions.html", "button secondary")
-      ])
+      buildEmptyState(
+        `${examScopeLabel(state.activeScope)} için hazırsın`,
+        "Rastgele pratikle hemen başla ya da doğrudan bir konu seç.",
+        [
+          linkButton("Pratiğe Başla", scopeHref(state.activeScope, "practice.html"), "button primary"),
+          linkButton("Konuya Git", scopeHref(state.activeScope, "questions.html"), "button secondary")
+        ]
+      )
     );
   } else {
     const overviewGrid = element("div", "summary-grid");
@@ -861,8 +1072,8 @@ function buildHome() {
       miniStat("Doğruluk", formatPercent(accuracy), totalWrong ? `${totalWrong} yanlış kaydı` : "Temiz ilerleme"),
       miniStat(
         "Tekrar listesi",
-        String(store.wrongQuestionIds.length),
-        store.wrongQuestionIds.length ? "Geri dönülecek soru" : "Liste temiz"
+        String(activeWrongIds.length),
+        activeWrongIds.length ? "Geri dönülecek soru" : "Liste temiz"
       ),
       miniStat("Görülen", `${uniqueSeen}/${state.questions.length}`, "Açılan farklı soru")
     );
@@ -903,9 +1114,11 @@ function buildHome() {
 
   const longestSource = [...state.coverage.inventory].sort((a, b) => b.totalPages - a.totalPages)[0];
 
-  clearNode(coverageRoot);
   coverageRoot.append(
-    stackItem("Toplam kapsam", `${summary.topics} konu • ${summary.subtopics} alt başlık • ${summary.questions} soru`),
+    stackItem(
+      "Aktif kapsam",
+      `${examScopeLabel(state.activeScope)} • ${summary.topics} konu • ${summary.subtopics} alt başlık • ${summary.questions} soru`
+    ),
     stackItem("Yoğun tekrar alanları", denseTopics.map((item) => item.title).join(" • ")),
     stackItem(
       "En geniş kaynak",
@@ -918,11 +1131,12 @@ function populateTopicSelect(select) {
   if (!select) return;
   clearNode(select);
   select.append(new Option("Tümü", ""));
-  const topics = [...new Set(state.coverage.inventory.map((item) => item.topic))];
+  const topics = [...new Set((state.coverage?.inventory || []).map((item) => item.topic))];
   topics.forEach((topic) => select.append(new Option(topic, topic)));
 }
 
 function filterQuestions({ topic = "", difficulty = "", search = "" }) {
+  if (!state.questions?.length) return [];
   const normalizedSearch = search.trim().toLocaleLowerCase("tr");
 
   return state.questions.filter((question) => {
@@ -963,6 +1177,20 @@ function buildQuestionsPage() {
   const nextButtons = [button, desktopButton].filter(Boolean);
   const filterToggles = [filterToggle, filterDockToggle].filter(Boolean);
 
+  if (!state.activeScope) {
+    counter.textContent = "Kapsam seç";
+    sheetCount.textContent = "Kapsam seç";
+    activeFilter.textContent = "Önce Vize veya Final seç";
+    nextButtons.forEach((node) => {
+      node.disabled = true;
+    });
+    filterToggles.forEach((node) => {
+      node.disabled = true;
+    });
+    ensureScopeChosen(root, "Önce sınav türünü seç", "questions.html");
+    return;
+  }
+
   populateTopicSelect(topicSelect);
   let currentIndex = 0;
   let orderIds = [];
@@ -975,11 +1203,12 @@ function buildQuestionsPage() {
   const getFilteredQuestions = (filters) => filterQuestions(filters);
 
   const formatFilterSummary = (filters) => {
+    const scopePrefix = examScopeLabel(state.activeScope);
     const parts = [];
     if (filters.topic) parts.push(filters.topic);
     if (filters.difficulty) parts.push(filters.difficulty);
     if (filters.search.trim()) parts.push(`Ara: ${filters.search.trim()}`);
-    return parts.length ? parts.join(" • ") : "Tüm havuz";
+    return parts.length ? `${scopePrefix} • ${parts.join(" • ")}` : `${scopePrefix} • Tüm havuz`;
   };
 
   const syncControlValues = () => {
@@ -1175,6 +1404,20 @@ function buildPracticePage() {
   const nextButtons = [button, desktopButton].filter(Boolean);
   const filterToggles = [filterToggle, filterDockToggle].filter(Boolean);
 
+  if (!state.activeScope) {
+    counter.textContent = "Kapsam seç";
+    sheetCount.textContent = "Kapsam seç";
+    activeFilter.textContent = "Önce Vize veya Final seç";
+    nextButtons.forEach((node) => {
+      node.disabled = true;
+    });
+    filterToggles.forEach((node) => {
+      node.disabled = true;
+    });
+    ensureScopeChosen(root, "Önce sınav türünü seç", "practice.html");
+    return;
+  }
+
   populateTopicSelect(topicSelect);
   let currentIndex = 0;
   let orderIds = [];
@@ -1191,10 +1434,11 @@ function buildPracticePage() {
     });
 
   const formatFilterSummary = (filters) => {
+    const scopePrefix = examScopeLabel(state.activeScope);
     const parts = [];
     if (filters.topic) parts.push(filters.topic);
     if (filters.difficulty) parts.push(filters.difficulty);
-    return parts.length ? parts.join(" • ") : "Tüm havuz";
+    return parts.length ? `${scopePrefix} • ${parts.join(" • ")}` : `${scopePrefix} • Tüm havuz`;
   };
 
   const syncControlValues = () => {
@@ -1379,11 +1623,28 @@ function buildReviewPage() {
   let lastIndex = 0;
   let lastTrigger = null;
 
+  if (!state.activeScope) {
+    counter.textContent = "Kapsam seç";
+    sheetCount.textContent = "Kapsam seç";
+    activeFilter.textContent = "Önce Vize veya Final seç";
+    nextButtons.forEach((node) => {
+      node.disabled = true;
+    });
+    clearButtons.forEach((node) => {
+      node.disabled = true;
+    });
+    toolToggles.forEach((node) => {
+      node.disabled = true;
+    });
+    ensureScopeChosen(root, "Önce sınav türünü seç", "review.html");
+    return;
+  }
+
   const isDesktop = () => desktopQuery.matches;
 
   const getReviewQuestions = () =>
-    getStore()
-      .wrongQuestionIds.map((id) => state.questionMap.get(id))
+    getWrongQuestionIds(getStore())
+      .map((id) => state.questionMap.get(id))
       .filter(Boolean);
 
   const resetToolExpansion = () => {
@@ -1404,10 +1665,13 @@ function buildReviewPage() {
   const updateCounts = () => {
     const reviewQuestions = getReviewQuestions();
     const hasQuestions = reviewQuestions.length > 0;
+    const scopePrefix = examScopeLabel(state.activeScope);
 
     counter.textContent = hasQuestions ? poolCountLabel(reviewQuestions.length) : "Liste boş";
     sheetCount.textContent = hasQuestions ? poolSizeLabel(reviewQuestions.length) : "Liste boş";
-    activeFilter.textContent = hasQuestions ? "Yanlış havuzu" : "Tekrar listesi boş";
+    activeFilter.textContent = hasQuestions
+      ? `${scopePrefix} • Yanlış havuzu`
+      : `${scopePrefix} • Tekrar listesi boş`;
 
     nextButtons.forEach((node) => {
       node.disabled = !hasQuestions;
@@ -1454,8 +1718,8 @@ function buildReviewPage() {
       currentId = null;
       lastIndex = 0;
       setEmpty(root, "Liste şu an boş", "Yeni yanlışlar burada birikir.", [
-        linkButton("Pratiğe Başla", "practice.html", "button primary"),
-        linkButton("Konuya Git", "questions.html", "button secondary")
+        linkButton("Pratiğe Başla", scopeHref(state.activeScope, "practice.html"), "button primary"),
+        linkButton("Konuya Git", scopeHref(state.activeScope, "questions.html"), "button secondary")
       ]);
       return;
     }
@@ -1491,7 +1755,7 @@ function buildReviewPage() {
 
   const clearReview = () => {
     const store = getStore();
-    store.wrongQuestionIds = [];
+    setWrongQuestionIds(store, []);
     saveStore(store);
     currentId = null;
     lastIndex = 0;
@@ -1568,6 +1832,32 @@ function buildCoveragePage() {
   const statsRoot = document.getElementById("coverage-stats");
   const topicsRoot = document.getElementById("coverage-topics");
   if (!statsRoot || !topicsRoot) return;
+
+  if (!state.activeScope || !state.coverage) {
+    const statCards = [
+      ["Vize", String(state.meta?.scopeTotals?.midterm || 0), "Yalnız vize havuzu"],
+      ["Final", String(state.meta?.scopeTotals?.final || 0), "Yalnız final havuzu"],
+      ["Toplam", String(state.meta?.scopeTotals?.all || 0), "Ayrılmış soru bankası"],
+      ["PDF", String(state.meta?.pdfCount || 0), "Kaynak ders dosyası"]
+    ];
+
+    clearNode(statsRoot);
+    statCards.forEach(([label, value, copy]) => {
+      const card = element("article", "stat-card");
+      card.append(element("span", "", label), element("strong", "", value), element("p", "", copy));
+      statsRoot.append(card);
+    });
+
+    clearNode(topicsRoot);
+    topicsRoot.append(
+      buildEmptyState(
+        "Önce Vize ya da Final seç",
+        "Kapsam ekranı yalnız seçili sınav havuzunun konu yoğunluğunu gösterir.",
+        buildScopeChoiceActions("coverage.html")
+      )
+    );
+    return;
+  }
 
   const summary = coverageSummary();
   const statCards = [

@@ -1,0 +1,93 @@
+[
+  {
+    "file_name": "Hücre Zarından Madde Geçişi.pdf",
+    "exam_scope": "final",
+    "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre final havuzuna dahildir.",
+    "covered_topics": [
+      "Biyolojik zarların temel özellikleri",
+      "Lipit çift tabaka ve sıvı-mozaik model",
+      "Zar proteinleri ve asimetri",
+      "Zar kıvrımı ve füzyonu",
+      "Pasif ve aktif taşınma",
+      "Su ve iyon kanalları"
+    ]
+  },
+  {
+    "file_name": "Karbohidrat Metabolizması Pentoz Fosfat Yolağı.pdf",
+    "exam_scope": "final",
+    "reason": "Karbonhidrat yapısı değil metabolizma odaklı olduğu için final havuzuna ayrılmıştır.",
+    "covered_topics": [
+      "Glikolizin genel mantığı",
+      "Glikolitik basamaklar",
+      "Fermentasyon",
+      "Glukoneogenez",
+      "Karşılıklı düzenleme",
+      "Pentoz fosfat yolağı"
+    ]
+  },
+  {
+    "file_name": "Karbonhidratlar ve Glikobiyoloji.pdf",
+    "exam_scope": "midterm",
+    "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre vize havuzuna dahildir.",
+    "covered_topics": [
+      "Monosakkaritler ve stereokimya",
+      "Halkalı yapı ve anomerler",
+      "Şeker türevleri ve disakkaritler",
+      "Depo ve yapısal polisakkaritler",
+      "Glikozaminoglikanlar",
+      "Glikokonjugatlar",
+      "Şeker kodu ve analitik yöntemler"
+    ]
+  },
+  {
+    "file_name": "Lipitler.pdf",
+    "exam_scope": "midterm",
+    "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre vize havuzuna dahildir.",
+    "covered_topics": [
+      "Yağ asitleri ve depo lipitleri",
+      "Triaçilgliseroller ve mumlar",
+      "Zar lipitleri",
+      "Sfingolipitler ve steroller",
+      "Sinyal, kofaktör ve pigment olarak lipitler"
+    ]
+  },
+  {
+    "file_name": "Nükleotidler Ve Nükleik Asitler.pdf",
+    "exam_scope": "midterm",
+    "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre vize havuzuna dahildir.",
+    "covered_topics": [
+      "Temel bilgiler ve baz-pentoz yapısı",
+      "Fosfodiester omurga",
+      "DNA çift sarmalı",
+      "RNA çeşitleri",
+      "Nükleik asit kimyası",
+      "Enzimatik olmayan hasar",
+      "Nükleotidlerin diğer işlevleri"
+    ]
+  },
+  {
+    "file_name": "Oksidatif Fosforillenme.pdf",
+    "exam_scope": "final",
+    "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre final havuzuna dahildir.",
+    "covered_topics": [
+      "Oksidatif fosforillenmenin yeri",
+      "Elektron taşıyıcıları",
+      "Fotosenteze giriş",
+      "Pigmentler",
+      "Kloroplast yapısı",
+      "Fotofosforillenme"
+    ]
+  },
+  {
+    "file_name": "Sitrik Asit Çevrimi.pdf",
+    "exam_scope": "final",
+    "reason": "Kullanıcının verdiği düzeltilmiş sınav kapsamına göre final havuzuna dahildir.",
+    "covered_topics": [
+      "Pirüvatın asetil-KoA'ya dönüşümü",
+      "PDH kompleksinin yapısı ve koenzimleri",
+      "Sitrik asit çevrimi basamakları",
+      "Enerji korunumu",
+      "Amfibolik rol"
+    ]
+  }
+]
